@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Configuration;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -321,10 +320,10 @@ namespace Lucky
 
         private void LuckyForm_Load(object sender, EventArgs e)
         {
-            btnOnoff.BackgroundImage = Image.FromFile(ConfigurationManager.AppSettings["ResPath"] + @"\btnOnOff.jpg");
-            btnbc.BackgroundImage = Image.FromFile(ConfigurationManager.AppSettings["ResPath"] + @"\btnbc.jpg");
-            btnRestart.BackgroundImage = Image.FromFile(ConfigurationManager.AppSettings["ResPath"] + @"\btnRestart.jpg");
-            BackgroundImage = Image.FromFile(ConfigurationManager.AppSettings["ResPath"] + @"\LuckyForm.jpg");
+            btnOnoff.BackgroundImage = Image.FromFile(Environment.CurrentDirectory + @"\btnOnOff.jpg");
+            btnbc.BackgroundImage = Image.FromFile(Environment.CurrentDirectory + @"\btnbc.jpg");
+            btnRestart.BackgroundImage = Image.FromFile(Environment.CurrentDirectory + @"\btnRestart.jpg");
+            BackgroundImage = Image.FromFile(Environment.CurrentDirectory + @"\LuckyForm.jpg");
 
             //奖项名称
             lblLevelName.Text = UserHelper.awardName;

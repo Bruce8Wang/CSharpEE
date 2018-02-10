@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Configuration;
-using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -189,8 +187,8 @@ namespace Lucky
         {
             try
             {
-                BackgroundImage = Image.FromFile(ConfigurationManager.AppSettings["ResPath"] + @"\LoginForm.jpg");
-                btnstart.BackgroundImage = Image.FromFile(ConfigurationManager.AppSettings["ResPath"] + @"\btnstart.jpg");
+                BackgroundImage = Image.FromFile(Environment.CurrentDirectory + @"\LoginForm.jpg");
+                btnstart.BackgroundImage = Image.FromFile(Environment.CurrentDirectory + @"\btnstart.jpg");
                 UserHelper.ReadEmployeeList();
                 BindAwardList();
             }

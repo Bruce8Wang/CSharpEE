@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
 using System.Data.OleDb;
 using System.Net;
@@ -68,7 +67,7 @@ namespace Lucky
         private static string IniReadValue(string Section, string Key)
         {
             var buffer = new byte[32768];
-            var strDir = ConfigurationManager.AppSettings["ResPath"] + @"\config.ini";
+            var strDir = Environment.CurrentDirectory + @"\config.ini";
             var temp = new StringBuilder(255);
             var i = GetPrivateProfileString(Section, Key, "", temp, 255, strDir);
             return temp.ToString();
@@ -77,7 +76,7 @@ namespace Lucky
         //写入INI文件
         public static void IniWriteValue(string Section, string Key, string Value)
         {
-            var strDir = ConfigurationManager.AppSettings["ResPath"] + @"\config.ini";
+            var strDir = Environment.CurrentDirectory + @"\config.ini";
             WritePrivateProfileString(Section, Key, Value, strDir);
         }
         #endregion
@@ -88,7 +87,7 @@ namespace Lucky
         /// </summary>
         public static void ReadEmployeeList()
         {
-            var strDir = ConfigurationManager.AppSettings["ResPath"] + @"\抽奖设置.xls";
+            var strDir = Environment.CurrentDirectory + @"\抽奖设置.xls";
             var source = "Provider=Microsoft.Jet.OleDb.4.0;Data Source='" + strDir + "';Extended Properties='Excel 8.0;HDR=yes;IMEX=1'";
             var conn = new OleDbConnection(source);
 
@@ -133,7 +132,7 @@ namespace Lucky
         /// <param name="level"></param>
         public static void ReadEmployeeListWinner(string awardName)
         {
-            var strDir = ConfigurationManager.AppSettings["ResPath"] + @"\中奖名单.xls";
+            var strDir = Environment.CurrentDirectory + @"\中奖名单.xls";
             var source = "Provider=Microsoft.Jet.OleDb.4.0;Data Source='" + strDir + "';Extended Properties='Excel 8.0;HDR=yes;IMEX=1'";
             var conn = new OleDbConnection(source);
             try
@@ -179,7 +178,7 @@ namespace Lucky
         {
             var sql = string.Empty;
             var sb = new StringBuilder();
-            var strDir = ConfigurationManager.AppSettings["ResPath"] + @"\中奖名单.xls";
+            var strDir = Environment.CurrentDirectory + @"\中奖名单.xls";
             var source = "Provider=Microsoft.Jet.OleDb.4.0;Data Source='" + strDir + "';Extended Properties='Excel 8.0;HDR=yes;IMEX=0'";
             var conn = new OleDbConnection(source);
             try
@@ -215,7 +214,7 @@ namespace Lucky
         public static void RemoveWinner(IList<string[]> empNo)
         {
             var sql = string.Empty;
-            var strDir = ConfigurationManager.AppSettings["ResPath"] + @"\抽奖设置.xls";
+            var strDir = Environment.CurrentDirectory + @"\抽奖设置.xls";
             var source = "Provider=Microsoft.Jet.OleDb.4.0;Data Source='" + strDir + "';Extended Properties='Excel 8.0;HDR=yes;IMEX=0'";
             var conn = new OleDbConnection(source);
             try
@@ -243,7 +242,7 @@ namespace Lucky
         public static void SaveAward(string name, int num)
         {
             var sql = string.Empty;
-            var strDir = ConfigurationManager.AppSettings["ResPath"] + @"\抽奖设置.xls";
+            var strDir = Environment.CurrentDirectory + @"\抽奖设置.xls";
             var source = "Provider=Microsoft.Jet.OleDb.4.0;Data Source='" + strDir + "';Extended Properties='Excel 8.0;HDR=yes;IMEX=0'";
             var conn = new OleDbConnection(source);
 
@@ -269,7 +268,7 @@ namespace Lucky
         #region 读取奖项
         public static DataTable ReadAward()
         {
-            var strDir = ConfigurationManager.AppSettings["ResPath"] + @"\抽奖设置.xls";
+            var strDir = Environment.CurrentDirectory + @"\抽奖设置.xls";
             var source = "Provider=Microsoft.Jet.OleDb.4.0;Data Source='" + strDir + "';Extended Properties='Excel 8.0;HDR=yes;IMEX=1'";
             var conn = new OleDbConnection(source);
             var dt = new DataTable();

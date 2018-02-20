@@ -1,0 +1,107 @@
+﻿body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-size: 12px;
+    line-height: 1.428571429;
+    color: #333;
+    background-color: aliceblue;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+
+.purpleTb {
+    BORDER-RIGHT: #666666 1px solid;
+    BORDER-TOP: #b5caff 1px solid;
+    BORDER-LEFT: #b5caff 1px solid;
+    BORDER-BOTTOM: #666666 1px solid;
+    FONT-SIZE: 12px;
+    width: 100%;
+    font-family: inherit;
+}
+
+    .purpleTb .fieldTr {
+        /*BACKGROUND-COLOR: #ece9d8;*/
+        background-color: #eee;
+    }
+
+    .purpleTb .fieldTd {
+        BORDER-RIGHT: #666666 1px solid;
+        PADDING-RIGHT: 0px;
+        BORDER-TOP: #fff 2px solid;
+        PADDING-LEFT: 0px;
+        FONT-WEIGHT: normal;
+        PADDING-BOTTOM: 0px;
+        BORDER-LEFT: #fff 1px solid;
+        PADDING-TOP: 2px;
+        BORDER-BOTTOM: #c0c0c0 1px solid;
+        HEIGHT: 28px;
+        align-content: center;
+    }
+
+        .purpleTb .fieldTd .fieldNowrapDiv {
+            PADDING-RIGHT: 0px;
+            PADDING-LEFT: 3px;
+            PADDING-BOTTOM: 0px;
+            OVERFLOW: hidden;
+            CURSOR: default;
+            PADDING-TOP: 3px;
+            WHITE-SPACE: nowrap;
+            TEXT-OVERFLOW: ellipsis;
+        }
+
+        .purpleTb .fieldTd .dragDiv {
+            PADDING-RIGHT: 3px;
+            DISPLAY: block;
+            PADDING-LEFT: 0px;
+            PADDING-BOTTOM: 0px;
+            WIDTH: 100%;
+            CURSOR: e-resize;
+            PADDING-TOP: 0px;
+        }
+
+    .purpleTb .dataRow0 {
+        BACKGROUND-COLOR: #fafafa;
+    }
+
+    .purpleTb .dataRow1 {
+        BACKGROUND-COLOR: #fff;
+    }
+
+    .purpleTb .dataRowSelected {
+        BACKGROUND-COLOR: #efefef;
+    }
+
+    .purpleTb .dataTd {
+        BORDER-RIGHT: #b5caff 1px solid;
+        PADDING-RIGHT: 3px;
+        BORDER-TOP: #fff 1px solid;
+        PADDING-LEFT: 0px;
+        PADDING-BOTTOM: 0px;
+        BORDER-LEFT: #fff 1px solid;
+        PADDING-TOP: 0px;
+        BORDER-BOTTOM: #b5caff 1px solid;
+        HEIGHT: 22px;
+    }
+
+        .purpleTb .dataTd .dataNowrapDiv {
+            PADDING-RIGHT: 0px;
+            PADDING-LEFT: 3px;
+            PADDING-BOTTOM: 0px;
+            OVERFLOW: hidden;
+            PADDING-TOP: 3px;
+            WHITE-SPACE: nowrap;
+            TEXT-OVERFLOW: ellipsis;
+        }
+
+.purpleTb tr:hover {
+    background-color: #d0e9c6;
+    border-color: #c9e2b3;
+}

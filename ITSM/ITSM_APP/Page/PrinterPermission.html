@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>打印机代码</title>
+    <!--<link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Content/myStyle.css" />-->
+
+    <link type="text/css" rel="stylesheet" href="../Content/H-ui.css" />
+    <link type="text/css" rel="stylesheet" href="../Content/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/viewstyle.css" />
+
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/SortView.js"></script>
+    <script src="/Scripts/PagerView.js"></script>
+    <script src="/Scripts/TableView.js"></script>
+    <script src="/Scripts/SelectorView.js"></script>
+
+</head>
+<body style="padding-left:10px;padding-right:10px;">
+
+    <div>
+        <h4>
+            打印机代码：
+        </h4>
+        <form style="display:none;">
+            代码：
+            <input id="Code" required style="width:50px;border-width:0px;border-bottom-width:thin" type="text">&nbsp;&nbsp;
+            名称：
+            <input id="Name" required style="width:50px;border-width:0px;border-bottom-width:thin" type="text">&nbsp;&nbsp;
+            中心：
+            <select id="Center" required style="width:100px;border-width:0px;border-bottom-width:thin"></select>&nbsp;&nbsp;
+
+            <input id="Color" name="Color" style="width:10px;border-width:0px;border-bottom-width:thin;" type="checkbox">彩色&nbsp;&nbsp;
+
+            <input id="FiveFloor" style="width:10px;border-width:0px;border-bottom-width:thin" type="checkbox"> 五楼权限&nbsp;&nbsp;
+
+            <input id="SixFloor" style="width:10px;border-width:0px;border-bottom-width:thin" type="checkbox">六楼权限&nbsp;&nbsp;
+
+            <input id="SevenFloor" style="width:10px;border-width:0px;border-bottom-width:thin" type="checkbox">七楼权限&nbsp;&nbsp;
+
+            <input id="EighthFloor" style="width:10px;border-width:0px;border-bottom-width:thin" type="checkbox">八楼权限&nbsp;&nbsp;
+
+            <input id="ForthBamboo" style="width:10px;border-width:0px;border-bottom-width:thin" type="checkbox">鑫竹苑权限&nbsp;&nbsp;
+
+            <input id="SecondHill" style="width:10px;border-width:0px;border-bottom-width:thin" type="checkbox">天御香山权限&nbsp;&nbsp;
+
+            <input id="ThirtyfifthSZStock" style="width:10px;border-width:0px;border-bottom-width:thin" type="checkbox">深交所权限&nbsp;&nbsp;&nbsp;&nbsp;
+
+            备注： <input id="Note" style="width:50px;border-width:0px;border-bottom-width:thin" type="text">&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit" class="btn btn-success radius" id="btnSubmit" onclick="printer_add(this);">
+                <i class="icon-plus"></i> 添加
+            </button>
+
+            <button id="btnExport" class="btn btn-success radius" type="button" onclick="exportExcel()">
+                <i class="icon-exchange"></i> 导出
+            </button>
+        </form>
+
+        <div id="table_div" style="align-content:center;text-align:center;"></div>
+
+        <h4>
+            说明：
+        </h4>
+        <p>
+            公司已部署12部网络打印机，其中黑色3台，彩色9台，打印彩色需要申请授权。<br />
+            <span style="font-weight:bold">黑白打印机</span> ，连接名称为“MP+数字”的字样<br />
+            <span style="font-weight:bold"> 黑彩色打印机 </span>，连接名称为“MP C+数字”的字样<br />
+            设计院专用打印，连接名称为“W+数字”<br />
+        </p>
+
+        <!--<p style="color:red;">名称由<span style="background-color:yellow">中心代码+姓名</span>组成，下面是中心代码表：</p>
+        <table style="font-size:8px;">
+            <tr style="background-color:lightgray; height:5px;">
+
+                <th style="width:8%">中心名称</th>
+                <th style="width:8%">中心代码</th>
+                <th style="width:8%">中心名称</th>
+                <th style="width:8%">中心代码</th>
+                <th style="width:8%">中心名称</th>
+                <th style="width:8%">中心代码</th>
+                <th style="width:8%">中心名称</th>
+                <th style="width:8%">中心代码</th>
+                <th style="width:8%">中心名称</th>
+                <th style="width:8%">中心代码</th>
+                <th style="width:8%">中心名称</th>
+                <th style="width:8%;border-right-width:1px;">中心代码</th>
+            </tr>
+            <tr>
+                <td style="border-left-width:1px;">成本中心</td>
+                <td>CB</td>
+                <td style="border-left-width:1px;">行政中心</td>
+                <td>XZ</td>
+                <td style="border-left-width:1px;">工程中心</td>
+                <td>GC</td>
+                <td style="border-left-width:1px;">人力资源中心</td>
+                <td>HR</td>
+                <td style="border-left-width:1px;">设计院</td>
+                <td>SJ</td>
+                <td style="border-left-width:1px;">采购中心</td>
+                <td style="border-right-width:1px;">CG</td>
+            </tr>
+            <tr>
+                <td style="border-left-width:1px;">市场运营中心</td>
+                <td>SC</td>
+                <td style="border-left-width:1px;">财务中心</td>
+                <td>FI</td>
+                <td style="border-left-width:1px;">苗圃事业部</td>
+                <td>MP</td>
+                <td style="border-left-width:1px;">投融资中心</td>
+                <td>TZ</td>
+                <td style="border-left-width:1px;">生态事业部</td>
+                <td>ST</td>
+                <td style="border-left-width:1px;">供应链事业部</td>
+                <td style="border-right-width:1px;">GY</td>
+            </tr>
+            <tr>
+
+                <td style="border-left-width:1px;">总裁办</td>
+                <td>ZC</td>
+                <td style="border-left-width:1px;">总工办</td>
+                <td>ZG</td>
+                <td style="border-left-width:1px;">审计中心</td>
+                <td>IA</td>
+                <td style="border-left-width:1px;">证券中心</td>
+                <td>ZQ</td>
+                <td style="border-left-width:1px;">生态旅游事业部</td>
+                <td>LY</td>
+                <td style="border-left-width:1px;">研发中心</td>
+                <td style="border-right-width:1px;">YJ</td>
+            </tr>
+            <tr>
+                <td style="border-left-width:1px;border-bottom-width:1px;">流程与信息中心</td>
+                <td style="border-bottom-width:1px;">IT</td>
+                <td style="border-left-width:1px;border-bottom-width:1px;"></td>
+                <td style="border-bottom-width:1px;"></td>
+                <td style="border-left-width:1px;border-bottom-width:1px;"></td>
+                <td style="border-bottom-width:1px;"></td>
+                <td style="border-left-width:1px;border-bottom-width:1px;"></td>
+                <td style="border-bottom-width:1px;"></td>
+                <td style="border-left-width:1px;border-bottom-width:1px;"></td>
+                <td style="border-bottom-width:1px;"></td>
+                <td style="border-left-width:1px;border-bottom-width:1px;"></td>
+                <td style="border-bottom-width:1px;border-right-width:1px;"></td>
+            </tr>
+
+
+        </table>-->
+
+        <p>打印机清单如下：</p>
+        <table style="font-size:8px;">
+            <tr style="background-color:lightgray; height:5px;">
+                <th style="width:5%">序号</th>
+                <th style="width:20%">打印机名称</th>
+                <th style="width:20%">打印机型号</th>
+                <th style="width:15%">IP</th>
+                <th style="width:20%">部门</th>
+                <th style="width:20%">位置</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>5F(五楼苗圃事业部旁MP C5000)</td>
+                <td>RICOH Aficio MP C5000</td>
+                <td>172.16.7.251</td>
+                <td>苗圃事业部</td>
+                <td>5楼苗圃事业部</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>5F(五楼会议室旁MP C5000)</td>
+                <td>RICOH Aficio MP C5000</td>
+                <td>172.16.7.253</td>
+                <td>工程中心</td>
+                <td>5楼工程中心</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>6F(六楼研发中心MP C3000)</td>
+                <td>RICOH Aficio MP C3000</td>
+                <td>172.16.8.248</td>
+                <td>研发中心</td>
+                <td>6楼研发中心</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>6F(六楼设计院中间通道MP C3000)</td>
+                <td>RICOH Aficio MP C3000</td>
+                <td>172.16.8.250</td>
+                <td>设计院</td>
+                <td>6楼设计院</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6F(六楼设计院中间通道MP C5000)</td>
+                <td>RICOH Aficio MP C5000</td>
+                <td>172.16.8.253</td>
+                <td>设计院</td>
+                <td>6楼设计院</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>6F(六楼设计一所MP C3000)</td>
+                <td>RICOH Aficio MP C3000</td>
+                <td>172.16.9.247</td>
+                <td>设计院</td>
+                <td>6楼设计院</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>7F(七楼财务中心MP 5000)</td>
+                <td>RICOH Aficio MP 5000</td>
+                <td>172.16.11.252</td>
+                <td>财务中心</td>
+                <td>7楼财务中心</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>7F(七楼预算部中间位置MP 5000)</td>
+                <td>RICOH Aficio MP 5000</td>
+                <td>172.16.11.253</td>
+                <td>预算</td>
+                <td>7楼预算</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>7F(七楼预算部中间位置MP C5000)</td>
+                <td>RICOH Aficio MP C5000</td>
+                <td>172.16.11.254</td>
+                <td>预算</td>
+                <td>7楼预算</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>7F(七楼行政部过道MP C5000)</td>
+                <td>RICOH Aficio MP C5000</td>
+                <td>172.16.13.254</td>
+                <td>行政</td>
+                <td>7楼行政</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>8F(八楼采购中心MP C2500)</td>
+                <td>RICOH Aficio MP C2500</td>
+                <td>172.16.14.239</td>
+                <td>采购</td>
+                <td>8楼采购</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>8F(八楼成本中心MP 2500)</td>
+                <td>RICOH Aficio MP C2500</td>
+                <td>172.16.14.241</td>
+                <td>成本</td>
+                <td>8楼成本</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="../Scripts/app_printer.js"></script>
+</body>
+
+</html>

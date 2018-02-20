@@ -1,0 +1,135 @@
+﻿@charset "utf-8";
+
+/********************************************
+
+This CSS document is for WebApplyMobilePortal.
+
+     Author:ZhaoHaopeng
+       Mail:s_zhaohaopeng@beisen.com
+       Time:2014-07-09
+Last Modify:2014-07-09
+
+********************************************/
+
+
+
+/*被用到的公共基础CSS*/
+
+*{ margin:0px; padding:0px; text-decoration:none;list-style: none; }
+*{ font-family:'STHeiti-Light','STHeiti-Medium','Microsoft YaHei UI', 'Microsoft YaHei','微软雅黑','微軟正黑體','Droid Sans','Droid Sans Fallback' !important}
+body { overflow-y:visible}
+
+.mb20 { margin-bottom:20px;}
+.mt20 { margin-top:20px;}
+.ml20 { margin-left:20px;}
+.mr20 { margin-right:20px;}
+.mlNone { margin-left:0px;}
+.mrNone{ margin-right:0px;}
+.mtNone { margin-top:0px;}
+.mbNone { margin-bottom:0px;}
+.mgNone { margin:0px;}
+.flr{ float:right}
+.fll { float:left}
+.h20 { height:20px;}
+.h25 { height:25px;}
+.h30 { height:30px;}
+.h35 { height:35px;}
+
+.outBox { padding:20px; margin-bottom:20px;}/*info、apply页面，中央显示区域四周的留白*/
+.applyButton { height: 100% !important;width: 100% !important;margin: 0 !important;border:0 !important;padding-left: 0 !important;padding-right: 0 !important; text-align:center !important; font-size: 16px !important; font-weight: normal !important; -webkit-border-radius: 0 !important; border-radius: 0 !important}
+/*以上是页面footer中的buttonCSS，为了覆写JQMobile，每个css都添加了important属性*/
+html .ui-page-theme-a .ui-select .ui-focus { height:20px;}
+/*以上一行是为了改变所有的select样式高度  -  OverWrite the CSS of JQMbile*/
+
+
+/*职位列表页*/
+.jobList{ width:100%; float:left; height:auto}
+.jobList ul{ width:100%; float:left; padding:0px; margin:0px;}
+.jobList ul li{ width:100%; list-style:none; margin:0px; padding:0px; float:left; background:#FFFFFF; margin-bottom:1px; position:relative}
+.jobList ul li:hover{ background: #eee}
+.jobList ul li a{ width:100%; height:86px; position:relative; display:block}
+.jobList ul li a h1{ width:95%; height:20px; line-height:20px; overflow:hidden; font-size:18px; font-weight:bold; color:#333; margin-left:5%; float:left; margin-top:10px; }
+.jobList ul li a h2{ width:95%; height:auto; line-height:16px; margin-left:5%; float:left; font-size:14px; color:#777; font-weight:normal; margin-bottom:5px; margin-top:10px; }
+.jobList ul li a h3{ width:95%; height:14px; line-height:14px; float:left; text-align:right; font-size:14px; color:#777; font-weight:normal; margin-top:14px;}
+.jobList ul li a .jobDetial {margin-left:5%; margin-right:5%; width:auto; width:auto; margin-top:14px; margin-bottom:20px;  height:83px; line-height:21px; float:left; overflow:hidden; position:relative}
+.jobList ul li a .jobDetial .leftimg img{ max-height:84px;max-width: 100px; float:left; margin-right:10px;  }
+.jobList ul li a .jobDetial .leftimg{ float: left;width: 100px;height: 84px; margin-right: 15px}
+.jobList ul li a .jobDetial .rDetial{ height:63px; overflow:hidden; line-height:21px; font-size:14px; color:#777; }
+.jobList ul li a .jobDetial2 {margin-left:5%; margin-right:5%; width:auto; width:auto; margin-top:14px;  height:30px; line-height:21px; float:left; overflow:hidden; position:relative}
+.jobList ul li a .jobDetial2 .leftimg img{ max-height:84px;max-width: 100px; float:left; margin-right:10px;  }
+.jobList ul li a .jobDetial2 .leftimg{ float: left;width: 100px;height: 84px; margin-right: 15px}
+.jobList ul li a .jobDetial2 .rDetial{ height:21px; overflow:hidden; padding-right:80px; line-height:21px; font-size:14px;font-weight: normal; color:#777;margin-bottom: -15px; float: left}
+.jobList ul li a .rDate2{ height:11px; line-height:11px; font-size:11px; color:#aaa; width:95%; text-align:right; float: left; margin-top: -25px; font-weight:normal;}
+.jobList ul li a .rDate{ height:11px; line-height:11px; font-size:11px; color:#aaa; width:95%; text-align:right; float: left; margin-top: -30px; font-weight:normal;}
+
+/*  ↓↓Overwrite the CSS of JQMobile↓↓  */
+
+.ui.icon.loading{ border:none}
+html .ui-body-a { border: none}
+/*去掉loading的gif的边框*/
+
+
+
+
+
+/*职位详细页*/
+.detial{ /*background:#fff;*/ width:100%; float:left; border-radius:10px; padding:0px; margin:0px;  /*box-shadow:0px 0px 5px 0px #ddd;*/ overflow:hidden; height:auto;/*border:1px solid #dcdcdc*/}
+.detial .title{ /*height:70px;*/ width:94%; padding: 0px 3%; float:left; /*background:#fafafa;*/ margin:0px; line-height: 33px; margin-top: 10px; /*border-bottom:1px solid #dcdcdc;*/ font-size:20px;}
+.detial .listJob { width:100%; float:left; /*background:#fff;*/ padding:0px; margin:10px 0px; }
+.detial .listJob li{ float:left; width:100%; min-height:35px; list-style:none; overflow:hidden }
+.detial .listJob li .l{ font-size:15px; list-style:none; color:#333; margin-left:-90px; line-height:35px; height:35px; width:8em;text-align: right; float:left}
+.detial .listJob li .r{ font-size:15px; list-style:none; color:#777; line-height:35px; width:auto;min-width: 100px; margin-right:10px; padding-left:6em;  float:left}
+/*.detial .listJob li span{ color:#333; }*/
+.detial .listJob li span{ color:#5656c3; }
+
+.detial .infoLine { width:auto; margin:0px 15px; border-top:1px solid #dcdcdc; border-left:0px solid #dcdcdc; height:0px; border-bottom:none;}
+
+/*.detial .detialDis{ width:auto; padding-top:1em; float:left;  margin:0px 15px 20px 15px; color:#888; font-size:14px; line-height:normal; border:none}
+.detial .infoPre {word-wrap: break-word; font-weight: normal;white-space: pre-line}*/
+
+
+
+
+/*填写信息表单*/
+h5{ width:80%; height:16px; line-height:16px; font-size:15px; margin:0px; font-weight:normal; margin-bottom:10px; color:#bbb}
+.information{ background:#fff; width:100%; float:left; border-radius:10px; padding:0px; margin:0px; box-shadow:0px 0px 5px 0px #ddd; overflow:hidden; height:auto; line-height:29px; text-indent:10px; padding:10px 0px; border:1px solid #dcdcdc; margin-bottom:20px;}
+.information .singal{ width:95%; padding:20px 2.5%; height:40px; float:left; border-bottom:1px solid #f5f5f5;}
+.information .singal .l{ width:33%; height:40px; float:left; line-height:40px; font-size:1em;margin-left: -7px;margin-right: 7px;  color:#666}
+.information .singal .l span{ color:#FF0004; }
+.information .singal .r{ width:67%; height:38px; float:left; line-height:38px; font-size:15px; color:#666; margin-top:-7.5px}
+/*自定义男女radio button，若采用jqMobile默认样式，则注释本样式
+.information .singal .r .radio2in1{ width:99%; height:38px; float:left;}
+.information .singal .r .radio2in1 input{ width:0px; height:0px; float:right; background:#000000; visibility:hidden }
+.information .singal .r .radio2in1 label{ float:right; width:45px; height:33px; line-height:33px; border-radius:5px; border:1px solid #ccc; margin-top:1px; text-align:center; text-indent:-1px}
+.information .singal .r .radio2in1 #left{ border-radius:5px 0px 0px 5px;}
+.information .singal .r .radio2in1 #right{ border-radius:0px 5px 5px 0px; margin-left:-1px}
+.information .singal .r .radio2in1 #left.ok,.information .singal .r .radio2in1 #right.ok{ background:#f5f5f5; color:#cecece}*/
+.information .singal .r select.textInput{ width:90%; height:22px; margin-left:5%; float:left; border:none; margin-top:6px; line-height:22px;}
+.information .singal .r select.textInput:focus{ box-shadow:0px 0px 5px 0px #aaa;}
+.information .noBorderBottom{ border-bottom:none}
+
+/*  ↓↓Overwrite the CSS of JQMobile↓↓  */
+
+.ui-focus { height:33px; }
+.ui-shadow-inset { height:33px; }
+.ui-input-has-clear { height:33px;}
+/*以上三行是为了改变表单高度*/
+
+html .ui-page-theme-a  .singal .ui-btn{ background:#fff; border-color:#ccc; color:#666;}
+html .ui-page-theme-a .singal .ui-btn-active { background:#f5f5f5; color:#3299ff}
+/*以上两行行是为了改变表男女选择样式*/
+
+html .ui-page-theme-a .singal .ui-select .ui-focus { height:19px;}
+/*以上一行是为了改变表单页的select样式高度*/
+
+.ui-input-text { border: 1px solid #ccc !important;}
+/*为了覆盖jq的input默认2像素*/
+
+.ui-mobile label.error {color:#f00; font-size:11px; width:100%; height:11px; float:left; margin-top:4px; margin-left:-10px; line-height:11px; position:relative; display:block}
+/*表单的提示信息*/
+
+.ui-popup-screen.in { opacity: 0.7 !important;}
+html .ui-overlay-c{ background: #000;}
+.ui-popup-container{ top: 0px !important; right: 0px !important; left:auto !important}
+
+html .ui-page-theme-c .ui-body-inherit { background:#fff;}

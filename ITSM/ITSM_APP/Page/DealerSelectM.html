@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/Content/jquery.mobile.flatui.css" />
+    <link rel="stylesheet" href="/Content/custom_0.1.css" />
+
+    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery-validate/1.12.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/Scripts/script.js" charset="utf-8"></script>
+    <script src="http://cdn.bootcss.com/knockout/3.2.0/knockout-min.js"></script>
+
+    <script src="/Scripts/Login.js"></script>
+    <script src="/Scripts/Register.js"></script>
+    <script src="/Scripts/Menu.js"></script>
+    <script src="/Scripts/Search.js"></script>
+
+    <script>
+        $(function () {
+            var _MenuJS = new MenuJS();
+            var _SearchJS = new SearchJS();
+        });
+    </script>
+    <title>IT报修单详情</title>
+</head>
+<body style="background-color: #f2f2f2;">
+    <div data-role="page" id="main" name="main" data-theme="b" style="padding: 0">
+        <!--Header Start-->
+        <div data-role="header" style="border:none;" data-position="fixed">
+            <div>
+                <div style="float: left; padding: 2px">
+                    <a id="panel_left_btn" href="#panel_left" data-role="button" style="margin-left:5px;margin-right:5px;" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all">菜单</a>
+
+                </div>
+                <div style="float: left; padding: 2px">
+                    <img height="42" src="http://dfiles.tms.beisen.com/CmsPortal/103610/5a8f5834366e4f69ba2b6a83243f96a1.gif">
+                </div>
+                <div style="float: right; padding: 2px">
+
+                </div>
+                <div style="float: right; padding: 2px">
+                    <a id="panel_right_btn" href="#panel_right" data-role="button" style="margin-left:5px;margin-right:5px;" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">搜索</a>
+                </div>
+            </div>
+        </div>
+        <!--Header End-->
+        <!--Main Start-->
+        <div role="main" class="ui-content" style="padding: 0 0 0 0;">
+            <div class="outBox">
+                <div class="detial mb20">
+                    <div>
+                        <table id="mytable" class="table table-striped ">
+                            <tr>
+                                <th width="2%"><div></div></th>
+                                <th><span>处理人</span></th>
+                                <th><span>备注</span></th>
+                            </tr>
+
+                            <tbody data-bind="template:{name:'reserveationTemplate',foreach:flowConfigs}"></tbody>
+                            <tr>
+                                <td colspan="3" align="center">
+                                    <button id="btnFlow" class="btn btn-primary">确定</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <script src="../Scripts/app_baseData.js"></script>
+                    <script type="text/x-jquery-tmpl" id="reserveationTemplate">
+                        <tr class="">
+                            <td><div><input id="sel" type="checkbox" /></div></td>
+                            <td><span id="spanDealer" data-bind="text:Dealer" /></td>
+                            <td><span data-bind="text:Note" /> </td>
+                        </tr>
+                    </script>
+                </div>
+            </div>
+
+        </div>
+        <!--Main end-->
+        <!--Footer Start-->
+        <div data-role="footer" data-position="fixed" style="border: 0; padding: 0">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="linkBack" href="javascript:history.go(-1);" class="icon-middle-back" data-icon="back">返回</a></li>
+                    <li><a id="linkHome" onclick="location.href ='/IndexM.html'" class="icon-bar" data-icon="home">首页</a></li>
+                    <li><a id="linkQry" onclick="location.href = '/Page/RepairListM.html?listType=1'" class="icon-bar" data-icon="search">查询</a></li>
+                    <li><a id="linkRefresh" href="javascript:location.reload();" class="icon-middle-refresh" data-icon="refresh">刷新</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Footer Start-->
+        <!--PanelLeft Start-->
+        <div data-role="panel" id="panel_left" style="background-color: #f2f2f2;" data-position="left">
+
+            <div>
+                <div id="menu_login" style="clear: both">
+                    <ul id="menu_login_info" data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true"></ul>
+                    <div data-role="popup" id="menu_login_usermenu" style="margin-top: 50px">
+                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+                        <ul id="menu_login_usermenu_ul" data-role="listview" data-inset="true" style="min-width: 210px;"></ul>
+                    </div>
+                </div>
+                <div data-theme="b" id="nav-panel" style="margin-top: 30px">
+                    <ul id="menu_function_menu" data-role="listview"></ul>
+                </div>
+            </div>
+        </div>
+        <!--PanelLeft End-->
+        <!--PanelRight Start-->
+        <div data-role="panel" id="panel_right" style="background-color: #f2f2f2;" data-position="right">
+
+            <div style="border-top-width: 0; padding: 0 10px">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a" style="width: 80%">
+                        <input type="text" id="keysearch" value="" placeholder="请输入职位关键字" style="width: 94%;" />
+                    </div>
+                    <div class="ui-block-b" style="width: 20%; padding-top: 6px">
+                        <a href="#" id="search_searchBtn" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">搜索</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="searchItem_view">
+                <div data-role="controlgroup">
+                    <select name="selFaultType" data-iconpos="left">
+                        <option value="-1">请选择故障类型</option>
+                    </select>
+                </div>
+                <div data-role="controlgroup">
+                    <select name="selStatus" data-iconpos="left">
+                        <option value="-1">请选择处理状态</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <!--PanelRight End-->
+        <script src="../Scripts/app_repairBillDetailM.js"></script>
+    </div>
+</body>
+</html>

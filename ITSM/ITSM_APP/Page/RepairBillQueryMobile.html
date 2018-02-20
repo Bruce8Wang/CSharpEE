@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" charset="utf-8" />
+    <title>查询报修单</title>
+    <!--链接CSS文件-->
+    <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.css" rel="stylesheet">
+
+    <!--链接常用Javascript Library文件-->
+    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/knockout/3.2.0/knockout-min.js"></script>
+    <script src="http://cdn.bootcss.com/modernizr/2.8.2/modernizr.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+    <script src="../Scripts/app_repairList_M.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            getDataList();
+        });
+    </script>
+
+</head>
+<body style="padding-top:0px; ">
+    <div data-role="page">
+        <div data-role="navbar">
+            <ul>
+                <li><a class="ui-btn-active"><h3><span id="spanTitle">IT报修单查询</span></h3></a>
+            </ul>
+        </div>
+        <div data-role="content">
+            <ul id="ulRepairBillList" data-role="listview" data-inset="true" data-filter="true"></ul>
+            <div style="text-align: right; float: right;font-size:small">
+                <a id="previous" href="#" onclick="previous()">上一页</a>
+                [<span id="lblCurrent">1</span>]
+                <a id="next" href="#" onclick="next()">下一页</a>
+            </div>
+        </div>
+
+        <div data-role="footer" class="navbar-fixed-bottom ">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="linkBack" href="javascript:history.go(-1);" class="icon-middle-back" data-icon="back">返回</a></li>
+                    <li><a id="linkHome" class="icon-bar" data-icon="home" onclick="home()">首页</a></li>
+                    <li><a id="linkRefresh" href="javascript:location.reload();" class="icon-middle-refresh" data-icon="refresh">刷新</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

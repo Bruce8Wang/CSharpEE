@@ -1,0 +1,220 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk">
+    <title>Toolbar with Menus</title>
+    <link rel="stylesheet" type="text/css" href="../../ext-3.2.1/resources/css/ext-all.css" />
+
+    <link href="http://cdn.bootcss.com/extjs/4.2.1/resources/css/ext-all.css" rel="stylesheet">
+
+    <style type="text/css">
+        .red-row {
+            background-color: #F5C0C0;
+        }
+
+        .yellow-row {
+            background-color: #FBF8BF !important;
+        }
+
+        .green-row {
+            background-color: #99CC99 !important;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+    <!-- GC -->
+    <!-- LIBS -->
+
+    <script src="http://cdn.bootcss.com/extjs/3.4.1-1/adapter/ext/ext-base.js"></script>
+    <script src="http://cdn.bootcss.com/extjs/4.2.1/ext-all.js"></script>
+
+    <script type="text/javascript">
+        // 支持中文排序
+        Ext.onReady(function () {
+            Ext.data.Store.prototype.applySort = function () {
+                if (this.sortInfo && !this.remoteSort) {
+                    var s = this.sortInfo;
+                    var f = s.field;
+                    var st = this.fields.get(f).sortType;
+                    var fn = function (r1, r2) {
+                        var v1 = st(r1.data[f]);
+                        var v2 = st(r2.data[f]);
+                        if (typeof (v1) == 'string') {
+                            return v1.localeCompare(v2);
+                        }
+                        return v1 > v2 ? 1 : (v1 < v2 ? -1 : 0);
+                    };
+                    this.data.sort(s.direction, fn);
+                    if (this.snapshot && this.snapshot != this.data) {
+                        this.snapshot.sort(s.direction, fn);
+                    }
+                }
+            };
+
+            // 在表格每行前面加一个复选框;
+            var sm = new Ext.grid.CheckboxSelectionModel({ handleMouseDown: Ext.emptyFn });
+
+
+            // 首先创建表格列模型;
+            var cm = new Ext.grid.ColumnModel([
+             new Ext.grid.RowNumberer(),
+             sm,
+             { header: '编号', dataIndex: 'id', width: 60, sortable: true, editor: new Ext.grid.GridEditor(new Ext.form.TextField({ allowBlank: true })) },
+             { header: '性别', dataIndex: 'sex', renderer: renderSex, editor: new Ext.grid.GridEditor(new Ext.form.TextField({ allowBlank: false })) },
+             { header: '名称', dataIndex: 'name', width: 80, sortable: true, editor: new Ext.grid.GridEditor(new Ext.form.TextField({ allowBlank: false })) },
+             { header: '描述', dataIndex: 'descn', width: 200, sortable: true, renderer: renderDescn, editor: new Ext.grid.GridEditor(new Ext.form.TextField({ allowBlank: false })) },
+             {
+                 header: '日期', dataIndex: 'date', width: 200, type: 'date', editor: new Ext.grid.GridEditor(new Ext.form.DateField({
+                     allowBlank: false,
+                     format: 'Y-m-d',
+                     minValue: '2007-12-14',
+                     disabledDays: [0, 6],
+                     disabledDaysText: '只能选择工作日'
+                 })),
+                 renderer: function (value) {
+                     return value.format("Y-m-d");
+                 }
+             }
+
+            ]);
+
+            //渲染日期
+
+            //渲染性别;
+            function renderSex(value) {
+                if (value == 'male') {
+                    return "<span style='color:red;font-weight:bold;'>红男</><img src='user_male.png'/>";
+                } else {
+                    return "<span style='color:green;font-weight:bold;'>绿女</span><img src='user_female.png'/>";
+                }
+            }
+            //渲染描述;
+            function renderDescn(value, cellmeta, record, rowIndex, columnIndex, store) {
+                var str = " <input type = 'button' value = '查看详细信息' onclick='alert(\"" +
+                 "这个单元格的值是：" + value + " \\n" +
+                 "这个单元格的配置是：{cellID:" + cellmeta.cellId + " , id:" + cellmeta.id + " ,css:" +
+                  cellmeta.css + " }\\n" +
+                 "这个单元格对应的record是：" + record + " , 一行的数据都在里边\\n" +
+                 "这是第" + rowIndex + "行\\n" +
+                 "这是第" + columnIndex + "列\\n" +
+                 "这个表格对应的Ext.data.Store在这里：" + store + "，随便用吧." +
+                 "\")' >";
+                return str;
+            }
+            //JavaScript 定义的二维数组;
+            var data = [
+             ['1', '啊', 'male', 'descn1', '1970-01-15T02:58:04'],
+             ['2', '啵', 'female', 'descn2', '1970-01-15T02:58:04'],
+             ['3', '呲', 'male', 'descn3', '1970-01-15T02:58:04'],
+             ['4', '嘚', 'female', 'descn4', '1970-01-15T02:58:04'],
+             ['1', '啊', 'male', 'descn1', '1970-01-15T02:58:04'],
+             ['1', '啊', 'male', 'descn1', '1970-01-15T02:58:04'],
+             ['2', '啵', 'female', 'descn2', '1970-01-15T02:58:04'],
+             ['3', '呲', 'male', 'descn3', '1970-01-15T02:58:04'],
+             ['4', '嘚', 'female', 'descn4', '1970-01-15T02:58:04'],
+             ['1', '啊', 'male', 'descn1', '1970-01-15T02:58:04'],
+             ['2', '啵', 'female', 'descn2', '1970-01-15T02:58:04'],
+             ['3', '呲', 'male', 'descn3', '1970-01-15T02:58:04'],
+             ['4', '嘚', 'female', 'descn4', '1970-01-15T02:58:04'],
+             ['1', '啊', 'male', 'descn1', '1970-01-15T02:58:04'],
+             ['2', '啵', 'female', 'descn2', '1970-01-15T02:58:04'],
+             ['3', '呲', 'male', 'descn3', '1970-01-15T02:58:04'],
+             ['4', '嘚', 'female', 'descn4', '1970-01-15T02:58:04'],
+             ['1', '啊', 'male', 'descn1', '1970-01-15T02:58:04'],
+             ['2', '啵', 'female', 'descn2', '1970-01-15T02:58:04'],
+             ['3', '呲', 'male', 'descn3', '1970-01-15T02:58:04'],
+
+             ['5', '咯', 'male', 'descn5', '1970-01-15T02:58:04']
+
+            ];
+            // 装载数据;
+            var store = new Ext.data.Store({
+                proxy: new Ext.data.MemoryProxy(data),
+                reader: new Ext.data.ArrayReader({}, [
+                 { name: 'id' },
+                 { name: 'sex', mapping: 2 },
+                 { name: 'name', mapping: 1 },
+                 { name: 'descn' },
+                 { name: 'date', type: 'date', dateFormat: 'Y-m-dTH:i:s' }
+                ])
+            });
+
+
+            //把数据装配在一起;
+            var grid = new Ext.grid.GridPanel({
+                renderTo: 'grid',
+                store: store,
+                cm: cm,
+                sm: sm,
+                clicksToEditor: 1,
+                height: 400,
+                width: 600,
+                enableColumnMove: false,
+                enableColumnResize: false,
+                stripeRows: true,
+                loadMask: true,
+                autoExpandColumn: 'date',
+                autoHeight: false,
+                bbar: new Ext.PagingToolbar({
+                    pageSize: 10,
+                    store: store,
+
+                    displayInfo: true,
+                    displayMsg: '显示第{0} 条 到 {1} 条记录，一共 {2} 条',
+                    emptyMsg: "没有记录"
+                }),
+                viewConfig: {
+
+                    forceFit: true,
+                    enableRowBody: true,
+                    scrollOffset: 30,
+                    columnsText: '显示的列',
+                    getRowClass: function (record, rowIndex, p, ds) {
+                        var cls = 'green-row';
+                        switch (record.data.color) {
+                            case '#FBF8BF':
+                                cls = 'yellow-row'
+                                break;
+
+                            case '#99CC99':
+                                cls = 'green-row'
+                                break;
+
+                            case '#F5C0C0':
+                                cls = 'red-row'
+                                break;
+                        }
+                        return cls;
+
+                    }
+
+                }
+
+            });
+            // 装载并初始化数据;
+            store.load();
+
+
+            // 触发按钮事件 ;
+            Ext.get('remove').on('click', function () {
+                store.remove(store.getAt(1));
+                grid.view.refresh();
+            });
+
+
+
+        });
+    </script>
+
+
+</head>
+<body>
+    <div id="grid" style="margin-top:30px">
+    </div>
+    <div style="margin-top:10px">
+        <input type="button" id="remove" name="remove" value="删除第二行" />
+
+        <div>
+</body>
+</html>

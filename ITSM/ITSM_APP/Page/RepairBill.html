@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" charset="utf-8" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link type="text/css" rel="stylesheet" href="/Content/H-ui.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/H-ui.admin.css" />
+    <link type="text/css" rel="stylesheet" href="/font/font-awesome.min.css" />
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script src="/Scripts/jquery-2.1.0.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/knockout-3.3.0.js"></script>
+    <script src="/Scripts/Calendar3.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery-autocomplete/jquery.autocomplete.js"></script>
+    <title class="title">新增报修单 </title>
+
+</head>
+<body style="padding-top:0px;border-style:solid;border-width:1px;">
+    <div style="height:60px; text-align:center;background-image:url(../Images/05Title1.jpg);margin-top:-20px;">
+        <h3></h3>
+    </div>
+    <nav class="Hui-breadcrumb"><i class="icon-home"></i><a href="/Index.html"> 首页</a><span class="c-gray en">&gt;</span> 报修单</nav>
+    <div>
+        <div class="Huiform">
+            <form id="form1" data-bind="submit: addRepairApplyBill">
+                <table class="table table-border table-bordered table-bg">
+
+                    <tr>
+                        <th width="10%" class="text-r">主题：</th>
+                        <td width="40%" colspan="2"><input id="inputTitle" required type="text" class="add form-control" data-bind="value:newRepairApplyBill.Title" placeholder="请在此区域简短描述故障现象" style="height:100%; width :90%;border-width:0px;border-bottom-width:thin" datatype="*1-100" nullmsg="主题不能为空" /><span class="c-red">*</span></td>
+
+                        <th width="10%" class="text-r"> 提单号：</th>
+                        <td colspan="2"><input id="inputBillNo" readonly type="text" class="add" data-bind="value: newRepairApplyBill.BillNo" style="height:100%; width :90%;border-width:0px" /></td>
+
+                    </tr>
+                    <tr>
+                        <th class="text-r">填单人：</th>
+                        <td colspan="2">
+                            <input readonly id="inputApplyEmployee" type="text" data-bind="value:newRepairApplyBill.ApplyEmployee" style="border-width:0px" />
+                        </td>
+
+                        <th class="text-r"> 报修人：</th>
+                        <td colspan="2">
+                            <input id="inputBXEmployee" type="text" class="add" data-bind="value:newRepairApplyBill.BXEmployee" placeholder="请输入报修人" style="height:100%; width :90%;border-width:0px;border-bottom-width:thin" />
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-r">填单人中心：</th>
+                        <td colspan="2">
+                            <input id="inputApplyDept" readonly type="text" class="add" data-bind="value: newRepairApplyBill.ApplyDept" style="border-width:0px;width:90%" />
+                        </td>
+
+                        <th class="text-r"> 报修人中心：</th>
+                        <td colspan="2">
+                            <select id="selBXDept" name="selBXDept" class="add" style="height:100%; width :90%;border-width:0px;border-bottom-width:thin;"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-r">联系电话：</th>
+                        <td colspan="2">
+                            <input required id="inputPhone" type="text" class="add" style="height:100%; width :90%;border-width:0px;border-bottom-width:thin" data-bind="value:newRepairApplyBill.Phone" placeholder="请输入联系电话" />
+                        </td>
+
+                        <th class="text-r"> 报修时间：</th>
+                        <td colspan="2">
+                            <input id="inputBXDate" readonly type="text" data-bind="value:newRepairApplyBill.BXDate" style="border-width:0px;width:90%" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-r">资产编号：</th>
+                        <td colspan="2">
+                            <input required id="inputAssetCode" type="text" class="add edit form-control" data-bind="value:newRepairApplyBill.AssetCode" placeholder="请输入资产编号" style="height:100%; width :90%;border-width:0px;border-bottom-width:thin" /><span class="c-red">*</span>
+                        </td>
+
+                        <th class="text-r">紧急程度：</th>
+                        <td colspan="2">
+                            <select id="selPriority" name="selPriority" class="add" style="height:100%; width :90%;border-width:0px;border-bottom-width:thin;"></select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-r">故障类型：</th>
+                        <td colspan="2">
+                            <select form="formOnwayFlow" id="selFaultType" pattern="" required name="selFaultType" class="add deal edit" style="height:100%; width :90%;border-width:0px;border-bottom-width:thin;"></select><span class="c-red">*</span>
+                        </td>
+
+                        <th class="text-r">公司邮箱：</th>
+                        <td colspan="2">
+                            <input required id="inputApplyEMail" type="text" class="add" data-bind="value:newRepairApplyBill.ApplyEMail" style="height:100%; width :90%;border-width:0px;border-bottom-width:thin" /><span class="c-red">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-r">故障前操作：</th>
+                        <td colspan="2">
+                            <textarea name="inputPrevOperation" class="add" rows="6" id="inputPrevOperation" placeholder="请在此区域输入故障前操作描述：如 安装了某个软件，卸载了某个程序" data-bind="value:newRepairApplyBill.PrevOperation" style="height:100%; width:95%;"></textarea>
+                        </td>
+
+                        <th class="text-r">故障描述：</th>
+                        <td colspan="2">
+                            <textarea name="inputNote" required class="add" rows="6" style="width:90%;" id="inputNote" placeholder="请在此区域详细描述故障情况，如哪个系统哪个功能出现什么问题，尽量定位到明细功能" data-bind="value:newRepairApplyBill.Note"></textarea><span class="c-red">*</span>
+                        </td>
+                    </tr>
+                    <tr class="Satisfaction">
+                        <th class="text-r">满意度</th>
+                        <td colspan="5">
+                            <select id="selSatisfactionLevels" name="selSatisfactionLevels" class="form-control Satisfaction" style="height:100%; width :10%;border-width:0px;border-bottom-width:thin;"></select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="6" align="center" style="text-align:center">
+                            <button id="btnRepairBill" class="btn btn-success radius" type="submit">
+                                <i class="icon-ok"></i> 提交
+                            </button>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+
+            <form id="formOnwayFlow" data-bind="submit: addOnwayFlow" class="form-horizontal">
+                <table id="tbOnwayFlow" class="table table-border table-bordered table-bg">
+                    <tr class="deal1">
+                        <th class="text-r deal1" width="10%">
+                            <span>&nbsp;&nbsp;处理人：</span>
+                        </th>
+                        <td width="40%" colspan="2"><input readonly id="inputDealer" type="text" style="height:100%; width :90%;border-width:0px;border-bottom-width:thin" data-bind="value: newOnwayFlow.CurrentDealer" /></td>
+                        <th width="10%" class="text-r"><span>&nbsp;&nbsp;处理时间：</span></th>
+                        <td width="40%" colspan="2"><input readonly id="inputDealDate" type="text" style="height:100%; width :90%;border-width:0px;border-bottom-width:thin" data-bind="value: newOnwayFlow.DealDate"></td>
+
+                    </tr>
+                    <tr class="deal deal1">
+
+                        <th class="text-r deal1" width="10%"><span>&nbsp;&nbsp;处理过程：</span> </th>
+                        <td width="40%" colspan="2">
+                            <textarea name="inputDealProcess" id="inputDealProcess" style="width:90%;" rows="6"></textarea>
+                        </td>
+                        <th width="10%" class="text-r">
+                            <span>&nbsp;&nbsp;解决方法：</span>
+                        </th>
+                        <td width="40%" colspan="2">
+                            <textarea name="inputDealNote" id="inputDealNote" style="width:90%;" rows="6" data-bind="value:newOnwayFlow.DealNote"></textarea>
+                        </td>
+
+                    </tr>
+                    <tr class="deal deal1">
+                        <th class="text-r" width="10%"><span>&nbsp;&nbsp;维护状态：</span></th>
+                        <td width="90%" colspan="5">
+                            <input type="radio" name="rStatus" disabled value="3" class="status" />未接单
+                            &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rStatus" value="1" class="status" />已接单，正在处理中
+                            &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rStatus" checked value="2" class="status" />处理完成
+                    </tr>
+                    <tr>
+                        <th class="text-c" colspan="6">
+                            <button id="btnDealFlow" class="btn btn-success radius" type="submit">
+                                <i class="icon-ok"></i> 提交
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                            <button id="btnTransferOA" class="btn btn-success radius" type="button" onclick="Trans2OA()">
+                                <i class="glyphicon-transfer"></i> 转OA审批
+                            </button>
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script src="/Scripts/app_repairBill.js"></script>
+    <!--<script src="/js/Validform_v5.3.2_min.js"></script>
+    <script src="/js/H-ui.js"></script>
+    <script src="/js/H-ui.admin.js"></script>
+    <script src="/js/gf_common.js"></script>
+    <script src="/js/gf_giftFetch.js"></script>
+    <script type="text/javascript">
+        $(".Huiform").Validform();
+    </script>-->
+</body>
+</html>

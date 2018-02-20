@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" charset="utf-8" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link type="text/css" rel="stylesheet" href="/Content/H-ui.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/H-ui.admin.css" />
+    <link type="text/css" rel="stylesheet" href="/font/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script src="/Scripts/jquery-2.1.0.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/Calendar3.js" type="text/javascript"></script>
+    <script src="/plugin/My97DatePicker/WdatePicker.js"></script>
+    <script src="/Scripts/jquery-autocomplete/jquery.autocomplete.js"></script>
+    <title class="title">问题与需求跟踪表 </title>
+
+</head>
+<body style="padding-top:0px;border-style:solid;border-width:1px;">
+    <div style="height:60px; text-align:center;background-image:url(../Images/05Title1.jpg);margin-top:-20px;">
+        <h3></h3>
+    </div>
+    <nav class="Hui-breadcrumb"><i class="icon-home"></i><a href="/Index.html"> 首页</a><span class="c-gray en">&gt;</span><a href="/Page/IssueTrackList.html">问题与需求跟踪表</a> </nav>
+    <div>
+        <div class="Huiform">
+            <form id="form1" action="IssueTrackList.html">
+                <table class="table table-border table-bordered table-bg">
+                    <tr>
+                        <th width="10%" class="text-r">单号：</th>
+                        <td width="40%" colspan="2">
+                            <input id="inputBillNo" readonly type="text" class="add" style="height:100%; width:90%;border-width:0px" />
+                        </td>
+                        <th width="10%" class="text-r">优先级：</th>
+                        <td colspan="2">
+                            <select id="selPriority" name="selPriority" style="height:100%; width:90%;border-width:0px;border-bottom-width:thin;">
+                                <option value="非紧急">非紧急</option>
+                                <option value="一般">一般</option>
+                                <option value="紧急">紧急</option>
+                                <option value="非常紧急">非常紧急</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-r">模块：</th>
+                        <td colspan="2">
+                            <select id="selModule" style="height:100%; width:90%;border-width:0px;border-bottom-width:thin;">
+                                <option value="费用报销">费用报销</option>
+                            </select>
+                        </td>
+
+                        <th class="text-r">问题类型：</th>
+                        <td colspan="2">
+                            <select id="selIssueType" style="height:100%; width:90%;border-width:0px;border-bottom-width:thin;">
+                                <option value="系统错误问题系统操作问题">系统错误问题系统操作问题</option>
+                                <option value="环境问题">环境问题</option>
+                                <option value="业务实施问题">业务实施问题</option>
+                                <option value="管理规则确认问题">管理规则确认问题</option>
+                                <option value="管理要求执行问题">管理要求执行问题</option>
+                                <option value="缺失模块">缺失模块</option>
+                                <option value="报表开发">报表开发</option>
+                                <option value="其他简要描述">其他简要描述</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-r">业务提交人：</th>
+                        <td colspan="2">
+                            <input id="inputSubmitter" type="text" class="add" style="height:100%; width:90%;border-width:0px;border-bottom-width:thin;" /><span class="c-red">*</span>
+                        </td>
+                        <th class="text-r">业务提交部门：</th>
+                        <td colspan="2">
+                            <select id="selSubmitDept" class="add" style="height:100%; width:90%;border-width:0px;border-bottom-width:thin;"></select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-r">反馈日期：</th>
+                        <td colspan="2">
+                            <input id="inputFeedbackDate" onfocus="WdatePicker()" class="Wdate" style="height:100%; width:90%;border-width:0px;border-bottom-width:thin;">
+                            <span class="c-red">*</span>
+                        </td>
+                        <th class="text-r">期望处理时间：</th>
+                        <td colspan="2">
+                            <input id="inputHopeTime" name="inputHopeTime" required class="add Wdate" maxlength="10" onfocus="WdatePicker()" style=" height:100%; width:90%;border-width:0px;border-bottom-width:thin;" />
+                            <span class="c-red">*</span>
+                        </td>
+                    </tr>
+                    <tr class="deal1">
+                        <th class="text-r deal1" width="10%">
+                            <span>&nbsp;&nbsp;处理状态：</span>
+                        </th>
+                        <td width="40%" colspan="2">
+                            <select id="selStatus" class="status" style="height:100%; width:20%;border-width:0px;border-bottom-width:thin;">
+                                <option value="待讨论">待讨论</option>
+                                <option value="待处理">待处理</option>
+                                <option value="处理中">处理中</option>
+                                <option value="已处理">已处理</option>
+                                <option value="待确认">待确认</option>
+                                <option value="已验证">已验证</option>
+                            </select>
+                        </td>
+                        <th width="10%" class="text-r"><span>&nbsp;&nbsp;实际处理时间：</span></th>
+
+                        <td width="40%" colspan="2">
+                            <input id="inputDealTime" name="inputDealTime" class="add Wdate" maxlength="10" onclick="new Calendar().show(this);" style="height:100%; width:90%;border-width:0px;border-bottom-width:thin" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-r">问题/需求详细描述：</th>
+                        <td colspan="2">
+                            <textarea id="inputDesciption" required name="inputDesciption" class="add" rows="6" style="height:100%; width:95%;"></textarea><span class="c-red">*</span>
+                        </td>
+                        <th class="text-r">解决方案：</th>
+                        <td colspan="2">
+                            <textarea id="inputSolution" name="inputSolution" class="add" rows="6" style="width:90%;"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" align="center" style="text-align:center">
+                            <button id="btnRepairBill" class="btn btn-success radius" type="submit">
+                                <i class="icon-ok"></i> 提交
+                            </button>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </div>
+    <script src="/Scripts/app_IssueTrack.js"></script>
+</body>
+</html>

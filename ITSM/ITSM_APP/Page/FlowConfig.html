@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>流程配置</title>
+    <!--链接CSS文件-->
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/site.css" rel="stylesheet" />
+    <!--链接常用Javascript Library文件-->
+    <script src="/Scripts/jquery-2.1.1.js"></script>
+    <script src="/Scripts/knockout-3.2.0.js"></script>
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/respond.js"></script>
+</head>
+<body style="padding-top:0px">
+    <div>
+        <table width="100%" border="1" class="panel panel-default">
+            <tr style="background-color:cadetblue">
+                <th width="20%"><div>层级</div></th>
+                <th width="20%"><div>处理人</div></th>
+                <th width="40%"><div>描述</div></th>
+                <th width="20%"><div>操作</div></th>
+            </tr>
+            <tbody data-bind="template:{name:'reserveationTemplate',foreach:flowConfigs}"></tbody>
+        </table>
+    </div>
+
+    <div>
+        <form data-bind="submit: addFlowConfig">
+            <table width="100%" border="1" class="panel panel-default">
+                <tr>
+                    <td width="20%" align="left">
+                        <div>
+                            层级：
+                        </div>
+                    </td>
+                    <td width="80%">
+                        <input id="inputLevel" type="text" class="form-control" data-bind="value:newFlowConfig.Level" placeholder="请输入数字" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <div>
+                            处理人：
+                        </div>
+                    </td>
+                    <td>
+                        <input id="inputDealer" type="text" class="form-control" data-bind="value:newFlowConfig.Dealer" placeholder="请输入处理人" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left"><div>描述：</div></td>
+                    <td><input id="inputNote" type="text" class="form-control" data-bind="value:newFlowConfig.Note" placeholder="请输入描述" /></td>
+                </tr>
+                <tr>
+                    <td height="69" colspan="2" align="center" valign="middle">
+                        <button type="submit" class="btn btn-default">提交</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="/Scripts/app_flowConfig.js"></script>
+    <script type="text/x-jquery-tmpl" id="reserveationTemplate">
+        <tr>
+            <td><span data-bind="text:Level" /></td>
+            <td><span data-bind="text:Dealer" /></td>
+            <td><span data-bind="text:Note" /></td>
+            <td>
+                <small><a href="#" data-bind="click: $parent.getFlowConfigDetail">编辑</a></small>
+                <small><a href="#" data-bind="click: $parent.deleteFlowConfig">删除</a></small>
+            </td>
+        </tr>
+    </script>
+</body>
+
+</html>

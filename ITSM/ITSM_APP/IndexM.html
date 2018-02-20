@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>IT服务管理平台</title>
+    <link href="Content/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="Content/flexslider.css" />
+
+    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.flexslider.js"></script>
+
+</head>
+
+<body>
+    <div id="slider" class="flexslider">
+        <ul class="slides">
+            <li>
+                <!--<h1>IT服务管理平台</h1><br />-->
+                当前登陆用户：
+                <span id="userName" style="color:blue">
+                </span>&nbsp;&nbsp;
+                中心：
+                <span id="deptName" style="color:blue">
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pice" hidden>
+        <div class="divide">
+            <div class="lar bg1">
+                <a onclick="location.href = 'Page/RepairBillM.html?billType=1'">
+                    <div class="tit">我要报修</div>
+                </a>
+            </div>
+            <div class="lar bg4">
+                <a onclick="location.href = 'Page/RepairListM.html?listType=1'">
+                    <div class="tit">查询报修单</div>
+                </a>
+            </div>
+        </div>
+        <div class="divide">
+            <div class="lar bg6">
+                <a onclick="location.href = 'Page/RepairListM.html?listType=3'">
+                    <div class="tit">我的待处理</div>
+                </a>
+            </div>
+            <div class="lar bg3">
+                <a onclick="location.href = 'Page/RepairListM.html?listType=4'">
+                    <div class="tit">我的已处理</div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="pice" hidden>
+        <div class="divide">
+            <div class="lar bg3">
+                <a onclick="location.href = 'Page/RepairListM.html?listType=5'">
+                    <div class="tit">我的报修单</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var width = parseInt(parseInt($(".pice").eq(0).css("width")) * 0.691) + "px";
+        $("#slider").nextAll(".pice").css("height", width);
+        var slider = $(".flexslider");
+        if (slider != null) {
+            $(".flexslider").flexslider({ animation: "slide", directionNav: false, slideshowSpeed: 5000 });
+        }
+    </script>
+    <script>
+        $(window).load(function () {
+            Show();
+        });
+
+        function Show() {
+            var wrapWidth = ($("#slider").css('width'));
+            var wrapHeight = ($("#slider").css('height'));
+            var picHeight = ($(".flex-viewport ul img").css('height'));
+            var picWidth = ($(".flex-viewport ul img").css('width'));
+            var d1 = parseFloat(wrapWidth) / parseFloat(picWidth);
+            var d2 = parseFloat(wrapHeight) / parseFloat(picHeight);
+            if (d1 < d2) {
+                with (document.documentElement) //为语句设置默认对象
+                {
+                    $(".flex-viewport ul img").css('width', parseInt(d2 * parseInt(picWidth)) + "px");
+                    $(".flex-viewport ul img").css('height', wrapHeight);
+                };
+            } else {
+                with (document.documentElement) {
+                    $(".flex-viewport ul img").css('width', wrapWidth);
+                    $(".flex-viewport ul img").css('height', parseInt(d1 * parseInt(picHeight)) + "px");
+                };
+
+            }//比较两个放大的比例，根据放大较大即填充满div慢的同比例放大
+        }
+    </script>
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F91788cb728c325803db600fe103b9179' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script src="Scripts/app_index.js"></script>
+</body>
+</html>
+

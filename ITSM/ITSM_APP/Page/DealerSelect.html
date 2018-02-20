@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" charset="utf-8" />
+
+    <title>选择处理人</title>
+    <!--链接CSS文件-->
+    <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <!--链接常用Javascript Library文件-->
+    <!--<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
+    <script src="http://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+
+    <script src="http://cdn.bootcss.com/knockout/3.2.0/knockout-min.js"></script>
+    <script src="http://cdn.bootcss.com/modernizr/2.8.2/modernizr.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+</head>
+<body style="padding-top:0px">
+    <div id="divDealerSelect">
+        <div>
+            <table id="mytable" class="table table-striped " style="width:100%">
+                <tr>
+                    <th width="2%"><div></div></th>
+                    <th><span>处理人</span></th>
+                    <th><span>备注</span></th>
+                </tr>
+
+                <tbody data-bind="template:{name:'reserveationTemplate',foreach:flowConfigs}"></tbody>
+
+                <tr>
+                    <td colspan="3">
+                        <span>处理意见:</span>
+                        <textarea id="inputDealNote" rows="10" style="width: 300px;height:100px"></textarea>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <button id="btnFlow" class="btn btn-primary">确定</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <script src="../Scripts/app_baseData.js"></script>
+        <script type="text/x-jquery-tmpl" id="reserveationTemplate">
+            <tr class="">
+                <td><div><input id="sel" type="checkbox" /></div></td>
+                <td><span id="spanDealer" data-bind="text:Dealer" /></td>
+                <td><span data-bind="text:Note" /> </td>
+            </tr>
+        </script>
+    </div>
+</body>
+</html>

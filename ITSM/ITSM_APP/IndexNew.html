@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" charset="utf-8" />
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />-->
+    <title>IT服务管理平台</title>
+    <!--链接CSS文件-->
+    <link href="/Content/Site.css" rel="stylesheet" />
+    <link href="/Content/myStyle.css" rel="stylesheet" />
+    <link href="/Content/Table.css" rel="stylesheet" />
+
+    <!--链接常用Javascript Library文件-->
+    <!--<script src="http://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>-->
+    <script src="/Scripts/jquery-2.1.0.js"></script>
+    <!--<script src="http://cdn.bootcss.com/knockout/3.2.0/knockout-min.js"></script>
+    <script src="http://cdn.bootcss.com/modernizr/2.8.2/modernizr.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+
+    <script type="text/javascript">
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4"; 
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                //location.href = "IndexMobile.html";
+                localStorage.deviceType = "mobile";
+                location.href = "IndexM.html";
+            }
+            else {
+                localStorage.deviceType = "PC";
+            }
+        }
+        browserRedirect();
+    </script>
+
+
+</head>
+<body style="padding-top:0px;padding-left:10px;padding-right:10px;border-style:solid;border-width:1px;">
+    <div style="height:60px; text-align:center;background-image:url(../Images/05Title1.jpg);margin-top:-20px;">
+        <h3></h3>
+    </div>
+
+    <div class="container-fluid navigator">
+        <small>
+            欢迎您：
+            <span id="userName" style="color:blue">
+            </span>&nbsp;&nbsp;
+            所属中心：
+            <span id="deptName" style="color:blue">
+            </span>
+            <!--<a href="Login.html" style="text-align:right">切换账号</a>-->
+        </small>
+    </div>
+    <div class="btn-group btn-group-lg " style="padding-top:5px;">
+
+        <a id="linkAdd" onclick="location.href = 'Page/RepairBill.html?billType=1'">
+            <input type="button" style="font-family:KaiTi;font-size:16px;" class="btn btn-warning" value="申请IT服务" />
+        </a>
+        <a id="linkQry" onclick="location.href = 'Page/RepairList.html?listType=1'">
+            <input type="button" style="font-family:KaiTi;font-size:16px;" class="btn btn-success" value="查询IT服务单" />
+        </a>
+        <a id="linkMyPending" onclick="location.href = 'Page/RepairList.html?listType=3'">
+            <input type="button" style="font-family:KaiTi;font-size:16px;" class="btn btn-default" value="我的待处理" />
+        </a>
+        <a id="linkMyPending" onclick="location.href = 'Page/RepairList.html?listType=3'">
+            <input type="button" style="font-family:KaiTi;font-size:16px;" class="btn btn-default" value="我的已处理" />
+        </a>
+        <a id="linkMyPending" onclick="location.href = 'Page/RepairList.html?listType=3'">
+            <input type="button" style="font-family:KaiTi;font-size:16px;" class="btn btn-default" value="我的报修单" />
+        </a>
+        <a id="linkMyPending" onclick="location.href = 'Page/RepairList.html?listType=3'">
+            <input type="button" style="font-family:KaiTi;font-size:16px;" class="btn btn-default" value="基础设置" />
+        </a>
+    </div>
+    <div style="border-style:solid;border-width:1px;border-color:#eae9e9;background-color:#f5fefc;padding-left:10px;padding-right:10px;margin-top:5px;">
+        <h4 style="font-family:KaiTi;color:#091c45">技术团队介绍</h4>
+        <hr />
+        <div class="container" style="font-family:'Microsoft YaHei'; font-size:12px;color:#12666f;">
+            <div class="row" style="font-size:medium">
+                <div class="col-lg-4">工程师简介</div>
+                <div class="col-lg-8">主要负责</div>
+            </div>
+            <hr />
+            <div class="row" style="margin-top:10px;margin-bottom:10px;">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-4"><img src="Images/kangsheng.jpg" style="height:140px;width:120px;" /></div>
+                        <div class="col-lg-8">
+                            <p>
+                                <h4 style="color:darkblue;font-family:'Microsoft YaHei';">
+                                    康盛
+                                </h4>
+                                <h5>
+                                    流程与信息中心/应用运维部
+                                </h5>
+                                应用运维工程师、OA系统管理员
+                            </p>
+                            <div>
+                                <a href="#" title="对服务进行评价">服务评价</a>&nbsp;&nbsp;
+                                <a href="#" title="点名找他处理">找他处理</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8" style="vertical-align:central;">OA系统、KK、邮箱、账号、打印机</div>
+            </div>
+            <hr />
+            <div class="row" style="margin-top:10px;margin-bottom:10px;">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-4"><img src="Images/luoyangfan.jpg" style="height:140px;width:120px;" /></div>
+                        <div class="col-lg-8">
+                            <p>
+                                <h4 style="color:darkblue ;font-family:'Microsoft YaHei';">罗扬帆</h4>
+                                <h5>流程与信息中心/应用运维部</h5>
+                                桌面运维工程师
+                            </p>
+                            <div><a href="#" title="对服务进行评价">服务评价</a>&nbsp;&nbsp;<a href="#" title="点名找他处理">找他处理</a></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8" style="vertical-align:central;">
+                    操作系统故障（浏览器、操作系统等）<br />
+                    办公软件故障（Office、PDF、杀毒、压缩软件等）<br />
+                    设计软件故障（CAD、PS、ID等）<br />
+                    应用系统故障（韦衡、EPM、SSLVPN、VOC、在线学习、ERP、KIS）<br />
+                    硬件类（内存、硬盘、显卡维护等）<br />
+                    新电脑系统安装（新员工入职装机、旧电脑更新装机）
+
+                </div>
+            </div>
+            <hr />
+            <div class="row" style="margin-top:10px;margin-bottom:10px;">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-4"><img src="Images/xiangyuan.jpg" style="height:140px;width:120px;" /></div>
+                        <div class="col-lg-8">
+                            <p>
+                                <h4 style="color:darkblue ;font-family:'Microsoft YaHei';">向园</h4>
+                                <h5>流程与信息中心/应用开发部</h5>
+                                桌面运维工程师/OA实施工程师
+                            </p>
+                            <div><a href="#" title="对服务进行评价">服务评价</a>&nbsp;&nbsp;<a href="#" title="点名找他处理">找他处理</a></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8" style="vertical-align:central;">
+                    操作系统故障（浏览器、操作系统等）<br />
+                    办公软件故障（Office、PDF、杀毒、压缩软件等）<br />
+                    设计软件故障（CAD、PS、ID等）<br />
+                    应用系统故障（韦衡、EPM、SSLVPN、VOC、在线学习、ERP、KIS）<br />
+                    硬件类（内存、硬盘、显卡维护等）<br />
+                    新电脑系统安装（新员工入职装机、旧电脑更新装机）
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="Scripts/app_index.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿.field {
+    border: 1px solid #dcd4d4;
+    background-color: #d9f1d0;
+    color: #040000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    width: 50px;
+}
+
+.query {
+    border: 1px solid #dcd4d4;
+    background-color: #d9f1d0;
+    color: #040000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    width: 80px;
+    height: 20px;
+}
+
+body {
+    background-color: #f1f6f6;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eae9e9;
+}
+
+.navigator {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eae9e9;
+    background-color: #f0faf1;
+}
+
+.table th {
+    align-content: center;
+    text-align: center;
+}
+
+.table td {
+    align-content: center;
+    text-align: center;
+}
+
+    .table td input {
+        border-width: 0px;
+        border-bottom-width: thin;
+        background-color: lightyellow;
+    }

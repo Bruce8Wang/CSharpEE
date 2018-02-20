@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/Content/jquery.mobile.flatui.css" />
+    <link rel="stylesheet" href="/Content/custom_0.1.css" />
+
+    <!--<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
+    <script src="http://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+
+
+    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery-validate/1.12.0/jquery.validate.min.js"></script>
+    <script src="http://cdn.bootcss.com/knockout/3.2.0/knockout-min.js"></script>
+
+    <script src="/Scripts/script.js"></script>
+    <script src="/Scripts/Login.js"></script>
+    <script src="/Scripts/Register.js"></script>
+    <script src="/Scripts/Menu.js"></script>
+    <script src="/Scripts/SearchFeedBack.js"></script>
+
+    <script>
+        $(function () {
+            var _MenuJS = new MenuJS();
+            var _SearchJS = new SearchJS();
+        });
+    </script>
+    <title>外部反馈详情</title>
+</head>
+<body style="background-color: #f2f2f2;">
+    <div data-role="page" id="main" data-theme="b" style="padding: 0">
+        <!--Header Start-->
+        <div data-role="header" style="border:none;" data-position="fixed">
+            <div>
+                <div style="float: left; padding: 2px">
+                    <a id="panel_left_btn" href="#panel_left" data-role="button" style="margin-left:5px;margin-right:5px;" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all">菜单</a>
+
+                </div>
+                <div style="float: left; padding: 2px">
+                    <img height="42" src="http://dfiles.tms.beisen.com/CmsPortal/103610/5a8f5834366e4f69ba2b6a83243f96a1.gif">
+                </div>
+                <div style="float: right; padding: 2px">
+
+                </div>
+                <!--<div style="float: right; padding: 2px">
+                    <a id="panel_right_btn" href="#panel_right" data-role="button" style="margin-left:5px;margin-right:5px;" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">搜索</a>
+                </div>-->
+            </div>
+        </div>
+        <!--Header End-->
+        <!--Main Start-->
+        <div role="main" class="ui-content" style="padding: 0 0 0 0;">
+            <div class="outBox">
+                <div class="detial mb20 ">
+                    <ul class="listJob">
+
+                        <li>
+                            <div class="r">
+                                <div class="l">反馈人：</div><span  id="spanName"></span></h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">公司：</div><span id="spanCompany"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">邮箱：</div><span id="spanEMail"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">手机号：</div><span id="spanMobile"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">反馈内容：</div><span id="spanContent"></span>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="r">
+                                <div class="l">故障图片：</div>
+                                <a id="aImg" href="" target="_blank">
+                                    <img id="img0" src="" width="50%" height="50%">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">反馈时间：</div><span id="spanCreateTime"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <input type="hidden" id="billId" />
+        </div>
+
+        <!--Main end-->
+        <!--Footer Start-->
+        <div data-role="footer" data-position="fixed" style="border: 0; padding: 0">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="linkBack" href="javascript:history.go(-1);" class="icon-middle-back" data-icon="back">返回</a></li>
+                    <!--<li><a id="linkQry" onclick="location.href = '/Page/FeedBackListM.html'" class="icon-bar" data-icon="search">查询</a></li>-->
+                    <li><a id="linkRefresh" href="javascript:location.reload();" class="icon-middle-refresh" data-icon="refresh">刷新</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Footer Start-->
+        <!--PanelLeft Start-->
+        <div data-role="panel" id="panel_left" style="background-color: #f2f2f2;" data-position="left">
+            <div>
+                <div id="menu_login" style="clear: both">
+                    <ul id="menu_login_info" data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true"></ul>
+                    <div data-role="popup" id="menu_login_usermenu" style="margin-top: 50px">
+                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+                        <ul id="menu_login_usermenu_ul" data-role="listview" data-inset="true" style="min-width: 210px;"></ul>
+                    </div>
+                </div>
+                <div data-theme="b" id="nav-panel" style="margin-top: 30px">
+                    <ul id="menu_function_menu" data-role="listview"></ul>
+                </div>
+            </div>
+        </div>
+        <!--PanelLeft End-->
+        <!--PanelRight Start-->
+        <div data-role="panel" id="panel_right" style="background-color: #f2f2f2;" data-position="right">
+
+            <div style="border-top-width: 0; padding: 0 10px">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a" style="width: 80%">
+                        <input type="text" id="keysearch" value="" placeholder="请输入关键字" style="width: 94%;" />
+                    </div>
+                    <div class="ui-block-b" style="width: 20%; padding-top: 6px">
+                        <a href="#" id="search_searchBtn" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">搜索</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--PanelRight End-->
+        <script src="../Scripts/app_feedBackDetailM.js"></script>
+    </div>
+</body>
+</html>

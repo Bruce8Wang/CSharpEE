@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" charset="utf-8" />
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />-->
+
+    <title>报修单</title>
+    <!--链接CSS文件-->
+    <link href="/Content/Site.css" rel="stylesheet" />
+    <link href="/Content/myStyle.css" rel="stylesheet" />
+    <link href="/Content/Table.css" rel="stylesheet" />
+    <link href="/Scripts/jquery-autocomplete/jquery.autocomplete.css" rel="stylesheet" />
+
+    <!--链接常用Javascript Library文件-->
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/knockout-3.3.0.js"></script>
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/Calendar3.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery-autocomplete/jquery.autocomplete.js"></script>
+
+</head>
+<body style="padding-top:0px;padding-left:10px;padding-right:10px;border-style:solid;border-width:1px;">
+    <div style="height:60px; text-align:center;background-image:url(../Images/05Title1.jpg);margin-top:-20px;">
+        <h3></h3>
+    </div>
+    <div class="container-fluid navigator">&nbsp;&nbsp;&nbsp;<a href="../Index.html">首页</a>>><span id="spanDisplay">报修单</span></div>
+    <label id="lbUploadx86" hidden style="color:red">检测到IE版本过低，无法使用此功能，<a href="http://itsm.sztechand.com/software/IE11-Windows6.1-x86-zh-cn.exe">点此升级</a></label>
+    <label id="lbUploadx64" hidden style="color:red">检测到IE版本过低，无法使用此功能，<a href="http://itsm.sztechand.com/software/IE11-Windows6.1-x64-zh-cn.exe">点此升级</a></label>
+    <br />
+    <div class="container-fluid " style="background-color:#f0faf1;">
+        <a id="aDistribute" class="admin" href="#"><input class="field" type="button" style="margin-right: 10px;" value="转发" /></a>
+
+    </div>
+
+    <form id="form1" data-bind="submit: addRepairApplyBill" class="form-horizontal">
+        <div id="divRepairBill" style="border-style:solid;border-width:1px;border-color:#eae9e9;background-color:#f5fefc;padding-left:10px;padding-right:10px;">
+            <!--<small>-->
+            <table id="tbRepairBill" style="width:100%;">
+                <tr style="height:50px;"><td colspan="5" style="text-align:center;" class="dataTd"><h4>IT报修单</h4></td></tr>
+                <tr>
+                    <td style="width:5%"></td>
+                    <td class="add dataTd" width="10%"><h6>&nbsp;&nbsp;<span style="color:red">*</span>主题：</h6></td>
+                    <td class="dataTd" width="40%">
+                        <input onmouseover="this.style.backgroundColor = 'yellow';"
+                               onmouseout="this.style.backgroundColor = 'white';" required id="inputTitle" type="text" class="add form-control" data-bind="value:newRepairApplyBill.Title" placeholder="请在此区域简短描述故障现象" />
+                    </td>
+                    <td class="dataTd" width="10%"><h6><span style="color:red">*</span>提单号：</h6></td>
+                    <td class="dataTd" width="35%"><input required id="inputBillNo" readonly type="text" class="add form-control " data-bind="value: newRepairApplyBill.BillNo" /></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="dataTd">
+                        <h6>&nbsp;&nbsp;<span style="color:red">*</span>填单人：</h6>
+                        <!--<input type="checkbox" id="" /> 补单-->
+                    </td>
+                    <td class="dataTd"><input readonly id="inputApplyEmployee" type="text" class="add form-control" data-bind="value:newRepairApplyBill.ApplyEmployee" /></td>
+                    <td class="dataTd"><h6><span style="color:red">*</span>报修人：</h6> </td>
+                    <td class="dataTd">
+                        <input required id="inputBXEmployee" type="text" class="add form-control" data-bind="value:newRepairApplyBill.BXEmployee" placeholder="请输入报修人" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="dataTd"><h6>&nbsp;&nbsp;<span style="color:red">*</span>填单人中心：</h6></td>
+                    <td class="dataTd"><input readonly id="inputApplyDept" type="text" class="add form-control" data-bind="value: newRepairApplyBill.ApplyDept" /></td>
+                    <td class="dataTd"><h6><span style="color:red">*</span>报修人中心：</h6></td>
+                    <td class="dataTd">
+                        <!--<input required id="inputBXDept" type="text" class="add form-control" data-bind="value:newRepairApplyBill.BXDept" />-->
+                        <select id="selBXDept" name="selBXDept" class="add form-control"></select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="dataTd"><h6>&nbsp;&nbsp;<span style="color:red">*</span>联系电话：</h6></td>
+                    <td class="dataTd"><input required id="inputPhone" type="text" class="add form-control" data-bind="value:newRepairApplyBill.Phone" placeholder="请输入联系电话" /></td>
+                    <td class="dataTd"><h6><span style="color:red">*</span>报修时间：</h6></td>
+                    <td class="dataTd"><input required id="inputBXDate" readonly type="text" class="form-control" data-bind="value:newRepairApplyBill.BXDate" /></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="dataTd"><h6>&nbsp;&nbsp;<span style="color:red">*</span>资产编号：</h6></td>
+                    <td class="dataTd"><input required id="inputAssetCode" type="text" class="add edit form-control" data-bind="value:newRepairApplyBill.AssetCode" placeholder="请输入资产编号" /></td>
+                    <!--<td class="dataTd"><h6><span style="color:red">*</span>电脑名称：</h6></td>
+                    <td class="dataTd"><input required id="inputComputerName" type="text" class="add edit form-control" data-bind="value:newRepairApplyBill.ComputerName" placeholder="请输入电脑名称" /></td>-->
+                    <td class="dataTd"><h6>&nbsp;&nbsp;紧急程度：</h6></td>
+                    <td class="dataTd">
+                        <!--<select name="selPriority" class="add form-control" data-bind="options: prioritys, optionsText: 'Name', value:newRepairApplyBill.Priority"></select>-->
+                        <select id="selPriority" name="selPriority" class="add form-control"></select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="dataTd"><h6>&nbsp;&nbsp;<span style="color:red">*</span>故障类型：</h6></td>
+                    <td class="dataTd">
+                        <!--<select form="formOnwayFlow" name="selFaultType" class="add deal edit form-control" data-bind="options: faultTypes, optionsText: 'Name', value:newRepairApplyBill.FaultType"></select>-->
+                        <select form="formOnwayFlow" id="selFaultType" name="selFaultType" class="add deal edit form-control"></select>
+
+                    </td>
+
+
+                    <td class="dataTd"><h6><span style="color:red">*</span>邮箱：</h6></td>
+                    <td class="dataTd">
+                        <input required id="inputApplyEMail" type="text" class="add form-control" data-bind="value:newRepairApplyBill.ApplyEMail" />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="dataTd"><h6>&nbsp;&nbsp;&nbsp;故障前操作：</h6></td>
+                    <td class="dataTd">
+                        <textarea name="inputPrevOperation" class="add form-control" rows="5" id="inputPrevOperation" placeholder="请在此区域输入故障前操作描述：如 安装了某个软件，卸载了某个程序" data-bind="value:newRepairApplyBill.PrevOperation"></textarea>
+                    </td>
+                    <td class="dataTd"><h6><span style="color:red">*</span>故障描述：</h6></td>
+                    <td class="dataTd">
+                        <textarea name="inputNote" required class="add form-control" rows="5" style="width:100%;" id="inputNote" placeholder="请在此区域详细描述故障情况，如哪个系统哪个功能出现什么问题，尽量定位到明细功能" data-bind="value:newRepairApplyBill.Note"></textarea>
+                    </td>
+
+                </tr>
+                <tr class="Satisfaction">
+                    <td></td>
+                    <td class="dataTd"><h6>&nbsp;&nbsp;&nbsp;满意度：</h6></td>
+                    <td class="dataTd" colspan="3">
+                        <!--<select id="selSatisfactionLevels" name="selSatisfactionLevels" class="form-control Satisfaction" data-bind="options:satisfactionLevels, optionsText: 'Name', value:newRepairApplyBill.SatisfactionLevel"></select>-->
+                        <select id="selSatisfactionLevels" name="selSatisfactionLevels" class="form-control Satisfaction"></select>
+                    </td>
+                </tr>
+                <!--<tr>
+                    <td><label>&nbsp;&nbsp;上传图片：</label></td>
+                    <td colspan="3">
+                        <input type="file" name="fileField" accept="image/gif,image/png,,image/jpeg" id="fileField" size="28" />
+                        <ul id="Errors"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>&nbsp;&nbsp;图片预览：</label></td>
+                    <td colspan="3">
+                        <a id="aImg" href="" target="_blank">
+                            <img id="img0" src="" width="20%" height="50%" style="display:none">
+                        </a>
+                    </td>
+                </tr>-->
+                <tr><td colspan="5" align="center"><button id="btnRepairBill" type="submit" class="btn btn-primary">提交</button></td></tr>
+            </table>
+        </div>
+    </form>
+    <br />
+    <form id="formOnwayFlow" data-bind="submit: addOnwayFlow" class="form-horizontal">
+        <div id="divOnwayFlow" class="deal" style="border-style:solid;border-width:1px;border-color:#eae9e9;background-color:#f5fefc;padding-left:10px;padding-right:10px;">
+            <table id="tbOnwayFlow" width="100%">
+                <tr class="deal1">
+                    <td style="width:5%"></td>
+                    <td width="10%"><span>&nbsp;&nbsp;处理人：</span></td>
+                    <td width="40%"><input readonly id="inputDealer" type="text" class="form-control input-group-sm " data-bind="value: newOnwayFlow.CurrentDealer" /></td>
+                    <td width="10%"><span>&nbsp;&nbsp;处理时间：</span></td>
+                    <td width="35%"><input readonly id="inputDealDate" type="text" class="form-control " data-bind="value: newOnwayFlow.DealDate"></td>
+
+                </tr>
+                <tr class="deal deal1">
+                    <td style="width:5%"></td>
+                    <td width="10%"><span>&nbsp;&nbsp;处理过程：</span> </td>
+                    <td width="40%">
+                        <textarea name="inputDealProcess" id="inputDealProcess" class="form-control" rows="5"></textarea>
+                    </td>
+                    <td width="10%">
+                        <span>&nbsp;&nbsp;解决方法：</span>
+                    </td>
+                    <td width="35%">
+                        <textarea name="inputDealNote" id="inputDealNote" class="form-control" rows="5" data-bind="value:newOnwayFlow.DealNote"></textarea>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td style="width:5%"></td>
+                    <td width="10%"><span>&nbsp;&nbsp;维护状态：</span></td>
+                    <td width="85%" colspan="3">
+                        <input type="radio" name="rStatus" disabled value="3" class="status" />未接单
+                        &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rStatus" value="1" class="status" />已接单，正在处理中
+                        &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rStatus" checked value="2" class="status" />处理完成
+                </tr>
+                <tr>
+                    <td colspan="5" align="center">
+                        <button id="btnDealFlow" type="submit" class="btn btn-primary">提交</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+    <script src="/Scripts/app_repairBill.js"></script>
+    <!--<script src="/Scripts/Calendar2.js" type="text/javascript"></script>-->
+
+</body>
+</html>

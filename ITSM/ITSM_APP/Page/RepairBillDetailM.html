@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/Content/jquery.mobile.flatui.css" />
+    <link rel="stylesheet" href="/Content/custom_0.1.css" />
+
+    <!--<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
+    <script src="http://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+
+
+    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery-validate/1.12.0/jquery.validate.min.js"></script>
+    <script src="http://cdn.bootcss.com/knockout/3.2.0/knockout-min.js"></script>
+
+    <script src="/Scripts/script.js"></script>
+    <script src="/Scripts/Login.js"></script>
+    <script src="/Scripts/Register.js"></script>
+    <script src="/Scripts/Menu.js"></script>
+    <script src="/Scripts/Search.js"></script>
+
+    <script>
+        $(function () {
+            var _MenuJS = new MenuJS();
+            var _SearchJS = new SearchJS();
+        });
+    </script>
+    <title>IT报修单详情</title>
+</head>
+<body style="background-color: #f2f2f2;">
+    <div data-role="page" id="main" data-theme="b" style="padding: 0">
+        <!--Header Start-->
+        <div data-role="header" style="border:none;" data-position="fixed">
+            <div>
+                <div style="float: left; padding: 2px">
+                    <a id="panel_left_btn" href="#panel_left" data-role="button" style="margin-left:5px;margin-right:5px;" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all">菜单</a>
+
+                </div>
+                <div style="float: left; padding: 2px">
+                    <img height="42" src="http://dfiles.tms.beisen.com/CmsPortal/103610/5a8f5834366e4f69ba2b6a83243f96a1.gif">
+                </div>
+                <div style="float: right; padding: 2px">
+
+                </div>
+                <div style="float: right; padding: 2px">
+                    <a id="panel_right_btn" href="#panel_right" data-role="button" style="margin-left:5px;margin-right:5px;" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">搜索</a>
+                </div>
+            </div>
+        </div>
+        <!--Header End-->
+        <!--Main Start-->
+        <div role="main" class="ui-content" style="padding: 0 0 0 0;">
+            <div class="outBox">
+                <div class="detial mb20">
+                    <ul class="listJob">
+                        <li>
+                            <div class="r">
+                                <div class="l">主题：</div><span id="spanTitle"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">提单号：</div><span id="spanBillNo"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">填单人：</div><span id="spanApplyEmployee"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">填单人中心：</div><span id="spanApplyDept"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">报修人：</div><span id="spanBXEmployee"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">报修人中心：</div><span id="spanBXDept"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">联系电话：</div><span id="spanPhone"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">邮箱：</div><span id="spanApplyEmail"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">报修时间：</div><span id="spanBXDate"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">资产编号：</div><span id="spanAssetCode"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">电脑名称：</div><span id="spanComputerName"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">故障类型：</div><span id="spanFaultType"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">处理状态：</div><span id="spanStatus"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">当前处理人：</div><span id="spanCurDealer"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">期望处理时间：</div><span id="spanHopeTime"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">故障前操作：</div><span class="detialDis infoPre" id="prevOperation"></span>
+                            </div>
+                        </li>                     
+                        <li>
+                            <div class="r">
+                                <div class="l">故障描述：</div><span class="detialDis infoPre" id="preNote"></span>
+                            </div>
+                        </li>               
+
+                        <li>
+                            <div class="r">
+                                <div class="l">故障图片：</div>
+                                <a id="aImg" href="" target="_blank">
+                                    <img id="img0" src="" width="50%" height="50%">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="r">
+                                <div class="l">故障录音：</div>
+                                <a id="linkFile" target="_blank" href="">
+                                    <span id="spanVedio" hidden>录音</span>
+                                </a>
+                            </div>
+
+                        </li>
+                        <li class="deal" hidden>
+                            <div class="r">
+                                <div class="l">实际处理时间：</div><span id="spanDealTime"></span>
+                            </div>
+                        </li>
+                        <li class="deal" hidden>
+                            <div class="r">
+                                <div class="l">处理人：</div><span id="spanDealEmployee"></span>
+                            </div>
+                        </li>
+                        <li class="deal" hidden>
+                            <div class="r">
+                                <div class="l">处理方法：</div><span style="width:100%; " id="preDealNote"></span>
+                            </div>
+                        </li> 
+
+                        <li>
+                            <div class="r">
+                                <div class="l">满意度：</div>
+                                <span id="spanSatisfaction"></span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <button id="btnDistribute" type="button" onclick="showDealerSelect()" class="admin">转发</button>
+                <button id="btnDeal" type="button" class="admin" onclick="showDealModule()">处理</button>
+                <button id="btnEdit" type="button" onclick="showEdit()" class="admin">编辑</button>
+                <button id="btnSatisfaction" type="button" onclick="showSatisfaction()" class="admin">满意度</button>
+            </div>
+
+            <div id="dealModule" role="main" class="ui-content" style="padding: 0 0 0 0;">
+                <div class="outBox">
+                    <form data-bind="submit: addOnwayFlow">
+                        <ul>
+                            <li>
+                                <div class="ui-field-contain">
+                                    <label for="inputDealer">
+                                        <span style="color:red">*</span> 处理人：
+                                    </label>
+                                    <input id="inputDealer" readonly type="text" class="input-group-sm " data-bind="value: newOnwayFlow.CurrentDealer" />
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="ui-field-contain">
+                                    <label for="inputDealDate">
+                                        <span style="color:red">*</span> 处理时间：
+                                    </label>
+                                    <input id="inputDealDate" readonly type="text" data-bind="value: newOnwayFlow.DealDate">
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="ui-field-contain">
+                                    <label for="inputDealNote">
+                                        <span style="color:red">*</span> 处理方法：
+                                    </label>
+                                    <textarea id="inputDealNote" required cols="40" rows="8" name="inputDealNote" data-bind="value:newOnwayFlow.DealNote"></textarea>
+                                </div>
+                            </li>
+                        </ul>
+                        <button id="btnOnwayFlow" type="submit" class="applyButton">提交</button>
+                    </form>
+                </div>
+            </div>
+            <input type="hidden" id="billId" />
+        </div>
+
+        <!--Main end-->
+        <!--Footer Start-->
+        <div data-role="footer" data-position="fixed" style="border: 0; padding: 0">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="linkBack" href="javascript:history.go(-1);" class="icon-middle-back" data-icon="back">返回</a></li>
+                    <li><a id="linkHome" onclick="location.href ='/IndexM.html'" class="icon-bar" data-icon="home">首页</a></li>
+                    <li><a id="linkQry" onclick="location.href = '/Page/RepairListM.html?listType=1'" class="icon-bar" data-icon="search">查询</a></li>
+                    <li><a id="linkRefresh" href="javascript:location.reload();" class="icon-middle-refresh" data-icon="refresh">刷新</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Footer Start-->
+        <!--PanelLeft Start-->
+        <div data-role="panel" id="panel_left" style="background-color: #f2f2f2;" data-position="left">
+            <div>
+                <div id="menu_login" style="clear: both">
+                    <ul id="menu_login_info" data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true"></ul>
+                    <div data-role="popup" id="menu_login_usermenu" style="margin-top: 50px">
+                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+                        <ul id="menu_login_usermenu_ul" data-role="listview" data-inset="true" style="min-width: 210px;"></ul>
+                    </div>
+                </div>
+                <div data-theme="b" id="nav-panel" style="margin-top: 30px">
+                    <ul id="menu_function_menu" data-role="listview"></ul>
+                </div>
+            </div>
+        </div>
+        <!--PanelLeft End-->
+        <!--PanelRight Start-->
+        <div data-role="panel" id="panel_right" style="background-color: #f2f2f2;" data-position="right">
+
+            <div style="border-top-width: 0; padding: 0 10px">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a" style="width: 80%">
+                        <input type="text" id="keysearch" value="" placeholder="请输入关键字" style="width: 94%;" />
+                    </div>
+                    <div class="ui-block-b" style="width: 20%; padding-top: 6px">
+                        <a href="#" id="search_searchBtn" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">搜索</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="searchItem_view">
+                <div data-role="controlgroup">
+                    <select name="filterFaultType" id="filterFaultType" data-iconpos="left">
+                        <option value="-1">请选择故障类型</option>
+                    </select>
+                </div>
+                <div data-role="controlgroup">
+                    <select name="filterStatus" id="filterStatus" data-iconpos="left">
+                        <option value="-1">请选择处理状态</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <!--PanelRight End-->
+        <script src="../Scripts/app_repairBillDetailM.js"></script>
+    </div>
+</body>
+</html>

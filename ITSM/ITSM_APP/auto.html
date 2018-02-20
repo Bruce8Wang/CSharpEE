@@ -1,0 +1,76 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>自定义提示</title>
+
+    <script src="Scripts/jquery-autocomplete/lib/jquery.js"></script>
+    <script src="Scripts/jquery-autocomplete/jquery.autocomplete.js"></script>
+    <link rel="stylesheet" href="Scripts/jquery-autocomplete/jquery.autocomplete.css" />
+
+    <script type="text/javascript">
+        //var emails = [
+        //    { name: "Peter Pan", to: "peter@pan.de" },
+        //    { name: "Molly", to: "molly@yahoo.com" },
+        //    { name: "Forneria Marconi", to: "live@japan.jp" },
+        //    { name: "Master <em>Sync</em>", to: "205bw@samsung.com" },
+        //    { name: "Dr. <strong>Tech</strong> de Log", to: "g15@logitech.com" },
+        //    { name: "Don Corleone", to: "don@vegas.com" },
+        //    { name: "Mc Chick", to: "info@donalds.org" },
+        //    { name: "Donnie Darko", to: "dd@timeshift.info" },
+        //    { name: "Quake The Net", to: "webmaster@quakenet.org" },
+        //    { name: "Dr. Write", to: "write@writable.com" },
+        //    { name: "GG Bond", to: "Bond@qq.com" },
+        //    { name: "Zhuzhu Xia", to: "zhuzhu@qq.com" }
+        //];
+
+        var centers = [
+            { name: "人力资源中心", PinYin: "renliziyuanzhongxin", JianPin: "rlzyzx" },
+            { name: "投融资中心", PinYin: "tourongzizhongxin", JianPin: "trzzx" },
+            { name: "采购中心", PinYin: "caigouzhongxin", JianPin: "cgzx" },
+            { name: "生态事业部", PinYin: "shengtaishiyebu", JianPin: "stsyb" },
+            { name: "流程与信息中心", PinYin: "liuchengyuxinxizhongxin", JianPin: "lcyxxzx" },
+            { name: "公司领导", PinYin: "gongsilingdao", JianPin: "gsld" },
+            { name: "总裁办公室", PinYin: "zongcaibangongshi", JianPin: "zcbgs" },
+            { name: "总工办公室", PinYin: "zonggongbangongshi", JianPin: "zgbgs" },
+            { name: "市场运营中心", PinYin: "shichangyunyingzhongxin", JianPin: "scyyzx" },
+            { name: "行政中心", PinYin: "xingzhengzhongxin", JianPin: "xzzx" },
+            { name: "成本中心", PinYin: "chengbenzhongxin", JianPin: "cbzx" },
+            { name: "供应链事业部", PinYin: "gongyinglianshiyebu", JianPin: "gylsyb" },
+            { name: "财务中心", PinYin: "caiwuzhongxin", JianPin: "cwzx" },
+            { name: "苗圃事业部", PinYin: "miaopushiyebu", JianPin: "mpsyb" },
+            { name: "研发中心", PinYin: "yanfazhongxin", JianPin: "yfzx" },
+            { name: "证券中心", PinYin: "zhengquanzhongxin", JianPin: "zqzx" },
+            { name: "审计中心", PinYin: "shenjizhongxin", JianPin: "sjzx" },
+            { name: "工程中心", PinYin: "gongchengzhongxin", JianPin: "gczx" },
+            { name: "设计院", PinYin: "shejiyuan", JianPin: "sjy" },
+            { name: "会议室", PinYin: "huiyishi", JianPin: "hys" }
+        ];
+
+        $(function () {
+            $('#keyword').autocomplete(centers, {
+                max: 12,    //列表里的条目数
+                minChars: 0,    //自动完成激活之前填入的最小字符
+                width: 400,     //提示的宽度，溢出隐藏
+                scrollHeight: 300,   //提示的高度，溢出显示滚动条
+                matchContains: true,    //包含匹配，就是data参数里的数据，是否只要包含文本框里的数据就显示
+                autoFill: false,    //自动填充
+                formatItem: function (row, i, max) {
+                    return row.name;
+                },
+                formatMatch: function (row, i, max) {
+                    return row.name + row.PinYin + row.JianPin;
+                },
+                formatResult: function (row) {
+                    return row.name;
+                }
+            }).result(function (event, row, formatted) {
+
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <input id="keyword" />
+
+</body>
+</html>

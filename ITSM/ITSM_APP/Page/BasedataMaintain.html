@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>基础资料维护</title>
+    <!--链接CSS文件-->
+    <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <!--链接常用Javascript Library文件-->
+    <!--<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
+    <script src="http://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+
+    <script src="http://cdn.bootcss.com/knockout/3.2.0/knockout-min.js"></script>
+    <script src="http://cdn.bootcss.com/modernizr/2.8.2/modernizr.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <style>
+        body {
+            font: 1em Helvetica, Arial, Sans-Serif;
+            line-height: 1.5em;
+            color: #333;
+            font-size: 13px;
+            background: #fff;
+        }
+
+        .first {
+            margin-left: 1% !important;
+        }
+
+        #container {
+            margin: 0 auto;
+            width: 100%;
+            /*max-width: 1240px;
+            min-width: 760px;*/
+            position: relative;
+            text-align: center;
+        }
+
+        .col {
+            float: left;
+            display: inline;
+            margin-left: 1%;
+            margin-top: 1%;
+            background: #f1f1f1;
+        }
+
+        .cols6 .col {
+            width: 20%;
+        }
+        /*6列布局的宽度*/
+    </style>
+</head>
+<body style="padding-top:20px">
+    <div class="container-fluid"><h4><a href="../Index.html">主页</a> >> 基础设置</h4></div>
+    <hr />
+    <div style="text-align:center" class="container-fluid">
+        <h3>基础设置</h3>
+    </div>
+    <div class="cols cols6 container-fluid" style="text-align:center">
+        <section class="col">
+            <a href="#" id="aFaultType"><h4>故障类型维护</h4></a>
+        </section>
+        <section class="col">
+            <a href="#" id="aSatisfactionLevel"><h4>满意度定义</h4></a>
+        </section>
+        <section class=" col">
+            <a href="#" id="aFlowConfig"> <h4>流程配置</h4></a>
+        </section>
+        <section class="col">
+            <a href="#" id="aSuperUser"><h4>管理账号维护</h4></a>
+        </section>
+
+    </div>
+    <hr />
+    <div id="divFlowConfig" class="container-fluid" style="display:none;">
+        <div class="container-fluid">
+            <a href="#" id="aAddFlowconfig"><label>新增</label></a>
+            <table id="tFlowConfig" width="100%" class="table table-bordered table-hover">
+                <tr>
+                    <th width="20%"><div>层级</div></th>
+                    <th width="20%"><div>处理人</div></th>
+                    <th width="20%"><div>邮箱</div></th>
+                    <th width="20%"><div>描述</div></th>
+                    <th width="20%"><div>操作</div></th>
+                </tr>
+                <tbody data-bind="template:{name:'reserveationTemplate',foreach:flowConfigs}"></tbody>
+            </table>
+        </div>
+        <hr />
+        <div class="container-fluid">
+            <form data-bind="submit: addFlowConfig">
+                <table width="100%" class="panel panel-default">
+                    <tr>
+                        <td width="20%" align="left">
+                            <div>
+                                层级：
+                            </div>
+                        </td>
+                        <td width="80%">
+                            <input id="inputFLevel" type="text" class="form-control" data-bind="value:newFlowConfig.Level" placeholder="请输入数字" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <div>
+                                处理人：
+                            </div>
+                        </td>
+                        <td>
+                            <input id="inputFDealer" type="text" class="form-control" data-bind="value:newFlowConfig.Dealer" placeholder="请输入处理人" />
+                        </td>
+                    </tr>
+                    <!--<tr>
+                        <td align="left">
+                            <div>
+                                手机号码：
+                            </div>
+                        </td>
+                        <td>
+                            <input id="inputFMobile" type="text" class="form-control" data-bind="value:newFlowConfig.Mobile" placeholder="请输入手机号码" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="left">
+                            <div>
+                                邮箱：
+                            </div>
+                        </td>
+                        <td>
+                            <input id="inputFEMail" type="text" class="form-control" data-bind="value:newFlowConfig.EMail" placeholder="请输入邮箱" />
+                        </td>
+                    </tr>-->
+                    <tr>
+                        <td align="left"><div>描述：</div></td>
+                        <td><input id="inputFNote" type="text" class="form-control" data-bind="value:newFlowConfig.Note" placeholder="请输入描述" /></td>
+                    </tr>
+                    <tr>
+                        <td height="69" colspan="2" align="center" valign="middle">
+                            <button type="submit" id="btnFlowconfig" class="btn btn-default">提交</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="divSatisfactionLevel" class="container-fluid" style="display:none;">
+        <div class="container-fluid">
+            <a href="#" id="aAddSatisfactionLevel"><label>新增</label></a>
+            <table id="tSatisfactionLevel" width="100%" class="table table-bordered table-hover">
+                <tr>
+                    <th width="20%"><div>等级</div></th>
+                    <th width="60%"><div>名称</div></th>
+                    <th width="20%"><div>操作</div></th>
+                </tr>
+                <tbody data-bind="template:{name:'reserveationTemplate1',foreach:satisfactionLevels}"></tbody>
+            </table>
+        </div>
+        <hr />
+        <div class="container-fluid">
+            <form data-bind="submit: addSatisfactionLevel">
+                <table width="100%" class="panel panel-default">
+                    <tr>
+                        <td width="20%" align="left">
+                            <div>
+                                等级：
+                            </div>
+                        </td>
+                        <td width="80%">
+                            <input id="inputSLevel" type="text" class="form-control" data-bind="value:newSatisfactionLevel.Level" placeholder="请输入等级" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <div>
+                                名称：
+                            </div>
+                        </td>
+                        <td>
+                            <input id="inputSName" type="text" class="form-control" data-bind="value:newSatisfactionLevel.Name" placeholder="请输入描述" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="69" colspan="2" align="center" valign="middle">
+                            <button type="submit" id="btnSatisfactionLevel" class="btn btn-default">提交</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="divFaultType" class="container-fluid" style="display:none;">
+        <div class="container-fluid">
+            <a href="#" id="aAddFaultType"><label>新增</label></a>
+            <table id="tFaultType" width="100%" class="table table-bordered table-hover">
+                <tr>
+                    <th width="20%"><div>故障名称</div></th>
+                    <th width="60%"><div>描述</div></th>
+                    <th width="20%"><div>操作</div></th>
+                </tr>
+                <tbody data-bind="template:{name:'reserveationTemplate2',foreach:faultTypes}"></tbody>
+            </table>
+        </div>
+        <hr />
+        <div class="container-fluid">
+            <form data-bind="submit: addFaultType">
+                <table width="100%" class="panel panel-default">
+                    <tr>
+                        <td width="20%" align="left">
+                            <div>
+                                故障名称：
+                            </div>
+                        </td>
+                        <td width="80%">
+                            <input id="inputTName" type="text" class="form-control" data-bind="value:newFaultType.Name" placeholder="请输入故障名称" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <div>
+                                描述：
+                            </div>
+                        </td>
+                        <td>
+                            <input id="inputTNote" type="text" class="form-control" data-bind="value:newFaultType.Note" placeholder="请输入描述" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="69" colspan="2" align="center" valign="middle">
+                            <button id="btnFaultType" type="submit" class="btn btn-default">提交</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="divSuperUser" class="container-fluid" style="display:none;">
+        <div class="container-fluid">
+            <a href="#" id="aSuperUser"><label>新增</label></a>
+            <table id="tFaultType" width="100%" class="table table-bordered table-hover">
+                <tr>
+                    <th width="20%"><div>姓名</div></th>
+                    <th width="80%"><div>操作</div></th>
+                </tr>
+                <tbody data-bind="template:{name:'reserveationTemplate3',foreach:superUsers}"></tbody>
+            </table>
+        </div>
+        <hr />
+        <div class="container-fluid">
+            <form data-bind="submit: addSuperUser">
+                <table width="100%" class="panel panel-default">
+                    <tr>
+                        <td width="20%" align="left">
+                            <div>
+                                姓名：
+                            </div>
+                        </td>
+                        <td width="80%">
+                            <input id="inputAName" type="text" class="form-control" data-bind="value:newSuperUser.UserName" placeholder="请输入管理账号" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="69" colspan="2" align="center" valign="middle">
+                            <button id="btnSuperUser" type="submit" class="btn btn-default">提交</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script src="../Scripts/app_baseData.js"></script>
+    <script type="text/x-jquery-tmpl" id="reserveationTemplate">
+        <tr>
+            <td><span id="FLevel" data-bind="text:Level" /></td>
+            <td><span id="FDealer" data-bind="text:Dealer" /></td>
+            <td><span id="FEMail" data-bind="text:EMail" /></td>
+            <td><span id="FNote" data-bind="text:Note" /></td>
+            <td>
+                <a href="#" data-bind="click: $parent.getFlowConfigDetail">编辑</a>
+                <a href="#" data-bind="click: $parent.deleteFlowConfig">删除</a>
+            </td>
+        </tr>
+    </script>
+
+    <script type="text/x-jquery-tmpl" id="reserveationTemplate1">
+        <tr>
+            <td><span id="SLevel" data-bind="text:Level" /></td>
+            <td><span id="SName" data-bind="text:Name" /></td>
+            <td>
+                <a href="#" data-bind="click: $parent.getSatisfactionLevelDetail">编辑</a>
+                <a href="#" data-bind="click: $parent.deleteSatisfactionLevel">删除</a>
+            </td>
+        </tr>
+    </script>
+
+    <script type="text/x-jquery-tmpl" id="reserveationTemplate2">
+        <tr>
+            <td><span id="TName" data-bind="text:Name" /></td>
+            <td><span id="TNote" data-bind="text:Note" /></td>
+            <td>
+                <a href="#" data-bind="click: $parent.getFaultTypeDetail">编辑</a>
+                <a href="#" data-bind="click: $parent.deleteFaultType">删除</a>
+            </td>
+        </tr>
+    </script>
+    <script type="text/x-jquery-tmpl" id="reserveationTemplate3">
+        <tr>
+            <td><span id="AName" data-bind="text:UserName" /></td>
+            <td>
+                <a href="#" data-bind="click: $parent.deleteSuperUser">删除</a>
+            </td>
+        </tr>
+    </script>
+
+</body>
+</html>

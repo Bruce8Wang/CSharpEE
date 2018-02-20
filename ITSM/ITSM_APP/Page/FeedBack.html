@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link type="text/css" rel="stylesheet" href="/Content/H-ui.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/H-ui.admin.css" />
+    <link type="text/css" rel="stylesheet" href="/font/font-awesome.min.css" />
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <!--<script src="http://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>-->
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/data-dialog-parent.js"></script>
+    <title class="title">反馈单明细 </title>
+
+</head>
+<body>
+    <nav class="Hui-breadcrumb"><i class="icon-home"></i><a href="/Index.html"> 首页</a><span class="c-gray en">&gt;</span> <a href="FeedBackList.html">外部反馈查询</a> <span class="c-gray en">&gt;</span><span class="title" id="spanName"> 反馈单明细</span></nav>
+    <div class="pd-20">
+        <div class="Huiform">
+            <form id="form1" action="giftFetch-list.html">
+                <table class="table table-border table-bordered table-bg">
+
+                    <tr>
+                        <th width="20%" class="text-r">反馈人：</th>
+                        <td width="30%">
+                            <input id="inputName" readonly style="height:100%; width :90%;border-width:0px;" />
+                        </td>
+                        <th width="20%" class="text-r"> 公司名：</th>
+                        <td width="30%">
+                            <input id="inputCompany" readonly style="height:100%; width :100%;border-width:0px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-r">邮箱：</th>
+                        <td><input id="inputEMail" readonly style="height:100%; width :100%;border-width:0px" /></td>
+                        <th class="text-r"> 手机号：</th>
+                        <td>
+                            <input id="inputMobile" readonly style="height:100%; width :100%;border-width:0px" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th width="10%" class="text-r">反馈内容：</th>
+                        <td colspan="5" width="90%">
+
+                            <span id="inputContent" maxlength="1000" style="height:100px; width:95%;"></span>
+
+                            <div>
+
+                                <a id="aImg" href="" target="_blank" hidden>
+                                    <img id="img0" src="" width="50%" height="50%">
+                                </a>
+
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="10%" class="text-r">反馈时间：</th>
+                        <td colspan="5" width="90%">
+                            <input id="inputCreateTime" readonly style="height:100%; width :90%;border-width:0px;" />
+
+                        </td>
+                    </tr>
+                    <!--<tr>
+                        <td colspan="6" align="center" style="text-align:center">
+                            <button id="btnSubmit" class="btn btn-success radius" type="submit">
+                                <i class="icon-ok"></i> 提交
+                            </button>
+                        </td>
+                    </tr>-->
+
+                </table>
+            </form>
+        </div>
+    </div>
+    <script src="/Scripts/Validform_v5.3.2_min.js"></script>
+    <script src="/Scripts/H-ui.js"></script>
+    <script src="/Scripts/H-ui.admin.js"></script>
+    <script src="/Scripts/app_feedBack.js"></script>
+    <script type="text/javascript">
+        $(".Huiform").Validform();
+    </script>
+</body>
+</html>

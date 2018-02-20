@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link type="text/css" rel="stylesheet" href="/Content/H-ui.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/H-ui.admin.css" />
+    <link type="text/css" rel="stylesheet" href="/font/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/viewstyle.css" />
+
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <!--<script src="http://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>-->
+
+    <script src="/Scripts/SortView.js"></script>
+    <script src="/Scripts/PagerView.js"></script>
+    <script src="/Scripts/TableView_FeedBack.js"></script>
+    <script src="/Scripts/SelectorView.js"></script>
+
+
+
+    <title>外部反馈查询</title>
+
+</head> 
+<body>
+
+    <nav class="Hui-breadcrumb"><i class="icon-home"></i> <a href="/Index.html"> 首页</a> <span class="c-gray en">&gt;</span> 外部反馈查询 </nav>
+    <div>
+
+        <table class="table-border table-bordered">
+            <tr>
+                <th width="20%" class="text-r">反馈人：</th>
+                <td width="30%"><input id="inputName" style="height:100%; width :200px;border-width:0px;border-bottom-width:thin" /></td>
+                <th width="10%" class="text-r">公司名：</th>
+                <td width="40%"><input id="inputCompany" style="height:100%; width :200px;border-width:0px;border-bottom-width:thin" /></td>
+            </tr>
+            <tr>
+                <td width="20%" class="text-r" style="background-color:#faf6f6">反馈时间范围：</td>
+                <td width="30%">
+                    <input type="text" onfocus="WdatePicker()" id="inputBeginDate" class="Wdate" style="width :120px;border-width:0px;border-bottom-width:thin;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" onfocus="WdatePicker()" id="inputEndDate" class="Wdate" style="width :120px;border-width:0px;border-bottom-width:thin;">
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center" style="text-align:center">
+                    <button id="btnSubmit" class="btn btn-success radius" type="button" onclick="query()">
+                        <i class="icon-search"></i> 查询
+                    </button>
+                    <button id="btnExport" class="btn btn-success radius" type="button" style="display:none" onclick="exportExcel()">
+                        <i class="icon-exchange"></i> 导出
+                    </button>
+
+
+                </td>
+            </tr>
+        </table>
+
+        <div id="table_div" class="cl pd-5 bg-1 bk-gray mt-20"></div>
+        <div style="text-align:center;"><label id="lbNoData" hidden style="color:red;">无可导出数据！</label></div>
+    </div>
+    <script src="/layer/layer.min.js"></script>
+    <script src="/Scripts/H-ui.js"></script>
+    <script src="/plugin/My97DatePicker/WdatePicker.js"></script>
+    <script src="/Scripts/jquery.dataTables.min.js"></script>
+    <script src="/Scripts/H-ui.admin.js"></script>
+    <script src="/Scripts/app_feedBackList.js"></script>
+
+    <script src="/Scripts/respond.js"></script>
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+[
+  {"Name":"技术周转率1","targetId":"6001","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"Name":"技术周转率2","targetId":"6011","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"Name":"技术率2","targetId":"6002","minValue":"0.2","maxValue":"20","titlea":"123"},
+  {"Name":"技术收益3","targetId":"6003","minValue":"0.3","maxValue":"30","titlea":"123"},
+  {"Name":"技术毛利率4","targetId":"6004","minValue":"0.4","maxValue":"40","titlea":"123"},
+  {"Name":"技术本5","targetId":"6005","minValue":"0.1","maxValue":"50","titlea":"123"},
+  {"Name":"技术市值6","targetId":"6006","minValue":"0.6","maxValue":"60","titlea":"123"},
+  {"Name":"技术市值7","targetId":"6007","minValue":"0.7","maxValue":"70","titlea":"123"},
+  {"Name":"技术值8","targetId":"6008","minValue":"0.8","maxValue":"80","titlea":"123"},
+  {"Name":"技术调整每股9","targetId":"6009","minValue":"0.9","maxValue":"90","titlea":"123"},
+  {"Name":"技术资本公积10","targetId":"6010","minValue":"1.0","maxValue":"100","titlea":"123"}
+]

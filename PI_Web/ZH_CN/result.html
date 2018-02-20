@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>回验结果</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/reset.css" rel="stylesheet">
+    <link href="../Content/home.css" rel="stylesheet">
+    <style type="text/css">
+		/*reset*/
+			#stockCon,
+			#testCon,
+			#testResult{
+				border: 1px solid #ccc;
+				background-color: #fff;
+				margin: 20px auto;
+			}
+		/*stockCon*/
+			#stockCon{
+				padding-bottom: 10px;
+			}
+			#stockCon h3{
+				margin-left: 20px;
+			}
+			#stockCon .col-md-3{
+				display: inline-block;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				text-indent: 20px;
+			}
+			.minVal{
+				margin-right: 10px;
+			}
+			.maxVal{
+				margin-left: 10px;
+			}
+		/*testCon*/
+			#testCon{
+				padding-bottom: 10px;
+			}
+			#testCon h3{
+				margin-left: 20px;
+			}
+			#testCon .col-md-2,
+			#testCon .col-md-3,
+			#testCon .col-md-5{
+				display: inline-block;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				text-indent: 20px;
+			}
+			#testCon .col-md-2 span:first-child,
+			#testCon .col-md-3 span:first-child,
+			#testCon .col-md-5 span:first-child{
+				color: #999;
+			}
+			#testCon .col-md-2 span:last-child,
+			#testCon .col-md-3 span:last-child,
+			#testCon .col-md-5 span:last-child{
+				font-size: 16px;
+				/*font-weight: bold;*/
+			}
+		/*testResult*/
+			#resultTit{		
+				display: block;
+				width: 100%;
+				height: 120px;
+				margin-bottom: 20px;
+			}
+			#resultTit .col-md-3,
+			#resultTit .col-md-9{
+				border: 1px solid red;
+				height: 120px;
+			}
+			#resultTit .col-md-3{
+				border-right: none;
+				font-size: 20px;
+				text-align: center;
+				line-height: 120px;
+				color: #f00;
+				/*font-weight: bold;*/
+			}
+			#resultTit ul{
+				padding: 18px 10px;
+			}
+			#resultTit ul span{
+				color: #f00;
+			}
+			#resultTit ul span:nth-child(3){
+				color: #0f0;
+			}
+		/*tableTop*/
+			#tableTop{
+				width: 96%;
+				margin:20px auto;				
+			}
+			#tableTop th,
+			#tableTop tr{
+				text-align: center;
+			}
+		/*Yield Bar*/
+			#yieldBar h3{
+				margin-left: 20px;
+			}
+    </style>
+  </head>
+  <body>  	
+  	<!-- menu -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  <div class="container">
+	  	<div class="row">
+			<div class="col-md-2">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#logoList">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand text-center" href="index.html" id="logo">
+			      	<img class="img-responsive center-block" src="../Images/logo.png">
+			      </a>
+			    </div>
+	    	</div>	 
+			<div class="col-md-9 col-md-offset-1">
+			    <div class="collapse navbar-collapse" id="logoList">
+			      <ul class="nav navbar-nav navbar-left">
+			        <li class="active"><a href="index.html">选股回验</a></li>			
+			        <li><a href="#">股池分析</a></li>			  
+			        <li ><a href="#">策略方案</a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">			        
+			        <li><a href="#" >
+			        	<span data-toggle="modal" data-target="#myModal">
+			        		登录
+			        	</span>
+				        </a>
+				    </li>
+				    <li ><a href="login.html">注册</a></li>
+			      </ul>
+			    </div>
+	    	</div>	    	
+	    </div>
+	  </div>
+	</nav>
+	<!-- content -->
+	<div class="container" id="stockCon">	
+	  	<div class="row" >			
+			<h3 class="redLine">选股条件</h3>
+			<div class="col-md-3">
+				<span class="minVal">10</span>
+				<span>≤<span class="detName">每日收益</span>≤</span>
+				<span class="maxVal">100</span>
+			</div>
+			<div class="col-md-3">
+				<span class="minVal">10</span>
+				<span>≤<span class="detName">每日收益</span>≤</span>
+				<span class="maxVal">100</span>
+			</div>
+			<div class="col-md-3">
+				<span class="minVal">10</span>
+				<span>≤<span class="detName">每日收益</span>≤</span>
+				<span class="maxVal">100</span>
+			</div>
+			<div class="col-md-3">
+				<span class="minVal">10</span>
+				<span>≤<span class="detName">每日收益</span>≤</span>
+				<span class="maxVal">100</span>
+			</div>
+			<div class="col-md-3">
+				<span class="minVal">10</span>
+				<span>≤<span class="detName">每日收益</span>≤</span>
+				<span class="maxVal">100</span>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="testCon">	
+	  	<div class="row">			
+			<h3 class="redLine">回验条件</h3>
+			<div class="col-md-2">
+				<span>回验时间:</span>
+				<span>1天</span>
+			</div>
+			<div class="col-md-2">
+				<span>调仓周期:</span>
+				<span>5天</span>
+			</div>
+			<div class="col-md-2">
+				<span>仓位控制:</span>
+				<span>满仓</span>
+			</div>
+			<div class="col-md-3">
+				<span>基准指数:</span>
+				<span>沪深300</span>
+			</div>
+			<div class="col-md-3">
+				<span>买入时间:</span>
+				<span>以开盘价买入</span>
+			</div>
+			<div class="col-md-5">
+				<span>追加条件:</span>
+				<span>收益率大于10%时，继续持有一个持续周期</span>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="testResult">	
+	  	<div class="row">			
+			<div id="resultTit">
+				<div class="col-md-3">回验结果</div>
+				<div class="col-md-9">
+					<ul>
+						<li>1.您的股票打败了<span>80%</span>的用户，您已经步入了股市大牛之路。</li>
+						<li>2.在回验周期内，该方案上涨<span>200%</span>，沪深300跌幅为<span>-2.39%</span>，其中，在牛市时，收益率为<span>60.12%</span>，在熊市时收益率为<span>36.9%</span>，在震荡市时，收益率为<span>54.32%</span>。</li>
+						<li>3.方案涨的比大盘多，跌得比大盘少。即最大收益与最大回撤皆优于大盘的单个股票。</li>
+					</ul>
+				</div>		
+			</div>
+			<div>
+				<table class="table table-bordered table-hover"  id="tableTop">
+					<thead>
+						<tr>    
+							<th>调仓周期</th>
+							<th>总收益率</th>
+							<th>年化收益率</th>
+							<th>胜率</th>
+							<th>夏普比率</th>
+							<th>最大回撤率</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1天</td>
+							<td>10%</td>
+							<td>10%</td>
+							<td>10%</td>
+							<td>10%</td>
+							<td>10%</td>
+						</tr>
+						<tr>
+							<td>3天</td>
+							<td>100%</td>
+							<td>10%</td>
+							<td>10%</td>
+							<td>10%</td>
+							<td>10%</td>
+						</tr>			
+					</tbody>
+				</table>
+			</div>
+			<div id="yieldBar">
+				<h3 class="redLine">累计收益率曲线</h3>
+				<div id="container" style="min-width:400px;height:400px"></div>
+			</div>
+			<div>
+				img2
+			</div>
+			<div>
+				table2
+			</div>
+			<div>
+				table3
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footTop">	
+		<div class="container">
+	  		<div class="row">
+	  			<div class="col-md-4">
+					<dl>
+						<dt>
+							<div>CONTACT</div>
+							<div>联系我们</div>
+						</dt>
+						<dd>地址：深圳市南山区学苑大道1001号南山智园A4栋</dd>
+						<dd>热线：400-609-6665， 800-999-3099</dd>
+						<dd>邮箱：service@gtadata.com</dd>						
+					</dl>
+	    		</div>
+	    		<div class="col-md-4">
+					<dl>
+						<dt>
+							<div>ABOUT US</div>
+							<div>关于我们</div>
+						</dt>
+						<dd>宽量网：<a href="http://www.gtaquant.com/Home/Index">http://www.gtaquant.com/Home/Index</a></dd>
+						<dd>宽社区：<a href="http://www.gtaquant.com/Home/Index">http://www.gtaquant.com/Home/Index</a></dd>
+						<dd>国泰安官网：<a href="http://www.gtaquant.com/">http://www.gtaquant.com/</a></dd>						
+					</dl>
+	    		</div>
+	    		<div class="col-md-4">
+					<dl>
+						<dt>
+							<div>WE CHAT</div>
+							<div>关注我们</div>
+						</dt>
+						<dd>
+							<img src="../Images/QR1.png">
+							<img src="../Images/QR2.png">
+						</dd>						
+					</dl>
+	    		</div>
+	  		</div>
+	  	</div>
+	</div>
+	<div class="footBottom">	
+		深圳国泰安教育技术股份有限公司 Copyright 2015 GTA All rights reserved.粤ICP备050
+	</div>
+    <script src="../Scripts/jquery-3.1.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/highcharts.js" ></script>
+    <script type="text/javascript" src="../Scripts/exporting.js" ></script>
+    <script type="text/javascript">
+	    $(function () {
+	        $('#container').highcharts({
+	            chart: {
+	                type: 'line',
+	                zoomType: 'x'
+	            },
+	            title: {
+	                text: 'Monthly Average Temperature'
+	            },
+	            subtitle: {
+	                text: 'Source: WorldClimate.com'
+	            },
+	            xAxis: {
+	                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+	            },
+	            yAxis: {
+	                title: {
+	                    text: 'Temperature (째C)'
+	                }
+	            },
+	            plotOptions: {
+	                line: {
+	                    dataLabels: {
+	                        enabled: true
+	                    },
+	                    enableMouseTracking: false
+	                }
+	            },
+	            series: [{
+	                name: 'Tokyo',
+	                data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+	            }, {
+	                name: 'London',
+	                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+	            }]
+	        });
+	    });
+    </script>
+  </body>
+</html>

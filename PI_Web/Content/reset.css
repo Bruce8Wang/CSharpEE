@@ -1,0 +1,139 @@
+/*reset*/
+	body{
+		background-color: #F4F4F4;
+		font-family: "微软雅黑";
+		padding-top: 50px;
+		overflow-x: hidden;
+	}	
+	.modal-header,.modal-footer	{
+		border:none;	    	
+	} 
+	dl,dt,dd,ul,ol,li{
+		list-style: none;
+		padding: 0;
+	}
+	img { 
+		border:0;
+	} 
+	input:focus {
+		outline: none;
+	}
+	/*导航栏样式调整*/
+	nav .col-md-9{
+		padding-left: 2px;
+	}
+	.navbar-left li{
+		margin-right: 30px;
+	}
+	/*自定义选股 样式调整 便于数据分布*/
+	.customConBefor .col-md-4,
+	.customConUnit .col-md-4{
+		width: auto;
+	}
+	.customConBefor .customConUnit .unitRight,
+	.customConUnit .customConUnit .unitRight{
+		margin-left: 30px;
+	}
+	/*滚动条reset*/
+		.mCSB_container_wrapper > .mCSB_container{
+			padding-right: 0px;
+		}
+		.mCSB_inside > .mCSB_container{
+			margin-right: 0px;
+		}
+		.mCSB_scrollTools .mCSB_draggerRail{
+			background-color:#fff;
+			opacity: 0;
+			filter:alpha(opacity=0);			
+		}
+		.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+			background-color:#C1C1C1;
+		}
+		.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+			background-color:#C1C1C1;
+		}
+		.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+		.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+			background-color:#C1C1C1;
+		}
+		.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+			width: 6px;
+		}
+		.mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown{
+			display: none;			
+		}
+		.mCSB_scrollTools a + .mCSB_draggerContainer{
+			margin-top: 0px;
+		}
+		.mCSB_scrollTools{
+			width: 6px;
+		}
+		#leftBody  .form-control{
+			border-color:#ccc;
+		}
+		#leftBody  .form-control:focus{
+			border-color:#999;
+			-webkit-box-shadow:none;
+			box-shadow:none;
+		}
+	           /*用于删除指标*/
+				.addDragDel{
+					background-color:#FB7373;
+					font-weight:bold;
+					color:#fff;
+					border-radius:3px;
+					display: block;
+					width: 150px;
+					text-align: center;
+					margin: 0;
+					position: absolute;
+					z-index:2;
+
+				}
+                /*用于数据颜色显示*/
+				.green{
+					color:green;
+				}
+				.red{
+					color:#d9333f;
+				}
+				/*运算符居中*/
+				#customWrap .divselect div span.opFirSel{
+					width: 100%;
+					border-right: 0;
+					color:#333 ;
+				}
+				#customWrap .divselect div span.opSencdSelf{
+					 width: 100%;
+					 border-right: 0;
+					 color:#333 ;
+				 }
+				#customWrap .customConBefor .customConUnit .unitRight.sencdNull{
+					margin-left: 3px;
+				}
+				.unitWrap div.onlyName{
+					line-height: 35px;
+				}
+				#checkedWrap .unitWrap .oneFloor .onlyNameTop{
+					min-height: 32px;
+					width: 154px;
+					line-height: 32px;
+					border:1px solid #999;
+					margin-top: 9px;
+					padding-bottom: 0px;
+
+				}
+				#checkedWrap  #checkedCon .unitWrap .oneFloor a.onlyOneFSty{
+					min-height: 32px;
+					width: 154px;
+					line-height: 32px;
+					/*border:1px solid #999;*/
+					margin-top: 9px;
+					padding-bottom: 0px;
+				}
+				.customConUnit .unitLeft.noBorder{
+					border: hidden;
+				}
+				#customWrap .divselect.noBorder{
+					border: hidden;
+				}

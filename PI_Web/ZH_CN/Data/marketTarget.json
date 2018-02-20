@@ -1,0 +1,13 @@
+[
+  {"Name":"行情周转率1","targetId":"4001","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"Name":"行情周转率2","targetId":"4011","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"Name":"行情率2","targetId":"4002","minValue":"0.2","maxValue":"20","titlea":"123"},
+  {"Name":"行情收益3","targetId":"4003","minValue":"0.3","maxValue":"30","titlea":"123"},
+  {"Name":"行情毛利率4","targetId":"4004","minValue":"0.4","maxValue":"40","titlea":"123"},
+  {"Name":"行情本5","targetId":"4005","minValue":"0.1","maxValue":"50","titlea":"123"},
+  {"Name":"行情市值6","targetId":"4006","minValue":"0.6","maxValue":"60","titlea":"123"},
+  {"Name":"行情市值7","targetId":"4007","minValue":"0.7","maxValue":"70","titlea":"123"},
+  {"Name":"行情值8","targetId":"4008","minValue":"0.8","maxValue":"80","titlea":"123"},
+  {"Name":"行情调整每股9","targetId":"4009","minValue":"0.9","maxValue":"90","titlea":"123"},
+  {"Name":"行情资本公积10","targetId":"4010","minValue":"1.0","maxValue":"100","titlea":"123"}
+  ]

@@ -1,0 +1,137 @@
+[
+    {
+        "Code": "PE",
+        "Name": "市盈率2",
+        "Ranking": 1
+    },
+    {
+        "Code": "GRORA",
+        "Name": "营业收入增长率A",
+        "Ranking": 2
+    },
+    {
+        "Code": "CirShares",
+        "Name": "流通股本",
+        "Ranking": 3
+    },
+    {
+        "Code": "TMV",
+        "Name": "总市值",
+        "Ranking": 4
+    },
+    {
+        "Code": "CMV",
+        "Name": "流通市值",
+        "Ranking": 5
+    },
+    {
+        "Code": "QUKR",
+        "Name": "速动比率",
+        "Ranking": 6
+    },
+    {
+        "Code": "CRPS",
+        "Name": "每股资本公积",
+        "Ranking": 7
+    },
+    {
+        "Code": "LTOTAR",
+        "Name": "资产负债率",
+        "Ranking": 8
+    },
+    {
+        "Code": "CURR",
+        "Name": "流动比率",
+        "Ranking": 9
+    },
+    {
+        "Code": "PB",
+        "Name": "市净率",
+        "Ranking": 10
+    },
+    {
+        "Code": "市现率1",
+        "Name": "市现率1",
+        "Ranking": 11
+    },
+    {
+        "Code": "TOTALASSET",
+        "Name": "资产总计",
+        "Ranking": 12
+    },
+    {
+        "Code": "ACCTPAYABLE",
+        "Name": "应付账款",
+        "Ranking": 13
+    },
+    {
+        "Code": "CPAITALRESERVES",
+        "Name": "资本公积",
+        "Ranking": 14
+    },
+    {
+        "Code": "LTPREPAIDEXP",
+        "Name": "长期待摊费用",
+        "Ranking": 15
+    },
+    {
+        "Code": "BEPS",
+        "Name": "基本每股收益",
+        "Ranking": 16
+    },
+    {
+        "Code": "COMPROAOPC",
+        "Name": "归属于母公司所有者的综合收益",
+        "Ranking": 17
+    },
+    {
+        "Code": "DEPS",
+        "Name": "稀释每股收益",
+        "Ranking": 18
+    },
+    {
+        "Code": "GLFVC",
+        "Name": "公允价值变动收益",
+        "Ranking": 19
+    },
+    {
+        "Code": "OP",
+        "Name": "开盘价",
+        "Ranking": 20
+    },
+    {
+        "Code": "CP",
+        "Name": "收盘价",
+        "Ranking": 21
+    },
+    {
+        "Code": "macd金叉",
+        "Name": "macd金叉",
+        "Ranking": 22
+    },
+    {
+        "Code": "kdj超买",
+        "Name": "kdj超买",
+        "Ranking": 23
+    },
+    {
+        "Code": "boll突破上轨",
+        "Name": "boll突破上轨",
+        "Ranking": 24
+    },
+    {
+        "Code": "macd底背离",
+        "Name": "macd底背离",
+        "Ranking": 25
+    },
+    {
+        "Code": "rsi金叉",
+        "Name": "rsi金叉",
+        "Ranking": 26
+    },
+    {
+        "Code": "kdj金叉",
+        "Name": "kdj金叉",
+        "Ranking": 27
+    }
+]

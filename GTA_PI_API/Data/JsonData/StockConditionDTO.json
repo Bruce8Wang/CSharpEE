@@ -1,0 +1,161 @@
+[
+    {
+        "IndexRangeConditions": [],
+        "CustomIndexConditions": [
+            {
+                "Index1": {
+                    "IndexCode": "CP",
+                    "IndexName": "收盘价",
+                    "MinValue": 0.0,
+                    "MaxValue": 0.0,
+                    "Term": "2017/01/21 17:12:56",
+                    "SelectLeft": null,
+                    "SelectRight": null,
+                    "Params": null
+                },
+                "Value1": 0.0,
+                "Index2": {
+                    "IndexCode": "CP",
+                    "IndexName": "收盘价",
+                    "MinValue": 0.0,
+                    "MaxValue": 0.0,
+                    "Term": "2017/01/20 17:12:56",
+                    "SelectLeft": null,
+                    "SelectRight": null,
+                    "Params": null
+                },
+                "Value2": 0.0,
+                "ResultIndex": null,
+                "ResultValue": 1.099,
+                "Operator": "/",
+                "Comparer": "＞"
+            },
+            {
+                "Index1": {
+                    "IndexCode": "CP",
+                    "IndexName": "收盘价",
+                    "MinValue": 0.0,
+                    "MaxValue": 0.0,
+                    "Term": "2017/01/20 17:12:56",
+                    "SelectLeft": null,
+                    "SelectRight": null,
+                    "Params": null
+                },
+                "Value1": 0.0,
+                "Index2": {
+                    "IndexCode": "CP",
+                    "IndexName": "收盘价",
+                    "MinValue": 0.0,
+                    "MaxValue": 0.0,
+                    "Term": "2017/01/19 17:12:56",
+                    "SelectLeft": null,
+                    "SelectRight": null,
+                    "Params": null
+                },
+                "Value2": 0.0,
+                "ResultIndex": null,
+                "ResultValue": 1.099,
+                "Operator": "/",
+                "Comparer": "＞"
+            }
+        ],
+        "MySolutionCode": "1"
+    },
+    {
+        "IndexRangeConditions": [],
+        "CustomIndexConditions": [
+            {
+                "Index1": {
+                    "IndexCode": "UDPPS",
+                    "IndexName": "每股末分配利润",
+                    "MinValue": 0.0,
+                    "MaxValue": 0.0,
+                    "Term": "2016/09/30 00:00:00",
+                    "SelectLeft": null,
+                    "SelectRight": null,
+                    "Params": null
+                },
+                "Value1": 0.0,
+                "Index2": null,
+                "Value2": 0.0,
+                "ResultIndex": null,
+                "ResultValue": 3.0,
+                "Operator": null,
+                "Comparer": "＞"
+            },
+            {
+                "Index1": {
+                    "IndexCode": "CRPS",
+                    "IndexName": "每股资本公积",
+                    "MinValue": 0.0,
+                    "MaxValue": 0.0,
+                    "Term": "2016/09/30 00:00:00",
+                    "SelectLeft": null,
+                    "SelectRight": null,
+                    "Params": null
+                },
+                "Value1": 0.0,
+                "Index2": null,
+                "Value2": 0.0,
+                "ResultIndex": null,
+                "ResultValue": 5.0,
+                "Operator": null,
+                "Comparer": "＞"
+            }
+        ],
+        "MySolutionCode": "2"
+    },
+    {
+        "IndexRangeConditions": [],
+        "CustomIndexConditions": [
+            {
+                "Index1": {
+                    "IndexCode": "CP",
+                    "IndexName": "收盘价",
+                    "MinValue": 0.0,
+                    "MaxValue": 0.0,
+                    "Term": "2017/01/21 17:12:56",
+                    "SelectLeft": null,
+                    "SelectRight": null,
+                    "Params": null
+                },
+                "Value1": 0.0,
+                "Index2": {
+                    "IndexCode": "MA",
+                    "IndexName": "MA",
+                    "MinValue": 0.0,
+                    "MaxValue": 0.0,
+                    "Term": null,
+                    "SelectLeft": null,
+                    "SelectRight": null,
+                    "Params": "20"
+                },
+                "Value2": 0.0,
+                "ResultIndex": null,
+                "ResultValue": 0.92,
+                "Operator": "/",
+                "Comparer": "＜"
+            },
+            {
+                "Index1": {
+                    "IndexCode": "RSI",
+                    "IndexName": "RSI",
+                    "MinValue": 0.0,
+                    "MaxValue": 0.0,
+                    "Term": null,
+                    "SelectLeft": null,
+                    "SelectRight": null,
+                    "Params": "14"
+                },
+                "Value1": 0.0,
+                "Index2": null,
+                "Value2": 0.0,
+                "ResultIndex": null,
+                "ResultValue": 20.0,
+                "Operator": null,
+                "Comparer": "＜"
+            }
+        ],
+        "MySolutionCode": "3"
+    }
+]

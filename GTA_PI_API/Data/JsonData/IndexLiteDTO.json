@@ -1,0 +1,2866 @@
+[
+    {
+        "Code": "UDPPS",
+        "Name": "每股末分配利润"
+    },
+    {
+        "Code": "CASHR",
+        "Name": "现金比率"
+    },
+    {
+        "Code": "QUKR",
+        "Name": "速动比率"
+    },
+    {
+        "Code": "CRPS",
+        "Name": "每股资本公积"
+    },
+    {
+        "Code": "LTOTAR",
+        "Name": "资产负债率"
+    },
+    {
+        "Code": "CURR",
+        "Name": "流动比率"
+    },
+    {
+        "Code": "PB",
+        "Name": "市净率"
+    },
+    {
+        "Code": "市现率1",
+        "Name": "市现率1"
+    },
+    {
+        "Code": "MVA",
+        "Name": "市值A"
+    },
+    {
+        "Code": "EBIT",
+        "Name": "息税前利润"
+    },
+    {
+        "Code": "OPL",
+        "Name": "经营杠杆"
+    },
+    {
+        "Code": "TOTL",
+        "Name": "综合杠杆"
+    },
+    {
+        "Code": "FDEPS",
+        "Name": "归属于母公司每股收益"
+    },
+    {
+        "Code": "NAPS",
+        "Name": "每股净资产"
+    },
+    {
+        "Code": "EPS",
+        "Name": "每股收益（原文披露）"
+    },
+    {
+        "Code": "RLTBTA",
+        "Name": "长期借款与总资产比"
+    },
+    {
+        "Code": "GRNPA",
+        "Name": "净利润增长率A"
+    },
+    {
+        "Code": "SELEXPR",
+        "Name": "销售费用率"
+    },
+    {
+        "Code": "ROAA",
+        "Name": "总资产净利润率(ROA)A"
+    },
+    {
+        "Code": "ARTOVA",
+        "Name": "应收账款周转率A"
+    },
+    {
+        "Code": "INVTOVA",
+        "Name": "存货周转率A"
+    },
+    {
+        "Code": "RARI",
+        "Name": "应收账款与收入比"
+    },
+    {
+        "Code": "RCAI",
+        "Name": "流动资产与收入比"
+    },
+    {
+        "Code": "RFAI",
+        "Name": "固定资产与收入比"
+    },
+    {
+        "Code": "RINVI",
+        "Name": "存货与收入比"
+    },
+    {
+        "Code": "GROPA",
+        "Name": "营业利润增长率A"
+    },
+    {
+        "Code": "GRTPA",
+        "Name": "利润总额增长率A"
+    },
+    {
+        "Code": "NOPPMAR",
+        "Name": "营业净利率"
+    },
+    {
+        "Code": "GOPMAR",
+        "Name": "营业毛利率"
+    },
+    {
+        "Code": "OPMAR",
+        "Name": "营业利润率"
+    },
+    {
+        "Code": "CAR",
+        "Name": "现金适合比率"
+    },
+    {
+        "Code": "CAR5Y",
+        "Name": "现金满足投资比率"
+    },
+    {
+        "Code": "CPTTAR",
+        "Name": "全部现金回收率"
+    },
+    {
+        "Code": "CRIR",
+        "Name": "现金再投资比率"
+    },
+    {
+        "Code": "FCFTE",
+        "Name": "股权自由现金流（原有）"
+    },
+    {
+        "Code": "FCFTF",
+        "Name": "企业自由现金流（原有）"
+    },
+    {
+        "Code": "OCFTS",
+        "Name": "现金与利润总额比"
+    },
+    {
+        "Code": "OPIND",
+        "Name": "营运指数"
+    },
+    {
+        "Code": "RCETDA",
+        "Name": "资本支出与折旧摊销比"
+    },
+    {
+        "Code": "RCFTOI",
+        "Name": "营业收入现金比净含量"
+    },
+    {
+        "Code": "RCTOI",
+        "Name": "营业收入现金比率"
+    },
+    {
+        "Code": "SURCC",
+        "Name": "净利润现金净含量"
+    },
+    {
+        "Code": "SURCCTTM",
+        "Name": "净利润现金净含量TTM"
+    },
+    {
+        "Code": "BUSTR",
+        "Name": "流转税率"
+    },
+    {
+        "Code": "EFFTR",
+        "Name": "所得税率"
+    },
+    {
+        "Code": "RETETAR",
+        "Name": "留存收益资产比"
+    },
+    {
+        "Code": "ROETCI",
+        "Name": "母公司所有者权益与投入资本比"
+    },
+    {
+        "Code": "CURAR",
+        "Name": "流动资产比率"
+    },
+    {
+        "Code": "CURLR",
+        "Name": "流动负债比率"
+    },
+    {
+        "Code": "FAR",
+        "Name": "固定资产比率"
+    },
+    {
+        "Code": "LLIAR",
+        "Name": "非流动负债比率"
+    },
+    {
+        "Code": "NCURAR",
+        "Name": "非流动资产比率"
+    },
+    {
+        "Code": "OELLFALI",
+        "Name": "长期资产适合率"
+    },
+    {
+        "Code": "SEFAR",
+        "Name": "股东权益对固定资产比率"
+    },
+    {
+        "Code": "SHEQR",
+        "Name": "所有者权益比率"
+    },
+    {
+        "Code": "TANGAR",
+        "Name": "有形资产比率"
+    },
+    {
+        "Code": "WCCAR",
+        "Name": "营运资金对流动资产比率"
+    },
+    {
+        "Code": "WCNAR",
+        "Name": "营运资金对净资产比率"
+    },
+    {
+        "Code": "WCTAR",
+        "Name": "营运资金对资产总额比率"
+    },
+    {
+        "Code": "CFICR",
+        "Name": "现金流量利息保障倍数"
+    },
+    {
+        "Code": "DCR",
+        "Name": "经营活动产生的现金流量净额/负债合计"
+    },
+    {
+        "Code": "RCFTCL",
+        "Name": "经营活动产生的现金流量净额/流动负债"
+    },
+    {
+        "Code": "RCTMD",
+        "Name": "现金流到期债务保障倍数"
+    },
+    {
+        "Code": "DLTCR",
+        "Name": "长期资本负债率"
+    },
+    {
+        "Code": "EQDBR",
+        "Name": "权益对负债比率"
+    },
+    {
+        "Code": "EQMTPL",
+        "Name": "权益乘数"
+    },
+    {
+        "Code": "EQR",
+        "Name": "产权比率"
+    },
+    {
+        "Code": "LMVSER",
+        "Name": "负债与权益市价比率"
+    },
+    {
+        "Code": "REBITL",
+        "Name": "息税折旧摊销前利润/负债合计"
+    },
+    {
+        "Code": "RLTLOC",
+        "Name": "长期债务与营运资金比率"
+    },
+    {
+        "Code": "ROCB",
+        "Name": "营运资金与借款比"
+    },
+    {
+        "Code": "TIEA",
+        "Name": "利息保障倍数A"
+    },
+    {
+        "Code": "TIEB",
+        "Name": "利息保障倍数B"
+    },
+    {
+        "Code": "TOTLNTAR",
+        "Name": "有形资产负债率"
+    },
+    {
+        "Code": "SQUKR",
+        "Name": "保守速动比率"
+    },
+    {
+        "Code": "WORKCAP",
+        "Name": "营运资金"
+    },
+    {
+        "Code": "ACCIT",
+        "Name": "应计项目"
+    },
+    {
+        "Code": "CACCRA",
+        "Name": "资本积累率A"
+    },
+    {
+        "Code": "CACCRB",
+        "Name": "资本积累率B"
+    },
+    {
+        "Code": "CPARA",
+        "Name": "资本保值增值率A"
+    },
+    {
+        "Code": "CPARB",
+        "Name": "资本保值增值率B"
+    },
+    {
+        "Code": "GRAEPSA",
+        "Name": "基本每股收益增长率A"
+    },
+    {
+        "Code": "GRAEPSB",
+        "Name": "基本每股收益增长率B"
+    },
+    {
+        "Code": "GRCFPSOA",
+        "Name": "每股经营活动产生的净流量增长率A"
+    },
+    {
+        "Code": "GRCFPSOB",
+        "Name": "每股经营活动产生的净流量增长率B"
+    },
+    {
+        "Code": "GRDEPSA",
+        "Name": "稀释每股收益增长率A"
+    },
+    {
+        "Code": "GRDEPSB",
+        "Name": "稀释每股收益增长率B"
+    },
+    {
+        "Code": "GRFAA",
+        "Name": "固定资产增长率A"
+    },
+    {
+        "Code": "GRFAB",
+        "Name": "固定资产增长率B"
+    },
+    {
+        "Code": "GRNCFFAA",
+        "Name": "筹资活动产生的现金流量增长率A"
+    },
+    {
+        "Code": "GRNCFFAB",
+        "Name": "筹资活动产生的现金流量增长率B"
+    },
+    {
+        "Code": "GRNCFIAA",
+        "Name": "投资活动产生的现金流量增长率A"
+    },
+    {
+        "Code": "GRNCFIAB",
+        "Name": "投资活动产生的现金流量增长率B"
+    },
+    {
+        "Code": "GRNCFOAA",
+        "Name": "经营活动产生的现金流量增长率A"
+    },
+    {
+        "Code": "GRNCFOAB",
+        "Name": "经营活动产生的现金流量增长率B"
+    },
+    {
+        "Code": "GRNPB",
+        "Name": "净利润增长率B"
+    },
+    {
+        "Code": "GROPB",
+        "Name": "营业利润增长率B"
+    },
+    {
+        "Code": "GRORA",
+        "Name": "营业收入增长率A"
+    },
+    {
+        "Code": "GRORB",
+        "Name": "营业收入增长率B"
+    },
+    {
+        "Code": "GRROEA",
+        "Name": "净资产收益率增长率A"
+    },
+    {
+        "Code": "GRROEB",
+        "Name": "净资产收益率增长率B"
+    },
+    {
+        "Code": "GRTAA",
+        "Name": "总资产增长率A"
+    },
+    {
+        "Code": "GRTAB",
+        "Name": "总资产增长率B"
+    },
+    {
+        "Code": "GRTPB",
+        "Name": "利润总额增长率B"
+    },
+    {
+        "Code": "SUSGR",
+        "Name": "可持续增长率"
+    },
+    {
+        "Code": "CDIVC",
+        "Name": "现金股利保障倍数"
+    },
+    {
+        "Code": "DIVCOV",
+        "Name": "股利倍数"
+    },
+    {
+        "Code": "DIVPAY",
+        "Name": "股利分配率"
+    },
+    {
+        "Code": "RETEARR",
+        "Name": "收益留存率"
+    },
+    {
+        "Code": "EBITA",
+        "Name": "息税折旧摊销前收入"
+    },
+    {
+        "Code": "EBITATTM",
+        "Name": "息税折旧摊销前收入TTM"
+    },
+    {
+        "Code": "EBITTTM",
+        "Name": "息税前利润TTM"
+    },
+    {
+        "Code": "ERDSP",
+        "Name": "销售期间费用率"
+    },
+    {
+        "Code": "ERDSPTTM",
+        "Name": "销售期间费用率TTM"
+    },
+    {
+        "Code": "FEXPR",
+        "Name": "财务费用率"
+    },
+    {
+        "Code": "FEXPRTTM",
+        "Name": "财务费用率TTM"
+    },
+    {
+        "Code": "GOPMARTTM",
+        "Name": "营业毛利率TTM"
+    },
+    {
+        "Code": "MEXPR",
+        "Name": "管理费用率"
+    },
+    {
+        "Code": "MEXPRTTM",
+        "Name": "管理费用率TTM"
+    },
+    {
+        "Code": "NOPPMARTTM",
+        "Name": "营业净利率TTM"
+    },
+    {
+        "Code": "NPMCAA",
+        "Name": "流动资产净利润率A"
+    },
+    {
+        "Code": "NPMCAB",
+        "Name": "流动资产净利润率B"
+    },
+    {
+        "Code": "NPMCAC",
+        "Name": "流动资产净利润率C"
+    },
+    {
+        "Code": "NPMCATTM",
+        "Name": "流动资产净利润率TTM"
+    },
+    {
+        "Code": "NPMFAA",
+        "Name": "固定资产净利润率A"
+    },
+    {
+        "Code": "NPMFAB",
+        "Name": "固定资产净利润率B"
+    },
+    {
+        "Code": "NPMFAC",
+        "Name": "固定资产净利润率C"
+    },
+    {
+        "Code": "NPMFATTM",
+        "Name": "固定资产净利润率TTM"
+    },
+    {
+        "Code": "OPMARTTM",
+        "Name": "营业利润率TTM"
+    },
+    {
+        "Code": "PBIAT",
+        "Name": "息前税后利润"
+    },
+    {
+        "Code": "REBITOPI",
+        "Name": "息税前营业利润率"
+    },
+    {
+        "Code": "REBITOPITTM",
+        "Name": "息税前营业利润率TTM"
+    },
+    {
+        "Code": "REBITTA",
+        "Name": "息税前利润与资产总额比"
+    },
+    {
+        "Code": "RETAA",
+        "Name": "资产报酬率A"
+    },
+    {
+        "Code": "RETAB",
+        "Name": "资产报酬率B"
+    },
+    {
+        "Code": "RETAC",
+        "Name": "资产报酬率C"
+    },
+    {
+        "Code": "RETATTM",
+        "Name": "资产报酬率TTM"
+    },
+    {
+        "Code": "RNPTP",
+        "Name": "净利润与利润总额比"
+    },
+    {
+        "Code": "ROAB",
+        "Name": "总资产净利润率(ROA)B"
+    },
+    {
+        "Code": "ROAC",
+        "Name": "总资产净利润率(ROA)C"
+    },
+    {
+        "Code": "ROATTM",
+        "Name": "总资产净利润率(ROA)TTM"
+    },
+    {
+        "Code": "ROEA",
+        "Name": "净资产收益率(ROE)A"
+    },
+    {
+        "Code": "ROEB",
+        "Name": "净资产收益率(ROE)B"
+    },
+    {
+        "Code": "ROEC",
+        "Name": "净资产收益率(ROE)C"
+    },
+    {
+        "Code": "ROETTM",
+        "Name": "净资产收益率(ROE)TTM"
+    },
+    {
+        "Code": "ROIC",
+        "Name": "投入资本回报率"
+    },
+    {
+        "Code": "ROLC",
+        "Name": "长期资本收益率"
+    },
+    {
+        "Code": "RPRC",
+        "Name": "成本费用利润率"
+    },
+    {
+        "Code": "RPRCTTM",
+        "Name": "成本费用利润率TTM"
+    },
+    {
+        "Code": "RSC",
+        "Name": "营业成本率"
+    },
+    {
+        "Code": "RSCTTM",
+        "Name": "营业成本率TTM"
+    },
+    {
+        "Code": "RTPEBIT",
+        "Name": "利润总额与息税前利润相比"
+    },
+    {
+        "Code": "SELEXPRTTM",
+        "Name": "销售费用率TTM"
+    },
+    {
+        "Code": "APTOVA",
+        "Name": "应付账款周转率A"
+    },
+    {
+        "Code": "APTOVB",
+        "Name": "应付账款周转率B"
+    },
+    {
+        "Code": "APTOVC",
+        "Name": "应付账款周转率C"
+    },
+    {
+        "Code": "APTOVTTM",
+        "Name": "应付账款周转率TTM"
+    },
+    {
+        "Code": "ARTOVB",
+        "Name": "应收账款周转率B"
+    },
+    {
+        "Code": "ARTOVC",
+        "Name": "应收账款周转率C"
+    },
+    {
+        "Code": "ARTOVDA",
+        "Name": "应收账款周转天数A"
+    },
+    {
+        "Code": "ARTOVDB",
+        "Name": "应收账款周转天数B"
+    },
+    {
+        "Code": "ARTOVDC",
+        "Name": "应收账款周转天数C"
+    },
+    {
+        "Code": "ARTOVDTTM",
+        "Name": "应收账款周转天数TTM"
+    },
+    {
+        "Code": "ARTOVTTM",
+        "Name": "应收账款周转率TTM"
+    },
+    {
+        "Code": "BUSCA",
+        "Name": "营业周期A"
+    },
+    {
+        "Code": "BUSCB",
+        "Name": "营业周期B"
+    },
+    {
+        "Code": "BUSCC",
+        "Name": "营业周期C"
+    },
+    {
+        "Code": "BUSCTTM",
+        "Name": "营业周期TTM"
+    },
+    {
+        "Code": "CAPP",
+        "Name": "资本密集度"
+    },
+    {
+        "Code": "CCETOVA",
+        "Name": "现金及现金等价物周转率A"
+    },
+    {
+        "Code": "CCETOVB",
+        "Name": "现金及现金等价物周转率B"
+    },
+    {
+        "Code": "CCETOVC",
+        "Name": "现金及现金等价物周转率C"
+    },
+    {
+        "Code": "CURATOVA",
+        "Name": "流动资产周转率A"
+    },
+    {
+        "Code": "CURATOVB",
+        "Name": "流动资产周转率B"
+    },
+    {
+        "Code": "CURATOVC",
+        "Name": "流动资产周转率C"
+    },
+    {
+        "Code": "CURATOVTTM",
+        "Name": "现金及现金等价物周转率TTM"
+    },
+    {
+        "Code": "FATOVA",
+        "Name": "固定资产周转率A"
+    },
+    {
+        "Code": "FATOVB",
+        "Name": "固定资产周转率B"
+    },
+    {
+        "Code": "FATOVC",
+        "Name": "固定资产周转率C"
+    },
+    {
+        "Code": "FATOVTTM",
+        "Name": "固定资产周转率TTM"
+    },
+    {
+        "Code": "INVTOVB",
+        "Name": "存货周转率B"
+    },
+    {
+        "Code": "INVTOVC",
+        "Name": "存货周转率C"
+    },
+    {
+        "Code": "INVTOVDA",
+        "Name": "存货周转天数A"
+    },
+    {
+        "Code": "INVTOVDB",
+        "Name": "存货周转天数B"
+    },
+    {
+        "Code": "INVTOVDC",
+        "Name": "存货周转天数C"
+    },
+    {
+        "Code": "INVTOVDTTM",
+        "Name": "存货周转天数TTM"
+    },
+    {
+        "Code": "INVTOVTTM",
+        "Name": "存货周转率TTM"
+    },
+    {
+        "Code": "LATOVA",
+        "Name": "非流动资产周转率A"
+    },
+    {
+        "Code": "LATOVB",
+        "Name": "非流动资产周转率B"
+    },
+    {
+        "Code": "LATOVC",
+        "Name": "非流动资产周转率C"
+    },
+    {
+        "Code": "LATOVTTM",
+        "Name": "非流动资产周转率TTM"
+    },
+    {
+        "Code": "SETOVA",
+        "Name": "股东权益周转率A"
+    },
+    {
+        "Code": "SETOVB",
+        "Name": "股东权益周转率B"
+    },
+    {
+        "Code": "SETOVC",
+        "Name": "股东权益周转率C"
+    },
+    {
+        "Code": "SETOVTTM",
+        "Name": "流动资产周转率TTM"
+    },
+    {
+        "Code": "TOTATOVA",
+        "Name": "总资产周转率A"
+    },
+    {
+        "Code": "TOTATOVB",
+        "Name": "总资产周转率B"
+    },
+    {
+        "Code": "TOTATOVC",
+        "Name": "总资产周转率C"
+    },
+    {
+        "Code": "TOTATOVTTM",
+        "Name": "总资产周转率TTM"
+    },
+    {
+        "Code": "WKCPTOVA",
+        "Name": "营运资金(资本)周转率A"
+    },
+    {
+        "Code": "WKCPTOVB",
+        "Name": "营运资金(资本)周转率B"
+    },
+    {
+        "Code": "WKCPTOVC",
+        "Name": "营运资金(资本)周转率C"
+    },
+    {
+        "Code": "WKCPTOVTTM",
+        "Name": "营运资金(资本)周转率TTM"
+    },
+    {
+        "Code": "NCFPS",
+        "Name": "每股现金净流量1"
+    },
+    {
+        "Code": "NCFPSFFA",
+        "Name": "每股筹资活动现金净流量"
+    },
+    {
+        "Code": "NCFPSFFATTM",
+        "Name": "每股筹资活动现金净流量TTM"
+    },
+    {
+        "Code": "NCFPSFIA",
+        "Name": "每股投资活动现金净流量"
+    },
+    {
+        "Code": "NCFPSFIATTM",
+        "Name": "每股投资活动现金净流量TTM"
+    },
+    {
+        "Code": "NCFPSFOA",
+        "Name": "每股经营活动产生的现金流量净额"
+    },
+    {
+        "Code": "NCFPSFOATTM",
+        "Name": "每股经营活动产生的现金流量净额TTM"
+    },
+    {
+        "Code": "FCFFPS",
+        "Name": "每股企业自由现金流（原有）"
+    },
+    {
+        "Code": "FCFTEPS",
+        "Name": "每股股权自由现金流（原有）"
+    },
+    {
+        "Code": "OPIPS",
+        "Name": "每股营业收入"
+    },
+    {
+        "Code": "OPIPSTTM",
+        "Name": "每股营业收入TTM"
+    },
+    {
+        "Code": "PPSBIT",
+        "Name": "息税前每股收益"
+    },
+    {
+        "Code": "PPSBITTTM",
+        "Name": "息税前每股收益TTM"
+    },
+    {
+        "Code": "REPS",
+        "Name": "每股留存收益"
+    },
+    {
+        "Code": "SRPS",
+        "Name": "每股盈余公积"
+    },
+    {
+        "Code": "WAEPS",
+        "Name": "每股收益1"
+    },
+    {
+        "Code": "BVRA",
+        "Name": "账面市值比A"
+    },
+    {
+        "Code": "BVRB",
+        "Name": "账面市值比B"
+    },
+    {
+        "Code": "DIVOCSA",
+        "Name": "普通股获利率A"
+    },
+    {
+        "Code": "DIVOCSB",
+        "Name": "普通股获利率B"
+    },
+    {
+        "Code": "MVB",
+        "Name": "市值B"
+    },
+    {
+        "Code": "PE",
+        "Name": "市盈率2"
+    },
+    {
+        "Code": "PETTM",
+        "Name": "市盈率TTM"
+    },
+    {
+        "Code": "PS",
+        "Name": "市销率2"
+    },
+    {
+        "Code": "PSTTM",
+        "Name": "市销率TTM"
+    },
+    {
+        "Code": "RDYOCS",
+        "Name": "本利比"
+    },
+    {
+        "Code": "TOBQA",
+        "Name": "托宾Q值A"
+    },
+    {
+        "Code": "TOBQB",
+        "Name": "托宾Q值B"
+    },
+    {
+        "Code": "TOBQC",
+        "Name": "托宾Q值C"
+    },
+    {
+        "Code": "TOBQD",
+        "Name": "托宾Q值D"
+    },
+    {
+        "Code": "FINL",
+        "Name": "财务杠杆"
+    },
+    {
+        "Code": "TOTALASSET",
+        "Name": "资产总计"
+    },
+    {
+        "Code": "TOTALCURASSETS",
+        "Name": "流动资产合计"
+    },
+    {
+        "Code": "TOTALCURLIAB",
+        "Name": "流动负债合计"
+    },
+    {
+        "Code": "TOTALLIAB",
+        "Name": "负债合计"
+    },
+    {
+        "Code": "TOTALLTLIAB",
+        "Name": "长期负债合计"
+    },
+    {
+        "Code": "LIABANDOWNEREQUITY",
+        "Name": "负债与所有者权益总计"
+    },
+    {
+        "Code": "TOTALNCURASSET",
+        "Name": "非流动资产合计"
+    },
+    {
+        "Code": "TOTALNCURLIAB",
+        "Name": "非流动负债合计"
+    },
+    {
+        "Code": "TOTALSHINT",
+        "Name": "所有者权益合计"
+    },
+    {
+        "Code": "ADVREC",
+        "Name": "预收款项"
+    },
+    {
+        "Code": "ACCTPAYABLE",
+        "Name": "应付账款"
+    },
+    {
+        "Code": "CASHASSET",
+        "Name": "货币资金"
+    },
+    {
+        "Code": "CPAITALRESERVES",
+        "Name": "资本公积"
+    },
+    {
+        "Code": "DIVPAYABLE",
+        "Name": "应付股利"
+    },
+    {
+        "Code": "LTDEBT",
+        "Name": "长期借款"
+    },
+    {
+        "Code": "LTPAYABLE",
+        "Name": "长期应付款"
+    },
+    {
+        "Code": "LTPREPAIDEXP",
+        "Name": "长期待摊费用"
+    },
+    {
+        "Code": "MINSHINT",
+        "Name": "少数股东权益"
+    },
+    {
+        "Code": "OTHERASSET",
+        "Name": "其他资产"
+    },
+    {
+        "Code": "OTHERCURLIAB",
+        "Name": "其他流动负债"
+    },
+    {
+        "Code": "OTHERCURASSETS",
+        "Name": "其他流动资产"
+    },
+    {
+        "Code": "OTHERLIAB",
+        "Name": "其他负债"
+    },
+    {
+        "Code": "OTHERNCURASSET",
+        "Name": "其他非流动资产"
+    },
+    {
+        "Code": "OTHERNCURLIAB",
+        "Name": "其他非流动负债"
+    },
+    {
+        "Code": "OTHERPAYABLE",
+        "Name": "其他应付款"
+    },
+    {
+        "Code": "SPECIALPAYABLE",
+        "Name": "专项应付款"
+    },
+    {
+        "Code": "RETAINPROFIT",
+        "Name": "未分配利润"
+    },
+    {
+        "Code": "FAPUATS",
+        "Name": "买入返售金融资产净额"
+    },
+    {
+        "Code": "ASUATR",
+        "Name": "卖出回购金融资产款"
+    },
+    {
+        "Code": "AVFSFINASSET",
+        "Name": "可供出售金融资产净额"
+    },
+    {
+        "Code": "BORRFROMCENTRALBANK",
+        "Name": "向中央银行借款"
+    },
+    {
+        "Code": "BONDPAYABLE",
+        "Name": "应付债券"
+    },
+    {
+        "Code": "CASHBALWCENTRALBANK",
+        "Name": "现金及存放中央银行款项"
+    },
+    {
+        "Code": "CLAIMPAYABLE",
+        "Name": "应付赔付款"
+    },
+    {
+        "Code": "STATUTORYDEPOSITS",
+        "Name": "存出资本保证金"
+    },
+    {
+        "Code": "CONSTMATERIAL",
+        "Name": "工程物资"
+    },
+    {
+        "Code": "ESTLIAB",
+        "Name": "预计负债"
+    },
+    {
+        "Code": "DUETOBAOFI",
+        "Name": "其中：同业及其他金融机构存放款项"
+    },
+    {
+        "Code": "BALWFININS",
+        "Name": "存放同业款项"
+    },
+    {
+        "Code": "CBDEPANDDUETOBAOFI",
+        "Name": "吸收存款及同业存放"
+    },
+    {
+        "Code": "DEFTAXLIAB",
+        "Name": "递延所得税负债"
+    },
+    {
+        "Code": "DEFINCOMETAXASSET",
+        "Name": "递延所得税资产"
+    },
+    {
+        "Code": "CUSTOMERDEPOSITS",
+        "Name": "其中:客户资金存款"
+    },
+    {
+        "Code": "FINASSETFORDERIV",
+        "Name": "衍生金融资产"
+    },
+    {
+        "Code": "DEVFINLIAB",
+        "Name": "衍生金融负债"
+    },
+    {
+        "Code": "DISPOSALOFFIXEDASSET",
+        "Name": "固定资产清理"
+    },
+    {
+        "Code": "CBDEPOSIT",
+        "Name": "其中：吸收存款"
+    },
+    {
+        "Code": "DEVEXP",
+        "Name": "开发支出"
+    },
+    {
+        "Code": "STAFFREMUPAYABLE",
+        "Name": "应付职工薪酬"
+    },
+    {
+        "Code": "COMMISSIONPAYABLE",
+        "Name": "应付手续费及佣金"
+    },
+    {
+        "Code": "REFUNDABLEDEPOSITS",
+        "Name": "存出保证金"
+    },
+    {
+        "Code": "FORECURTRANSDIFF",
+        "Name": "外币报表折算差额"
+    },
+    {
+        "Code": "GENERALRISKPROVISION",
+        "Name": "一般风险准备"
+    },
+    {
+        "Code": "HTMINVT",
+        "Name": "持有至到期投资净额"
+    },
+    {
+        "Code": "INTPAYABLE",
+        "Name": "应付利息"
+    },
+    {
+        "Code": "POLIRESFORLTHEALTHINSUR",
+        "Name": "其中:长期健康险责任准备金"
+    },
+    {
+        "Code": "POLIRESFORLIFEINSUR",
+        "Name": "其中:寿险责任准备金"
+    },
+    {
+        "Code": "PLEDGEBORROWING",
+        "Name": "其中:质押借款"
+    },
+    {
+        "Code": "ACCTREC",
+        "Name": "应收账款净额"
+    },
+    {
+        "Code": "PRODBIOASSET",
+        "Name": "生产性生物资产净额"
+    },
+    {
+        "Code": "NONCURASSETSDUEONEYR",
+        "Name": "一年内到期的非流动资产"
+    },
+    {
+        "Code": "NCURLIABDUEONEYR",
+        "Name": "一年内到期的非流动负债"
+    },
+    {
+        "Code": "UNDERCONSTPROJECT",
+        "Name": "在建工程净额"
+    },
+    {
+        "Code": "DIVREC",
+        "Name": "应收股利净额"
+    },
+    {
+        "Code": "FIXEDASSET",
+        "Name": "固定资产净额"
+    },
+    {
+        "Code": "GOODWILL",
+        "Name": "商誉净额"
+    },
+    {
+        "Code": "INTANGIBLEASSET",
+        "Name": "无形资产净额"
+    },
+    {
+        "Code": "INVTPROPERTY",
+        "Name": "投资性房地产净额"
+    },
+    {
+        "Code": "INVENTORY",
+        "Name": "存货净额"
+    },
+    {
+        "Code": "INTREC",
+        "Name": "应收利息净额"
+    },
+    {
+        "Code": "LTREC",
+        "Name": "长期应收款净额"
+    },
+    {
+        "Code": "LTDEBTINVT",
+        "Name": "长期债权投资净额"
+    },
+    {
+        "Code": "LTEQUITYINVT",
+        "Name": "长期股权投资净额"
+    },
+    {
+        "Code": "LTINVT",
+        "Name": "长期投资净额"
+    },
+    {
+        "Code": "LOANANDADVANCES",
+        "Name": "发放贷款及垫款净额"
+    },
+    {
+        "Code": "NOTESREC",
+        "Name": "应收票据净额"
+    },
+    {
+        "Code": "OILGASASSET",
+        "Name": "油气资产净额"
+    },
+    {
+        "Code": "OTHERREC",
+        "Name": "其他应收款净额"
+    },
+    {
+        "Code": "NOTESPAYABLE",
+        "Name": "应付票据"
+    },
+    {
+        "Code": "NETFUNDSLENDING",
+        "Name": "拆出资金净额"
+    },
+    {
+        "Code": "PREPAY",
+        "Name": "预付款项净额"
+    },
+    {
+        "Code": "INSPREMIUMREC",
+        "Name": "应收保费净额"
+    },
+    {
+        "Code": "REINSREC",
+        "Name": "应收分保账款净额"
+    },
+    {
+        "Code": "REINSCONTRESERVESREC",
+        "Name": "应收分保合同准备金净额"
+    },
+    {
+        "Code": "SUBROGATIONREC",
+        "Name": "应收代位追偿款净额"
+    },
+    {
+        "Code": "STINVT",
+        "Name": "短期投资净额"
+    },
+    {
+        "Code": "PLACEMENTFROMBAOFI",
+        "Name": "拆入资金"
+    },
+    {
+        "Code": "NIIDFP",
+        "Name": "保户储金及投资款"
+    },
+    {
+        "Code": "POLIDIVPAYABLE",
+        "Name": "应付保单红利"
+    },
+    {
+        "Code": "POLIPLEDGELOAN",
+        "Name": "保户质押贷款净额"
+    },
+    {
+        "Code": "NOBELMETAL",
+        "Name": "贵金属"
+    },
+    {
+        "Code": "SECBROKDEPO",
+        "Name": "代理承销证券款"
+    },
+    {
+        "Code": "PREMIUMRECINADV",
+        "Name": "预收保费"
+    },
+    {
+        "Code": "CLAIMRESERVES",
+        "Name": "其中:未决赔款准备金"
+    },
+    {
+        "Code": "CRRFR",
+        "Name": "其中:应收分保未决赔款准备金净额"
+    },
+    {
+        "Code": "LTRFHIRFR",
+        "Name": "其中:应收分保长期健康险责任准备金净额"
+    },
+    {
+        "Code": "PRRLIRFR",
+        "Name": "其中:应收分保寿险责任准备金净额"
+    },
+    {
+        "Code": "UPRRFR",
+        "Name": "其中:应收分保未到期责任准备金净额"
+    },
+    {
+        "Code": "RECFROMREINSUR",
+        "Name": "应付分保账款"
+    },
+    {
+        "Code": "INSURCONTRESERVES",
+        "Name": "保险合同准备金"
+    },
+    {
+        "Code": "CUSTOMERBROKDEPO",
+        "Name": "代理买卖证券款"
+    },
+    {
+        "Code": "SEPACCOUNTASSET",
+        "Name": "独立账户资产"
+    },
+    {
+        "Code": "SEPACCTLIAB",
+        "Name": "独立账户负债"
+    },
+    {
+        "Code": "PAIDUPCAPITAL",
+        "Name": "实收资本(或股本)"
+    },
+    {
+        "Code": "STBORROWING",
+        "Name": "短期借款"
+    },
+    {
+        "Code": "BALWCLEARCO",
+        "Name": "结算备付金"
+    },
+    {
+        "Code": "CUSTOMEREXRESERVES",
+        "Name": "其中：客户备付金"
+    },
+    {
+        "Code": "SURPLUSRESERVES",
+        "Name": "盈余公积"
+    },
+    {
+        "Code": "TOEATP",
+        "Name": "归属于母公司所有者权益合计"
+    },
+    {
+        "Code": "TERMDEPOSITS",
+        "Name": "定期存款"
+    },
+    {
+        "Code": "TAXPAYABLE",
+        "Name": "应交税费"
+    },
+    {
+        "Code": "FINASSETFORTRADING",
+        "Name": "交易性金融资产"
+    },
+    {
+        "Code": "HFTFINLIAB",
+        "Name": "交易性金融负债"
+    },
+    {
+        "Code": "MEMBERSHIPFEE",
+        "Name": "其中:交易席位费"
+    },
+    {
+        "Code": "TREASURYSTOCK",
+        "Name": "其中：库存股"
+    },
+    {
+        "Code": "UNEARNPREMIUMRESERVES",
+        "Name": "其中:未到期责任准备金"
+    },
+    {
+        "Code": "UNCONFIRMINVTLOSS",
+        "Name": "未确认的投资损失"
+    },
+    {
+        "Code": "BEPS",
+        "Name": "基本每股收益"
+    },
+    {
+        "Code": "COMPROAOPC",
+        "Name": "归属于母公司所有者的综合收益"
+    },
+    {
+        "Code": "DEPS",
+        "Name": "稀释每股收益"
+    },
+    {
+        "Code": "GLFVC",
+        "Name": "公允价值变动收益"
+    },
+    {
+        "Code": "INVSTG",
+        "Name": "投资收益"
+    },
+    {
+        "Code": "MININT",
+        "Name": "少数股东损益"
+    },
+    {
+        "Code": "NINTINC",
+        "Name": "利息净收入"
+    },
+    {
+        "Code": "NOPEXP",
+        "Name": "营业外支出"
+    },
+    {
+        "Code": "NOPINC",
+        "Name": "营业外收入"
+    },
+    {
+        "Code": "NPAOPC",
+        "Name": "归属于母公司所有者的净利润"
+    },
+    {
+        "Code": "OPEXP",
+        "Name": "营业成本"
+    },
+    {
+        "Code": "OPPRO",
+        "Name": "营业利润"
+    },
+    {
+        "Code": "OPREV",
+        "Name": "营业收入"
+    },
+    {
+        "Code": "OTHOINC",
+        "Name": "其他业务收入"
+    },
+    {
+        "Code": "OTHOPEXP",
+        "Name": "其他业务成本"
+    },
+    {
+        "Code": "SELLEXP",
+        "Name": "销售费用"
+    },
+    {
+        "Code": "TAFO",
+        "Name": "营业税金及附加"
+    },
+    {
+        "Code": "TCOMINCO",
+        "Name": "综合收益总额"
+    },
+    {
+        "Code": "TOLPRO",
+        "Name": "利润总额"
+    },
+    {
+        "Code": "TOTOEXP",
+        "Name": "营业总成本"
+    },
+    {
+        "Code": "TOTOR",
+        "Name": "营业总收入"
+    },
+    {
+        "Code": "UNCONFIRMINVTLOSS",
+        "Name": "未确认的投资损失"
+    },
+    {
+        "Code": "BME",
+        "Name": "业务及管理费"
+    },
+    {
+        "Code": "CLMEXP",
+        "Name": "赔付支出"
+    },
+    {
+        "Code": "CLMRCVR",
+        "Name": "减：摊回赔付支出"
+    },
+    {
+        "Code": "COMPROAMS",
+        "Name": "归属于少数股东的综合收益"
+    },
+    {
+        "Code": "EXPRCRI",
+        "Name": "减：摊回分保费用"
+    },
+    {
+        "Code": "EXPRISAC",
+        "Name": "分保费用"
+    },
+    {
+        "Code": "FCEXP",
+        "Name": "手续费及佣金支出"
+    },
+    {
+        "Code": "FCINC",
+        "Name": "手续费及佣金收入"
+    },
+    {
+        "Code": "FOREXG",
+        "Name": "汇兑收益"
+    },
+    {
+        "Code": "GADMEXP",
+        "Name": "管理费用"
+    },
+    {
+        "Code": "IGAJV",
+        "Name": "其中：对联营企业和合营企业的投资收益"
+    },
+    {
+        "Code": "IMPLOS",
+        "Name": "资产减值损失"
+    },
+    {
+        "Code": "INCTEXP",
+        "Name": "所得税费用"
+    },
+    {
+        "Code": "INSRRR",
+        "Name": "减：摊回保险责任准备金"
+    },
+    {
+        "Code": "INSUINC",
+        "Name": "保险业务收入"
+    },
+    {
+        "Code": "INTEXP",
+        "Name": "利息支出"
+    },
+    {
+        "Code": "INTINC",
+        "Name": "利息收入"
+    },
+    {
+        "Code": "NCLMEXP",
+        "Name": "赔付支出净额"
+    },
+    {
+        "Code": "NEPRMM",
+        "Name": "已赚保费"
+    },
+    {
+        "Code": "NFCINC",
+        "Name": "手续费及佣金净收入"
+    },
+    {
+        "Code": "NIAMC",
+        "Name": "其中：受托客户资产管理业务净收入"
+    },
+    {
+        "Code": "NINCSB",
+        "Name": "其中：代理买卖证券业务净收入"
+    },
+    {
+        "Code": "NINCSU",
+        "Name": "其中:证券承销业务净收入"
+    },
+    {
+        "Code": "NLDNCA",
+        "Name": "其中：非流动资产处置净损益"
+    },
+    {
+        "Code": "NPIR",
+        "Name": "提取保险责任准备金净额"
+    },
+    {
+        "Code": "OTHCOMPRO",
+        "Name": "其他综合收益(损失)"
+    },
+    {
+        "Code": "OTHIANP",
+        "Name": "影响净利润的其他项目"
+    },
+    {
+        "Code": "OTHOPPRO",
+        "Name": "其他业务利润"
+    },
+    {
+        "Code": "PAYSRD",
+        "Name": "退保金"
+    },
+    {
+        "Code": "PLCDIV",
+        "Name": "保单红利支出"
+    },
+    {
+        "Code": "PRECR",
+        "Name": "减：分出保费"
+    },
+    {
+        "Code": "PROIR",
+        "Name": "提取保险责任准备金"
+    },
+    {
+        "Code": "PROUEPR",
+        "Name": "减：提取未到期责任准备金"
+    },
+    {
+        "Code": "RINSPINC",
+        "Name": "其中：分保费收入"
+    },
+    {
+        "Code": "BBCCE",
+        "Name": "期初现金及现金等价物余额"
+    },
+    {
+        "Code": "CLMPAID",
+        "Name": "支付原保险合同赔付款项的现金"
+    },
+    {
+        "Code": "CPACFILA",
+        "Name": "购建固定资产、无形资产和其他长期资产支付的现金"
+    },
+    {
+        "Code": "CPDDPI",
+        "Name": "分配股利、利润或偿付利息支付的现金"
+    },
+    {
+        "Code": "CPEMP",
+        "Name": "支付给职工以及为职工支付的现金"
+    },
+    {
+        "Code": "CPGS",
+        "Name": "购买商品、接受劳务支付的现金"
+    },
+    {
+        "Code": "CPINVST",
+        "Name": "投资支付的现金"
+    },
+    {
+        "Code": "CPIS",
+        "Name": "吸收权益性投资收到的现金"
+    },
+    {
+        "Code": "CPISMSS",
+        "Name": "其中：子公司吸收少数股东投资收到的现金"
+    },
+    {
+        "Code": "CRAI",
+        "Name": "吸收投资收到的现金"
+    },
+    {
+        "Code": "CRDRI",
+        "Name": "收回投资收到的现金"
+    },
+    {
+        "Code": "CRDTFA",
+        "Name": "处置交易性金融资产净增加额"
+    },
+    {
+        "Code": "CREPBOR",
+        "Name": "偿还债务支付的现金"
+    },
+    {
+        "Code": "CRRI",
+        "Name": "取得投资收益收到的现金"
+    },
+    {
+        "Code": "CRSGRS",
+        "Name": "销售商品、提供劳务收到的现金"
+    },
+    {
+        "Code": "DPDMSS",
+        "Name": "其中：子公司支付给少数股东的股利、利润"
+    },
+    {
+        "Code": "EBCCE",
+        "Name": "期末现金及现金等价物余额"
+    },
+    {
+        "Code": "EFERCC",
+        "Name": "汇率变动对现金及现金等价物的影响"
+    },
+    {
+        "Code": "EOIC",
+        "Name": "其他对现金的影响"
+    },
+    {
+        "Code": "ICRPLCL",
+        "Name": "质押贷款净增加额"
+    },
+    {
+        "Code": "IFCP",
+        "Name": "支付利息、手续费及佣金的现金"
+    },
+    {
+        "Code": "IFCR",
+        "Name": "收取利息、手续费及佣金的现金"
+    },
+    {
+        "Code": "INCLOAC",
+        "Name": "客户贷款及垫款净增加额"
+    },
+    {
+        "Code": "INCREREP",
+        "Name": "回购业务资金净增加额"
+    },
+    {
+        "Code": "IPBOFI",
+        "Name": "拆入资金净增加额"
+    },
+    {
+        "Code": "IPDI",
+        "Name": "保户储金及投资款净增加额"
+    },
+    {
+        "Code": "IPOFI",
+        "Name": "向其他金融机构拆入资金净增加额"
+    },
+    {
+        "Code": "NCBCB",
+        "Name": "向中央银行借款净增加额"
+    },
+    {
+        "Code": "NCFFA",
+        "Name": "筹资活动产生的现金流量净额"
+    },
+    {
+        "Code": "NCFIA",
+        "Name": "投资活动产生的现金流量净额"
+    },
+    {
+        "Code": "NCFOP",
+        "Name": "经营活动产生的现金流量净额"
+    },
+    {
+        "Code": "NCPASOBU",
+        "Name": "取得子公司及其他营业单位支付的现金净额"
+    },
+    {
+        "Code": "NCRDFILA",
+        "Name": "处置固定资产、无形资产和其他长期资产收回的现金净额"
+    },
+    {
+        "Code": "NCRDSOBU",
+        "Name": "处置子公司及其他营业单位收到的现金净额"
+    },
+    {
+        "Code": "NCRR",
+        "Name": "收到再保险业务现金净额"
+    },
+    {
+        "Code": "NICDDBFI",
+        "Name": "客户存款和同业存放款项净增加额"
+    },
+    {
+        "Code": "NIDCBFI",
+        "Name": "存放中央银行和同业款项净增加额"
+    },
+    {
+        "Code": "OCPRFA",
+        "Name": "支付其他与筹资活动有关的现金"
+    },
+    {
+        "Code": "OCPRIA",
+        "Name": "支付其他与投资活动有关的现金"
+    },
+    {
+        "Code": "OCPROA",
+        "Name": "支付其他与经营活动有关的现金"
+    },
+    {
+        "Code": "OCRRIA",
+        "Name": "收到的其他与投资活动有关的现金"
+    },
+    {
+        "Code": "OCRROA",
+        "Name": "收到的其他与经营活动有关的现金"
+    },
+    {
+        "Code": "OPRFA",
+        "Name": "收到其他与筹资活动有关的现金"
+    },
+    {
+        "Code": "PLCDIVP",
+        "Name": "支付保单红利的现金"
+    },
+    {
+        "Code": "PRMMRCV",
+        "Name": "收到原保险合同保费取得的现金"
+    },
+    {
+        "Code": "PROBOR",
+        "Name": "取得借款收到的现金"
+    },
+    {
+        "Code": "PROISBD",
+        "Name": "发行债券收到的现金"
+    },
+    {
+        "Code": "TAXREF",
+        "Name": "收到的税费返还"
+    },
+    {
+        "Code": "VTAXPAID",
+        "Name": "支付的各项税费"
+    },
+    {
+        "Code": "1011001",
+        "Name": "3G"
+    },
+    {
+        "Code": "1011002",
+        "Name": "IPV6"
+    },
+    {
+        "Code": "1011003",
+        "Name": "QFII"
+    },
+    {
+        "Code": "1011004",
+        "Name": "保障房"
+    },
+    {
+        "Code": "1011005",
+        "Name": "并购重组"
+    },
+    {
+        "Code": "1011006",
+        "Name": "参股金融"
+    },
+    {
+        "Code": "1011007",
+        "Name": "长吉图板块"
+    },
+    {
+        "Code": "1011008",
+        "Name": "长株潭"
+    },
+    {
+        "Code": "1011009",
+        "Name": "成渝特区"
+    },
+    {
+        "Code": "1011010",
+        "Name": "触摸屏"
+    },
+    {
+        "Code": "1011011",
+        "Name": "创投概念"
+    },
+    {
+        "Code": "1011012",
+        "Name": "低碳经济"
+    },
+    {
+        "Code": "1011013",
+        "Name": "迪士尼概念"
+    },
+    {
+        "Code": "1011014",
+        "Name": "分拆上市"
+    },
+    {
+        "Code": "1011015",
+        "Name": "风力发电"
+    },
+    {
+        "Code": "1011016",
+        "Name": "氟化行业"
+    },
+    {
+        "Code": "1011017",
+        "Name": "港珠澳大桥"
+    },
+    {
+        "Code": "1011018",
+        "Name": "公司回购"
+    },
+    {
+        "Code": "1011019",
+        "Name": "股权激励"
+    },
+    {
+        "Code": "1011020",
+        "Name": "国际版概念"
+    },
+    {
+        "Code": "1011021",
+        "Name": "国企H股"
+    },
+    {
+        "Code": "1011022",
+        "Name": "海南旅游岛"
+    },
+    {
+        "Code": "1011023",
+        "Name": "海峡西岸"
+    },
+    {
+        "Code": "1011024",
+        "Name": "航天军工"
+    },
+    {
+        "Code": "1011025",
+        "Name": "核能核电"
+    },
+    {
+        "Code": "1011026",
+        "Name": "红筹股"
+    },
+    {
+        "Code": "1011027",
+        "Name": "黄河三角洲"
+    },
+    {
+        "Code": "1011028",
+        "Name": "抗旱"
+    },
+    {
+        "Code": "1011029",
+        "Name": "锂电池"
+    },
+    {
+        "Code": "1011030",
+        "Name": "鄱阳湖"
+    },
+    {
+        "Code": "1011031",
+        "Name": "融资融券"
+    },
+    {
+        "Code": "1011032",
+        "Name": "三网融合"
+    },
+    {
+        "Code": "1011033",
+        "Name": "石墨烯"
+    },
+    {
+        "Code": "1011034",
+        "Name": "水利建设"
+    },
+    {
+        "Code": "1011035",
+        "Name": "太阳能发电"
+    },
+    {
+        "Code": "1011036",
+        "Name": "天津滨海新区"
+    },
+    {
+        "Code": "1011037",
+        "Name": "铁路基建"
+    },
+    {
+        "Code": "1011039",
+        "Name": "物联网"
+    },
+    {
+        "Code": "1011040",
+        "Name": "西藏区域"
+    },
+    {
+        "Code": "1011041",
+        "Name": "稀缺资源"
+    },
+    {
+        "Code": "1011042",
+        "Name": "新材料"
+    },
+    {
+        "Code": "1011043",
+        "Name": "新股"
+    },
+    {
+        "Code": "1011044",
+        "Name": "新疆开发"
+    },
+    {
+        "Code": "1011045",
+        "Name": "新三板"
+    },
+    {
+        "Code": "1011046",
+        "Name": "信托重仓"
+    },
+    {
+        "Code": "1011047",
+        "Name": "央视50"
+    },
+    {
+        "Code": "1011048",
+        "Name": "医改"
+    },
+    {
+        "Code": "1011049",
+        "Name": "云计算概念"
+    },
+    {
+        "Code": "1011050",
+        "Name": "整体上市"
+    },
+    {
+        "Code": "1011051",
+        "Name": "致命病菌"
+    },
+    {
+        "Code": "1011052",
+        "Name": "智能电网"
+    },
+    {
+        "Code": "1011053",
+        "Name": "南沙新区概念"
+    },
+    {
+        "Code": "1011054",
+        "Name": "地热概念"
+    },
+    {
+        "Code": "1011055",
+        "Name": "页岩气概念"
+    },
+    {
+        "Code": "1011056",
+        "Name": "苹果概念"
+    },
+    {
+        "Code": "1011057",
+        "Name": "3D概念"
+    },
+    {
+        "Code": "1011058",
+        "Name": "风险警示板"
+    },
+    {
+        "Code": "1011059",
+        "Name": "新型城镇化"
+    },
+    {
+        "Code": "1011060",
+        "Name": "美丽中国"
+    },
+    {
+        "Code": "1011061",
+        "Name": "转融券"
+    },
+    {
+        "Code": "1001001",
+        "Name": "全部A股"
+    },
+    {
+        "Code": "1001014",
+        "Name": "三板股票"
+    },
+    {
+        "Code": "1001010",
+        "Name": "正在发行的股票"
+    },
+    {
+        "Code": "1001004",
+        "Name": "全部上市公司"
+    },
+    {
+        "Code": "上证A股",
+        "Name": "上证A股"
+    },
+    {
+        "Code": "深证A股",
+        "Name": "深证A股"
+    },
+    {
+        "Code": "上证上市公司",
+        "Name": "上证上市公司"
+    },
+    {
+        "Code": "深证上市公司",
+        "Name": "深证上市公司"
+    },
+    {
+        "Code": "暂停上市A股",
+        "Name": "暂停上市A股"
+    },
+    {
+        "Code": "深证主板A股",
+        "Name": "深证主板A股"
+    },
+    {
+        "Code": "中小企业板",
+        "Name": "中小企业板"
+    },
+    {
+        "Code": "创业板",
+        "Name": "创业板"
+    },
+    {
+        "Code": "1001015",
+        "Name": "退市整理板块"
+    },
+    {
+        "Code": "1001016",
+        "Name": "风险警示板块"
+    },
+    {
+        "Code": "1001017",
+        "Name": "主板(上证)"
+    },
+    {
+        "Code": "1001009",
+        "Name": "IPO审核未通过股票"
+    },
+    {
+        "Code": "1001008",
+        "Name": "IPO审核通过股票"
+    },
+    {
+        "Code": "1001007",
+        "Name": "IPO审核待表决股票"
+    },
+    {
+        "Code": "1001013",
+        "Name": "已摘牌股票"
+    },
+    {
+        "Code": "1001012",
+        "Name": "暂停上市股票"
+    },
+    {
+        "Code": "1001011",
+        "Name": "已发行待上市的股票"
+    },
+    {
+        "Code": "1010001",
+        "Name": "北京市"
+    },
+    {
+        "Code": "1010002",
+        "Name": "天津市"
+    },
+    {
+        "Code": "1010003",
+        "Name": "河北省"
+    },
+    {
+        "Code": "1010004",
+        "Name": "山西省"
+    },
+    {
+        "Code": "1010005",
+        "Name": "内蒙古自治区"
+    },
+    {
+        "Code": "1010006",
+        "Name": "辽宁省"
+    },
+    {
+        "Code": "1010007",
+        "Name": "吉林省"
+    },
+    {
+        "Code": "1010008",
+        "Name": "黑龙江省"
+    },
+    {
+        "Code": "1010009",
+        "Name": "上海市"
+    },
+    {
+        "Code": "1010010",
+        "Name": "江苏省"
+    },
+    {
+        "Code": "1010011",
+        "Name": "浙江省"
+    },
+    {
+        "Code": "1010012",
+        "Name": "安徽省"
+    },
+    {
+        "Code": "1010013",
+        "Name": "福建省"
+    },
+    {
+        "Code": "1010014",
+        "Name": "江西省"
+    },
+    {
+        "Code": "1010015",
+        "Name": "山东省"
+    },
+    {
+        "Code": "1010016",
+        "Name": "河南省"
+    },
+    {
+        "Code": "1010017",
+        "Name": "湖北省"
+    },
+    {
+        "Code": "1010018",
+        "Name": "湖南省"
+    },
+    {
+        "Code": "1010019",
+        "Name": "广东省"
+    },
+    {
+        "Code": "1010020",
+        "Name": "广西壮族自治区"
+    },
+    {
+        "Code": "1010021",
+        "Name": "海南省"
+    },
+    {
+        "Code": "1010022",
+        "Name": "重庆市"
+    },
+    {
+        "Code": "1010023",
+        "Name": "四川省"
+    },
+    {
+        "Code": "1010024",
+        "Name": "贵州省"
+    },
+    {
+        "Code": "1010025",
+        "Name": "云南省"
+    },
+    {
+        "Code": "1010026",
+        "Name": "西藏自治区"
+    },
+    {
+        "Code": "1010027",
+        "Name": "陕西省"
+    },
+    {
+        "Code": "1010028",
+        "Name": "甘肃省"
+    },
+    {
+        "Code": "1010029",
+        "Name": "青海省"
+    },
+    {
+        "Code": "1010030",
+        "Name": "宁夏回族自治区"
+    },
+    {
+        "Code": "1010031",
+        "Name": "新疆维吾尔自治区"
+    },
+    {
+        "Code": "1010032",
+        "Name": "台湾省"
+    },
+    {
+        "Code": "1010033",
+        "Name": "香港特别行政区"
+    },
+    {
+        "Code": "1010034",
+        "Name": "澳门特别行政区"
+    },
+    {
+        "Code": "1006001",
+        "Name": "农、林、牧、渔业"
+    },
+    {
+        "Code": "农业",
+        "Name": "农业"
+    },
+    {
+        "Code": "林业",
+        "Name": "林业"
+    },
+    {
+        "Code": "畜牧业",
+        "Name": "畜牧业"
+    },
+    {
+        "Code": "渔业",
+        "Name": "渔业"
+    },
+    {
+        "Code": "农、林、牧、渔服务业",
+        "Name": "农、林、牧、渔服务业"
+    },
+    {
+        "Code": "1006002",
+        "Name": "采矿业"
+    },
+    {
+        "Code": "煤炭开采和洗选业",
+        "Name": "煤炭开采和洗选业"
+    },
+    {
+        "Code": "石油和天然气开采业",
+        "Name": "石油和天然气开采业"
+    },
+    {
+        "Code": "黑色金属矿采选业",
+        "Name": "黑色金属矿采选业"
+    },
+    {
+        "Code": "有色金属矿采选业",
+        "Name": "有色金属矿采选业"
+    },
+    {
+        "Code": "非金属矿采选业",
+        "Name": "非金属矿采选业"
+    },
+    {
+        "Code": "开采辅助活动",
+        "Name": "开采辅助活动"
+    },
+    {
+        "Code": "其他采矿业",
+        "Name": "其他采矿业"
+    },
+    {
+        "Code": "1006003",
+        "Name": "制造业"
+    },
+    {
+        "Code": "农副食品加工业",
+        "Name": "农副食品加工业"
+    },
+    {
+        "Code": "食品制造业",
+        "Name": "食品制造业"
+    },
+    {
+        "Code": "酒、饮料和精制茶制造业",
+        "Name": "酒、饮料和精制茶制造业"
+    },
+    {
+        "Code": "烟草制品业",
+        "Name": "烟草制品业"
+    },
+    {
+        "Code": "纺织业",
+        "Name": "纺织业"
+    },
+    {
+        "Code": "纺织服装、服饰业",
+        "Name": "纺织服装、服饰业"
+    },
+    {
+        "Code": "皮革、毛皮、羽毛及其制品和制鞋业",
+        "Name": "皮革、毛皮、羽毛及其制品和制鞋业"
+    },
+    {
+        "Code": "木材加工和木、竹、藤、棕、草制品业",
+        "Name": "木材加工和木、竹、藤、棕、草制品业"
+    },
+    {
+        "Code": "家具制造业",
+        "Name": "家具制造业"
+    },
+    {
+        "Code": "造纸和纸制品业",
+        "Name": "造纸和纸制品业"
+    },
+    {
+        "Code": "印刷和记录媒介复制业",
+        "Name": "印刷和记录媒介复制业"
+    },
+    {
+        "Code": "文教、工美、体育和娱乐用品制造业",
+        "Name": "文教、工美、体育和娱乐用品制造业"
+    },
+    {
+        "Code": "石油加工、炼焦和核燃料加工业",
+        "Name": "石油加工、炼焦和核燃料加工业"
+    },
+    {
+        "Code": "化学原料和化学制品制造业",
+        "Name": "化学原料和化学制品制造业"
+    },
+    {
+        "Code": "医药制造业",
+        "Name": "医药制造业"
+    },
+    {
+        "Code": "化学纤维制造业",
+        "Name": "化学纤维制造业"
+    },
+    {
+        "Code": "橡胶和塑料制品业",
+        "Name": "橡胶和塑料制品业"
+    },
+    {
+        "Code": "非金属矿物制品业",
+        "Name": "非金属矿物制品业"
+    },
+    {
+        "Code": "黑色金属冶炼和压延加工业",
+        "Name": "黑色金属冶炼和压延加工业"
+    },
+    {
+        "Code": "有色金属冶炼和压延加工业",
+        "Name": "有色金属冶炼和压延加工业"
+    },
+    {
+        "Code": "金属制品业",
+        "Name": "金属制品业"
+    },
+    {
+        "Code": "通用设备制造业",
+        "Name": "通用设备制造业"
+    },
+    {
+        "Code": "专用设备制造业",
+        "Name": "专用设备制造业"
+    },
+    {
+        "Code": "汽车制造业",
+        "Name": "汽车制造业"
+    },
+    {
+        "Code": "铁路、船舶、航空航天和其他运输设备制造业",
+        "Name": "铁路、船舶、航空航天和其他运输设备制造业"
+    },
+    {
+        "Code": "电气机械和器材制造业",
+        "Name": "电气机械和器材制造业"
+    },
+    {
+        "Code": "计算机、通信和其他电子设备制造业",
+        "Name": "计算机、通信和其他电子设备制造业"
+    },
+    {
+        "Code": "仪器仪表制造业",
+        "Name": "仪器仪表制造业"
+    },
+    {
+        "Code": "其他制造业",
+        "Name": "其他制造业"
+    },
+    {
+        "Code": "废弃资源综合利用业",
+        "Name": "废弃资源综合利用业"
+    },
+    {
+        "Code": "金属制品、机械和设备修理业",
+        "Name": "金属制品、机械和设备修理业"
+    },
+    {
+        "Code": "1006004",
+        "Name": "电力、热力、燃气及水生产和供应业"
+    },
+    {
+        "Code": "电力、热力生产和供应业",
+        "Name": "电力、热力生产和供应业"
+    },
+    {
+        "Code": "燃气生产和供应业",
+        "Name": "燃气生产和供应业"
+    },
+    {
+        "Code": "水的生产和供应业",
+        "Name": "水的生产和供应业"
+    },
+    {
+        "Code": "1006005",
+        "Name": "建筑业"
+    },
+    {
+        "Code": "房屋建筑业",
+        "Name": "房屋建筑业"
+    },
+    {
+        "Code": "土木工程建筑业",
+        "Name": "土木工程建筑业"
+    },
+    {
+        "Code": "建筑安装业",
+        "Name": "建筑安装业"
+    },
+    {
+        "Code": "建筑装饰和其他建筑业",
+        "Name": "建筑装饰和其他建筑业"
+    },
+    {
+        "Code": "1006006",
+        "Name": "批发和零售业"
+    },
+    {
+        "Code": "批发业",
+        "Name": "批发业"
+    },
+    {
+        "Code": "零售业",
+        "Name": "零售业"
+    },
+    {
+        "Code": "1006007",
+        "Name": "交通运输、仓储和邮政业"
+    },
+    {
+        "Code": "铁路运输业",
+        "Name": "铁路运输业"
+    },
+    {
+        "Code": "道路运输业",
+        "Name": "道路运输业"
+    },
+    {
+        "Code": "水上运输业",
+        "Name": "水上运输业"
+    },
+    {
+        "Code": "航空运输业",
+        "Name": "航空运输业"
+    },
+    {
+        "Code": "管道运输业",
+        "Name": "管道运输业"
+    },
+    {
+        "Code": "装卸搬运和运输代理业",
+        "Name": "装卸搬运和运输代理业"
+    },
+    {
+        "Code": "仓储业",
+        "Name": "仓储业"
+    },
+    {
+        "Code": "邮政业",
+        "Name": "邮政业"
+    },
+    {
+        "Code": "1006008",
+        "Name": "住宿和餐饮业"
+    },
+    {
+        "Code": "住宿业",
+        "Name": "住宿业"
+    },
+    {
+        "Code": "餐饮业",
+        "Name": "餐饮业"
+    },
+    {
+        "Code": "1006009",
+        "Name": "信息传输、软件和信息技术服务业"
+    },
+    {
+        "Code": "电信、广播电视和卫星传输服务",
+        "Name": "电信、广播电视和卫星传输服务"
+    },
+    {
+        "Code": "互联网和相关服务",
+        "Name": "互联网和相关服务"
+    },
+    {
+        "Code": "软件和信息技术服务业",
+        "Name": "软件和信息技术服务业"
+    },
+    {
+        "Code": "1006010",
+        "Name": "金融业"
+    },
+    {
+        "Code": "货币金融服务",
+        "Name": "货币金融服务"
+    },
+    {
+        "Code": "资本市场服务",
+        "Name": "资本市场服务"
+    },
+    {
+        "Code": "保险业",
+        "Name": "保险业"
+    },
+    {
+        "Code": "其他金融业",
+        "Name": "其他金融业"
+    },
+    {
+        "Code": "1006011",
+        "Name": "房地产业"
+    },
+    {
+        "Code": "1006011",
+        "Name": "房地产业"
+    },
+    {
+        "Code": "1006012",
+        "Name": "租赁和商务服务业"
+    },
+    {
+        "Code": "租赁业",
+        "Name": "租赁业"
+    },
+    {
+        "Code": "商务服务业",
+        "Name": "商务服务业"
+    },
+    {
+        "Code": "1006013",
+        "Name": "科学研究和技术服务业"
+    },
+    {
+        "Code": "研究和试验发展",
+        "Name": "研究和试验发展"
+    },
+    {
+        "Code": "专业技术服务业",
+        "Name": "专业技术服务业"
+    },
+    {
+        "Code": "科技推广和应用服务业",
+        "Name": "科技推广和应用服务业"
+    },
+    {
+        "Code": "1006014",
+        "Name": "水利、环境和公共设施管理业"
+    },
+    {
+        "Code": "水利管理业",
+        "Name": "水利管理业"
+    },
+    {
+        "Code": "生态保护和环境治理业",
+        "Name": "生态保护和环境治理业"
+    },
+    {
+        "Code": "公共设施管理业",
+        "Name": "公共设施管理业"
+    },
+    {
+        "Code": "1006015",
+        "Name": "居民服务、修理和其他服务业"
+    },
+    {
+        "Code": "居民服务业",
+        "Name": "居民服务业"
+    },
+    {
+        "Code": "机动车、电子产品和日用产品修理业",
+        "Name": "机动车、电子产品和日用产品修理业"
+    },
+    {
+        "Code": "其他服务业",
+        "Name": "其他服务业"
+    },
+    {
+        "Code": "1006016",
+        "Name": "教育"
+    },
+    {
+        "Code": "1006016",
+        "Name": "教育"
+    },
+    {
+        "Code": "1006017",
+        "Name": "卫生和社会工作"
+    },
+    {
+        "Code": "卫生",
+        "Name": "卫生"
+    },
+    {
+        "Code": "社会工作",
+        "Name": "社会工作"
+    },
+    {
+        "Code": "1006018",
+        "Name": "文化、体育和娱乐业"
+    },
+    {
+        "Code": "新闻和出版业",
+        "Name": "新闻和出版业"
+    },
+    {
+        "Code": "广播、电视、电影和影视录音制作业",
+        "Name": "广播、电视、电影和影视录音制作业"
+    },
+    {
+        "Code": "文化艺术业",
+        "Name": "文化艺术业"
+    },
+    {
+        "Code": "体育",
+        "Name": "体育"
+    },
+    {
+        "Code": "娱乐业",
+        "Name": "娱乐业"
+    },
+    {
+        "Code": "1006019",
+        "Name": "综合"
+    },
+    {
+        "Code": "1006019",
+        "Name": "综合"
+    },
+    {
+        "Code": "OP",
+        "Name": "开盘价"
+    },
+    {
+        "Code": "CP",
+        "Name": "收盘价"
+    },
+    {
+        "Code": "HIP",
+        "Name": "最高价"
+    },
+    {
+        "Code": "LOP",
+        "Name": "最低价"
+    },
+    {
+        "Code": "CQ",
+        "Name": "区间成交量"
+    },
+    {
+        "Code": "CM",
+        "Name": "区间成交额"
+    },
+    {
+        "Code": "ChangeRatio",
+        "Name": "涨跌幅"
+    },
+    {
+        "Code": "Amplitude",
+        "Name": "振幅"
+    },
+    {
+        "Code": "QF_DailyTradingTurnover",
+        "Name": "日换手率"
+    },
+    {
+        "Code": "CMV",
+        "Name": "流通市值"
+    },
+    {
+        "Code": "TMV",
+        "Name": "总市值"
+    },
+    {
+        "Code": "CirShares",
+        "Name": "流通股本"
+    },
+    {
+        "Code": "MACD",
+        "Name": "MACD"
+    },
+    {
+        "Code": "macd顶背离",
+        "Name": "macd顶背离"
+    },
+    {
+        "Code": "macd底背离",
+        "Name": "macd底背离"
+    },
+    {
+        "Code": "macd金叉",
+        "Name": "macd金叉"
+    },
+    {
+        "Code": "macd死叉",
+        "Name": "macd死叉"
+    },
+    {
+        "Code": "MA",
+        "Name": "MA"
+    },
+    {
+        "Code": "KDJ",
+        "Name": "KDJ"
+    },
+    {
+        "Code": "kdj金叉",
+        "Name": "kdj金叉"
+    },
+    {
+        "Code": "kdj死叉",
+        "Name": "kdj死叉"
+    },
+    {
+        "Code": "kdj低位金叉",
+        "Name": "kdj低位金叉"
+    },
+    {
+        "Code": "kdj顶背离",
+        "Name": "kdj顶背离"
+    },
+    {
+        "Code": "kdj底背离",
+        "Name": "kdj底背离"
+    },
+    {
+        "Code": "kdj超卖",
+        "Name": "kdj超卖"
+    },
+    {
+        "Code": "kdj超买",
+        "Name": "kdj超买"
+    },
+    {
+        "Code": "BOLL",
+        "Name": "BOLL"
+    },
+    {
+        "Code": "boll突破上轨",
+        "Name": "boll突破上轨"
+    },
+    {
+        "Code": "boll突破中轨",
+        "Name": "boll突破中轨"
+    },
+    {
+        "Code": "RSI",
+        "Name": "RSI"
+    },
+    {
+        "Code": "rsi金叉",
+        "Name": "rsi金叉"
+    },
+    {
+        "Code": "rsi死叉",
+        "Name": "rsi死叉"
+    },
+    {
+        "Code": "WR",
+        "Name": "WR"
+    },
+    {
+        "Code": "DMI",
+        "Name": "DMI"
+    },
+    {
+        "Code": "dmi金叉",
+        "Name": "dmi金叉"
+    },
+    {
+        "Code": "dmi死叉",
+        "Name": "dmi死叉"
+    }
+]

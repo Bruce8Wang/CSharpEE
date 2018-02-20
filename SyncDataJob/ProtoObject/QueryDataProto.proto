@@ -1,0 +1,108 @@
+package SyncDataJob.ProtoObject;
+
+//查询数据
+message RequestQueryData
+{
+	repeated string SecurityID=1;	//内部证券ID
+	required string StartTime =2;	//开始时间
+	required string EndTime   =3;	//结束时间
+	required uint32 Frequency =4;	//频率
+	required uint32 MessageID =5;   //数据品种ID
+}
+//查询结果
+message ReponseQueryData
+{
+	repeated DataInfo ListDataInfo=1;		//数据集合
+	required uint32 MessageID =2;   //数据品种ID
+}
+//数据信息结构体
+message DataInfo
+{
+	required bytes data=1;		//数据二进制流
+}
+
+//查询SecurityId列表
+message RequestSecurityID
+{
+	repeated string SymbolName=1;	//请求SecurityId证券名称（SZSE、SSE、NULL）
+}
+
+//查询SecurityID返回结果
+message ReponseSecurityID
+{
+	repeated SecrityIDInfo ListSecrityIDInfo      =1;		//SecurityID集合
+}
+
+//SecurityID详细信息
+message SecrityIDInfo
+{
+	required string SecurityID      =1;		//内部证券ID
+	required string Symbol          =2;		//证券名称
+	required string SecurityExchange=3;		//证券市场
+	required string TypeID          =4;		
+}
+//异常信息： TypeID=0; MessageID=0xFFFF;
+message ExceptionMessage
+{
+    required int32  ExceptionCode   = 1; //异常代码
+    required string ExceptionReason = 2; //异常原因
+}
+
+//查询数据
+message RequestQueryPlate
+{
+	required string plateID			 =1;   //板块ID
+}
+//查询结果
+message ReponseQueryPlate
+{
+	required string plateId			 =1;   //板块ID
+	repeated PlateInfo listPlateInfo =2;//板块信息列表
+}
+message PlateInfo
+{
+	required string symbol		     =1;//证券代码
+	required string exchangeCode     =2;//证券市场
+	required string securtiyID	     =3;//SecurityID
+}
+//查询快照数据请求结构体
+message QueryQuoteDataRequest
+{
+	repeated QueryPlateInfo PlateInfos     =1;//板块ID
+	repeated string Fields     =2;//所需字段
+	required int32 PageIndex   =3;//当前页
+	required int32 PageSize    =4;//每页长
+	required string SortField  =5;//排序字段
+	required SortType SortType =6;//排序方式
+}
+message QueryPlateInfo
+{
+	required string PlateID=1;//板块ID或者SecuriyID
+    required QueryType Type=2;//请求类型
+	repeated FreqInfo FreqInfos=3;//频率信息
+}
+message FreqInfo
+{
+	required string MsgID=1;//品种消息号
+	repeated int32 Freq=2;//频率，秒单位
+}
+enum QueryType
+{
+	PlateID=1;//板块ID类型
+	SecurityID=2;//SecurityID类型
+}
+enum SortType
+{
+	None=0;//不排序
+	Desc=1;//降序
+	Asec=2;//升序
+}
+message QueryQuoteDataResponse
+{
+	repeated QuoteDataInfo Data=1;//行情快照集合
+}
+message QuoteDataInfo
+{
+	required string msgId=1;    //当前结构体消息号
+	required bytes data=2;		//数据二进制流
+}

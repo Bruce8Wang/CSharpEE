@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FAD98D5-1E79-4F27-AB23-0864C1B4180C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>    
+    <RootNamespace>SyncDataJob</RootNamespace>
+    <AssemblyName>SyncDataJob</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.1.2.1\lib\net45\StackExchange.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GTA.Dsp.Client">
+      <HintPath>..\packages\DspLibrary(DeskTop)\GTA.Dsp.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="GTA.DSP.Prod.QN.DataDefine">
+      <HintPath>..\packages\DspLibrary(DeskTop)\Dsp解析库\GTA.DSP.Prod.QN.DataDefine.dll</HintPath>
+    </Reference>
+    <Reference Include="GTA.Dsp.Proto">
+      <HintPath>..\packages\DspLibrary(DeskTop)\GTA.Dsp.Proto.dll</HintPath>
+    </Reference>
+    <Reference Include="GTA.Dsp.ProtocolHandler">
+      <HintPath>..\packages\DspLibrary(DeskTop)\GTA.Dsp.ProtocolHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="GTA.Dsp.Serializer">
+      <HintPath>..\packages\DspLibrary(DeskTop)\GTA.Dsp.Serializer.dll</HintPath>
+    </Reference>
+    <Reference Include="GTA.Quantrader.DSP.ObjectDefine">
+      <HintPath>..\packages\DspLibrary(DeskTop)\GTA.Quantrader.DSP.ObjectDefine.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.4.2.27, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.4.2\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.4.2.27, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.4.2\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.4.2.27, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.4.2\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.1.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\packages\protobuf-net.2.1.0\lib\net45\protobuf-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProtoObject\QueryDataProto.cs" />
+    <Compile Include="ProtoObject\RequestDataProtoAnalyser.cs" />
+    <Compile Include="Utility\CalcIndexHelper.cs" />
+    <Compile Include="Utility\DSPHelper.cs" />
+    <Compile Include="Utility\DspRequest.cs" />
+    <Compile Include="Utility\DspToMongoHelper.cs" />
+    <Compile Include="Utility\LogHelper.cs" />
+    <Compile Include="Utility\MongodbCacheHelper.cs" />
+    <Compile Include="Utility\MongoDBHelper.cs" />
+    <Compile Include="Program.cs" />    
+    <Compile Include="Utility\RedisOperation.cs" />
+    <Compile Include="Utility\SyncRequestEx.cs" />
+    <Compile Include="Utility\TransferHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\JsonData\IndexTreeDTO.json" />
+    <None Include="Data\JsonData\行情数据的字段.json" />
+    <None Include="packages.config" />
+    <None Include="ProtoObject\QueryDataProto.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GTA_PI_Common\GTA_PI_Common.csproj">
+      <Project>{5c566c51-025d-44c6-881b-93850b8c4496}</Project>
+      <Name>GTA_PI_Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

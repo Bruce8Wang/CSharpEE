@@ -1,0 +1,1002 @@
+[
+    {
+        "Code": "000001",
+        "Name": "平安银行",
+        "RecentRice": 145.83,
+        "ChangeRate": 5.45,
+        "ChangeAmount": 7.54,
+        "LastAmount": 135.58,
+        "TodayAmount": 138.29,
+        "volume": 852014.0
+    },
+    {
+        "Code": "000002",
+        "Name": "万科A",
+        "RecentRice": 175.79,
+        "ChangeRate": 9.62,
+        "ChangeAmount": 15.43,
+        "LastAmount": 155.69,
+        "TodayAmount": 160.36,
+        "volume": 421221.0
+    },
+    {
+        "Code": "000003",
+        "Name": "PT 金田A",
+        "RecentRice": 95.06,
+        "ChangeRate": 3.89,
+        "ChangeAmount": 3.56,
+        "LastAmount": 87.14,
+        "TodayAmount": 91.50,
+        "volume": 714433.0
+    },
+    {
+        "Code": "000004",
+        "Name": "国农科技",
+        "RecentRice": 148.79,
+        "ChangeRate": 8.95,
+        "ChangeAmount": 12.22,
+        "LastAmount": 126.45,
+        "TodayAmount": 136.57,
+        "volume": 836928.0
+    },
+    {
+        "Code": "000005",
+        "Name": "世纪星源",
+        "RecentRice": 81.81,
+        "ChangeRate": 1.49,
+        "ChangeAmount": 1.20,
+        "LastAmount": 76.05,
+        "TodayAmount": 80.61,
+        "volume": 683398.0
+    },
+    {
+        "Code": "000006",
+        "Name": "深振业A",
+        "RecentRice": 136.97,
+        "ChangeRate": 6.78,
+        "ChangeAmount": 8.70,
+        "LastAmount": 122.16,
+        "TodayAmount": 128.27,
+        "volume": 199162.0
+    },
+    {
+        "Code": "000007",
+        "Name": "全新好",
+        "RecentRice": 157.76,
+        "ChangeRate": 7.51,
+        "ChangeAmount": 11.02,
+        "LastAmount": 134.62,
+        "TodayAmount": 146.74,
+        "volume": 601237.0
+    },
+    {
+        "Code": "000008",
+        "Name": "神州高铁",
+        "RecentRice": 166.13,
+        "ChangeRate": 0.2,
+        "ChangeAmount": 0.33,
+        "LastAmount": 154.95,
+        "TodayAmount": 165.80,
+        "volume": 846770.0
+    },
+    {
+        "Code": "000009",
+        "Name": "中国宝安",
+        "RecentRice": 171.55,
+        "ChangeRate": 6.68,
+        "ChangeAmount": 10.74,
+        "LastAmount": 151.71,
+        "TodayAmount": 160.81,
+        "volume": 362009.0
+    },
+    {
+        "Code": "000010",
+        "Name": "美丽生态",
+        "RecentRice": 176.38,
+        "ChangeRate": 6.94,
+        "ChangeAmount": 11.45,
+        "LastAmount": 160.13,
+        "TodayAmount": 164.93,
+        "volume": 854465.0
+    },
+    {
+        "Code": "000011",
+        "Name": "深物业A",
+        "RecentRice": 135.48,
+        "ChangeRate": 4.29,
+        "ChangeAmount": 5.57,
+        "LastAmount": 128.62,
+        "TodayAmount": 129.91,
+        "volume": 696131.0
+    },
+    {
+        "Code": "000012",
+        "Name": "南玻A",
+        "RecentRice": 145.52,
+        "ChangeRate": 2.96,
+        "ChangeAmount": 4.18,
+        "LastAmount": 139.94,
+        "TodayAmount": 141.34,
+        "volume": 410365.0
+    },
+    {
+        "Code": "000013",
+        "Name": "*ST 石化A",
+        "RecentRice": 69.30,
+        "ChangeRate": 9.08,
+        "ChangeAmount": 5.77,
+        "LastAmount": 62.9,
+        "TodayAmount": 63.53,
+        "volume": 184940.0
+    },
+    {
+        "Code": "000014",
+        "Name": "沙河股份",
+        "RecentRice": 160.50,
+        "ChangeRate": 3.74,
+        "ChangeAmount": 5.79,
+        "LastAmount": 148.76,
+        "TodayAmount": 154.71,
+        "volume": 271127.0
+    },
+    {
+        "Code": "000015",
+        "Name": "PT 中浩A",
+        "RecentRice": 119.24,
+        "ChangeRate": 1.42,
+        "ChangeAmount": 1.67,
+        "LastAmount": 114.15,
+        "TodayAmount": 117.57,
+        "volume": 62103.0
+    },
+    {
+        "Code": "000016",
+        "Name": "深康佳A",
+        "RecentRice": 128.38,
+        "ChangeRate": 5.2,
+        "ChangeAmount": 6.35,
+        "LastAmount": 117.34,
+        "TodayAmount": 122.03,
+        "volume": 603427.0
+    },
+    {
+        "Code": "000017",
+        "Name": "深中华A",
+        "RecentRice": 129.48,
+        "ChangeRate": 8.42,
+        "ChangeAmount": 10.06,
+        "LastAmount": 113.73,
+        "TodayAmount": 119.42,
+        "volume": 100351.0
+    },
+    {
+        "Code": "000018",
+        "Name": "神州长城",
+        "RecentRice": 80.85,
+        "ChangeRate": 8.89,
+        "ChangeAmount": 6.60,
+        "LastAmount": 70.71,
+        "TodayAmount": 74.25,
+        "volume": 896840.0
+    },
+    {
+        "Code": "000019",
+        "Name": "深深宝A",
+        "RecentRice": 161.11,
+        "ChangeRate": 0.27,
+        "ChangeAmount": 0.43,
+        "LastAmount": 156.0,
+        "TodayAmount": 160.68,
+        "volume": 500300.0
+    },
+    {
+        "Code": "000020",
+        "Name": "深华发A",
+        "RecentRice": 68.13,
+        "ChangeRate": 4.32,
+        "ChangeAmount": 2.82,
+        "LastAmount": 59.37,
+        "TodayAmount": 65.31,
+        "volume": 600978.0
+    },
+    {
+        "Code": "000021",
+        "Name": "深科技",
+        "RecentRice": 127.73,
+        "ChangeRate": 5.31,
+        "ChangeAmount": 6.44,
+        "LastAmount": 117.76,
+        "TodayAmount": 121.29,
+        "volume": 786047.0
+    },
+    {
+        "Code": "000022",
+        "Name": "深赤湾A",
+        "RecentRice": 153.46,
+        "ChangeRate": 0.1,
+        "ChangeAmount": 0.15,
+        "LastAmount": 141.95,
+        "TodayAmount": 153.31,
+        "volume": 449048.0
+    },
+    {
+        "Code": "000023",
+        "Name": "深天地A",
+        "RecentRice": 84.97,
+        "ChangeRate": 8.24,
+        "ChangeAmount": 6.47,
+        "LastAmount": 75.48,
+        "TodayAmount": 78.50,
+        "volume": 601623.0
+    },
+    {
+        "Code": "000024",
+        "Name": "招商地产",
+        "RecentRice": 79.50,
+        "ChangeRate": 2.98,
+        "ChangeAmount": 2.30,
+        "LastAmount": 72.83,
+        "TodayAmount": 77.20,
+        "volume": 306164.0
+    },
+    {
+        "Code": "000025",
+        "Name": "特力A",
+        "RecentRice": 132.96,
+        "ChangeRate": 1.72,
+        "ChangeAmount": 2.25,
+        "LastAmount": 121.03,
+        "TodayAmount": 130.71,
+        "volume": 235639.0
+    },
+    {
+        "Code": "000026",
+        "Name": "飞亚达A",
+        "RecentRice": 90.18,
+        "ChangeRate": 2.7,
+        "ChangeAmount": 2.37,
+        "LastAmount": 86.09,
+        "TodayAmount": 87.81,
+        "volume": 537560.0
+    },
+    {
+        "Code": "000027",
+        "Name": "深圳能源",
+        "RecentRice": 82.54,
+        "ChangeRate": 2.74,
+        "ChangeAmount": 2.20,
+        "LastAmount": 80.34,
+        "TodayAmount": 80.34,
+        "volume": 561869.0
+    },
+    {
+        "Code": "000028",
+        "Name": "国药一致",
+        "RecentRice": 112.20,
+        "ChangeRate": 2.32,
+        "ChangeAmount": 2.54,
+        "LastAmount": 100.61,
+        "TodayAmount": 109.66,
+        "volume": 555929.0
+    },
+    {
+        "Code": "000029",
+        "Name": "深深房A",
+        "RecentRice": 173.55,
+        "ChangeRate": 4.92,
+        "ChangeAmount": 8.14,
+        "LastAmount": 157.53,
+        "TodayAmount": 165.41,
+        "volume": 225273.0
+    },
+    {
+        "Code": "000030",
+        "Name": "富奥股份",
+        "RecentRice": 171.35,
+        "ChangeRate": 8.18,
+        "ChangeAmount": 12.96,
+        "LastAmount": 148.03,
+        "TodayAmount": 158.39,
+        "volume": 698347.0
+    },
+    {
+        "Code": "000031",
+        "Name": "中粮地产",
+        "RecentRice": 129.99,
+        "ChangeRate": 9.08,
+        "ChangeAmount": 10.82,
+        "LastAmount": 114.59,
+        "TodayAmount": 119.17,
+        "volume": 743470.0
+    },
+    {
+        "Code": "000032",
+        "Name": "深桑达A",
+        "RecentRice": 148.69,
+        "ChangeRate": 7.38,
+        "ChangeAmount": 10.22,
+        "LastAmount": 134.44,
+        "TodayAmount": 138.47,
+        "volume": 279053.0
+    },
+    {
+        "Code": "000033",
+        "Name": "*ST 新都",
+        "RecentRice": 193.10,
+        "ChangeRate": 9.01,
+        "ChangeAmount": 15.96,
+        "LastAmount": 165.55,
+        "TodayAmount": 177.14,
+        "volume": 223760.0
+    },
+    {
+        "Code": "000034",
+        "Name": "神州数码",
+        "RecentRice": 153.47,
+        "ChangeRate": 3.24,
+        "ChangeAmount": 4.82,
+        "LastAmount": 145.74,
+        "TodayAmount": 148.65,
+        "volume": 373809.0
+    },
+    {
+        "Code": "000035",
+        "Name": "中国天楹",
+        "RecentRice": 74.37,
+        "ChangeRate": 5.6,
+        "ChangeAmount": 3.94,
+        "LastAmount": 64.03,
+        "TodayAmount": 70.43,
+        "volume": 774616.0
+    },
+    {
+        "Code": "000036",
+        "Name": "华联控股",
+        "RecentRice": 123.18,
+        "ChangeRate": 0.42,
+        "ChangeAmount": 0.52,
+        "LastAmount": 117.94,
+        "TodayAmount": 122.66,
+        "volume": 318777.0
+    },
+    {
+        "Code": "000037",
+        "Name": "*ST 南电A",
+        "RecentRice": 82.01,
+        "ChangeRate": 6.77,
+        "ChangeAmount": 5.20,
+        "LastAmount": 74.57,
+        "TodayAmount": 76.81,
+        "volume": 628125.0
+    },
+    {
+        "Code": "000038",
+        "Name": "深大通",
+        "RecentRice": 75.85,
+        "ChangeRate": 4.66,
+        "ChangeAmount": 3.38,
+        "LastAmount": 71.75,
+        "TodayAmount": 72.47,
+        "volume": 865126.0
+    },
+    {
+        "Code": "000039",
+        "Name": "中集集团",
+        "RecentRice": 62.67,
+        "ChangeRate": 6.94,
+        "ChangeAmount": 4.07,
+        "LastAmount": 55.81,
+        "TodayAmount": 58.60,
+        "volume": 884481.0
+    },
+    {
+        "Code": "000040",
+        "Name": "东旭蓝天",
+        "RecentRice": 99.20,
+        "ChangeRate": 8.19,
+        "ChangeAmount": 7.51,
+        "LastAmount": 87.32,
+        "TodayAmount": 91.69,
+        "volume": 938348.0
+    },
+    {
+        "Code": "000042",
+        "Name": "中洲控股",
+        "RecentRice": 99.50,
+        "ChangeRate": 5.66,
+        "ChangeAmount": 5.33,
+        "LastAmount": 85.61,
+        "TodayAmount": 94.17,
+        "volume": 696166.0
+    },
+    {
+        "Code": "000043",
+        "Name": "中航地产",
+        "RecentRice": 174.93,
+        "ChangeRate": 7.37,
+        "ChangeAmount": 12.01,
+        "LastAmount": 162.92,
+        "TodayAmount": 162.92,
+        "volume": 728534.0
+    },
+    {
+        "Code": "000045",
+        "Name": "深纺织A",
+        "RecentRice": 81.30,
+        "ChangeRate": 1.45,
+        "ChangeAmount": 1.16,
+        "LastAmount": 79.35,
+        "TodayAmount": 80.14,
+        "volume": 846565.0
+    },
+    {
+        "Code": "000046",
+        "Name": "泛海控股",
+        "RecentRice": 75.50,
+        "ChangeRate": 1.37,
+        "ChangeAmount": 1.02,
+        "LastAmount": 74.48,
+        "TodayAmount": 74.48,
+        "volume": 102855.0
+    },
+    {
+        "Code": "000047",
+        "Name": "ST 中侨",
+        "RecentRice": 106.91,
+        "ChangeRate": 5.69,
+        "ChangeAmount": 5.76,
+        "LastAmount": 95.42,
+        "TodayAmount": 101.15,
+        "volume": 449976.0
+    },
+    {
+        "Code": "000048",
+        "Name": "康达尔",
+        "RecentRice": 126.30,
+        "ChangeRate": 1.3,
+        "ChangeAmount": 1.62,
+        "LastAmount": 123.45,
+        "TodayAmount": 124.68,
+        "volume": 922763.0
+    },
+    {
+        "Code": "000049",
+        "Name": "德赛电池",
+        "RecentRice": 85.31,
+        "ChangeRate": 2.17,
+        "ChangeAmount": 1.81,
+        "LastAmount": 83.5,
+        "TodayAmount": 83.5,
+        "volume": 355320.0
+    },
+    {
+        "Code": "000050",
+        "Name": "深天马A",
+        "RecentRice": 116.71,
+        "ChangeRate": 0.86,
+        "ChangeAmount": 1.00,
+        "LastAmount": 111.26,
+        "TodayAmount": 115.71,
+        "volume": 563777.0
+    },
+    {
+        "Code": "000055",
+        "Name": "方大集团",
+        "RecentRice": 82.96,
+        "ChangeRate": 5.02,
+        "ChangeAmount": 3.97,
+        "LastAmount": 74.52,
+        "TodayAmount": 78.99,
+        "volume": 576295.0
+    },
+    {
+        "Code": "000056",
+        "Name": "皇庭国际",
+        "RecentRice": 162.89,
+        "ChangeRate": 3.46,
+        "ChangeAmount": 5.45,
+        "LastAmount": 152.85,
+        "TodayAmount": 157.44,
+        "volume": 176078.0
+    },
+    {
+        "Code": "000058",
+        "Name": "深赛格",
+        "RecentRice": 130.10,
+        "ChangeRate": 4.11,
+        "ChangeAmount": 5.14,
+        "LastAmount": 114.64,
+        "TodayAmount": 124.96,
+        "volume": 40815.0
+    },
+    {
+        "Code": "000059",
+        "Name": "华锦股份",
+        "RecentRice": 180.30,
+        "ChangeRate": 6.91,
+        "ChangeAmount": 11.65,
+        "LastAmount": 159.1,
+        "TodayAmount": 168.65,
+        "volume": 963922.0
+    },
+    {
+        "Code": "000060",
+        "Name": "中金岭南",
+        "RecentRice": 103.50,
+        "ChangeRate": 5.24,
+        "ChangeAmount": 5.15,
+        "LastAmount": 92.78,
+        "TodayAmount": 98.35,
+        "volume": 699365.0
+    },
+    {
+        "Code": "000061",
+        "Name": "农产品",
+        "RecentRice": 173.22,
+        "ChangeRate": 3.28,
+        "ChangeAmount": 5.50,
+        "LastAmount": 161.27,
+        "TodayAmount": 167.72,
+        "volume": 173359.0
+    },
+    {
+        "Code": "000062",
+        "Name": "深圳华强",
+        "RecentRice": 168.27,
+        "ChangeRate": 4.42,
+        "ChangeAmount": 7.12,
+        "LastAmount": 152.03,
+        "TodayAmount": 161.15,
+        "volume": 936220.0
+    },
+    {
+        "Code": "000063",
+        "Name": "中兴通讯",
+        "RecentRice": 152.93,
+        "ChangeRate": 2.27,
+        "ChangeAmount": 3.39,
+        "LastAmount": 143.79,
+        "TodayAmount": 149.54,
+        "volume": 788014.0
+    },
+    {
+        "Code": "000065",
+        "Name": "北方国际",
+        "RecentRice": 67.67,
+        "ChangeRate": 6.72,
+        "ChangeAmount": 4.26,
+        "LastAmount": 59.82,
+        "TodayAmount": 63.41,
+        "volume": 562105.0
+    },
+    {
+        "Code": "000066",
+        "Name": "长城电脑",
+        "RecentRice": 125.38,
+        "ChangeRate": 2.2,
+        "ChangeAmount": 2.70,
+        "LastAmount": 115.74,
+        "TodayAmount": 122.68,
+        "volume": 34410.0
+    },
+    {
+        "Code": "000068",
+        "Name": "华控赛格",
+        "RecentRice": 94.52,
+        "ChangeRate": 9.08,
+        "ChangeAmount": 7.87,
+        "LastAmount": 83.32,
+        "TodayAmount": 86.65,
+        "volume": 671864.0
+    },
+    {
+        "Code": "000069",
+        "Name": "华侨城A",
+        "RecentRice": 147.93,
+        "ChangeRate": 9.84,
+        "ChangeAmount": 13.25,
+        "LastAmount": 133.35,
+        "TodayAmount": 134.68,
+        "volume": 644311.0
+    },
+    {
+        "Code": "000070",
+        "Name": "特发信息",
+        "RecentRice": 95.71,
+        "ChangeRate": 0.18,
+        "ChangeAmount": 0.17,
+        "LastAmount": 93.67,
+        "TodayAmount": 95.54,
+        "volume": 910446.0
+    },
+    {
+        "Code": "000078",
+        "Name": "海王生物",
+        "RecentRice": 172.62,
+        "ChangeRate": 6.06,
+        "ChangeAmount": 9.86,
+        "LastAmount": 156.5,
+        "TodayAmount": 162.76,
+        "volume": 805018.0
+    },
+    {
+        "Code": "000088",
+        "Name": "盐田港",
+        "RecentRice": 96.93,
+        "ChangeRate": 7.01,
+        "ChangeAmount": 6.35,
+        "LastAmount": 87.94,
+        "TodayAmount": 90.58,
+        "volume": 249546.0
+    },
+    {
+        "Code": "000089",
+        "Name": "深圳机场",
+        "RecentRice": 167.50,
+        "ChangeRate": 3.74,
+        "ChangeAmount": 6.04,
+        "LastAmount": 155.25,
+        "TodayAmount": 161.46,
+        "volume": 160583.0
+    },
+    {
+        "Code": "000090",
+        "Name": "天健集团",
+        "RecentRice": 158.34,
+        "ChangeRate": 9.88,
+        "ChangeAmount": 14.24,
+        "LastAmount": 135.94,
+        "TodayAmount": 144.10,
+        "volume": 367457.0
+    },
+    {
+        "Code": "000096",
+        "Name": "广聚能源",
+        "RecentRice": 168.52,
+        "ChangeRate": 4.22,
+        "ChangeAmount": 6.82,
+        "LastAmount": 160.1,
+        "TodayAmount": 161.70,
+        "volume": 786277.0
+    },
+    {
+        "Code": "000099",
+        "Name": "中信海直",
+        "RecentRice": 107.22,
+        "ChangeRate": 4.47,
+        "ChangeAmount": 4.59,
+        "LastAmount": 97.74,
+        "TodayAmount": 102.63,
+        "volume": 564880.0
+    },
+    {
+        "Code": "000100",
+        "Name": "TCL集团",
+        "RecentRice": 119.47,
+        "ChangeRate": 4.65,
+        "ChangeAmount": 5.31,
+        "LastAmount": 106.69,
+        "TodayAmount": 114.16,
+        "volume": 786546.0
+    },
+    {
+        "Code": "000150",
+        "Name": "宜华健康",
+        "RecentRice": 146.12,
+        "ChangeRate": 5.91,
+        "ChangeAmount": 8.15,
+        "LastAmount": 127.75,
+        "TodayAmount": 137.97,
+        "volume": 559316.0
+    },
+    {
+        "Code": "000151",
+        "Name": "中成股份",
+        "RecentRice": 108.43,
+        "ChangeRate": 8.73,
+        "ChangeAmount": 8.71,
+        "LastAmount": 96.82,
+        "TodayAmount": 99.72,
+        "volume": 666821.0
+    },
+    {
+        "Code": "000153",
+        "Name": "丰原药业",
+        "RecentRice": 182.65,
+        "ChangeRate": 2.68,
+        "ChangeAmount": 4.77,
+        "LastAmount": 163.19,
+        "TodayAmount": 177.88,
+        "volume": 223553.0
+    },
+    {
+        "Code": "000155",
+        "Name": "*ST 川化",
+        "RecentRice": 167.46,
+        "ChangeRate": 1.3,
+        "ChangeAmount": 2.15,
+        "LastAmount": 150.28,
+        "TodayAmount": 165.31,
+        "volume": 852557.0
+    },
+    {
+        "Code": "000156",
+        "Name": "华数传媒",
+        "RecentRice": 68.79,
+        "ChangeRate": 9.4,
+        "ChangeAmount": 5.91,
+        "LastAmount": 58.22,
+        "TodayAmount": 62.88,
+        "volume": 95886.0
+    },
+    {
+        "Code": "000157",
+        "Name": "中联重科",
+        "RecentRice": 75.21,
+        "ChangeRate": 6.97,
+        "ChangeAmount": 4.90,
+        "LastAmount": 66.33,
+        "TodayAmount": 70.31,
+        "volume": 225653.0
+    },
+    {
+        "Code": "000158",
+        "Name": "常山股份",
+        "RecentRice": 157.86,
+        "ChangeRate": 5.29,
+        "ChangeAmount": 7.93,
+        "LastAmount": 146.99,
+        "TodayAmount": 149.93,
+        "volume": 425707.0
+    },
+    {
+        "Code": "000159",
+        "Name": "国际实业",
+        "RecentRice": 164.69,
+        "ChangeRate": 3.44,
+        "ChangeAmount": 5.48,
+        "LastAmount": 159.21,
+        "TodayAmount": 159.21,
+        "volume": 647845.0
+    },
+    {
+        "Code": "000166",
+        "Name": "申万宏源",
+        "RecentRice": 175.27,
+        "ChangeRate": 5.91,
+        "ChangeAmount": 9.78,
+        "LastAmount": 151.83,
+        "TodayAmount": 165.49,
+        "volume": 116439.0
+    },
+    {
+        "Code": "000301",
+        "Name": "东方市场",
+        "RecentRice": 169.57,
+        "ChangeRate": 7.78,
+        "ChangeAmount": 12.24,
+        "LastAmount": 145.68,
+        "TodayAmount": 157.33,
+        "volume": 425525.0
+    },
+    {
+        "Code": "000333",
+        "Name": "美的集团",
+        "RecentRice": 147.69,
+        "ChangeRate": 3.92,
+        "ChangeAmount": 5.57,
+        "LastAmount": 137.98,
+        "TodayAmount": 142.12,
+        "volume": 89963.0
+    },
+    {
+        "Code": "000338",
+        "Name": "潍柴动力",
+        "RecentRice": 168.87,
+        "ChangeRate": 9.26,
+        "ChangeAmount": 14.31,
+        "LastAmount": 151.53,
+        "TodayAmount": 154.56,
+        "volume": 420546.0
+    },
+    {
+        "Code": "000400",
+        "Name": "许继电气",
+        "RecentRice": 107.66,
+        "ChangeRate": 5.36,
+        "ChangeAmount": 5.48,
+        "LastAmount": 96.4,
+        "TodayAmount": 102.18,
+        "volume": 713499.0
+    },
+    {
+        "Code": "000401",
+        "Name": "冀东水泥",
+        "RecentRice": 149.08,
+        "ChangeRate": 6.85,
+        "ChangeAmount": 9.56,
+        "LastAmount": 134.15,
+        "TodayAmount": 139.52,
+        "volume": 41954.0
+    },
+    {
+        "Code": "000402",
+        "Name": "金融街",
+        "RecentRice": 73.98,
+        "ChangeRate": 7.29,
+        "ChangeAmount": 5.03,
+        "LastAmount": 66.3,
+        "TodayAmount": 68.95,
+        "volume": 160908.0
+    },
+    {
+        "Code": "000403",
+        "Name": "ST 生化",
+        "RecentRice": 160.08,
+        "ChangeRate": 7.27,
+        "ChangeAmount": 10.85,
+        "LastAmount": 142.12,
+        "TodayAmount": 149.23,
+        "volume": 933846.0
+    },
+    {
+        "Code": "000404",
+        "Name": "华意压缩",
+        "RecentRice": 124.73,
+        "ChangeRate": 3.5,
+        "ChangeAmount": 4.22,
+        "LastAmount": 113.69,
+        "TodayAmount": 120.51,
+        "volume": 945444.0
+    },
+    {
+        "Code": "000405",
+        "Name": "ST 鑫光",
+        "RecentRice": 98.02,
+        "ChangeRate": 0.44,
+        "ChangeAmount": 0.43,
+        "LastAmount": 97.59,
+        "TodayAmount": 97.59,
+        "volume": 223868.0
+    },
+    {
+        "Code": "000406",
+        "Name": "石油大明",
+        "RecentRice": 177.89,
+        "ChangeRate": 3.46,
+        "ChangeAmount": 5.95,
+        "LastAmount": 163.75,
+        "TodayAmount": 171.94,
+        "volume": 780072.0
+    },
+    {
+        "Code": "000407",
+        "Name": "胜利股份",
+        "RecentRice": 89.22,
+        "ChangeRate": 3.55,
+        "ChangeAmount": 3.06,
+        "LastAmount": 81.28,
+        "TodayAmount": 86.16,
+        "volume": 631815.0
+    },
+    {
+        "Code": "000408",
+        "Name": "*ST 金源",
+        "RecentRice": 89.52,
+        "ChangeRate": 0.56,
+        "ChangeAmount": 0.50,
+        "LastAmount": 88.14,
+        "TodayAmount": 89.02,
+        "volume": 355239.0
+    },
+    {
+        "Code": "000409",
+        "Name": "山东地矿",
+        "RecentRice": 129.35,
+        "ChangeRate": 9.32,
+        "ChangeAmount": 11.03,
+        "LastAmount": 111.62,
+        "TodayAmount": 118.32,
+        "volume": 504938.0
+    },
+    {
+        "Code": "000410",
+        "Name": "沈阳机床",
+        "RecentRice": 85.64,
+        "ChangeRate": 0.16,
+        "ChangeAmount": 0.14,
+        "LastAmount": 80.66,
+        "TodayAmount": 85.50,
+        "volume": 453093.0
+    },
+    {
+        "Code": "000411",
+        "Name": "英特集团",
+        "RecentRice": 72.89,
+        "ChangeRate": 6.38,
+        "ChangeAmount": 4.37,
+        "LastAmount": 64.64,
+        "TodayAmount": 68.52,
+        "volume": 303070.0
+    },
+    {
+        "Code": "000412",
+        "Name": "ST 五环",
+        "RecentRice": 134.74,
+        "ChangeRate": 5.57,
+        "ChangeAmount": 7.11,
+        "LastAmount": 121.55,
+        "TodayAmount": 127.63,
+        "volume": 260532.0
+    },
+    {
+        "Code": "000413",
+        "Name": "东旭光电",
+        "RecentRice": 165.86,
+        "ChangeRate": 0.41,
+        "ChangeAmount": 0.68,
+        "LastAmount": 150.16,
+        "TodayAmount": 165.18,
+        "volume": 365405.0
+    },
+    {
+        "Code": "000415",
+        "Name": "渤海金控",
+        "RecentRice": 129.03,
+        "ChangeRate": 7.34,
+        "ChangeAmount": 8.82,
+        "LastAmount": 116.71,
+        "TodayAmount": 120.21,
+        "volume": 201495.0
+    },
+    {
+        "Code": "000416",
+        "Name": "民生控股",
+        "RecentRice": 69.07,
+        "ChangeRate": 7.98,
+        "ChangeAmount": 5.10,
+        "LastAmount": 58.69,
+        "TodayAmount": 63.97,
+        "volume": 493827.0
+    },
+    {
+        "Code": "000417",
+        "Name": "合肥百货",
+        "RecentRice": 62.87,
+        "ChangeRate": 8.55,
+        "ChangeAmount": 4.95,
+        "LastAmount": 57.35,
+        "TodayAmount": 57.92,
+        "volume": 678291.0
+    },
+    {
+        "Code": "000418",
+        "Name": "小天鹅A",
+        "RecentRice": 108.38,
+        "ChangeRate": 4.29,
+        "ChangeAmount": 4.46,
+        "LastAmount": 99.92,
+        "TodayAmount": 103.92,
+        "volume": 902906.0
+    },
+    {
+        "Code": "000419",
+        "Name": "通程控股",
+        "RecentRice": 151.72,
+        "ChangeRate": 7.17,
+        "ChangeAmount": 10.15,
+        "LastAmount": 131.08,
+        "TodayAmount": 141.57,
+        "volume": 831119.0
+    },
+    {
+        "Code": "000420",
+        "Name": "吉林化纤",
+        "RecentRice": 60.10,
+        "ChangeRate": 1.38,
+        "ChangeAmount": 0.82,
+        "LastAmount": 55.92,
+        "TodayAmount": 59.28,
+        "volume": 363182.0
+    }
+]

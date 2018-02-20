@@ -1,0 +1,137 @@
+{
+  "Name": "恭喜发财",
+  "InputCondition": {
+    "IndexRangeConditions": [
+      {
+        "MinValue": 1.4,
+        "MaxValue": 27.4,
+        "Code": "UDPPS",
+        "Name": "每股末分配利润",
+        "Desc": "未分配利润期末值/实收资本本期期末值",
+        "SelectTerm": "2016/12/31 00:00:00",
+        "SelectTermDisplay": "2016年 年报",
+        "SelectTermList": [
+          {
+            "SelectItem": "2016/12/31 00:00:00",
+            "SelectDisplay": "2016年 年报"
+          },
+          {
+            "SelectItem": "2016/09/30 00:00:00",
+            "SelectDisplay": "2016年 第三季度报"
+          }
+        ],
+        "Value": [
+          1.4,
+          1.8
+        ],
+        "SelectLeftList": null,
+        "SelectLeft": null,
+        "SelectRight": null,
+        "SelectRightDisplay": null,
+        "SelectRightList": null,
+        "ParamsValues": null
+      }
+    ],
+    "CustomIndexConditions": [
+      {
+        "first": {
+          "MinValue": 1.4,
+          "MaxValue": 27.4,
+          "Code": "UDPPS",
+          "Name": "每股末分配利润",
+          "Desc": "未分配利润期末值/实收资本本期期末值",
+          "SelectTerm": "2016/12/31 00:00:00",
+          "SelectTermDisplay": "2016年 年报",
+          "SelectTermList": [
+            {
+              "SelectItem": "2016/12/31 00:00:00",
+              "SelectDisplay": "2016年 年报"
+            },
+            {
+              "SelectItem": "2016/09/30 00:00:00",
+              "SelectDisplay": "2016年 第三季度报"
+            }
+          ],
+          "Value": [
+            1.4,
+            1.8
+          ],
+          "SelectLeftList": null,
+          "SelectLeft": null,
+          "SelectRight": null,
+          "SelectRightDisplay": null,
+          "SelectRightList": null,
+          "ParamsValues": null
+        },
+        "firstInputVal": "12.44",
+        "operator1": "1",
+        "second": {
+          "MinValue": 1.4,
+          "MaxValue": 27.4,
+          "Code": "UDPPS",
+          "Name": "每股末分配利润",
+          "Desc": "未分配利润期末值/实收资本本期期末值",
+          "SelectTerm": "2016/12/31 00:00:00",
+          "SelectTermDisplay": "2016年 年报",
+          "SelectTermList": [
+            {
+              "SelectItem": "2016/12/31 00:00:00",
+              "SelectDisplay": "2016年 年报"
+            },
+            {
+              "SelectItem": "2016/09/30 00:00:00",
+              "SelectDisplay": "2016年 第三季度报"
+            }
+          ],
+          "Value": [
+            1.4,
+            1.8
+          ],
+          "SelectLeftList": null,
+          "SelectLeft": null,
+          "SelectRight": null,
+          "SelectRightDisplay": null,
+          "SelectRightList": null,
+          "ParamsValues": null
+        },
+        "secondInputVal": "11.23",
+        "operator2": "2",
+        "third": {
+          "MinValue": 1.4,
+          "MaxValue": 27.4,
+          "Code": "UDPPS",
+          "Name": "每股末分配利润",
+          "Desc": "未分配利润期末值/实收资本本期期末值",
+          "SelectTerm": "2016/12/31 00:00:00",
+          "SelectTermDisplay": "2016年 年报",
+          "SelectTermList": [
+            {
+              "SelectItem": "2016/12/31 00:00:00",
+              "SelectDisplay": "2016年 年报"
+            },
+            {
+              "SelectItem": "2016/09/30 00:00:00",
+              "SelectDisplay": "2016年 第三季度报"
+            }
+          ],
+          "Value": [
+            1.4,
+            1.8
+          ],
+          "SelectLeftList": null,
+          "SelectLeft": null,
+          "SelectRight": null,
+          "SelectRightDisplay": null,
+          "SelectRightList": null,
+          "ParamsValues": null
+        },
+        "thirdInputVal": "11.23",
+        "operator1Name": "+",
+        "operator2Name": "=",
+        "isFirstRo": "false",
+        "isSecondRo": "false",
+        "isThirdRo": "false"
+      }
+    ]
+  }
+}

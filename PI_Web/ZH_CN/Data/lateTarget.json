@@ -1,0 +1,13 @@
+[
+  {"Name":"存货周转率1","targetId":"3001","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"Name":"存货周转率2","targetId":"3011","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"Name":"市盈率2","targetId":"3002","minValue":"0.2","maxValue":"20","titlea":"123"},
+  {"Name":"每股收益3","targetId":"3003","minValue":"0.3","maxValue":"30","titlea":"123"},
+  {"Name":"销售毛利率4","targetId":"3004","minValue":"0.4","maxValue":"40","titlea":"123"},
+  {"Name":"总股本5","targetId":"3005","minValue":"0.1","maxValue":"50","titlea":"123"},
+  {"Name":"流通市值6","targetId":"3006","minValue":"0.6","maxValue":"60","titlea":"123"},
+  {"Name":"流通市值7","targetId":"3007","minValue":"0.7","maxValue":"70","titlea":"123"},
+  {"Name":"总市值8","targetId":"3008","minValue":"0.8","maxValue":"80","titlea":"123"},
+  {"Name":"静态调整每股9","targetId":"3009","minValue":"0.9","maxValue":"90","titlea":"123"},
+  {"Name":"每股资本公积10","targetId":"3010","minValue":"1.0","maxValue":"100","titlea":"123"}
+]

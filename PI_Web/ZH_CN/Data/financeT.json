@@ -1,0 +1,13 @@
+[
+  {"Name":"财务周转率1","targetId":"2001","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"Name":"财务周转率2","targetId":"2011","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"Name":"财务率2","targetId":"2002","minValue":"0.2","maxValue":"20","titlea":"123"},
+  {"Name":"财务收益3","targetId":"2003","minValue":"0.3","maxValue":"30","titlea":"123"},
+  {"Name":"财务毛利率4","targetId":"2004","minValue":"0.4","maxValue":"40","titlea":"123"},
+  {"Name":"财务本5","targetId":"2005","minValue":"0.1","maxValue":"50","titlea":"123"},
+  {"Name":"财务市值6","targetId":"2006","minValue":"0.6","maxValue":"60","titlea":"123"},
+  {"Name":"财务市值7","targetId":"2007","minValue":"0.7","maxValue":"70","titlea":"123"},
+  {"Name":"财务值8","targetId":"2008","minValue":"0.8","maxValue":"80","titlea":"123"},
+  {"Name":"财务调整每股9","targetId":"2009","minValue":"0.9","maxValue":"90","titlea":"123"},
+  {"Name":"财务资本公积10","targetId":"2010","minValue":"1.0","maxValue":"100","titlea":"123"}
+]

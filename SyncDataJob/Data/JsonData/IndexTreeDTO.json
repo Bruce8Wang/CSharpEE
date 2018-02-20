@@ -1,0 +1,6122 @@
+[
+    {
+        "Code": "PE",
+        "Name": "市盈率2",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "（今收盘价）当期期末值/（调整因子*（净利润）当期值/（实收资本）本期期末值）"
+    },
+    {
+        "Code": "GRORA",
+        "Name": "营业收入增长率A",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "（（营业收入）本年本期单季度金额-（营业收入）上一个单季度金额）/（营业收入）上一个单季度金额"
+    },
+    {
+        "Code": "TMV",
+        "Name": "总市值",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "CMV",
+        "Name": "流通市值",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "QUKR",
+        "Name": "速动比率",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "(流动资产-存货)/(流动负债)。\n其中任意一个为0或是空值，结果为空。"
+    },
+    {
+        "Code": "CRPS",
+        "Name": "每股资本公积",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "资本公积期末值/实收资本本期期末值"
+    },
+    {
+        "Code": "LTOTAR",
+        "Name": "资产负债率",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "负债合计/资产总计。\n分子为空，0值代替；分母为空或是0值，结果为空。"
+    },
+    {
+        "Code": "CURR",
+        "Name": "流动比率",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "流动资产/流动负债。\n分子、分母任意一个为0或是空值，结果为空。"
+    },
+    {
+        "Code": "PB",
+        "Name": "市净率",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "（今收盘价）当期期末值/（（所有者权益合计）期末值/（实收资本）本期期末值）"
+    },
+    {
+        "Code": "PCF",
+        "Name": "市现率2",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "（今收盘价）当期期末值/（调整因子*（经营活动产生的现金流量净额）当期值/（实收资本）本期期末值）"
+    },
+    {
+        "Code": "TOTALASSET",
+        "Name": "资产总计",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "ACCTPAYABLE",
+        "Name": "应付账款",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "CPAITALRESERVES",
+        "Name": "资本公积",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "LTPREPAIDEXP",
+        "Name": "长期待摊费用",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "BEPS",
+        "Name": "基本每股收益",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "COMPROAOPC",
+        "Name": "归属于母公司所有者的综合收益",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "DEPS",
+        "Name": "稀释每股收益",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "GLFVC",
+        "Name": "公允价值变动收益",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "OP",
+        "Name": "开盘价",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "CP",
+        "Name": "收盘价",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "MACD_GoldX",
+        "Name": "macd金叉",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "DIF由下向上突破 DEA，通常为买入信号。"
+    },
+    {
+        "Code": "KDJ_Overbought",
+        "Name": "kdj超买",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "kdj＞80，表明买方力量增强为超买区，表示买方力量巨增，大多数投资者看好此股，极少数投资者在卖股，也是高风险区。"
+    },
+    {
+        "Code": "BOLL_Upper",
+        "Name": "boll突破上轨",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "股价向上突破boll上轨，说明行情非常强势，后市股价短线可能出现大涨，是强烈的买入信号。实战中，用这种方式在大趋势向好的情况下做短线的成功率非常高。"
+    },
+    {
+        "Code": "MACD_DownDepart",
+        "Name": "macd底背离",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "底背离一般出现在价格的低位区。当K线图上的价格走势还在下跌，而MACD指标图形上的由绿柱构成的图形的走势是一底比一底小，即当价格的低点比前一次低点底，而指标的低点却比前一次的低点高，这叫底背离现象。底背离现象一般是预示价格在低位可能反转向上的信号，表明短期内可能反弹向上，是短期买入的信号。"
+    },
+    {
+        "Code": "RSI_GoldX",
+        "Name": "rsi金叉",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "短期RSI上穿长期RSI，通常为买入信号。"
+    },
+    {
+        "Code": "KDJ_GoldX",
+        "Name": "kdj金叉",
+        "TypeCode": "0",
+        "TypeName": "最近常用指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "k线上穿d线，通常为买入信号。"
+    },
+    {
+        "Code": "UDPPS",
+        "Name": "每股未分配利润",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "未分配利润期末值/实收资本本期期末值"
+    },
+    {
+        "Code": "CASHR",
+        "Name": "现金比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "期末现金及现金等价物余额/流动负债。\n分子为空值或是0时，以A001101货币资金，代替，仍为空或是0值时，计算结果为空；分母为空或是0值，结果为空。"
+    },
+    {
+        "Code": "QUKR",
+        "Name": "速动比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "(流动资产-存货)/(流动负债)。\n其中任意一个为0或是空值，结果为空。"
+    },
+    {
+        "Code": "CRPS",
+        "Name": "每股资本公积",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "资本公积期末值/实收资本本期期末值"
+    },
+    {
+        "Code": "LTOTAR",
+        "Name": "资产负债率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "负债合计/资产总计。\n分子为空，0值代替；分母为空或是0值，结果为空。"
+    },
+    {
+        "Code": "CURR",
+        "Name": "流动比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "流动资产/流动负债。\n分子、分母任意一个为0或是空值，结果为空。"
+    },
+    {
+        "Code": "PB",
+        "Name": "市净率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（今收盘价）当期期末值/（（所有者权益合计）期末值/（实收资本）本期期末值）"
+    },
+    {
+        "Code": "PCF",
+        "Name": "市现率2",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（今收盘价）当期期末值/（调整因子*（经营活动产生的现金流量净额）当期值/（实收资本）本期期末值）"
+    },
+    {
+        "Code": "MVA",
+        "Name": "市值A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（总股本-境内上市的外资股B股）*A股（今收盘价）当期期末值+境内上市的外资股B股*B股（今收盘价）当期期末值*当日汇率"
+    },
+    {
+        "Code": "EBIT",
+        "Name": "息税前利润",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "净利润+所得税费用+财务费用"
+    },
+    {
+        "Code": "OPL",
+        "Name": "经营杠杆",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+财务费用+固定资产折旧、油气资产折耗、生产性生物资产折旧+无形资产摊销+长期待摊费用摊销）/（净利润+所得税费用+财务费用）"
+    },
+    {
+        "Code": "TOTL",
+        "Name": "综合杠杆",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+财务费用+固定资产折旧、油气资产折耗、生产性生物资产折旧+无形资产摊销+长期待摊费用摊销）/（净利润+所得税费用）"
+    },
+    {
+        "Code": "FDEPS",
+        "Name": "归属于母公司每股收益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "归属于母公司所有者的净利润本期值/实收资本本期期末值。\n归属于母公司所有者的净利润取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "NAPS",
+        "Name": "每股净资产",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "所有者权益合计期末值/实收资本本期期末值。\n所有者权益合计取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "EPS",
+        "Name": "每股收益（原文披露）",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "基本每股收益"
+    },
+    {
+        "Code": "RLTBTA",
+        "Name": "长期借款与总资产比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "长期借款/资产总计。\n分子为空，0值代替；分母为空或是0值，结果为空。"
+    },
+    {
+        "Code": "GRNPA",
+        "Name": "净利润增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（净利润）本年本期单季度金额-（净利润）上一个单季度金额）/（净利润）上一个单季度金额"
+    },
+    {
+        "Code": "SELEXPR",
+        "Name": "销售费用率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（销售费用）/（营业收入）"
+    },
+    {
+        "Code": "ROAA",
+        "Name": "总资产净利润率(ROA)A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（资产总计）期末余额"
+    },
+    {
+        "Code": "ARTOVA",
+        "Name": "应收账款周转率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（应收账款净额）期末余额"
+    },
+    {
+        "Code": "INVTOVA",
+        "Name": "存货周转率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业成本）/（存货净额）期末余额"
+    },
+    {
+        "Code": "RARI",
+        "Name": "应收账款与收入比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（应收账款净额）期末余额/（营业收入）"
+    },
+    {
+        "Code": "RCAI",
+        "Name": "流动资产与收入比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（流动资产合计）期末余额/（营业收入）"
+    },
+    {
+        "Code": "RFAI",
+        "Name": "固定资产与收入比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（固定资产净额）期末余额/（营业收入）"
+    },
+    {
+        "Code": "RINVI",
+        "Name": "存货与收入比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（存货净额）期末余额/（营业收入）"
+    },
+    {
+        "Code": "GROPA",
+        "Name": "营业利润增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（营业利润）本年本期单季度金额-（营业利润）上一个单季度金额）/（营业利润）上一个单季度金额"
+    },
+    {
+        "Code": "GRTPA",
+        "Name": "利润总额增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（利润总额）本年本期单季度金额-（利润总额）上一个单季度金额）/（利润总额）上一个单季度金额"
+    },
+    {
+        "Code": "NOPPMAR",
+        "Name": "营业净利率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（营业收入）"
+    },
+    {
+        "Code": "GOPMAR",
+        "Name": "营业毛利率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入-营业成本）/（营业收入）"
+    },
+    {
+        "Code": "OPMAR",
+        "Name": "营业利润率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业利润）/（营业收入）"
+    },
+    {
+        "Code": "CAR",
+        "Name": "现金适合比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（经营活动产生的现金流量净额）/（购建固定资产、无形资产和其他长期资产支付的现金+分配股利、利润或偿付利息支付的现金+存货净额本期变动额）"
+    },
+    {
+        "Code": "CAR5Y",
+        "Name": "现金满足投资比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（经营活动产生的现金流量净额）近5年之和/（购建固定资产、无形资产和其他长期资产支付的现金+分配股利、利润或偿付利息支付的现金+存货净额本期变动额）近5年之和"
+    },
+    {
+        "Code": "CPTTAR",
+        "Name": "全部现金回收率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（经营活动产生的现金流量净额）/（资产总计）期末余额"
+    },
+    {
+        "Code": "CRIR",
+        "Name": "现金再投资比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（经营活动产生的现金流量净额）/（固定资产净额+持有至到期投资净额+长期债权投资净额+长期股权投资净额+流动资产合计-流动负债合计）"
+    },
+    {
+        "Code": "FCFTE",
+        "Name": "股权自由现金流（原有）",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "净利润+固定资产折旧、油气资产折耗、生产性生物资产折旧+无形资产摊销+长期待摊费用摊销-筹资活动产生的现金流量净额-（流动资产合计-流动负债合计）本期变动额-偿还债务支付的现金+发行债券收到的现金"
+    },
+    {
+        "Code": "FCFTF",
+        "Name": "企业自由现金流（原有）",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": ""
+    },
+    {
+        "Code": "OCFTS",
+        "Name": "现金与利润总额比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（经营活动产生的现金流量净额）/（利润总额）"
+    },
+    {
+        "Code": "OPIND",
+        "Name": "营运指数",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（经营活动产生的现金流量净额）/（净利润-投资收益-公允价值变动收益-营业外收入+营业外支出+固定资产折旧、油气资产折耗、生产性生物资产折旧+无形资产摊销+长期待摊费用摊销+递延所得税资产减少+递延所得税负债增加）"
+    },
+    {
+        "Code": "RCETDA",
+        "Name": "资本支出与折旧摊销比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（购建固定资产、无形资产和其他长期资产支付的现金）/（固定资产折旧、油气资产折耗、生产性生物资产折旧+无形资产摊销+长期待摊费用摊销）"
+    },
+    {
+        "Code": "RCFTOI",
+        "Name": "营业收入现金比净含量",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（经营活动产生的现金流量净额）/（营业总收入）"
+    },
+    {
+        "Code": "RCTOI",
+        "Name": "营业收入现金比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（销售商品、提供劳务收到的现金）/（营业收入）"
+    },
+    {
+        "Code": "SURCC",
+        "Name": "净利润现金净含量",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（经营活动产生的现金流量净额）/（净利润）"
+    },
+    {
+        "Code": "SURCCTTM",
+        "Name": "净利润现金净含量TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（经营活动产生的现金流量净额）TTM/（净利润）TTM"
+    },
+    {
+        "Code": "BUSTR",
+        "Name": "流转税率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业税金及附加）/（营业总收入）"
+    },
+    {
+        "Code": "EFFTR",
+        "Name": "所得税率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（所得税费用）/（利润总额）"
+    },
+    {
+        "Code": "RETETAR",
+        "Name": "留存收益资产比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（盈余公积+未分配利润）/（资产总计）"
+    },
+    {
+        "Code": "ROETCI",
+        "Name": "母公司所有者权益与投入资本比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（归属于母公司所有者权益合计）本期期末值/（资产总计-流动负债合计+应付票据+短期借款+一年内到期的非流动负债）本期期末值"
+    },
+    {
+        "Code": "CURAR",
+        "Name": "流动资产比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（流动资产合计）/（资产总计）"
+    },
+    {
+        "Code": "CURLR",
+        "Name": "流动负债比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（流动负债合计）/（负债合计）"
+    },
+    {
+        "Code": "FAR",
+        "Name": "固定资产比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（固定资产净额）/（资产总计）"
+    },
+    {
+        "Code": "LLIAR",
+        "Name": "非流动负债比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（非流动负债合计）/（负债合计）"
+    },
+    {
+        "Code": "NCURAR",
+        "Name": "非流动资产比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（非流动资产合计）/（资产总计）"
+    },
+    {
+        "Code": "OELLFALI",
+        "Name": "长期资产适合率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（所有者权益合计+非流动负债合计）/（固定资产净额+长期股权投资净额）"
+    },
+    {
+        "Code": "SEFAR",
+        "Name": "股东权益对固定资产比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（所有者权益合计）/（固定资产净额）"
+    },
+    {
+        "Code": "SHEQR",
+        "Name": "所有者权益比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（所有者权益合计）/（资产总计）"
+    },
+    {
+        "Code": "TANGAR",
+        "Name": "有形资产比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（无形资产净额）/（资产总计）"
+    },
+    {
+        "Code": "WCCAR",
+        "Name": "营运资金对流动资产比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（流动资产合计-流动负债合计）/（流动资产合计）"
+    },
+    {
+        "Code": "WCNAR",
+        "Name": "营运资金对净资产比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（流动资产合计-流动负债合计）/（所有者权益合计）"
+    },
+    {
+        "Code": "WCTAR",
+        "Name": "营运资金对资产总额比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（流动资产合计-流动负债合计）/（资产总计）"
+    },
+    {
+        "Code": "CFICR",
+        "Name": "现金流量利息保障倍数",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "经营活动产生的现金流量净额/财务费用。\n分子为空值时，结果为空；分母为空值或0值时，结果为空。"
+    },
+    {
+        "Code": "DCR",
+        "Name": "经营活动产生的现金流量净额/负债合计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "经营活动产生的现金流量净额/（负债合计）平均余额。\n分母为负债合计的均值，（本期期末值+上年年末值）/2。\n分母为空或是0值，结果为空。"
+    },
+    {
+        "Code": "RCFTCL",
+        "Name": "经营活动产生的现金流量净额/流动负债",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "经营活动产生的现金流量净额/流动负债合计。\n分母为流动负债合计；分母为空或是0值，结果为空。"
+    },
+    {
+        "Code": "RCTMD",
+        "Name": "现金流到期债务保障倍数",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "经营活动产生的现金流量净额/（一年内到期的非流动负债+应付票据）。\n分母中各项目为空时，以0值替代，合计值为0时，计算结果为空。"
+    },
+    {
+        "Code": "DLTCR",
+        "Name": "长期资本负债率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "非流动负债合计/（所有者权益合计+非流动负债合计）。\n分子、分母各项为空时，以0值代替；分母合计项为0时，结果为空值。"
+    },
+    {
+        "Code": "EQDBR",
+        "Name": "权益对负债比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "所有者权益合计/负债合计。\n分子为空时，以0值代替；分母为空或是0值，结果为空。"
+    },
+    {
+        "Code": "EQMTPL",
+        "Name": "权益乘数",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "资产总计/所有者权益合计。\n分子、分母任一为空或是0值，结果为空。"
+    },
+    {
+        "Code": "EQR",
+        "Name": "产权比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "负债合计/所有者权益合计。\n分子为空时，以0值代替；分母为空或是0值，结果为空。"
+    },
+    {
+        "Code": "LMVSER",
+        "Name": "负债与权益市价比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "负债合计/市值A"
+    },
+    {
+        "Code": "REBITL",
+        "Name": "息税折旧摊销前利润/负债合计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+长期待摊费用摊销+无形资产摊销+固定资产折旧、油气资产折耗、生产性生物资产折旧）/（负债合计）平均余额。\n分母为负债合计的均值，（本期期末值+上年年末值）/2。\n分子个项目为空时，以0值代替，如果分子合计值为0时，结果空值；分母为空或是0值，结果为空。"
+    },
+    {
+        "Code": "RLTLOC",
+        "Name": "长期债务与营运资金比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "非流动负债合计/（流动资产合计-流动负债合计）。\n分子、分母各项为空时，以0值代替；分母合计项为0时，结果为空值。"
+    },
+    {
+        "Code": "ROCB",
+        "Name": "营运资金与借款比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（流动资产合计-流动负债合计）/（短期借款+长期借款）。\n分子、分母各项为空时，以0值代替；分母合计项为0时，结果为空值。"
+    },
+    {
+        "Code": "TIEA",
+        "Name": "利息保障倍数A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+财务费用）/财务费用=息税前利润/财务费用。\n分子各项目为空时，以0值代替；分母为空值或是0值时，结果为空。"
+    },
+    {
+        "Code": "TIEB",
+        "Name": "利息保障倍数B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+财务费用）/财务费用。\n分子各项目为空时，以0值代替；分母为空值或是0值时，结果为空。"
+    },
+    {
+        "Code": "TOTLNTAR",
+        "Name": "有形资产负债率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（负债合计）/（资产总计-无形资产净额-商誉净额）。\n分子为空，0值代替；无形资产净额、商誉净额为空值时，以0代替；资产总计为空或是0值，结果为空。"
+    },
+    {
+        "Code": "SQUKR",
+        "Name": "保守速动比率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "(货币资金+交易性金融资产+衍生金融资产+短期投资净额+应收票据净额+应收账款净额)/(流动负债)。\n分母为0或是空值，结果为空。"
+    },
+    {
+        "Code": "WORKCAP",
+        "Name": "营运资金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "流动资产合计-流动负债合计。\n流动负债合计为空时，以0值取代；流动资产合计为空时，结果为空。"
+    },
+    {
+        "Code": "ACCIT",
+        "Name": "应计项目",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（流动资产合计-流动负债合计+应交税费+应付利息）本期值和上年同期值变动金额-（现金及现金等价物净增加额+固定资产折旧、油气资产折耗、生产性生物资产折旧+无形资产摊销+长期待摊费用摊销）TTM"
+    },
+    {
+        "Code": "CACCRA",
+        "Name": "资本积累率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（所有者权益合计）本期期末值-（所有者权益合计）本期期初值）/（所有者权益合计）本期期初值"
+    },
+    {
+        "Code": "CACCRB",
+        "Name": "资本积累率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（所有者权益合计）本期期末值-（所有者权益合计）上年同期期末值）/（所有者权益合计）上年同期期末值"
+    },
+    {
+        "Code": "CPARA",
+        "Name": "资本保值增值率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（所有者权益合计）本期期末值/（所有者权益合计）本期期初值"
+    },
+    {
+        "Code": "CPARB",
+        "Name": "资本保值增值率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（所有者权益合计）本期期末值/（所有者权益合计）上年同期期末值"
+    },
+    {
+        "Code": "GRAEPSA",
+        "Name": "基本每股收益增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（基本每股收益）本年本期单季度金额-（基本每股收益）上一个单季度金额）/（基本每股收益）上一个单季度金额"
+    },
+    {
+        "Code": "GRAEPSB",
+        "Name": "基本每股收益增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（基本每股收益）本年本期金额-（基本每股收益）上年同期金额）/（基本每股收益）上年同期金额"
+    },
+    {
+        "Code": "GRCFPSOA",
+        "Name": "每股经营活动产生的净流量增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（经营活动产生的现金流量净额）本期单季度金额/（实收资本）本期间期末值-（经营活动产生的现金流量净额）上一个单季度金额/（实收资本）上一个季度期末金额）/（经营活动产生的现金流量净额）上一个单季度金额/（实收资本）上一个季度期末金额"
+    },
+    {
+        "Code": "GRCFPSOB",
+        "Name": "每股经营活动产生的净流量增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（经营活动产生的现金流量净额）本期值/（实收资本）本期间期末值-（经营活动产生的现金流量净额）上年同期金额/（实收资本）上年同期期末金额）/（经营活动产生的现金流量净额）上年同期金额/（实收资本）上年同期期末金额）"
+    },
+    {
+        "Code": "GRDEPSA",
+        "Name": "稀释每股收益增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（稀释每股收益）本年本期单季度金额-（稀释每股收益）上一个单季度金额）/（稀释每股收益）上一个单季度金额"
+    },
+    {
+        "Code": "GRDEPSB",
+        "Name": "稀释每股收益增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（稀释每股收益）本年本期金额-（稀释每股收益）上年同期金额）/（稀释每股收益）上年同期金额"
+    },
+    {
+        "Code": "GRFAA",
+        "Name": "固定资产增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（固定资产净额）本期期末值-（固定资产净额）本期期初值）/（固定资产净额）本期期初值"
+    },
+    {
+        "Code": "GRFAB",
+        "Name": "固定资产增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（固定资产净额）本期期末值-（固定资产净额）上年同期期末值）/（固定资产净额）上年同期期末值"
+    },
+    {
+        "Code": "GRNCFFAA",
+        "Name": "筹资活动产生的现金流量增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（筹资活动产生的现金流量净额）本年本期单季度金额-（筹资活动产生的现金流量净额）上一个单季度金额）/（筹资活动产生的现金流量净额）上一个单季度金额"
+    },
+    {
+        "Code": "GRNCFFAB",
+        "Name": "筹资活动产生的现金流量增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（筹资活动产生的现金流量净额）本年本期金额-（筹资活动产生的现金流量净额）上年同期金额）/（筹资活动产生的现金流量净额）上年同期金额"
+    },
+    {
+        "Code": "GRNCFIAA",
+        "Name": "投资活动产生的现金流量增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（投资活动产生的现金流量净额）本年本期单季度金额-（投资活动产生的现金流量净额）上一个单季度金额）/（投资活动产生的现金流量净额）上一个单季度金额"
+    },
+    {
+        "Code": "GRNCFIAB",
+        "Name": "投资活动产生的现金流量增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（投资活动产生的现金流量净额）本年本期金额-（投资活动产生的现金流量净额）上年同期金额）/（投资活动产生的现金流量净额）上年同期金额"
+    },
+    {
+        "Code": "GRNCFOAA",
+        "Name": "经营活动产生的现金流量增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（经营活动产生的现金流量净额）本年本期单季度金额-（经营活动产生的现金流量净额）上一个单季度金额）/（经营活动产生的现金流量净额）上一个单季度金额"
+    },
+    {
+        "Code": "GRNCFOAB",
+        "Name": "经营活动产生的现金流量增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（经营活动产生的现金流量净额）本年本期金额-（经营活动产生的现金流量净额）上年同期金额）/（经营活动产生的现金流量净额）上年同期金额"
+    },
+    {
+        "Code": "GRNPB",
+        "Name": "净利润增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（净利润）本年本期金额-（净利润）上年同期金额）/（净利润）上年同期金额"
+    },
+    {
+        "Code": "GROPB",
+        "Name": "营业利润增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（营业利润）本年本期金额-（营业利润）上年同期金额）/（营业利润）上年同期金额"
+    },
+    {
+        "Code": "GRORA",
+        "Name": "营业收入增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（营业收入）本年本期单季度金额-（营业收入）上一个单季度金额）/（营业收入）上一个单季度金额"
+    },
+    {
+        "Code": "GRORB",
+        "Name": "营业收入增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（营业收入）本年本期金额-（营业收入）上年同期金额）/（营业收入）上年同期金额"
+    },
+    {
+        "Code": "GRROEA",
+        "Name": "净资产收益率增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（归属于母公司所有者的净利润）本期单季度金额/（归属于母公司所有者权益合计）本期间期末值-（归属于母公司所有者的净利润）上一个单季度金额/（归属于母公司所有者权益合计）上一个季度期末金额）/（归属于母公司所有者的净利润）上一个单季度金额/（归属于母公司所有者权益合计）上一个季度期末金额"
+    },
+    {
+        "Code": "GRROEB",
+        "Name": "净资产收益率增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（归属于母公司所有者的净利润）本期值/（归属于母公司所有者权益合计）本期间期末值-（归属于母公司所有者的净利润）上年同期金额/（归属于母公司所有者权益合计）上年同期期末金额）/（归属于母公司所有者的净利润）上年同期金额/（归属于母公司所有者权益合计）上年同期期末金额）"
+    },
+    {
+        "Code": "GRTAA",
+        "Name": "总资产增长率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（资产总计）本期期末值-（资产总计）本期期初值）/（资产总计）本期期初值"
+    },
+    {
+        "Code": "GRTAB",
+        "Name": "总资产增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（资产总计）本期期末值-（资产总计）上年同期期末值）/（资产总计）上年同期期末值"
+    },
+    {
+        "Code": "GRTPB",
+        "Name": "利润总额增长率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（利润总额）本年本期金额-（利润总额）上年同期金额）/（利润总额）上年同期金额"
+    },
+    {
+        "Code": "SUSGR",
+        "Name": "可持续增长率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（净利润）/（所有者权益合计）期末余额）*（1-（DividendperShare_BT每股派息税前）/（（净利润）本期值/（实收资本）本期期末值））/（1-分子）"
+    },
+    {
+        "Code": "CDIVC",
+        "Name": "现金股利保障倍数",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（经营活动产生的现金流量净额本期值/实收资本本期期末值）/每股派息税前"
+    },
+    {
+        "Code": "DIVCOV",
+        "Name": "股利倍数",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润本期值/实收资本本期期末值）/每股派息税前"
+    },
+    {
+        "Code": "DIVPAY",
+        "Name": "股利分配率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "每股派息税前/（净利润本期值/实收资本本期期末值）"
+    },
+    {
+        "Code": "RETEARR",
+        "Name": "收益留存率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（1-每股派息税前）/（净利润本期值/ 实收资本本期期末值）"
+    },
+    {
+        "Code": "EBITA",
+        "Name": "息税折旧摊销前收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "净利润+所得税费用+财务费用+固定资产折旧、油气资产折耗、生产性生物资产折旧+无形资产摊销+长期待摊费用摊销"
+    },
+    {
+        "Code": "EBITATTM",
+        "Name": "息税折旧摊销前收入TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "净利润TTM+所得税费用TTM+财务费用TTM+固定资产折旧、油气资产折耗、生产性生物资产折旧TTM+无形资产摊销TTM+长期待摊费用摊销TTM"
+    },
+    {
+        "Code": "EBITTTM",
+        "Name": "息税前利润TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "净利润TTM+所得税费用TTM+财务费用TTM"
+    },
+    {
+        "Code": "ERDSP",
+        "Name": "销售期间费用率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（销售费用+管理费用+财务费用）/（营业收入）"
+    },
+    {
+        "Code": "ERDSPTTM",
+        "Name": "销售期间费用率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（销售费用+管理费用+财务费用）TTM/（营业收入）TTM"
+    },
+    {
+        "Code": "FEXPR",
+        "Name": "财务费用率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（财务费用）/（营业收入）"
+    },
+    {
+        "Code": "FEXPRTTM",
+        "Name": "财务费用率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（财务费用）TTM/（营业收入）TTM"
+    },
+    {
+        "Code": "GOPMARTTM",
+        "Name": "营业毛利率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入-营业成本）TTM/（营业收入）TTM"
+    },
+    {
+        "Code": "MEXPR",
+        "Name": "管理费用率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（管理费用）/（营业收入）"
+    },
+    {
+        "Code": "MEXPRTTM",
+        "Name": "管理费用率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（管理费用）TTM/（营业收入）TTM"
+    },
+    {
+        "Code": "NOPPMARTTM",
+        "Name": "营业净利率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）TTM/（营业收入）TTM"
+    },
+    {
+        "Code": "NPMCAA",
+        "Name": "流动资产净利润率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（流动资产合计）期末余额"
+    },
+    {
+        "Code": "NPMCAB",
+        "Name": "流动资产净利润率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（流动资产合计）平均余额1；\n（流动资产合计）平均余额1＝（（流动资产合计）本期期末值+（流动资产合计）本年公布的期初值）/2"
+    },
+    {
+        "Code": "NPMCAC",
+        "Name": "流动资产净利润率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（流动资产合计）平均余额2；\n（流动资产合计）平均余额2＝（（流动资产合计）本期期末值+（流动资产合计）上年同期年末值）/2"
+    },
+    {
+        "Code": "NPMCATTM",
+        "Name": "流动资产净利润率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润TTM）/（流动资产合计）平均余额3；\n（流动资产总计）平均余额3=（流动资产总计本期期末值+流动资产总计上年同期期末值）/2"
+    },
+    {
+        "Code": "NPMFAA",
+        "Name": "固定资产净利润率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（固定资产净额）期末余额"
+    },
+    {
+        "Code": "NPMFAB",
+        "Name": "固定资产净利润率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（固定资产净额）平均余额1；\n（固定资产净额）平均余额1＝（（固定资产净额）本期期末值+（固定资产净额）本年公布的期初值）/2"
+    },
+    {
+        "Code": "NPMFAC",
+        "Name": "固定资产净利润率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（固定资产净额）平均余额2；\n（固定资产净额）平均余额2＝（（固定资产净额）本期期末值+（固定资产净额）上年同期年末值）/2"
+    },
+    {
+        "Code": "NPMFATTM",
+        "Name": "固定资产净利润率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润TTM）/（固定资产净额）平均余额3；\n（固定资产净额）平均余额3=（固定资产净额本期期末值+固定资产净额上年同期期末值）/2"
+    },
+    {
+        "Code": "OPMARTTM",
+        "Name": "营业利润率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业利润）TTM/（营业收入）TTM"
+    },
+    {
+        "Code": "PBIAT",
+        "Name": "息前税后利润",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+财务费用）*（净利润）/（净利润+所得税费用）"
+    },
+    {
+        "Code": "REBITOPI",
+        "Name": "息税前营业利润率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+财务费用）/（营业收入）"
+    },
+    {
+        "Code": "REBITOPITTM",
+        "Name": "息税前营业利润率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+财务费用）TTM/（营业收入）TTM"
+    },
+    {
+        "Code": "REBITTA",
+        "Name": "息税前利润与资产总额比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+财务费用）/（资产总计）期末余额；"
+    },
+    {
+        "Code": "RETAA",
+        "Name": "资产报酬率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+财务费用）/（资产总计）期末余额"
+    },
+    {
+        "Code": "RETAB",
+        "Name": "资产报酬率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+财务费用）/（资产总计）平均余额1；\n（资产总计）平均余额1＝（资产总计本期期末值+资产总计本年公布的期初值）/2"
+    },
+    {
+        "Code": "RETAC",
+        "Name": "资产报酬率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+财务费用）/（资产总计）平均余额2；\n（资产总计）平均余额2＝（资产总计本期期末值+资产总计上年同期年末值）/2"
+    },
+    {
+        "Code": "RETATTM",
+        "Name": "资产报酬率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润TTM+财务费用TTM）/（资产总计）平均余额3；\n（资产总计）平均余额3=（资产总计本期期末值+资产总计上年同期期末值）/2"
+    },
+    {
+        "Code": "RNPTP",
+        "Name": "净利润与利润总额比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（利润总额）"
+    },
+    {
+        "Code": "ROAB",
+        "Name": "总资产净利润率(ROA)B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（资产总计）平均余额1；\n（资产总计）平均余额1＝（资产总计本期期末值+资产总计本年公布的期初值）/2"
+    },
+    {
+        "Code": "ROAC",
+        "Name": "总资产净利润率(ROA)C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（资产总计）平均余额2；\n（资产总计）平均余额2＝（资产总计本期期末值+资产总计上年同期年末值）/2"
+    },
+    {
+        "Code": "ROATTM",
+        "Name": "总资产净利润率(ROA)TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润TTM）/（资产总计）平均余额3；\n（资产总计）平均余额3=（资产总计本期期末值+资产总计上年同期期末值）/2"
+    },
+    {
+        "Code": "ROEA",
+        "Name": "净资产收益率(ROE)A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（所有者权益合计）期末余额"
+    },
+    {
+        "Code": "ROEB",
+        "Name": "净资产收益率(ROE)B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（所有者权益合计）平均余额1；\n（所有者权益合计）平均余额1＝（（所有者权益合计）本期期末值+（所有者权益合计）本年公布的期初值）/2"
+    },
+    {
+        "Code": "ROEC",
+        "Name": "净资产收益率(ROE)C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润）/（所有者权益合计）平均余额2；\n（所有者权益合计）平均余额2＝（（所有者权益合计）本期期末值+（所有者权益合计）上年同期年末值）/2"
+    },
+    {
+        "Code": "ROETTM",
+        "Name": "净资产收益率(ROE)TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润TTM）/（所有者权益合计）平均余额3；\n（所有者权益合计）平均余额3=（所有者权益合计本期期末值+所有者权益合计上年同期期末值）/2"
+    },
+    {
+        "Code": "ROIC",
+        "Name": "投入资本回报率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+财务费用）/（资产总计-流动负债合计+应付票据+短期借款+一年内到期的非流动负债）期末余额"
+    },
+    {
+        "Code": "ROLC",
+        "Name": "长期资本收益率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+财务费用）/（所有者权益合计+非流动负债合计）平均余额1"
+    },
+    {
+        "Code": "RPRC",
+        "Name": "成本费用利润率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（利润总额）/（营业成本+销售费用+管理费用+财务费用）"
+    },
+    {
+        "Code": "RPRCTTM",
+        "Name": "成本费用利润率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（利润总额）TTM/（营业成本+销售费用+管理费用+财务费用）TTM"
+    },
+    {
+        "Code": "RSC",
+        "Name": "营业成本率",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业成本）/（营业收入）"
+    },
+    {
+        "Code": "RSCTTM",
+        "Name": "营业成本率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业成本）TTM/（营业收入）TTM"
+    },
+    {
+        "Code": "RTPEBIT",
+        "Name": "利润总额与息税前利润相比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（利润总额）/（净利润+所得税费用+财务费用）"
+    },
+    {
+        "Code": "SELEXPRTTM",
+        "Name": "销售费用率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（销售费用）TTM/（营业收入）TTM"
+    },
+    {
+        "Code": "APTOVA",
+        "Name": "应付账款周转率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业成本）/（应付账款）期末余额"
+    },
+    {
+        "Code": "APTOVB",
+        "Name": "应付账款周转率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业成本）/（应付账款）平均余额1；\n（应付账款）平均余额1＝（应付账款本期期末值+应付账款本年公布的期初值）/2"
+    },
+    {
+        "Code": "APTOVC",
+        "Name": "应付账款周转率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业成本）/（应付账款）平均余额2；\n（应付账款）平均余额2＝（应付账款应付账款本期期末值+应付账款上年同期年末值）/2"
+    },
+    {
+        "Code": "APTOVTTM",
+        "Name": "应付账款周转率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业成本）TTM/（应付账款）平均余额3；\n（应付账款）平均余额3=（应付账款本期期末值+应付账款上年同期期末值）/2"
+    },
+    {
+        "Code": "ARTOVB",
+        "Name": "应收账款周转率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（应收账款净额）平均余额1；\n（应收账款净额）平均余额1＝（应收账款净额本期期末值+应收账款净额本年公布的期初值）/2"
+    },
+    {
+        "Code": "ARTOVC",
+        "Name": "应收账款周转率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（应收账款净额）平均余额2；\n（应收账款净额）平均余额2＝（应收账款净额本期期末值+应收账款净额上年同期年末值）/2"
+    },
+    {
+        "Code": "ARTOVDA",
+        "Name": "应收账款周转天数A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "期间对应天数/应收账款周转率A"
+    },
+    {
+        "Code": "ARTOVDB",
+        "Name": "应收账款周转天数B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "期间对应天数/应收账款周转率B"
+    },
+    {
+        "Code": "ARTOVDC",
+        "Name": "应收账款周转天数C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "期间对应天数/应收账款周转率C"
+    },
+    {
+        "Code": "ARTOVDTTM",
+        "Name": "应收账款周转天数TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "365/应收账款周转率TTM"
+    },
+    {
+        "Code": "ARTOVTTM",
+        "Name": "应收账款周转率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）TTM/（应收账款净额）平均余额3；\n（应收账款净额）平均余额3=（应收账款净额本期期末值+应收账款净额上年同期期末值）/2"
+    },
+    {
+        "Code": "BUSCA",
+        "Name": "营业周期A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "存货周转天数A+应收账款周转天数A"
+    },
+    {
+        "Code": "BUSCB",
+        "Name": "营业周期B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "存货周转天数B+应收账款周转天数B"
+    },
+    {
+        "Code": "BUSCC",
+        "Name": "营业周期C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "存货周转天数C+应收账款周转天数C"
+    },
+    {
+        "Code": "BUSCTTM",
+        "Name": "营业周期TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "存货周转天数TTM+应收账款周转天数TTM"
+    },
+    {
+        "Code": "CAPP",
+        "Name": "资本密集度",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（资产总计）期末余额/（营业收入）"
+    },
+    {
+        "Code": "CCETOVA",
+        "Name": "现金及现金等价物周转率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（期末现金及现金等价物余额）期末余额"
+    },
+    {
+        "Code": "CCETOVB",
+        "Name": "现金及现金等价物周转率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（期末现金及现金等价物余额）平均余额1；\n（期末现金及现金等价物余额）平均余额1＝（期末现金及现金等价物余额本期期末值+期末现金及现金等价物余额本年公布的期初值）/2"
+    },
+    {
+        "Code": "CCETOVC",
+        "Name": "现金及现金等价物周转率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（期末现金及现金等价物余额）平均余额2；\n（期末现金及现金等价物余额）平均余额2＝（期末现金及现金等价物余额本期期末值+期末现金及现金等价物余额上年同期年末值）/2"
+    },
+    {
+        "Code": "CURATOVA",
+        "Name": "流动资产周转率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（流动资产合计）期末余额"
+    },
+    {
+        "Code": "CURATOVB",
+        "Name": "流动资产周转率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（流动资产合计）平均余额1；\n（流动资产合计）平均余额1＝（流动资产合计本期期末值+流动资产合计本年公布的期初值）/2"
+    },
+    {
+        "Code": "CURATOVC",
+        "Name": "流动资产周转率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（流动资产合计）平均余额2；\n（流动资产合计）平均余额2＝（流动资产合计本期期末值+流动资产合计上年同期年末值）/2"
+    },
+    {
+        "Code": "CURATOVTTM",
+        "Name": "现金及现金等价物周转率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": ""
+    },
+    {
+        "Code": "FATOVA",
+        "Name": "固定资产周转率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（固定资产净额）期末余额"
+    },
+    {
+        "Code": "FATOVB",
+        "Name": "固定资产周转率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（固定资产净额）平均余额1；\n（固定资产净额）平均余额1＝（固定资产净额本期期末值+固定资产净额本年公布的期初值）/2"
+    },
+    {
+        "Code": "FATOVC",
+        "Name": "固定资产周转率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（固定资产净额）平均余额2；\n（固定资产净额）平均余额2＝（固定资产净额本期期末值+固定资产净额上年同期年末值）/2"
+    },
+    {
+        "Code": "FATOVTTM",
+        "Name": "固定资产周转率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）TTM/（固定资产净额）平均余额3；\n（固定资产净额）平均余额3=（固定资产净额本期期末值+固定资产净额上年同期期末值）/2"
+    },
+    {
+        "Code": "INVTOVB",
+        "Name": "存货周转率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业成本）/（存货净额）平均余额1；\n（存货净额）平均余额1＝（存货净额本期期末值+存货净额本年公布的期初值）/2"
+    },
+    {
+        "Code": "INVTOVC",
+        "Name": "存货周转率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业成本）/（存货净额）平均余额2；\n（存货净额）平均余额2＝（存货净额本期期末值+存货净额上年同期年末值）/2"
+    },
+    {
+        "Code": "INVTOVDA",
+        "Name": "存货周转天数A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "期间对应天数/存货周转率A"
+    },
+    {
+        "Code": "INVTOVDB",
+        "Name": "存货周转天数B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "期间对应天数/存货周转率B"
+    },
+    {
+        "Code": "INVTOVDC",
+        "Name": "存货周转天数C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "期间对应天数/存货周转率C"
+    },
+    {
+        "Code": "INVTOVDTTM",
+        "Name": "存货周转天数TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "365/存货周转率TTM"
+    },
+    {
+        "Code": "INVTOVTTM",
+        "Name": "存货周转率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业成本）TTM/（存货净额）平均余额3；\n（存货净额）平均余额3=（存货净额本期期末值+存货净额上年同期期末值）/2"
+    },
+    {
+        "Code": "LATOVA",
+        "Name": "非流动资产周转率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（非流动资产合计）期末余额"
+    },
+    {
+        "Code": "LATOVB",
+        "Name": "非流动资产周转率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（非流动资产合计）平均余额1；\n（非流动资产合计）平均余额1＝（非流动资产合计本期期末值+非流动资产合计本年公布的期初值）/2"
+    },
+    {
+        "Code": "LATOVC",
+        "Name": "非流动资产周转率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（非流动资产合计）平均余额2；\n（非流动资产合计）平均余额2＝（非流动资产合计本期期末值+非流动资产合计上年同期年末值）/2"
+    },
+    {
+        "Code": "LATOVTTM",
+        "Name": "非流动资产周转率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）TTM/（非流动资产合计）平均余额3；\n（非流动资产合计）平均余额3=（非流动资产合计本期期末值+非流动资产合计上年同期期末值）/2"
+    },
+    {
+        "Code": "SETOVA",
+        "Name": "股东权益周转率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（所有者权益合计）期末余额"
+    },
+    {
+        "Code": "SETOVB",
+        "Name": "股东权益周转率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（所有者权益合计）平均余额1；\n（所有者权益合计）平均余额1＝（所有者权益合计本期期末值+所有者权益合计本年公布的期初值）/2"
+    },
+    {
+        "Code": "SETOVC",
+        "Name": "股东权益周转率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（所有者权益合计）平均余额2；\n（所有者权益合计）平均余额2＝（所有者权益合计本期期末值+所有者权益合计上年同期年末值）/2"
+    },
+    {
+        "Code": "SETOVTTM",
+        "Name": "流动资产周转率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）TTM/（流动资产合计）平均余额3；\n（流动资产合计）平均余额3=（流动资产合计本期期末值+流动资产合计上年同期期末值）/2"
+    },
+    {
+        "Code": "TOTATOVA",
+        "Name": "总资产周转率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（资产总计）期末余额"
+    },
+    {
+        "Code": "TOTATOVB",
+        "Name": "总资产周转率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（资产总计）平均余额1；\n（资产总计）平均余额1＝（资产总计本期期末值+资产总计本年公布的期初值）/2"
+    },
+    {
+        "Code": "TOTATOVC",
+        "Name": "总资产周转率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（资产总计）平均余额2；\n（资产总计）平均余额2＝（资产总计本期期末值+资产总计上年同期年末值）/2"
+    },
+    {
+        "Code": "TOTATOVTTM",
+        "Name": "总资产周转率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）TTM/（资产总计）平均余额3；\n（资产总计）平均余额3=（资产总计本期期末值+资产总计上年同期期末值）/2"
+    },
+    {
+        "Code": "WKCPTOVA",
+        "Name": "营运资金(资本)周转率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（流动资产合计-流动负债合计）期末余额"
+    },
+    {
+        "Code": "WKCPTOVB",
+        "Name": "营运资金(资本)周转率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（流动资产合计-流动负债合计）平均余额1；\n（流动资产合计-流动负债合计）平均余额1＝（（流动资产合计-流动负债合计）本期期末值+（流动资产合计-流动负债合计）本年公布的期初值）/2"
+    },
+    {
+        "Code": "WKCPTOVC",
+        "Name": "营运资金(资本)周转率C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）/（流动资产合计-流动负债合计）平均余额2；\n（流动资产合计-流动负债合计）平均余额2＝（（流动资产合计-流动负债合计）本期期末值+（流动资产合计-流动负债合计）上年同期年末值）/2"
+    },
+    {
+        "Code": "WKCPTOVTTM",
+        "Name": "营运资金(资本)周转率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（营业收入）TTM/（流动资产合计-流动负债合计）平均余额3；\n（流动资产合计-流动负债合计）平均余额3=（（流动资产合计-流动负债合计）本期期末值+（流动资产合计-流动负债合计）上年同期期末值）/2"
+    },
+    {
+        "Code": "NCFPS",
+        "Name": "每股现金净流量1",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "现金及现金等价物净增加额本期值/实收资本本期期末值。\n现金及现金等价物净增加额取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "NCFPSFFA",
+        "Name": "每股筹资活动现金净流量",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "筹资活动产生的现金流量净额本期值/实收资本本期期末值。\n筹资活动产生的现金流量净额取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "NCFPSFFATTM",
+        "Name": "每股筹资活动现金净流量TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "筹资活动产生的现金流量净额TTM/实收资本本期期末值。\n筹资活动产生的现金流量净额取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "NCFPSFIA",
+        "Name": "每股投资活动现金净流量",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "投资活动产生的现金流量净额本期值/实收资本本期期末值。\n投资活动产生的现金流量净额取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "NCFPSFIATTM",
+        "Name": "每股投资活动现金净流量TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "投资活动产生的现金流量净额TTM/实收资本本期期末值。\n投资活动产生的现金流量净额取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "NCFPSFOA",
+        "Name": "每股经营活动产生的现金流量净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "经营活动产生的现金流量净额本期值/实收资本本期期末值。\n经营活动产生的现金流量净额取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "NCFPSFOATTM",
+        "Name": "每股经营活动产生的现金流量净额TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "经营活动产生的现金流量净额TTM/实收资本本期期末值。\n经营活动产生的现金流量净额取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "FCFFPS",
+        "Name": "每股企业自由现金流（原有）",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（现金及现金等价物净增加额-筹资活动产生的现金流量净额）本期值/实收资本本期期末值。\n现金及现金等价物净增加额、筹资活动产生的现金流量净额取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "FCFTEPS",
+        "Name": "每股股权自由现金流（原有）",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（（现金及现金等价物净增加额）-（吸收权益性投资收到的现金-分配股利、利润或偿付利息支付的现金））本期值/实收资本本期期末值。\n现金及现金等价物净增加额取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "OPIPS",
+        "Name": "每股营业收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "营业总收入本期值/实收资本本期期末值。\n营业总收入取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "OPIPSTTM",
+        "Name": "每股营业收入TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "营业总收入TTM/实收资本本期期末值。\n营业总收入取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "PPSBIT",
+        "Name": "息税前每股收益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+财务费用）本期值/实收资本本期期末值。\n净利润取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "PPSBITTTM",
+        "Name": "息税前每股收益TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+财务费用）TTM/实收资本本期期末值。\n净利润取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "REPS",
+        "Name": "每股留存收益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（盈余公积+未分配利润）期末值/实收资本本期期末值"
+    },
+    {
+        "Code": "SRPS",
+        "Name": "每股盈余公积",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "盈余公积期末值/实收资本本期期末值"
+    },
+    {
+        "Code": "WAEPS",
+        "Name": "每股收益1",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "净利润本期值/实收资本本期期末值。\n净利润取值若为空或0时，对应指标则以null表示"
+    },
+    {
+        "Code": "BVRA",
+        "Name": "账面市值比A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（资产总计）/市值A"
+    },
+    {
+        "Code": "BVRB",
+        "Name": "账面市值比B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（资产总计）/市值B"
+    },
+    {
+        "Code": "DIVOCSA",
+        "Name": "普通股获利率A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "每股派息税后/（今收盘价）本期期末值"
+    },
+    {
+        "Code": "DIVOCSB",
+        "Name": "普通股获利率B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "每股派息税后/（今收盘价）本期期末值+（（今收盘价）当期期末值-（今收盘价）当期期初值）/（今收盘价）当期期初值"
+    },
+    {
+        "Code": "MVB",
+        "Name": "市值B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（总股数-境内上市的外资股B股）*（今收盘价）A股当期期末值+境内上市的外资股B股*（今收盘价）当期期末值*当日汇率+（负债合计）本期期末值"
+    },
+    {
+        "Code": "PE",
+        "Name": "市盈率2",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（今收盘价）当期期末值/（调整因子*（净利润）当期值/（实收资本）本期期末值）"
+    },
+    {
+        "Code": "PETTM",
+        "Name": "市盈率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（今收盘价）当期期末值/（（净利润）TTM/（实收资本）本期期末值）"
+    },
+    {
+        "Code": "PS",
+        "Name": "市销率2",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（今收盘价）当期期末值/（调整因子*（营业总收入）当期值/（实收资本）本期期末值）"
+    },
+    {
+        "Code": "PSTTM",
+        "Name": "市销率TTM",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（今收盘价）当期期末值/（（营业总收入）TTM/（实收资本）本期期末值）"
+    },
+    {
+        "Code": "RDYOCS",
+        "Name": "本利比",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（今收盘价）本期期末值/（每股派息税后）"
+    },
+    {
+        "Code": "TOBQA",
+        "Name": "托宾Q值A",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "市值A/（资产总计）"
+    },
+    {
+        "Code": "TOBQB",
+        "Name": "托宾Q值B",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "市值A/（资产总计-无形资产净额-商誉净额）"
+    },
+    {
+        "Code": "TOBQC",
+        "Name": "托宾Q值C",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "市值B/（资产总计）"
+    },
+    {
+        "Code": "TOBQD",
+        "Name": "托宾Q值D",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "市值B/（资产总计无形资产净额-商誉净额）"
+    },
+    {
+        "Code": "FINL",
+        "Name": "财务杠杆",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_1",
+        "SubTypeName": "财务分析指标",
+        "Desc": "（净利润+所得税费用+财务费用）/（净利润+所得税费用）"
+    },
+    {
+        "Code": "TOTALASSET",
+        "Name": "资产总计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "TOTALCURASSETS",
+        "Name": "流动资产合计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "TOTALCURLIAB",
+        "Name": "流动负债合计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "TOTALLIAB",
+        "Name": "负债合计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "TOTALLTLIAB",
+        "Name": "长期负债合计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "LIABANDOWNEREQUITY",
+        "Name": "负债与所有者权益总计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "TOTALNCURASSET",
+        "Name": "非流动资产合计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "TOTALNCURLIAB",
+        "Name": "非流动负债合计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "TOTALSHINT",
+        "Name": "所有者权益合计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "ADVREC",
+        "Name": "预收款项",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "ACCTPAYABLE",
+        "Name": "应付账款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CASHASSET",
+        "Name": "货币资金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CPAITALRESERVES",
+        "Name": "资本公积",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "DIVPAYABLE",
+        "Name": "应付股利",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "LTDEBT",
+        "Name": "长期借款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "LTPAYABLE",
+        "Name": "长期应付款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "LTPREPAIDEXP",
+        "Name": "长期待摊费用",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "MINSHINT",
+        "Name": "少数股东权益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHERASSET",
+        "Name": "其他资产",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHERCURLIAB",
+        "Name": "其他流动负债",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHERCURASSETS",
+        "Name": "其他流动资产",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHERLIAB",
+        "Name": "其他负债",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHERNCURASSET",
+        "Name": "其他非流动资产",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHERNCURLIAB",
+        "Name": "其他非流动负债",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHERPAYABLE",
+        "Name": "其他应付款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "SPECIALPAYABLE",
+        "Name": "专项应付款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "RETAINPROFIT",
+        "Name": "未分配利润",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "FAPUATS",
+        "Name": "买入返售金融资产净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "ASUATR",
+        "Name": "卖出回购金融资产款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "AVFSFINASSET",
+        "Name": "可供出售金融资产净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "BORRFROMCENTRALBANK",
+        "Name": "向中央银行借款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "BONDPAYABLE",
+        "Name": "应付债券",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CASHBALWCENTRALBANK",
+        "Name": "现金及存放中央银行款项",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CLAIMPAYABLE",
+        "Name": "应付赔付款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "STATUTORYDEPOSITS",
+        "Name": "存出资本保证金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CONSTMATERIAL",
+        "Name": "工程物资",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "ESTLIAB",
+        "Name": "预计负债",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "DUETOBAOFI",
+        "Name": "其中：同业及其他金融机构存放款项",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "BALWFININS",
+        "Name": "存放同业款项",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CBDEPANDDUETOBAOFI",
+        "Name": "吸收存款及同业存放",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "DEFTAXLIAB",
+        "Name": "递延所得税负债",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "DEFINCOMETAXASSET",
+        "Name": "递延所得税资产",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CUSTOMERDEPOSITS",
+        "Name": "其中:客户资金存款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "FINASSETFORDERIV",
+        "Name": "衍生金融资产",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "DEVFINLIAB",
+        "Name": "衍生金融负债",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "DISPOSALOFFIXEDASSET",
+        "Name": "固定资产清理",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CBDEPOSIT",
+        "Name": "其中：吸收存款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "DEVEXP",
+        "Name": "开发支出",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "STAFFREMUPAYABLE",
+        "Name": "应付职工薪酬",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "COMMISSIONPAYABLE",
+        "Name": "应付手续费及佣金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "REFUNDABLEDEPOSITS",
+        "Name": "存出保证金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "FORECURTRANSDIFF",
+        "Name": "外币报表折算差额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "GENERALRISKPROVISION",
+        "Name": "一般风险准备",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "HTMINVT",
+        "Name": "持有至到期投资净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "INTPAYABLE",
+        "Name": "应付利息",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "POLIRESFORLTHEALTHINSUR",
+        "Name": "其中:长期健康险责任准备金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "POLIRESFORLIFEINSUR",
+        "Name": "其中:寿险责任准备金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "PLEDGEBORROWING",
+        "Name": "其中:质押借款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "ACCTREC",
+        "Name": "应收账款净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "PRODBIOASSET",
+        "Name": "生产性生物资产净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "NONCURASSETSDUEONEYR",
+        "Name": "一年内到期的非流动资产",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "NCURLIABDUEONEYR",
+        "Name": "一年内到期的非流动负债",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "UNDERCONSTPROJECT",
+        "Name": "在建工程净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "DIVREC",
+        "Name": "应收股利净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "FIXEDASSET",
+        "Name": "固定资产净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "GOODWILL",
+        "Name": "商誉净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "INTANGIBLEASSET",
+        "Name": "无形资产净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "INVTPROPERTY",
+        "Name": "投资性房地产净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "INVENTORY",
+        "Name": "存货净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "INTREC",
+        "Name": "应收利息净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "LTREC",
+        "Name": "长期应收款净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "LTDEBTINVT",
+        "Name": "长期债权投资净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "LTEQUITYINVT",
+        "Name": "长期股权投资净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "LTINVT",
+        "Name": "长期投资净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "LOANANDADVANCES",
+        "Name": "发放贷款及垫款净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "NOTESREC",
+        "Name": "应收票据净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "OILGASASSET",
+        "Name": "油气资产净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHERREC",
+        "Name": "其他应收款净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "NOTESPAYABLE",
+        "Name": "应付票据",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "NETFUNDSLENDING",
+        "Name": "拆出资金净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "PREPAY",
+        "Name": "预付款项净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "INSPREMIUMREC",
+        "Name": "应收保费净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "REINSREC",
+        "Name": "应收分保账款净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "REINSCONTRESERVESREC",
+        "Name": "应收分保合同准备金净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "SUBROGATIONREC",
+        "Name": "应收代位追偿款净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "STINVT",
+        "Name": "短期投资净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "PLACEMENTFROMBAOFI",
+        "Name": "拆入资金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "NIIDFP",
+        "Name": "保户储金及投资款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "POLIDIVPAYABLE",
+        "Name": "应付保单红利",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "POLIPLEDGELOAN",
+        "Name": "保户质押贷款净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "NOBELMETAL",
+        "Name": "贵金属",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "SECBROKDEPO",
+        "Name": "代理承销证券款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "PREMIUMRECINADV",
+        "Name": "预收保费",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CLAIMRESERVES",
+        "Name": "其中:未决赔款准备金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CRRFR",
+        "Name": "其中:应收分保未决赔款准备金净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "LTRFHIRFR",
+        "Name": "其中:应收分保长期健康险责任准备金净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "PRRLIRFR",
+        "Name": "其中:应收分保寿险责任准备金净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "UPRRFR",
+        "Name": "其中:应收分保未到期责任准备金净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "RECFROMREINSUR",
+        "Name": "应付分保账款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "INSURCONTRESERVES",
+        "Name": "保险合同准备金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CUSTOMERBROKDEPO",
+        "Name": "代理买卖证券款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "SEPACCOUNTASSET",
+        "Name": "独立账户资产",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "SEPACCTLIAB",
+        "Name": "独立账户负债",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "PAIDUPCAPITAL",
+        "Name": "实收资本(或股本)",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "STBORROWING",
+        "Name": "短期借款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "BALWCLEARCO",
+        "Name": "结算备付金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "CUSTOMEREXRESERVES",
+        "Name": "其中：客户备付金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "SURPLUSRESERVES",
+        "Name": "盈余公积",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "TOEATP",
+        "Name": "归属于母公司所有者权益合计",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "TERMDEPOSITS",
+        "Name": "定期存款",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "TAXPAYABLE",
+        "Name": "应交税费",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "FINASSETFORTRADING",
+        "Name": "交易性金融资产",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "HFTFINLIAB",
+        "Name": "交易性金融负债",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "MEMBERSHIPFEE",
+        "Name": "其中:交易席位费",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "TREASURYSTOCK",
+        "Name": "其中：库存股",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "UNEARNPREMIUMRESERVES",
+        "Name": "其中:未到期责任准备金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "UNCONFIRMINVTLOSS",
+        "Name": "未确认的投资损失",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_2",
+        "SubTypeName": "资产负债表",
+        "Desc": ""
+    },
+    {
+        "Code": "BEPS",
+        "Name": "基本每股收益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "COMPROAOPC",
+        "Name": "归属于母公司所有者的综合收益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "DEPS",
+        "Name": "稀释每股收益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "GLFVC",
+        "Name": "公允价值变动收益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "INVSTG",
+        "Name": "投资收益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "MININT",
+        "Name": "少数股东损益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NINTINC",
+        "Name": "利息净收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NOPEXP",
+        "Name": "营业外支出",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NOPINC",
+        "Name": "营业外收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NPAOPC",
+        "Name": "归属于母公司所有者的净利润",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "OPEXP",
+        "Name": "营业成本",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "OPPRO",
+        "Name": "营业利润",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "OPREV",
+        "Name": "营业收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHOINC",
+        "Name": "其他业务收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHOPEXP",
+        "Name": "其他业务成本",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "SELLEXP",
+        "Name": "销售费用",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "TAFO",
+        "Name": "营业税金及附加",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "TCOMINCO",
+        "Name": "综合收益总额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "TOLPRO",
+        "Name": "利润总额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "TOTOEXP",
+        "Name": "营业总成本",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "TOTOR",
+        "Name": "营业总收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "UNCONFIRMINVTLOSS",
+        "Name": "未确认的投资损失",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "BME",
+        "Name": "业务及管理费",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "CLMEXP",
+        "Name": "赔付支出",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "CLMRCVR",
+        "Name": "减：摊回赔付支出",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "COMPROAMS",
+        "Name": "归属于少数股东的综合收益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "EXPRCRI",
+        "Name": "减：摊回分保费用",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "EXPRISAC",
+        "Name": "分保费用",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "FCEXP",
+        "Name": "手续费及佣金支出",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "FCINC",
+        "Name": "手续费及佣金收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "FOREXG",
+        "Name": "汇兑收益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "GADMEXP",
+        "Name": "管理费用",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "IGAJV",
+        "Name": "其中：对联营企业和合营企业的投资收益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "IMPLOS",
+        "Name": "资产减值损失",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "INCTEXP",
+        "Name": "所得税费用",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "INSRRR",
+        "Name": "减：摊回保险责任准备金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "INSUINC",
+        "Name": "保险业务收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "INTEXP",
+        "Name": "利息支出",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "INTINC",
+        "Name": "利息收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NCLMEXP",
+        "Name": "赔付支出净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NEPRMM",
+        "Name": "已赚保费",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NFCINC",
+        "Name": "手续费及佣金净收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NIAMC",
+        "Name": "其中：受托客户资产管理业务净收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NINCSB",
+        "Name": "其中：代理买卖证券业务净收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NINCSU",
+        "Name": "其中:证券承销业务净收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NLDNCA",
+        "Name": "其中：非流动资产处置净损益",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "NPIR",
+        "Name": "提取保险责任准备金净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHCOMPRO",
+        "Name": "其他综合收益(损失)",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHIANP",
+        "Name": "影响净利润的其他项目",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "OTHOPPRO",
+        "Name": "其他业务利润",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "PAYSRD",
+        "Name": "退保金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "PLCDIV",
+        "Name": "保单红利支出",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "PRECR",
+        "Name": "减：分出保费",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "PROIR",
+        "Name": "提取保险责任准备金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "PROUEPR",
+        "Name": "减：提取未到期责任准备金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "RINSPINC",
+        "Name": "其中：分保费收入",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_3",
+        "SubTypeName": "利润表",
+        "Desc": ""
+    },
+    {
+        "Code": "BBCCE",
+        "Name": "期初现金及现金等价物余额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CLMPAID",
+        "Name": "支付原保险合同赔付款项的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CPACFILA",
+        "Name": "购建固定资产、无形资产和其他长期资产支付的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CPDDPI",
+        "Name": "分配股利、利润或偿付利息支付的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CPEMP",
+        "Name": "支付给职工以及为职工支付的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CPGS",
+        "Name": "购买商品、接受劳务支付的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CPINVST",
+        "Name": "投资支付的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CPIS",
+        "Name": "吸收权益性投资收到的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CPISMSS",
+        "Name": "其中：子公司吸收少数股东投资收到的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CRAI",
+        "Name": "吸收投资收到的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CRDRI",
+        "Name": "收回投资收到的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CRDTFA",
+        "Name": "处置交易性金融资产净增加额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CREPBOR",
+        "Name": "偿还债务支付的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CRRI",
+        "Name": "取得投资收益收到的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "CRSGRS",
+        "Name": "销售商品、提供劳务收到的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "DPDMSS",
+        "Name": "其中：子公司支付给少数股东的股利、利润",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "EBCCE",
+        "Name": "期末现金及现金等价物余额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "EFERCC",
+        "Name": "汇率变动对现金及现金等价物的影响",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "EOIC",
+        "Name": "其他对现金的影响",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "ICRPLCL",
+        "Name": "质押贷款净增加额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "IFCP",
+        "Name": "支付利息、手续费及佣金的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "IFCR",
+        "Name": "收取利息、手续费及佣金的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "INCLOAC",
+        "Name": "客户贷款及垫款净增加额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "INCREREP",
+        "Name": "回购业务资金净增加额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "IPBOFI",
+        "Name": "拆入资金净增加额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "IPDI",
+        "Name": "保户储金及投资款净增加额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "IPOFI",
+        "Name": "向其他金融机构拆入资金净增加额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "NCBCB",
+        "Name": "向中央银行借款净增加额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "NCFFA",
+        "Name": "筹资活动产生的现金流量净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "NCFIA",
+        "Name": "投资活动产生的现金流量净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "NCFOP",
+        "Name": "经营活动产生的现金流量净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "NCPASOBU",
+        "Name": "取得子公司及其他营业单位支付的现金净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "NCRDFILA",
+        "Name": "处置固定资产、无形资产和其他长期资产收回的现金净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "NCRDSOBU",
+        "Name": "处置子公司及其他营业单位收到的现金净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "NCRR",
+        "Name": "收到再保险业务现金净额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "NICDDBFI",
+        "Name": "客户存款和同业存放款项净增加额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "NIDCBFI",
+        "Name": "存放中央银行和同业款项净增加额",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "OCPRFA",
+        "Name": "支付其他与筹资活动有关的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "OCPRIA",
+        "Name": "支付其他与投资活动有关的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "OCPROA",
+        "Name": "支付其他与经营活动有关的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "OCRRIA",
+        "Name": "收到的其他与投资活动有关的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "OCRROA",
+        "Name": "收到的其他与经营活动有关的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "OPRFA",
+        "Name": "收到其他与筹资活动有关的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "PLCDIVP",
+        "Name": "支付保单红利的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "PRMMRCV",
+        "Name": "收到原保险合同保费取得的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "PROBOR",
+        "Name": "取得借款收到的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "PROISBD",
+        "Name": "发行债券收到的现金",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "TAXREF",
+        "Name": "收到的税费返还",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "VTAXPAID",
+        "Name": "支付的各项税费",
+        "TypeCode": "1",
+        "TypeName": "财务指标",
+        "SubTypeCode": "1_4",
+        "SubTypeName": "现金流量表",
+        "Desc": ""
+    },
+    {
+        "Code": "1001001",
+        "Name": "全部A股",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001014",
+        "Name": "三板股票",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001010",
+        "Name": "正在发行的股票",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001004",
+        "Name": "全部上市公司",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001001001",
+        "Name": "上证A股",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001001002",
+        "Name": "深证A股",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001004001",
+        "Name": "上证上市公司",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001004002",
+        "Name": "深证上市公司",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001012001",
+        "Name": "暂停上市A股",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001001002001",
+        "Name": "深证主板A股",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001001002002",
+        "Name": "中小企业板",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001001002003",
+        "Name": "创业板",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001015",
+        "Name": "退市整理板块",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001016",
+        "Name": "风险警示板块",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001017",
+        "Name": "主板(上证)",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001009",
+        "Name": "IPO审核未通过股票",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001008",
+        "Name": "IPO审核通过股票",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001007",
+        "Name": "IPO审核待表决股票",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001013",
+        "Name": "已摘牌股票",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001012",
+        "Name": "暂停上市股票",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1001011",
+        "Name": "已发行待上市的股票",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_2",
+        "SubTypeName": "市场板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010001",
+        "Name": "北京市",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010002",
+        "Name": "天津市",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010003",
+        "Name": "河北省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010004",
+        "Name": "山西省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010005",
+        "Name": "内蒙古自治区",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010006",
+        "Name": "辽宁省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010007",
+        "Name": "吉林省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010008",
+        "Name": "黑龙江省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010009",
+        "Name": "上海市",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010010",
+        "Name": "江苏省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010011",
+        "Name": "浙江省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010012",
+        "Name": "安徽省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010013",
+        "Name": "福建省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010014",
+        "Name": "江西省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010015",
+        "Name": "山东省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010016",
+        "Name": "河南省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010017",
+        "Name": "湖北省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010018",
+        "Name": "湖南省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010019",
+        "Name": "广东省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010020",
+        "Name": "广西壮族自治区",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010021",
+        "Name": "海南省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010022",
+        "Name": "重庆市",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010023",
+        "Name": "四川省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010024",
+        "Name": "贵州省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010025",
+        "Name": "云南省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010026",
+        "Name": "西藏自治区",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010027",
+        "Name": "陕西省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010028",
+        "Name": "甘肃省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010029",
+        "Name": "青海省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010030",
+        "Name": "宁夏回族自治区",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010031",
+        "Name": "新疆维吾尔自治区",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010032",
+        "Name": "台湾省",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010033",
+        "Name": "香港特别行政区",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1010034",
+        "Name": "澳门特别行政区",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_3",
+        "SubTypeName": "地域板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006001",
+        "Name": "农、林、牧、渔业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006001001",
+        "Name": "农业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006001002",
+        "Name": "林业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006001003",
+        "Name": "畜牧业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006001004",
+        "Name": "渔业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006001005",
+        "Name": "农、林、牧、渔服务业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006002",
+        "Name": "采矿业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006002001",
+        "Name": "煤炭开采和洗选业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006002002",
+        "Name": "石油和天然气开采业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006002003",
+        "Name": "黑色金属矿采选业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006002004",
+        "Name": "有色金属矿采选业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006002005",
+        "Name": "非金属矿采选业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006002006",
+        "Name": "开采辅助活动",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006002007",
+        "Name": "其他采矿业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003",
+        "Name": "制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003001",
+        "Name": "农副食品加工业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003002",
+        "Name": "食品制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003003",
+        "Name": "酒、饮料和精制茶制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003004",
+        "Name": "烟草制品业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003005",
+        "Name": "纺织业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003006",
+        "Name": "纺织服装、服饰业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003007",
+        "Name": "皮革、毛皮、羽毛及其制品和制鞋业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003008",
+        "Name": "木材加工和木、竹、藤、棕、草制品业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003009",
+        "Name": "家具制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003010",
+        "Name": "造纸和纸制品业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003011",
+        "Name": "印刷和记录媒介复制业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003012",
+        "Name": "文教、工美、体育和娱乐用品制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003013",
+        "Name": "石油加工、炼焦和核燃料加工业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003014",
+        "Name": "化学原料和化学制品制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003015",
+        "Name": "医药制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003016",
+        "Name": "化学纤维制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003017",
+        "Name": "橡胶和塑料制品业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003018",
+        "Name": "非金属矿物制品业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003019",
+        "Name": "黑色金属冶炼和压延加工业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003020",
+        "Name": "有色金属冶炼和压延加工业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003021",
+        "Name": "金属制品业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003022",
+        "Name": "通用设备制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003023",
+        "Name": "专用设备制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003024",
+        "Name": "汽车制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003025",
+        "Name": "铁路、船舶、航空航天和其他运输设备制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003026",
+        "Name": "电气机械和器材制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003027",
+        "Name": "计算机、通信和其他电子设备制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003028",
+        "Name": "仪器仪表制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003029",
+        "Name": "其他制造业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003030",
+        "Name": "废弃资源综合利用业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006003031",
+        "Name": "金属制品、机械和设备修理业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006004",
+        "Name": "电力、热力、燃气及水生产和供应业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006004001",
+        "Name": "电力、热力生产和供应业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006004002",
+        "Name": "燃气生产和供应业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006004003",
+        "Name": "水的生产和供应业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006005",
+        "Name": "建筑业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006005001",
+        "Name": "房屋建筑业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006005002",
+        "Name": "土木工程建筑业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006005003",
+        "Name": "建筑安装业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006005004",
+        "Name": "建筑装饰和其他建筑业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006006",
+        "Name": "批发和零售业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006006001",
+        "Name": "批发业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006006002",
+        "Name": "零售业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006007",
+        "Name": "交通运输、仓储和邮政业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006007001",
+        "Name": "铁路运输业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006007002",
+        "Name": "道路运输业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006007003",
+        "Name": "水上运输业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006007004",
+        "Name": "航空运输业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006007005",
+        "Name": "管道运输业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006007006",
+        "Name": "装卸搬运和运输代理业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006007007",
+        "Name": "仓储业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006007008",
+        "Name": "邮政业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006008",
+        "Name": "住宿和餐饮业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006008001",
+        "Name": "住宿业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006008002",
+        "Name": "餐饮业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006009",
+        "Name": "信息传输、软件和信息技术服务业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006009001",
+        "Name": "电信、广播电视和卫星传输服务",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006009002",
+        "Name": "互联网和相关服务",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006009003",
+        "Name": "软件和信息技术服务业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006010",
+        "Name": "金融业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006010001",
+        "Name": "货币金融服务",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006010002",
+        "Name": "资本市场服务",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006010003",
+        "Name": "保险业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006010004",
+        "Name": "其他金融业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006011001",
+        "Name": "房地产业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006011001",
+        "Name": "房地产业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006012",
+        "Name": "租赁和商务服务业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006012001",
+        "Name": "租赁业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006012002",
+        "Name": "商务服务业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006013",
+        "Name": "科学研究和技术服务业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006013001",
+        "Name": "研究和试验发展",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006013002",
+        "Name": "专业技术服务业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006013003",
+        "Name": "科技推广和应用服务业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006014",
+        "Name": "水利、环境和公共设施管理业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006014001",
+        "Name": "水利管理业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006014002",
+        "Name": "生态保护和环境治理业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006014003",
+        "Name": "公共设施管理业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006015",
+        "Name": "居民服务、修理和其他服务业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006015001",
+        "Name": "居民服务业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006015002",
+        "Name": "机动车、电子产品和日用产品修理业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006015003",
+        "Name": "其他服务业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006016001",
+        "Name": "教育",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006016001",
+        "Name": "教育",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006017",
+        "Name": "卫生和社会工作",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006017001",
+        "Name": "卫生",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006017002",
+        "Name": "社会工作",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006018",
+        "Name": "文化、体育和娱乐业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006018001",
+        "Name": "新闻和出版业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006018002",
+        "Name": "广播、电视、电影和影视录音制作业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006018003",
+        "Name": "文化艺术业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006018004",
+        "Name": "体育",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006018005",
+        "Name": "娱乐业",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "1006019001",
+        "Name": "综合",
+        "TypeCode": "2",
+        "TypeName": "板块指标",
+        "SubTypeCode": "2_4",
+        "SubTypeName": "行业板块",
+        "Desc": ""
+    },
+    {
+        "Code": "OP",
+        "Name": "开盘价",
+        "TypeCode": "3",
+        "TypeName": "行情指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "CP",
+        "Name": "收盘价",
+        "TypeCode": "3",
+        "TypeName": "行情指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "HIP",
+        "Name": "最高价",
+        "TypeCode": "3",
+        "TypeName": "行情指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "LOP",
+        "Name": "最低价",
+        "TypeCode": "3",
+        "TypeName": "行情指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "CQ",
+        "Name": "区间成交量",
+        "TypeCode": "3",
+        "TypeName": "行情指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "CM",
+        "Name": "区间成交额",
+        "TypeCode": "3",
+        "TypeName": "行情指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "ChangeRatio",
+        "Name": "涨跌幅",
+        "TypeCode": "3",
+        "TypeName": "行情指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "Amplitude",
+        "Name": "振幅",
+        "TypeCode": "3",
+        "TypeName": "行情指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "TurnoverRate",
+        "Name": "日换手率",
+        "TypeCode": "3",
+        "TypeName": "行情指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "CMV",
+        "Name": "流通市值",
+        "TypeCode": "3",
+        "TypeName": "行情指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "TMV",
+        "Name": "总市值",
+        "TypeCode": "3",
+        "TypeName": "行情指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": ""
+    },
+    {
+        "Code": "MACD",
+        "Name": "MACD",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "MACD称为平滑异同移动平均线，由快的移动平均线减去慢的移动平均线。当MACD从负数转向正数，是买的信号。当MACD从正数转向负数，是卖的信号。当MACD以大角度变化，表示快的移动平均线和慢的移动平均线的差距非常迅速的拉开，代表了一个市场大趋势的转变。"
+    },
+    {
+        "Code": "MACD_TopDepart",
+        "Name": "macd顶背离",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "当股价K线图上的股票走势一峰比一峰高，股价一直在向上涨，而MACD指标图形上的由红柱构成的图形的走势是一峰比一峰低，即当股价的高点比前一次的高点高、而MACD指标的高点比指标的前一次高点低，这叫顶背离现象。顶背离现象一般是股价在高位即将反转转势的信号，表明股价短期内即将下跌，是卖出股票的信号。"
+    },
+    {
+        "Code": "MACD_DownDepart",
+        "Name": "macd底背离",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "底背离一般出现在价格的低位区。当K线图上的价格走势还在下跌，而MACD指标图形上的由绿柱构成的图形的走势是一底比一底小，即当价格的低点比前一次低点底，而指标的低点却比前一次的低点高，这叫底背离现象。底背离现象一般是预示价格在低位可能反转向上的信号，表明短期内可能反弹向上，是短期买入的信号。"
+    },
+    {
+        "Code": "MACD_GoldX",
+        "Name": "macd金叉",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "DIF由下向上突破 DEA，通常为买入信号。"
+    },
+    {
+        "Code": "MACD_BlackX",
+        "Name": "macd死叉",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "DIF由上向下突破 DEA，通常为卖出信号。"
+    },
+    {
+        "Code": "MA",
+        "Name": "MA",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "移动平均线(MA)采用统计学中\"移动平均\"的原理，将一段时期内的股票价格平均值连成曲线，用来显示股价的历史波动情况，进而反映股价指数未来发展趋势的技术分析方法。它是道氏理论的形象化表述。"
+    },
+    {
+        "Code": "KDJ",
+        "Name": "KDJ",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "KDJ指标又叫随机指标，一般是用于股票分析的统计体系，根据统计学原理，通过一个特定的周期（常为9日、9周等）内出现过的最高价、最低价及最后一个计算周期的收盘价及这三者之间的比例关系，来计算最后一个计算周期的未成熟随机值RSV，然后根据平滑移动平均线的方法来计算K值、D值与J值，并绘成曲线图来研判股票走势。"
+    },
+    {
+        "Code": "KDJ_GoldX",
+        "Name": "kdj金叉",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "k线上穿d线，通常为买入信号。"
+    },
+    {
+        "Code": "KDJ_BlackX",
+        "Name": "kdj死叉",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "k线下穿d线，通常为卖出信号。"
+    },
+    {
+        "Code": "KDJ_LowGoldX",
+        "Name": "kdj低位金叉",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "kdj在20附近，k线上穿d线。"
+    },
+    {
+        "Code": "KDJ_TopDepart",
+        "Name": "kdj顶背离",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "kdj顶背离是指当K线图上的股票价格创一峰比一峰高时，其对应的kdj值却是在高位上一峰比一峰低，形成价格位置与指标位置的明显反差。"
+    },
+    {
+        "Code": "KDJ_DownDepart",
+        "Name": "kdj底背离",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "当股价K线图上的股票走势一谷比一谷低，股价在向下跌，而KDJ曲线图上的KDJ指标的走势是在低位一底比一底高，这叫底背离现象。底背离现象一般是股价将低位反转的信号，表明股价中短期内即将上涨，是买入的信号。"
+    },
+    {
+        "Code": "KDJ_Oversold",
+        "Name": "kdj超卖",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "kdj＜20,即80%以上的人在卖股票,或说只有两成以上的人在买股票,股价超卖。"
+    },
+    {
+        "Code": "KDJ_Overbought",
+        "Name": "kdj超买",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "kdj＞80，表明买方力量增强为超买区，表示买方力量巨增，大多数投资者看好此股，极少数投资者在卖股，也是高风险区。"
+    },
+    {
+        "Code": "BOLL",
+        "Name": "BOLL",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "BOLL指标又叫布林线指标，是研判股价运动趋势的一种中长期技术分析工具。随着股价波动幅度的大小而变化，股价涨跌幅度加大时，带状区变宽，涨跌幅度狭小盘整时，带状区则变窄。\nBOLL指标一共由四条线组成，即上轨线UP 、中轨线MB、下轨线DN和价格线。"
+    },
+    {
+        "Code": "BOLL_Upper",
+        "Name": "boll突破上轨",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "股价向上突破boll上轨，说明行情非常强势，后市股价短线可能出现大涨，是强烈的买入信号。实战中，用这种方式在大趋势向好的情况下做短线的成功率非常高。"
+    },
+    {
+        "Code": "BOLL_Mid",
+        "Name": "boll突破中轨",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "股价向上突破boll中轨。\n如果股价的成交量放大并且突破中期移动平均线时，是中短线的买入机会。\n如果股价顺着中轨线向上攀升，说明中期上升行情已经形成，是买入和继续做多的好机会。"
+    },
+    {
+        "Code": "RSI",
+        "Name": "RSI",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "相对强弱指数是通过比较一段时期内的平均收盘涨数和平均收盘跌数来分析市场买沽盘的意向和实力，从而作出未来市场的走势。\nRSI值如果超过50,表明市场进入强市,可以考虑买入。"
+    },
+    {
+        "Code": "RSI_GoldX",
+        "Name": "rsi金叉",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "短期RSI上穿长期RSI，通常为买入信号。"
+    },
+    {
+        "Code": "RSI_BlackX",
+        "Name": "rsi死叉",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "短期RSI下穿长期RSI，通常为卖出信号。"
+    },
+    {
+        "Code": "WR",
+        "Name": "WR",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "简称威廉指标，兼具超买超卖和强弱分界的指标；是目前股市技术分析中比较常用的短期研判指标。对于投资者而言，威廉指标是一个简单实用的技术指标：它及时准确地选择出市场中股价异动前的瞬间，既能选择出加速下跌的瞬间，也能选择出涨升启动前的最佳入市时机。"
+    },
+    {
+        "Code": "DMI",
+        "Name": "DMI",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "DMI指标又叫动向指标或趋向指标，是通过分析股票价格在涨跌过程中买卖双方力量均衡点的变化情况，即多空双方的力量的变化受价格波动的影响而发生由均衡到失衡的循环过程，从而提供对趋势判断依据的一种技术指标。"
+    },
+    {
+        "Code": "DMI_GoldX",
+        "Name": "dmi金叉",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "趋向线pdi上穿mdi，通常为买入信号。"
+    },
+    {
+        "Code": "DMI_BlackX",
+        "Name": "dmi死叉",
+        "TypeCode": "4",
+        "TypeName": "技术指标",
+        "SubTypeCode": "0",
+        "SubTypeName": "",
+        "Desc": "趋向线pdi下穿mdi，通常为卖出信号。"
+    }
+]

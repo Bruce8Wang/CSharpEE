@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/reset.css" rel="stylesheet">
+    <link href="../Content/home.css" rel="stylesheet">
+    <style type="text/css">
+		/*login reset*/
+		#regBody,#regTit,#regCon{
+			/*border: 1px solid red;*/
+		}
+		#regBody{			
+			margin-top: 20px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+		}
+		#regTit span{
+			display: inline-block;
+			margin: 20px;
+			padding-left: 12px;
+			line-height: 1.0;
+			font-size: 18px;
+			border-left: 4px solid red;
+		}
+		.form-group{
+			/*border: 1px solid red;*/
+			margin-bottom: 30px;
+		}
+		#reg{
+			width: 100%;
+		}
+    	#links{
+    		padding-top: 60px;
+    		text-align: center;
+    	}
+    	#links a{
+    		color: #000;
+    		border-right: 1px solid #A9A9A9;
+    		padding-right: 6px;
+    	}
+    	#links a:last-child{
+    		border:none;
+    	}
+    </style>
+  </head>
+  <body>  	
+  	<!-- 导航 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  <div class="container">
+	  	<div class="row">
+			<div class="col-md-2">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#logoList">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand text-center" href="index.html" id="logo">
+			      	<img class="img-responsive center-block" src="../Images/logo.png">
+			      </a>
+			    </div>
+	    	</div>	 
+			<div class="col-md-9 col-md-offset-1">
+			    <div class="collapse navbar-collapse" id="logoList">
+			      <ul class="nav navbar-nav navbar-left">
+			        <li><a href="index.html">选股回验</a></li>			
+			        <li><a href="#">股池分析</a></li>			  
+			        <li><a href="#">策略方案</a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">			        
+			        <li><a href="#" >
+			        	<span data-toggle="modal" data-target="#myModal">
+			        		登录
+			        	</span>
+				        </a>
+				    </li>
+				    <li class="active"><a href="login.html">注册</a></li>
+			      </ul>
+			    </div>
+	    	</div>	    	
+	    </div>
+	  </div>
+	</nav>
+	<!-- 注册账户 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2" id="regBody" >
+				<div class="row" id="regTit">
+					<div class="col-md-4">
+						<span>注册账户</span>
+					</div>
+				</div>
+				<div class="row" id="regCon">
+					<div class="col-md-8 col-md-offset-2">
+						<form class="form-horizontal" role="form">
+						  <div class="form-group">
+						    <label for="tel" class="col-md-3 control-label"><span class="red">*</span>手机号码</label>
+						    <div class="col-md-9">
+						      <input type="tel" class="form-control" id="tel" placeholder="请输入11位手机号码">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="psw" class="col-md-3 control-label"><span class="red">*</span>密码</label>
+						    <div class="col-md-9">
+						      <input type="password" class="form-control" id="psw" placeholder="包含数字、字母、下划线,6-16位">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="code" class="col-md-3 control-label"><span class="red">*</span>验证码</label>
+						    <div class="col-md-6">
+						      <input type="text" class="form-control" id="code" placeholder="请输入6位验证码">
+						    </div>
+						    <div class="col-md-3">
+						      <button type="button" class="btn btn-danger" id="getCode">获取验证码</button>				     
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <div class="col-md-9 col-md-offset-3 ">
+						      <div class="checkbox">
+						        <label>
+						          <input type="checkbox" checked> 注册表示您同意<a href=""  class="red">《使用条款》</a>
+						        </label>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <div class="col-md-9 col-md-offset-3 ">
+						      <button type="submit" class="btn btn-danger" id="reg">注册</button>
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <div class="col-md-9 col-md-offset-3 ">
+						      	已有账户，直接
+								<a href="#" class="red">登录</a>
+						    </div>
+						  </div>
+						</form>
+					</div>			
+				</div>
+			</div>				
+		</div>			
+	</div>
+	<!-- 底部区域 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2" id="links">
+				<a href="">关于我们</a>
+				<a href="">联系我们</a>
+				<a href="">新手指引</a>
+				<a href="">业务模式</a>
+				<a href="">安全保障</a>
+				<a href="">媒体报道</a>
+				<a href="">加入我们</a>
+				<a href="">帮助中心</a>
+			</div>			
+		</div>
+	</div>
+    <script src="../Scripts/jquery-3.1.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+  </body>
+</html>

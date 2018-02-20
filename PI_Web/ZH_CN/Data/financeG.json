@@ -1,0 +1,13 @@
+[
+  {"Name":"财务报表率1","targetId":"1001","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"Name":"财务报表率2","targetId":"1011","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"Name":"财务报表","targetId":"1002","minValue":"0.2","maxValue":"20","titlea":"123"},
+  {"Name":"财务报表3","targetId":"1003","minValue":"0.3","maxValue":"30","titlea":"123"},
+  {"Name":"财务报表率4","targetId":"1004","minValue":"0.4","maxValue":"40","titlea":"123"},
+  {"Name":"财务报表","targetId":"1005","minValue":"0.1","maxValue":"50","titlea":"123"},
+  {"Name":"财务报表6","targetId":"1006","minValue":"0.6","maxValue":"60","titlea":"123"},
+  {"Name":"财务报表7","targetId":"1007","minValue":"0.7","maxValue":"70","titlea":"123"},
+  {"Name":"财务报表","targetId":"1008","minValue":"0.8","maxValue":"80","titlea":"123"},
+  {"Name":"财务报表每股9","targetId":"1009","minValue":"0.9","maxValue":"90","titlea":"123"},
+  {"Name":"财务报表公积10","targetId":"1010","minValue":"1.0","maxValue":"100","titlea":"123"}
+]

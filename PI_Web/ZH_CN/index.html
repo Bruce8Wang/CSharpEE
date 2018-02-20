@@ -1,0 +1,838 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>众智平台</title>
+    <meta name="keywords" content="众智平台,众智平台" />
+	<meta name="description" content="众智平台,众智平台" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="../Content/reset.css" rel="stylesheet">
+    <link href="../Content/home.css" rel="stylesheet">
+	<!--为防止加载无数据时页面闪烁-->
+	<link href="../Content/ngcss.css" rel="stylesheet">
+
+</head>
+<body>
+	<!-- header -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  <div class="container">
+	  	<div class="row">
+			<div class="col-md-2">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#logoList">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand text-center" href="index.html" id="logo">
+			      	<img class="img-responsive center-block" src="../Images/logo.png">
+			      </a>
+			    </div>
+	    	</div>	 
+			<div class="col-md-9 col-md-offset-1">
+			    <div class="collapse navbar-collapse" id="logoList">
+			      <ul class="nav navbar-nav navbar-left">
+			        <li class="active"><a href="index.html" >选股回验</a></li>			
+			        <li><a href="#">股池分析</a></li>			  
+			        <li><a href="#">策略方案</a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">			        
+			        <li><a href="#" >
+			        	<span data-toggle="modal" data-target="#myModal">
+			        		登录
+			        	</span>
+				        </a>
+				    </li>
+				    <li><a href="login.html">注册</a></li>
+			      </ul>
+			    </div>
+	    	</div>	    	
+	    </div>
+	  </div>
+	</nav>
+	<!-- body -->
+	<div class="main" ng-app="app" ng-controller="myCtrl">
+		<div class="container" id="mainBody">
+	  		<div class="row">
+	  			<div id="checkSwt">回验&lt;&lt;</div>
+	  			<div class="col-md-3 title" id="leftBody">
+				    <div class="firstWrap">				
+				    	<a href="#" class="firstTit" id="condition">备选条件</a>			    	
+				    	<div class="firstCon">
+				    		<ul>
+				    			<li>
+				    				<div class="gap"></div>
+				    				<input type="text" ng-model="name" ng-keyup="change($event)" ng-keydown="changeUpDown($event)" class="form-control" id="indexName" placeholder="找不到想要的指标?何不搜索试试" >
+				    				<div id="clearBtn">×</div>
+									<ul id="nameBody">
+										<li  ng-cloak class="targetBox" ng-repeat="item in dataScr"  ng-mousedown="selectItem(item)" ng-mouseenter="changeMouse($index)" ng-class="{searchHover:$index==now}"><span>{{item.name}}</span>
+										</li>
+									</ul>
+				    			</li>
+				    		</ul>				    		
+				    		<div class="secondWrap">
+								<a href="#" class="secondTit">最近常用指标</a>
+								<div class="secondCon">
+									<ol>
+										<li ng-cloak class="targetBox" ng-repeat="item in latas" title="{{item.titlea}}" name="{{item.name}}" track-by="$index" ng-mousedown="selectItem(item)">{{item.nameCon}}</li>
+									</ol>
+								</div>
+								<a href="#" class="secondTit">财务指标</a>
+								<div class="secondCon">
+									<div class="thirdWrap">
+										<a href="#" class="thirdTit">财务分析指标</a>
+										<div class="thirdCon">
+											<ol>
+											  <li ng-cloak class="targetBox" ng-repeat="item in finAnalys" title="{{item.titlea}}" name="{{item.name}}" track-by="$index" ng-mousedown="selectItem(item)">{{item.nameCon}}</li>
+										    </ol>
+										</div>
+										<a href="#" class="thirdTit">资产负债表</a>
+										<div class="thirdCon">
+											<ol>
+												<li ng-cloak class="targetBox" ng-repeat="item in BanlaceSheets" title="{{item.titlea}}" name="{{item.name}}" track-by="$index" ng-mousedown="selectItem(item)">{{item.nameCon}}</li>
+											</ol>
+										</div>
+										<a href="#" class="thirdTit">利润表</a>
+										<div class="thirdCon">
+											<ol>
+												<li ng-cloak class="targetBox" ng-repeat="item in ProfitSheets" title="{{item.titlea}}" name="{{item.name}}" track-by="$index" ng-mousedown="selectItem(item)">{{item.nameCon}}</li>
+											</ol>
+										</div>
+										<a href="#" class="thirdTit">现金流量表</a>
+										<div class="thirdCon">
+											<ol>
+												<li ng-cloak class="targetBox" ng-repeat="item in CashFlows" title="{{item.titlea}}" name="{{item.name}}" track-by="$index" ng-mousedown="selectItem(item)">{{item.nameCon}}</li>
+
+											</ol>
+										</div>
+									</div>
+								</div>
+								<a href="#" class="secondTit">板块指标</a>
+								<div class="secondCon">
+									<div class="thirdWrap">
+										<a href="#" class="thirdTit">概念板块</a>
+										<div class="thirdCon">
+											<ol>
+												<li ng-cloak class="targetBox" ng-repeat="item in ConceptPs" title="{{item.titlea}}" name="{{item.name}}" track-by="$index" ng-mousedown="selectItem(item)">{{item.nameCon}}</li>
+										  	</ol>
+										</div>
+										<a href="#" class="thirdTit">市场板块</a>
+										<div class="thirdCon">
+											<ol>
+												<li ng-cloak class="targetBox" ng-repeat="item in MarketPs" title="{{item.titlea}}" name="{{item.name}}" track-by="$index" ng-mousedown="selectItem(item)">{{item.nameCon}}</li>
+											</ol>
+										</div>
+										<a href="#" class="thirdTit">地域板块</a>
+										<div class="thirdCon">
+											<ol>
+												<li ng-cloak class="targetBox" ng-repeat="item in RegionPs" title="{{item.titlea}}" name="{{item.name}}" track-by="$index" ng-mousedown="selectItem(item)">{{item.nameCon}}</li>
+
+											</ol>
+										</div>
+										<a href="#" class="thirdTit">行业板块</a>
+										<div class="thirdCon">
+											<ol>
+												<li ng-cloak class="targetBox" ng-repeat="item in TradePs" title="{{item.titlea}}" name="{{item.name}}" track-by="$index" ng-mousedown="selectItem(item)">{{item.nameCon}}</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+								<a href="#" class="secondTit">行情指标</a>
+								<div class="secondCon">
+									<ol>
+									  <li ng-cloak class="targetBox" ng-repeat="item in markets" title="{{item.titlea}}" name="{{item.name}}" track-by="$index" ng-mousedown="selectItem(item)">{{item.nameCon}}</li>
+								    </ol>
+								</div>
+								<a href="#" class="secondTit">技术指标</a>
+								<div class="secondCon">
+									<ol>
+										<li ng-cloak class="targetBox" ng-repeat="item in techs" title="{{item.titlea}}" name="{{item.name}}" track-by="$index" ng-mousedown="selectItem(item)">{{item.nameCon}}</li>
+									</ol>
+								</div>						
+							</div>
+				    	</div>
+				    	<div class="gapTit"></div>
+				    	<a href="#" class="firstTit" id="MyStock">我的选股方案</a>
+				    	<div class="firstCon" id="myOptions">				    	
+							<ul ng-cloak>
+								<li  ng-repeat="item in solutions.slice().reverse()" ng-click="getSolutionCont(item)">{{item.Name}}</li>
+							</ul>
+				    	</div>
+				    </div>
+	  			</div>
+					<div class="col-md-9" id="rightBody">
+	  				<div class="wrap">
+	  					<div class="row wrapTop">
+		  					<div class="redLine selectWrap">
+		  						<span>已选条件</span>
+		  						<a href="#" id="save" title="保存所选条件" ></a>
+		  						<a href="#" id="del" title="清空所有条件"></a>
+		  					</div>
+		  					<div id="checkedWrap" data-drag="default">
+		  						<div id="checkedCon">
+			  						<div ng-cloak class="col-md-6 checkedConUnit" ng-repeat="choiceItem in choiceItems" ng-mouseenter="fenbutu(choiceItem)">
+										<span  style="display: none" ng-bind="choiceItem.value" ></span>
+				  						<input ng-cloak ng-class="{'visiHidden':choiceItem.value==null}"  type="text" class="valueLeft" ng-model="choiceItem.minValue" ng-model-options="{debounce:1000}"><!--ng-model-options="{debounce:1000}"-->
+				  						<span ng-class="{'visiHidden':choiceItem.value==null}">≤</span>
+				  						<div class="unitWrap">
+				  							<div class="oneFloor">
+										        <a href="#"  class="dragDelDiv onlyOneFloor"  ng-class="{'onlyNameTop':choiceItem.selectTerm==null}" ng-mousedown="delDivItem($index)" name="{{choiceItem.name}}">{{choiceItem.nameCon}}</a>
+										    </div>
+										    <div class="twoFloor" ng-if="choiceItem.selectLeft==null&&choiceItem.selectTermList!=null">
+												<div class="divselect">
+						  							<div>
+														<span ng-bind="choiceItem.selectTermDisplay"></span>
+												        <span></span>
+												    </div>
+												    <ul>
+														<li  class="enterCho" ng-repeat="item in choiceItem.selectTermList" track-by="$index"  ng-bind="item.SelectDisplay" ng-click="choseTime(item,choiceItem)" ng-mouseenter="enterChose(choiceItem)"></li>
+												    </ul>
+						  						</div>
+									      	</div>
+									      	<div class="threeFloor" ng-if="choiceItem.selectLeft!=null&&choiceItem.selectTermList&&choiceItem.selectLeftList">
+										        <span class="speSec">
+										          <div class="divselect">
+										            <div>
+										              <span ng-bind="choiceItem.selectLeft">adj</span>
+										              <span></span>
+										            </div>
+										            <ul>
+														<li ng-repeat="item in choiceItem.selectLeftList" ng-bind="item.SelectDisplay" ng-click="choParam(item,choiceItem)"></li>
+													</ul>
+										          </div>
+										        </span>
+										        <span class="speSec">
+										          <div class="divselect">
+										            <div>
+													  <span ng-bind="choiceItem.selectTermDisplay"></span>
+										              <span></span>
+										            </div>
+										            <ul>
+														<li ng-repeat="item in choiceItem.selectTermList" track-by="$index" ng-bind="item.SelectDisplay" ng-click="choseTime(item,choiceItem)"></li>
+													</ul>
+										          </div>
+										        </span>
+										    </div>
+										    <div class="fourFloor" ng-class="{'spanhidden':choiceItem.paramsValues==null}">
+										        <span>(</span>
+										        <input   ng-repeat="item in choiceItem.paramsValues" ng-model="item.InputValue">
+										        <!-- <span>,</span> -->
+										        <!--<input>
+										        <span>,</span>
+										        <input>-->
+										        <span>)</span>
+										    </div> 
+				  						</div>
+				  						<span ng-class="{'visiHidden':choiceItem.value==null}">≤</span>
+				  						<input ng-class="{'visiHidden':choiceItem.value==null}" type="text" class="valueRight" ng-model="choiceItem.maxValue">
+				  					</div>
+									<div class="tips"><span>+</span>拖动指标标签到此面板处</div>
+								</div>			  		
+		  					</div>		  					
+		  				</div>
+		  				<div class="row wrapTop">
+		  					<div class="customTit">
+		  						<div>自定义选股</div>	
+		  					</div>
+		  					<div id="customWrap">
+			  					<div class="customConBefor">
+			  						<div class="customConUnit">
+			  							<div class="col-md-4">
+					  						<div class="unitLeft selFirTip " ng-class="{'addTipUrl':(defaultItem.firstInputVal===''&&defaultItem.first.name==null)}" data-drag="1">
+			<!--ljq0123复制已选-->		          <div ng-cloak class="unitWrap">
+														<div class="oneFloor" ng-class="{'onlyName':defaultItem.first.selectTerm==null}">
+															<a href="javascript:;" class="selDelFir" name="{{defaultItem.first.name}}" >{{defaultItem.first.nameCon}}</a>
+														</div>
+														<div class="twoFloor" ng-if="defaultItem.first.selectLeft==null&&defaultItem.first.selectTermList!=null&&defaultItem.first.name!=null"> <!-- 修改判断ng-class="{'spanhidden':defaultItem.first.selectLeft!=null||defaultItem.first.name==null}"-->
+																<div class="divselect">
+																<div>
+																	<span ng-bind="defaultItem.first.selectTermDisplay"></span>
+																	<span></span>
+																</div>
+																<ul class="defEnter">
+																	<li class="enterCho" ng-repeat="item in defaultItem.first.selectTermList" track-by="$index"  ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,defaultItem.first)" ng-mouseenter="enterChose(defaultItem.first)"></li>
+																</ul>
+															</div>
+														</div>
+														<div class="threeFloor" ng-class="{'spanhidden':defaultItem.first.selectLeft==null}">
+														<span class="speSec">
+														  <div class="divselect">
+															  <div>
+																  <span ng-bind="defaultItem.first.selectLeft">adj</span>
+																  <span></span>
+															  </div>
+															  <ul>
+																  <li ng-repeat="item in defaultItem.first.selectLeftList" ng-bind="item.SelectDisplay" ng-click="selfChoParam(item,defaultItem.first)"></li>
+															  </ul>
+														  </div>
+														</span>
+														<span class="speSec">
+														  <div class="divselect">
+															  <div>
+																  <span ng-bind="defaultItem.first.selectTermDisplay"></span>
+																  <span></span>
+															  </div>
+															  <ul>
+																  <li ng-repeat="item in defaultItem.first.selectTermList" track-by="$index" ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,defaultItem.first)"></li>
+															  </ul>
+														  </div>
+														</span>
+														</div>
+														<div class="fourFloor" ng-class="{'spanhidden':defaultItem.first.paramsValues==null}">
+															<span>(</span>
+															<input   ng-repeat="item in defaultItem.first.paramsValues" ng-model="item.InputValue" >
+															<!-- <span>,</span> -->
+															<!--<input>
+															<span>,</span>
+															<input>-->
+															<span>)</span>
+														</div>
+												        <input type="text" class="editable" ng-class="{'spanhidden':defaultItem.isFirstRo}" ng-readonly="defaultItem.isFirstRo" ng-model="defaultItem.firstInputVal">
+
+											</div>
+					  						</div>
+					  						<div class="unitRight divselect">
+					  							<div>
+													<span  ng-bind="defaultItem.operator1Name"></span>
+											        <span></span>
+											    </div>
+											    <ul class="op1Enter">
+													<li class="enterCho" ng-repeat="item in operation1" ng-click="choseSign(item,1)">{{item.op}}</li>
+											    </ul>
+					  						</div>
+					  					</div>
+					  					<div class="col-md-4">
+					  						<div class="unitLeft selSencdTip" ng-class="{'addTipUrl':(defaultItem.secondInputVal===''&&defaultItem.second.name==null)}" data-drag="2">
+												<div ng-cloak class="unitWrap">
+													<div class="oneFloor" ng-class="{'onlyName':defaultItem.second.selectTerm==null}">
+														<a href="javascript:;" class="selDelFir" name="{{defaultItem.second.name}}" >{{defaultItem.second.nameCon}}</a>
+													</div>
+													<div class="twoFloor" ng-if="defaultItem.second.selectLeft==null&&defaultItem.second.selectTermList!=null&&defaultItem.second.name!=null">
+														<div class="divselect">
+															<div>
+																<span ng-bind="defaultItem.second.selectTermDisplay"></span>
+																<span></span>
+															</div>
+															<ul class="defEnter">
+																<li class="enterCho" ng-repeat="item in defaultItem.second.selectTermList" track-by="$index"  ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,defaultItem.second)" ng-mouseenter="enterChose(defaultItem.second)"></li>
+															</ul>
+														</div>
+													</div>
+													<div class="threeFloor" ng-class="{'spanhidden':defaultItem.second.selectLeft==null}">
+										        <span class="speSec">
+										          <div class="divselect">
+													  <div>
+														  <span ng-bind="defaultItem.second.selectLeft">adj</span>
+														  <span></span>
+													  </div>
+													  <ul>
+														  <li ng-repeat="item in defaultItem.second.selectLeftList" ng-bind="item.SelectDisplay" ng-click="selfChoParam(item,defaultItem.second)"></li>
+													  </ul>
+												  </div>
+										        </span>
+										        <span class="speSec">
+										          <div class="divselect">
+													  <div>
+														  <span ng-bind="defaultItem.second.selectTermDisplay"></span>
+														  <span></span>
+													  </div>
+													  <ul>
+														  <li ng-repeat="item in defaultItem.second.selectTermList" track-by="$index" ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,defaultItem.second)"></li>
+													  </ul>
+												  </div>
+										        </span>
+													</div>
+													<div class="fourFloor" ng-class="{'spanhidden':defaultItem.second.paramsValues==null}">
+														<span>(</span>
+														<input   ng-repeat="item in defaultItem.second.paramsValues" ng-model="item.InputValue" >
+														<!-- <span>,</span> -->
+														<!--<input>
+                                                        <span>,</span>
+                                                        <input>-->
+														<span>)</span>
+													</div>
+													<input type="text" class="editable" ng-class="{'spanhidden':defaultItem.isSecondRo}" ng-readonly="defaultItem.isSecondRo" ng-model="defaultItem.secondInputVal">
+												</div>
+
+											</div>
+					  						<div class="unitRight divselect">
+					  							<div>
+													<span  ng-bind="defaultItem.operator2Name"></span>
+											        <span></span>
+											    </div>
+											    <ul class="op2Enter">
+													<li class="enterCho" ng-repeat="item in operation2" ng-click="choseSign(item,2)">{{item.op}}</li>
+											    </ul>
+					  						</div>
+					  					</div>
+					  					<div class="col-md-4">
+					  						<div class="unitLeft selTridTip" data-drag="3"  ng-class="{'addTipUrl':(defaultItem.thirdInputVal===''&&defaultItem.third.name==null)}">
+												<div ng-cloak class="unitWrap">
+													<div class="oneFloor" ng-class="{'onlyName':defaultItem.third.selectTerm==null}">
+														<a href="#" class="selDelFir" name="{{defaultItem.third.name}}" >{{defaultItem.third.nameCon}}</a>
+													</div>
+													<div class="twoFloor" ng-if="defaultItem.third.selectLeft==null&&defaultItem.third.selectTermList!=null&&defaultItem.third.name!=null">
+														<div class="divselect">
+															<div>
+																<span ng-bind="defaultItem.third.selectTermDisplay"></span>
+																<span></span>
+															</div>
+															<ul class="defEnter">
+																<li class="enterCho" ng-repeat="item in defaultItem.third.selectTermList" track-by="$index"  ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,defaultItem.third)" ng-mouseenter="enterChose(defaultItem.third)"></li>
+															</ul>
+														</div>
+													</div>
+													<div class="threeFloor" ng-class="{'spanhidden':defaultItem.third.selectLeft==null}">
+										        <span class="speSec">
+										          <div class="divselect">
+													  <div>
+														  <span ng-bind="defaultItem.third.selectLeft">adj</span>
+														  <span></span>
+													  </div>
+													  <ul>
+														  <li ng-repeat="item in defaultItem.third.selectLeftList" ng-bind="item.SelectDisplay" ng-click="selfChoParam(item,defaultItem.third)"></li>
+													  </ul>
+												  </div>
+										        </span>
+										        <span class="speSec">
+										          <div class="divselect">
+													  <div>
+														  <span ng-bind="defaultItem.third.selectTermDisplay"></span>
+														  <span></span>
+													  </div>
+													  <ul>
+														  <li ng-repeat="item in defaultItem.third.selectTermList" track-by="$index" ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,defaultItem.third)"></li>
+													  </ul>
+												  </div>
+										        </span>
+													</div>
+													<div class="fourFloor" ng-class="{'spanhidden':defaultItem.third.paramsValues==null}">
+														<span>(</span>
+														<input   ng-repeat="item in defaultItem.third.paramsValues" ng-model="item.InputValue" >
+														<!-- <span>,</span> -->
+														<!--<input>
+                                                        <span>,</span>
+                                                        <input>-->
+														<span>)</span>
+													</div>
+													<input type="text" class="editable" ng-class="{'spanhidden':defaultItem.isThirdRo}" ng-readonly="defaultItem.isThirdRo" ng-model="defaultItem.thirdInputVal">
+
+											</div>
+					  						</div>
+					  						<a class="unitRightAdd"  ng-class="{'sureActNg':(defaultItem.thirdInputVal!==''||defaultItem.third.name!=null)&&((defaultItem.firstInputVal!==''||defaultItem.first.name!=null)||(defaultItem.secondInputVal!==''||defaultItem.second.name!=null))}" ng-click="addItem()"></a>
+					  					</div>					 
+			  						</div>
+			  					</div>
+             				    <div class="customConBefor">
+								  <div class="customConUnit"  ng-repeat="item in selfItems.slice().reverse()">
+									<div class="col-md-4" ng-if="item.first.name||item.firstInputVal!=''||item.firstInputVal===0">
+										<div class="unitLeft noBorder">
+											<div  ng-cloak class="unitWrap">
+												<div class="oneFloor" ng-class="{'onlyName':item.first.selectTerm==null}">
+													<a href="#"  name="{{item.first.name}}" >{{item.first.nameCon}}</a>
+												</div>
+												<div class="twoFloor" ng-class="{'spanhidden':item.first.selectLeft!=null||item.first.name==null}">
+													<div class="divselect">
+														<div>
+															<span ng-bind="item.first.selectTermDisplay"></span>
+															<!--<span></span>-->
+														</div>
+														<!--<ul>
+															<li ng-repeat="item in item.first.selectTermList" track-by="$index"  ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,item.first)"></li>
+														</ul>-->
+													</div>
+												</div>
+												<div class="threeFloor" ng-class="{'spanhidden':item.first.selectLeft==null}">
+														<span class="speSec">
+														  <div class="divselect">
+															  <div>
+																  <span ng-bind="item.first.selectLeft">adj</span>
+																  <!--<span></span>-->
+															  </div>
+															  <!--<ul>
+																  <li ng-repeat="item in item.first.selectLeftList" ng-bind="item.SelectDisplay" ng-click="selfChoParam(item,item.first)"></li>
+															  </ul>-->
+														  </div>
+														</span>
+														<span class="speSec">
+														  <div class="divselect">
+															  <div>
+																  <span ng-bind="item.first.selectTermDisplay"></span>
+																  <!--<span></span>-->
+															  </div>
+															  <!--<ul>
+																  <li ng-repeat="item in item.first.selectTermList" track-by="$index" ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,item.first)"></li>
+															  </ul>-->
+														  </div>
+														</span>
+												</div>
+												<div class="fourFloor" ng-class="{'spanhidden':item.first.paramsValues==null}">
+													<span>(</span>
+													<input   ng-repeat="item in item.first.paramsValues" ng-model="item.InputValue" >
+													<!-- <span>,</span> -->
+													<!--<input>
+                                                    <span>,</span>
+
+                                                    <input>-->
+													<span>)</span>
+												</div>
+												<div  class="selfEditable" ng-class="{'spanhidden':item.isFirstRo}" ng-readonly="item.isFirstRo" ng-bind="item.firstInputVal">
+												</div>
+											</div>
+										</div>
+										<div class="unitRight divselect noBorder" ng-if="(item.first.name||item.firstInputVal!=''||item.firstInputVal===0)&&(item.second.name||item.secondInputVal!=''||item.secondInputVal===0)">
+											<div>
+												<span  ng-bind="item.operator1Name" class="opFirSel"></span>
+
+											</div>
+											<!--<ul>
+                                                <li ng-repeat="item in operation1" ng-click="choseSign(item,1)">{{item.op}}</li>
+                                            </ul>-->
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="unitLeft noBorder" ng-if="item.second.name||item.secondInputVal!=''||item.secondInputVal===0" ng-class="{'no-bg':item.second!=''}">
+											<div ng-cloak class="unitWrap">
+												<div class="oneFloor" ng-class="{'onlyName':item.second.selectTerm==null}">
+													<a href="#"  name="{{item.second.name}}" >{{item.second.nameCon}}</a>
+												</div>
+												<div class="twoFloor" ng-class="{'spanhidden':item.second.selectLeft!=null||item.second.name==null}">
+													<div class="divselect">
+														<div>
+															<span ng-bind="item.second.selectTermDisplay"></span>
+															<!--<span></span>-->
+														</div>
+														<!--<ul>
+                                                            <li ng-repeat="item in item.second.selectTermList" track-by="$index"  ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,item.second)"></li>
+                                                        </ul>-->
+													</div>
+												</div>
+												<div class="threeFloor" ng-class="{'spanhidden':item.second.selectLeft==null}">
+										        <span class="speSec">
+										          <div class="divselect">
+													  <div>
+														  <span ng-bind="item.second.selectLeft">adj</span>
+														  <!-- <span></span>-->
+													  </div>
+													  <!--<ul>
+														  <li ng-repeat="item in item.second.selectLeftList" ng-bind="item.SelectDisplay" ng-click="selfChoParam(item,item.second)"></li>
+													  </ul>-->
+												  </div>
+										        </span>
+										        <span class="speSec">
+										          <div class="divselect">
+													  <div>
+														  <span ng-bind="item.second.selectTermDisplay"></span>
+														  <!-- <span></span>-->
+													  </div>
+													  <!--<ul>
+														  <li ng-repeat="item in item.second.selectTermList" track-by="$index" ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,item.second)"></li>
+													  </ul>-->
+												  </div>
+										        </span>
+												</div>
+												<div class="fourFloor" ng-class="{'spanhidden':item.second.paramsValues==null}">
+													<span>(</span>
+													<input   ng-repeat="item in item.second.paramsValues" ng-model="item.InputValue" >
+													<!-- <span>,</span> -->
+													<!--<input>
+                                                    <span>,</span>
+                                                    <input>-->
+													<span>)</span>
+												</div>
+												<div class="selfEditable" ng-class="{'spanhidden':item.isSecondRo}" ng-readonly="item.isSecondRo" ng-bind="item.secondInputVal">
+											    </div>
+											</div>
+
+										</div>
+										<div class="unitRight divselect noBorder" ng-class="{'sencdNull':!(item.second.name||item.secondInputVal!=''||item.secondInputVal===0)}">
+											<div>
+												<span  ng-bind="item.operator2Name" class="opSencdSelf"></span>
+
+											</div>
+											<!--<ul>
+                                                <li ng-repeat="item in operation2" ng-click="choseSign(item,2)">{{item.op}}</li>
+
+                                            </ul>-->
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="unitLeft noBorder">
+											<div  ng-cloak class="unitWrap">
+												<div class="oneFloor" ng-class="{'onlyName':item.third.selectTerm==null}">
+													<a href="#"  name="{{item.third.name}}" >{{item.third.nameCon}}</a>
+												</div>
+												<div class="twoFloor" ng-class="{'spanhidden':item.third.selectLeft!=null||item.third.name==null}">
+													<div class="divselect">
+														<div>
+															<span ng-bind="item.third.selectTermDisplay"></span>
+															<!--<span></span>-->
+														</div>
+														<!--<ul>
+                                                            <li ng-repeat="item in item.third.selectTermList" track-by="$index"  ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,item.third)"></li>
+                                                        </ul>-->
+													</div>
+												</div>
+												<div class="threeFloor" ng-class="{'spanhidden':item.third.selectLeft==null}">
+										        <span class="speSec">
+										          <div class="divselect">
+													  <div>
+														  <span ng-bind="item.third.selectLeft">adj</span>
+														  <!--<span></span>-->
+													  </div>
+													  <!--<ul>
+														  <li ng-repeat="item in item.third.selectLeftList" ng-bind="item.SelectDisplay" ng-click="selfChoParam(item,item.third)"></li>
+													  </ul>-->
+												  </div>
+										        </span>
+										        <span class="speSec">
+										          <div class="divselect">
+													  <div>
+														  <span ng-bind="item.third.selectTermDisplay"></span>
+														  <!--<span></span>-->
+													  </div>
+													  <!--<ul>
+														  <li ng-repeat="item in item.third.selectTermList" track-by="$index" ng-bind="item.SelectDisplay" ng-click="selfChoseTime(item,item.third)"></li>
+													  </ul>-->
+												  </div>
+										        </span>
+												</div>
+												<div class="fourFloor" ng-class="{'spanhidden':item.third.paramsValues==null}">
+													<span>(</span>
+													<input   ng-repeat="item in item.third.paramsValues" ng-model="item.InputValue" >
+													<!-- <span>,</span> -->
+													<!--<input>
+                                                    <span>,</span>
+                                                    <input>-->
+													<span>)</span>
+												</div>
+												<div class="selfEditable" ng-class="{'spanhidden':item.isThirdRo}" ng-readonly="item.isThirdRo" ng-bind="item.thirdInputVal">
+                                                </div>
+											</div>
+										</div>
+										<a class="unitRightAdd" ng-click="delSelfItem($index)">×</a>
+									</div>
+								</div>
+							</div>
+							</div>
+		  				</div>
+	  				</div>
+	  				<div class="wrap">
+	  					<div class="row wrapBom">
+		  					<div class="redLine">选股结果</div>	
+		  					<div class="resultTit">已匹配到<span ng-bind="resultLenghtAll"></span>只股票</div>
+		  					<div>
+								<!--<div class="data-result">
+									选中的标准：
+									<div ng-repeat="choiceItem in choiceItems">
+										<div>标准：{{choiceItem.name}}==》最小值:{{choiceItem.minValue}}最大值：{{choiceItem.maxValue}}
+											</br>传给后台时间：{{choiceItem.selectTerm}} 输入参数{{choiceItem.paramsValues}}</div>
+									</div>
+									</br>自定义标准：{{defaultItem}}
+									<div ng-repeat="item in selfItems">
+										<div>{{item.first}}{{item.operator1}}{{item.second}}{{item.operator2}}{{item.third}}</div>
+									</div>
+								</div>-->
+								<div ng-show="resultLenghtAll" class="result">
+									<div class="data-table">
+										<div class="data-table-head-wrap">
+											<div class="data-table-head">
+												<div>股票名称</div>
+												<div ng-click="getResults(null,'RecentRice')">最新价</div>
+												<div ng-click="getResults(null,'ChangeRate')">涨跌幅</div>
+												<div ng-click="getResults(null,'ChangeAmount')">开盘价</div>
+												<div ng-click="getResults(null,'LastAmount')">昨收价</div>
+												<div ng-click="getResults(null,'volume')">成交量</div>
+												<div ng-click="getResults(null,'TodayAmount')">成交额</div>
+											</div>
+										</div>										
+										<div id="tableBody">
+											<div ng-cloak ng-repeat="data in resultList" ><!--| orderBy:orderIndex :isDesc-->
+												<div class="data-table-body">
+													<div>
+														<span>{{data.name}}</span>
+														<span>{{data.code}}</span>
+													</div>
+													<div ng-class="{'green':data.changeRate<0,'red':data.changeRate>0}">
+														<span ng-show="data.recentRice!=0">{{data.recentRice | number:2}}</span>
+														<span ng-class="{'zero':data.recentRice==0}" ng-show="data.recentRice==0">-</span>
+													</div>
+													<div ng-class="{'green':data.changeRate<0,'red':data.changeRate>0}">
+														<span ng-show="data.recentRice!=0">{{data.changeRate}}%</span>
+														<span ng-class="{'zero':data.recentRice==0}" ng-show="data.recentRice==0">-</span>
+													</div>
+													<div ng-class="{'green':data.changeRate<0,'red':data.changeRate>0}">
+														<span ng-show="data.recentRice!=0">{{data.changeAmount | number:2}}</span>
+														<span ng-class="{'zero':data.recentRice==0}" ng-show="data.recentRice==0">-</span>
+													</div>
+													<div ng-class="{'green':data.changeRate<0,'red':data.changeRate>0}">{{data.lastAmount | number:2}}</div>
+													<div>{{data.volume}}</div>
+													<div>{{data.todayAmount}}</div>
+												</div>
+											</div>
+											<p id="MoreAndMore" data-gap="10" ng-show="resultLenghtAll>10">
+												<!--//加载中-->
+												<span id="loadTip">滚动加载更多</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+		  				</div>		
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</div>
+	</div>
+	<!-- footer -->
+	<div class="footTop">	
+		<div class="container">
+	  		<div class="row">
+	  			<div class="col-md-4">
+					<dl>
+						<dt>
+							<div>CONTACT</div>
+							<div>联系我们</div>
+						</dt>
+						<dd>地址：深圳市南山区学苑大道1001号南山智园A4栋</dd>
+						<dd>热线：400-609-6665， 800-999-3099</dd>
+						<dd>邮箱：service@gtadata.com</dd>						
+					</dl>
+	    		</div>
+	    		<div class="col-md-4">
+					<dl>
+						<dt>
+							<div>ABOUT US</div>
+							<div>关于我们</div>
+						</dt>
+						<dd>宽量网：<a href="http://www.gtaquant.com/Home/Index">http://www.gtaquant.com/Home/Index</a></dd>
+						<dd>宽社区：<a href="http://www.gtaquant.com/Home/Index">http://www.gtaquant.com/Home/Index</a></dd>
+						<dd>国泰安官网：<a href="http://www.gtaquant.com/">http://www.gtaquant.com/</a></dd>						
+					</dl>
+	    		</div>
+	    		<div class="col-md-4">
+					<dl>
+						<dt>
+							<div>WE CHAT</div>
+							<div>关注我们</div>
+						</dt>
+						<dd>
+							<img src="../Images/QR1.png">
+							<img src="../Images/QR2.png">
+						</dd>						
+					</dl>
+	    		</div>
+	  		</div>
+	  	</div>
+	</div>
+	<div class="footBottom">	
+		深圳国泰安教育技术股份有限公司 Copyright 2015 GTA All rights reserved.粤ICP备050
+	</div>
+	<!-- float -->
+	<div id="mask"></div>
+	<div id="bombBox">
+	<!-- 	<a class="closeBtn">×</a>
+		<div class="tipCon"><span>!</span><span>最多只能添加10个条件！</span></div>
+		<div class="btnWrap"><a class="sureBtn">确定</a></div> -->
+	</div>	
+	<div id="backCheck"  class="backCheck">
+		<a href="#" id="backCheckBtn">回验 &gt;&gt;</a>
+		<div id="backCheckBody">
+			<div class="checkTit">
+				<a href="">默认参数</a>
+				<a href="">自定义参数</a>
+			</div>			
+			<div class="checkCon">
+				<div>回验时间：1年</div>
+				<div>调仓周期：1天、3天、5天、20天</div>
+				<div>调仓时间：以T+1日开盘价调仓</div>
+				<div>仓位控制：满仓</div>
+				<div>基准指数：沪深300</div>
+			</div>
+			<div class="checkCon">
+				<div class="checkTime">回验时间：<span>1年</span><span>3年</span><span>5年</span></div>
+				<div>调仓周期：<span class="changeTime"><input type="text" value="10" autocomplete="off" oninput="value=this.value.replace(/\D/g,'');" ></span>天</div>
+				<div class="radioWrap">
+					止损条件：
+					<span class="openConBtn">开启</span>
+					<span class="closeConBtn selected">不开启</span>					
+				</div>
+				<div class="proCon">收益率≤<input type="text" class="pro" autocomplete="off" value="-12">%时，全部卖出</div>
+				<div class="radioWrap">
+					追加条件：
+					<span class="openConBtn">开启</span>
+					<span class="closeConBtn selected">不开启</span>					
+				</div>
+				<div class="proCon">收益率≥<input type="text" class="pro" autocomplete="off" value="10">%时，继续持有一个持股周期</div>
+				<div>调仓时间：以T+1日开盘价调仓</div>
+				<div>仓位控制：满仓</div>
+				<div>基准指数：沪深300</div>
+			</div>
+			<button type="button" class="btn btn-danger" id="checkSta">开始回验</button>		
+		</div>
+	</div>
+	<script src="../Scripts/jquery-3.1.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/angular.min.js"></script>
+	<script src="../Scripts/ngjs/app.js"></script>
+	<script src="../Scripts/ngjs/service/commonService.js"></script>
+	<script src="../Scripts/ngjs/controller/homeCtrl.js"></script>
+	<script type="text/javascript" src="../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../Scripts/jquery-nstslider.js"></script>
+	<script src="../Scripts/home.js"></script>
+	<script type="text/javascript">
+		(function($){
+			// 滚动条重置
+			$(window).on("load",function(){
+					$.mCustomScrollbar.defaults.scrollButtons.enable=true;
+					$.mCustomScrollbar.defaults.axis="y";						
+					$("ol").mCustomScrollbar();	
+					$("#myOptions").mCustomScrollbar();
+					$("#nameBody").mCustomScrollbar({
+						scrollButtons:{
+							// enable:false,
+							// scrollType:"continuous",
+							// scrollSpeed:20,
+							// scrollAmount:36
+						},
+						keyboard:{
+							enable:true,
+							scrollAmount:5,
+							scrolltype:"scrolltype"	
+						}
+					});				
+			});
+		})(jQuery);
+		/*阻止子滚动到底部父级滚动事件*/
+		$.fn.scrollUnique = function() {
+			return $(this).each(function() {
+				var eventType = 'mousewheel';
+				// 火狐是DOMMouseScroll事件
+				if (document.mozHidden !== undefined) {
+					eventType = 'DOMMouseScroll';
+				}
+				$(this).on(eventType, function(event) {
+					// 一些数据
+					var scrollTop = this.scrollTop,
+							scrollHeight = this.scrollHeight,
+							height = this.clientHeight;
+
+					var delta = (event.originalEvent.wheelDelta) ? event.originalEvent.wheelDelta : -(event.originalEvent.detail || 0);
+
+					if ((delta > 0 && scrollTop <= delta) || (delta < 0 && scrollHeight - height - scrollTop <= -1 * delta)) {
+						// IE浏览器下滚动会跨越边界直接影响父级滚动，因此，临界时候手动边界滚动定位
+						this.scrollTop = delta > 0? 0: scrollHeight;
+						// 向上滚 || 向下滚
+						event.preventDefault();
+					}
+				});
+			});
+		};
+		$("#tableBody").scrollUnique();
+	</script>
+</body>
+</html>

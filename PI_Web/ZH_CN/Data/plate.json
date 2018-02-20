@@ -1,0 +1,13 @@
+[
+  {"timeId":"1","seasonTime":"2013 第三季度","Name":"板块周转率1","targetId":"5001","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"timeId":"2","seasonTime":"2013 第三季度","Name":"板块转率2","targetId":"5011","minValue":"0.1","maxValue":"10","titlea":"123"},
+  {"timeId":"3","seasonTime":"2013 第三季度","Name":"板块率2","targetId":"5002","minValue":"0.2","maxValue":"20","titlea":"123"},
+  {"timeId":"4","seasonTime":"2013 第三季度","Name":"板块收益3","targetId":"5003","minValue":"0.3","maxValue":"30","titlea":"123"},
+  {"timeId":"5","seasonTime":"2013 第三季度","Name":"板块毛利率4","targetId":"5004","minValue":"0.4","maxValue":"40","titlea":"123"},
+  {"timeId":"6","seasonTime":"2013 第三季度","Name":"板块本5","targetId":"5005","minValue":"0.1","maxValue":"50","titlea":"123"},
+  {"timeId":"7","seasonTime":"2013 第三季度","Name":"板块市值6","targetId":"5006","minValue":"0.6","maxValue":"60","titlea":"123"},
+  {"timeId":"8","seasonTime":"2013 第三季度","Name":"板块市值7","targetId":"5007","minValue":"0.7","maxValue":"70","titlea":"123"},
+  {"timeId":"9","seasonTime":"2013 第三季度","Name":"板块值8","targetId":"5008","minValue":"0.8","maxValue":"80","titlea":"123"},
+  {"timeId":"10","seasonTime":"2013 第三季度","Name":"板块调整每股9","targetId":"5009","minValue":"0.9","maxValue":"90","titlea":"123"},
+  {"timeId":"11","seasonTime":"2013 第三季度","Name":"板块资本公积10","targetId":"5010","minValue":"1.0","maxValue":"100","titlea":"123"}
+]

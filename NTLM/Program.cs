@@ -3,11 +3,11 @@ using System;
 using System.Configuration;
 using System.Threading;
 
-namespace com.example.demo
+namespace NTLM
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             using (WebApp.Start<Startup>(ConfigurationManager.AppSettings["url"]))
             {

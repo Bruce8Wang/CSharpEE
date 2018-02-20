@@ -1,8 +1,8 @@
 ﻿using System.Web.Http;
 
-namespace com.example.demo.Controllers
+namespace NTLM.Controllers
 {
-    public  class DefaultController:ApiController
+    public class DefaultController : ApiController
     {
         [Route("api/Default")]
         [HttpGet]

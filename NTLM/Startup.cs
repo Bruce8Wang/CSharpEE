@@ -5,14 +5,15 @@ using System;
 using System.Net;
 using System.Web.Http;
 
-namespace com.example.demo
+namespace NTLM
 {
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class Startup
     {
         public void Configuration(IAppBuilder app)
         {
             //设置使用Windows认证
-            HttpListener listener = (HttpListener)app.Properties["System.Net.HttpListener"];
+            var listener = (HttpListener) app.Properties["System.Net.HttpListener"];
             listener.AuthenticationSchemes = AuthenticationSchemes.Ntlm;
 
             var config = new HttpConfiguration();
@@ -26,12 +27,6 @@ namespace com.example.demo
                 FileSystem = new PhysicalFileSystem(string.Format("{0}/static", Environment.CurrentDirectory))
             };
             app.UseFileServer(opt);
-
-            app.Run(context =>
-            {
-                context.Response.ContentType = "text/html";
-                return context.Response.WriteAsync("Hello World !");
-            });
         }
     }
 }

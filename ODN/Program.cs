@@ -18,11 +18,13 @@ namespace ODN
             var frm = new Form();
             frm.Load += (sender, e) =>
             {
-                btnSubmit.Location = new Point(120, 80);
-                btnSubmit.Size = new Size(75, 25);
-                btnSubmit.Text = "Submit";
-                frm.ClientSize = new Size(400, 300);
+                var ScreenArea = Screen.GetWorkingArea(frm);
+                frm.Location = new Point(0, 0);
+                frm.Size = new Size(ScreenArea.Width, ScreenArea.Height);
                 frm.Text = "主表单";
+                btnSubmit.Location = new Point(ScreenArea.Width / 2 - btnSubmit.Size.Width / 2,
+                    ScreenArea.Height / 2 - btnSubmit.Size.Height * 2);
+                btnSubmit.Text = "Submit";
                 frm.Controls.Add(btnSubmit);
             };
             //运行一个Form

@@ -1,9 +1,8 @@
-﻿<%@ WebHandler Language="C#" Class="A003" %>
+﻿<%@ WebHandler Language="C#" Class="C01" %>
 
-using System;
 using System.Web;
 
-public class A003 : IHttpHandler
+public class C01 : IHttpHandler
 {
 
     public void ProcessRequest(HttpContext context)

@@ -1,0 +1,17 @@
+﻿<%@ ServiceHost Language="C#" Service="D01" %>
+
+using System.ServiceModel;
+[ServiceContract]
+public interface ID01
+{
+    [OperationContract]
+    string Hello(string value);
+}
+
+public class D01 : ID01
+{
+    public string Hello(string value)
+    {
+        return "Hello " + value;
+    }
+}

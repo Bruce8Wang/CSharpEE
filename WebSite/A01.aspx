@@ -25,8 +25,8 @@
 </head>
 <body>
     <form id="frmMain" runat="server" method="post" enctype="application/x-www-form-urlencoded">
-        <asp:Button runat="server" ID="btnSubmit" Text="Submit"></asp:Button><br />
-        <asp:Label runat="server" ID="lblShow"></asp:Label>
+        <asp:Button ID="btnSubmit" runat="server" Text="Submit" /><br />
+        <asp:Label ID="lblShow" runat="server" Text=""></asp:Label>
     </form>
 </body>
 </html>

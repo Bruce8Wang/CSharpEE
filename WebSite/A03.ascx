@@ -1,6 +1,8 @@
-﻿<%@ Control Language="C#" %>
+﻿<%@ Control Language="C#" ClassName="A03" %>
 
 <script runat="server">
+    public string Text { get; set; }
+
     protected override void OnInit(EventArgs f)
     {
         Load += (sender, e) =>

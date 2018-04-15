@@ -1,6 +1,7 @@
 ﻿<%@ ServiceHost Language="C#" Service="D01" %>
 
 using System.ServiceModel;
+
 [ServiceContract]
 public interface ID01
 {

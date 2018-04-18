@@ -50,9 +50,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\Default.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
+    <Compile Include="Controller\Default.cs" />
     <Compile Include="Controller\Global.cs" />
     <Compile Include="Model\Person.cs" />
   </ItemGroup>

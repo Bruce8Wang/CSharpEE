@@ -1,0 +1,1 @@
+﻿<%@ Application Inherits="demo.Controller.Global" Language="C#" %>

@@ -8,7 +8,6 @@ namespace demo.Controller
 {
     public class Default : Page
     {
-        protected HtmlForm frmMain;
         protected Button btnSubmit;
         protected Label lblShow;
 

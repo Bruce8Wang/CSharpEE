@@ -1,1 +1,1 @@
-﻿<%@ Application Inherits="demo.Controller.Global" Language="C#" %>
+﻿<%@ Application Language="C#" Inherits="demo.Controller.Global" %>

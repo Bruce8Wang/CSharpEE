@@ -24,7 +24,7 @@
     <title>Home Page</title>
 </head>
 <body>
-    <form id="frmMain" runat="server" method="post" action="./A01.aspx" enctype="application/x-www-form-urlencoded">
+    <form id="frmMain" runat="server" method="post" enctype="application/x-www-form-urlencoded">
         <asp:Button ID="btnSubmit" runat="server" Text="Submit" /><br />
         <asp:Label ID="lblShow" runat="server" Text=""></asp:Label>
     </form>

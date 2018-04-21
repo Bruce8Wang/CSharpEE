@@ -1,9 +1,9 @@
 ﻿using System.Web;
 using System.Web.SessionState;
 
-namespace demo.Controller
+namespace demo
 {
-    public class Global: HttpApplication
+    public class App: HttpApplication
     {
         public override void Init()
         {

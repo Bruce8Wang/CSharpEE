@@ -52,6 +52,9 @@
     <Compile Include="Controller\Global.cs" />
     <Compile Include="Model\Person.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="FolderProfile.pubxml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" Inherits="demo.Controller.Default" %>
+﻿<%@ Page Inherits="demo.Controller.Default" %>
 
 <!DOCTYPE html>
 <html>

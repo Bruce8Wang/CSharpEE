@@ -8,8 +8,7 @@ namespace Wpf_Demo
         [STAThread]
         private static void Main()
         {
-            Application app = new Application();
-            app.StartupUri = new Uri("MainWindow.xaml", UriKind.Relative);
+            var app = new Application {StartupUri = new Uri("MainWindow.xaml", UriKind.Relative)};
             app.Run();
         }
     }

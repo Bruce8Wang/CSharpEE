@@ -23,10 +23,10 @@ namespace WindowsForms_Demo
                 Controls.Add(btnSubmit);
             };
 
-            btnSubmit.Click += (sender, e) => 
-			{ 
-				MessageBox.Show("Hello World !"); 
-			};
+            btnSubmit.Click += (sender, e) =>
+            {
+                MessageBox.Show("Hello World !");
+            };
         }
     }
 }

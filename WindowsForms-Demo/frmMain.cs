@@ -11,14 +11,12 @@ namespace WindowsForms_Demo
             {
                 Location = new Point(250, 200),
                 Size = new Size(75, 25),
-                Name = "btnSubmit",
                 Text = "Submit"
             };
 
             Load += (sender, e) =>
             {
                 ClientSize = new Size(800, 600);
-                Name = "frmMain";
                 Text = "frmMain";
                 Controls.Add(btnSubmit);
             };

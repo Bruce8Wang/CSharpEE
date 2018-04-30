@@ -3,10 +3,10 @@ using System.Windows;
 
 namespace Wpf_Demo
 {
-    internal static class Program
+    public static class Program
     {
         [STAThread]
-        private static void Main()
+        public static void Main()
         {
             var app = new Application {StartupUri = new Uri("MainWindow.xaml", UriKind.Relative)};
             app.Run();

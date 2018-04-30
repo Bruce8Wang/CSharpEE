@@ -3,10 +3,10 @@ using System.Windows.Forms;
 
 namespace WindowsForms_Demo
 {
-    internal static class Program
+    public static class Program
     {
         [STAThread]
-        private static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" ClassName="A03" %>
+﻿<%@ Control Language="C#" %>
 
 <script runat="server">
     public string Text { get; set; }

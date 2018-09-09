@@ -14,6 +14,7 @@
         {
             lblShow.Text = User.Identity.Name.Trim();
         };
+		base.OnInit(e);
     }
 </script>
 

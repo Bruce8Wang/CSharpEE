@@ -3,9 +3,9 @@
 <script runat="server">
     public string Text { get; set; }
 
-    protected override void OnInit(EventArgs f)
+    protected override void OnInit(EventArgs e)
     {
-        Load += (sender, e) =>
+        Load += (sender, e1) =>
         {
             if (IsPostBack)
             {

@@ -1,16 +1,16 @@
 ﻿<%@ Page Language="C#" %>
 
 <script runat="server">    
-    protected override void OnInit(EventArgs f)
+    protected override void OnInit(EventArgs e)
     {
-        Load += (sender, e) =>
+        Load += (sender, e1) =>
         {
             if (IsPostBack)
             {
                 Response.Write("我爱你，中国！");
             }
         };
-        btnSubmit.Click += (sender, e) =>
+        btnSubmit.Click += (sender, e2) =>
         {
             lblShow.Text = User.Identity.Name.Trim();
         };

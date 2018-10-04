@@ -1,0 +1,18 @@
+﻿@using System.Configuration;
+@{
+    var db = Database.OpenConnectionString(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString, ConfigurationManager.ConnectionStrings["ConnectionString"].ProviderName);
+    var dbdata = db.Query(@"SELECT ProjectName, " +
+            "ProjectPercentCompleted " +
+        "FROM dbo.ProjectSummary_RD " +
+        "order by ProjectName");
+    var myChart = new Chart(width: 1200, height: 800, theme: ChartTheme.Green)
+        .AddLegend("项目总体进度")
+        .AddTitle("项目总体进度一览表")
+        .AddSeries(name: "Project Summary",
+                    chartType: "bar",
+                    xValue: dbdata,
+                    xField: "ProjectName",
+                    yValues: dbdata,
+                    yFields: "ProjectPercentCompleted")
+        .Write();
+}

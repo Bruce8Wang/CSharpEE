@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PWADS" targetNamespace="http://tempuri.org/PWADS.xsd" xmlns:mstns="http://tempuri.org/PWADS.xsd" xmlns="http://tempuri.org/PWADS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProjectDetail_RDTableAdapter" Name="ProjectDetail_RD">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Web.config)" DbObjectName="ProjectWebApp.dbo.ProjectDetail_RD" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProjectDepartment, ProjectName, OwnerName, ProjectStartDate, ProjectFinishDate, ProjectPercentCompleted, DelayRate, ProjectDuration, PublishDate, TaskName, TaskBaselineStartDate, TaskBaselineFinishDate, TaskBaselineDuration, TaskStartDate, TaskFinishDate, TaskDuration, TaskActualStartDate, TaskActualFinishDate, TaskActualDuration, TaskPercentCompleted, TaskResourceName FROM dbo.ProjectDetail_RD</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProjectDepartment" DataSetColumn="ProjectDepartment" />
+              <Mapping SourceColumn="ProjectName" DataSetColumn="ProjectName" />
+              <Mapping SourceColumn="OwnerName" DataSetColumn="OwnerName" />
+              <Mapping SourceColumn="ProjectStartDate" DataSetColumn="ProjectStartDate" />
+              <Mapping SourceColumn="ProjectFinishDate" DataSetColumn="ProjectFinishDate" />
+              <Mapping SourceColumn="ProjectPercentCompleted" DataSetColumn="ProjectPercentCompleted" />
+              <Mapping SourceColumn="DelayRate" DataSetColumn="DelayRate" />
+              <Mapping SourceColumn="ProjectDuration" DataSetColumn="ProjectDuration" />
+              <Mapping SourceColumn="PublishDate" DataSetColumn="PublishDate" />
+              <Mapping SourceColumn="TaskName" DataSetColumn="TaskName" />
+              <Mapping SourceColumn="TaskBaselineStartDate" DataSetColumn="TaskBaselineStartDate" />
+              <Mapping SourceColumn="TaskBaselineFinishDate" DataSetColumn="TaskBaselineFinishDate" />
+              <Mapping SourceColumn="TaskBaselineDuration" DataSetColumn="TaskBaselineDuration" />
+              <Mapping SourceColumn="TaskStartDate" DataSetColumn="TaskStartDate" />
+              <Mapping SourceColumn="TaskFinishDate" DataSetColumn="TaskFinishDate" />
+              <Mapping SourceColumn="TaskDuration" DataSetColumn="TaskDuration" />
+              <Mapping SourceColumn="TaskActualStartDate" DataSetColumn="TaskActualStartDate" />
+              <Mapping SourceColumn="TaskActualFinishDate" DataSetColumn="TaskActualFinishDate" />
+              <Mapping SourceColumn="TaskActualDuration" DataSetColumn="TaskActualDuration" />
+              <Mapping SourceColumn="TaskPercentCompleted" DataSetColumn="TaskPercentCompleted" />
+              <Mapping SourceColumn="TaskResourceName" DataSetColumn="TaskResourceName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PWADS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="False">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProjectDetail_RD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectDepartment" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProjectName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OwnerName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProjectStartDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ProjectFinishDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ProjectPercentCompleted" type="xs:short" minOccurs="0" />
+              <xs:element name="DelayRate" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProjectDuration" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PublishDate" type="xs:dateTime" />
+              <xs:element name="TaskName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TaskBaselineStartDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TaskBaselineFinishDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TaskBaselineDuration" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TaskStartDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TaskFinishDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TaskDuration" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TaskActualStartDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TaskActualFinishDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TaskActualDuration" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TaskPercentCompleted" type="xs:short" minOccurs="0" />
+              <xs:element name="TaskResourceName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

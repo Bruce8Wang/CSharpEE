@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>项目进度总体概览图</title>
+    <script src="../Scripts/jquery-2.1.4.min.js"></script>
+    <script src="../Scripts/highcharts.js"></script>
+    <script src="/Scripts/projectSummary.js"></script>
+</head>
+<body>
+    <div style="text-align:right">
+        <button type="button" onclick="javascript: window.open('ProjectSummary.cshtml')" style="border-style:dashed;background-color:red;font-size:14px">项目总体报表</button>
+    </div>
+    <div id="container" style="width: 100%; height: auto;min-height:600px; margin: 10px auto"></div>
+    <script language="JavaScript">
+        $(document).ready(function () {
+            var arrayProject = [];
+            var arrayPercent = [];
+            var delayRate = [];
+
+            ajaxHelper('/api/ProjectSummary', 'GET').done(function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    arrayProject.push(data[i].ProjectName);
+                    arrayPercent.push(data[i].ProjectPercentCompleted);
+                    delayRate.push(data[i].DelayRate);
+                }
+            });
+
+
+            var chart = {
+                type: 'bar'
+            };
+            var title = {
+                text: '项目进度总体概览图'
+            };
+            var subtitle = {
+                text: 'Source: Enterprise Project Management'
+            };
+            var xAxis = {
+                categories: arrayProject,
+                title: {
+                    text: null
+                }
+            };
+            var yAxis = {
+                min: 0,
+                title: {
+                    text: 'Population (percent)',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            };
+            var tooltip = {
+                valueSuffix: ' %'
+            };
+            var plotOptions = {
+                bar: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            };
+            var legend = {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'top',
+                x: -40,
+                y: 100,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+                shadow: true
+            };
+            var credits = {
+                enabled: false
+            };
+
+            var series = [{
+                name: '完成百分比',
+                data: arrayPercent
+            }
+            , {
+                name: '延迟率',
+                data: delayRate
+            }
+            ];
+
+            var json = {};
+            json.chart = chart;
+            json.title = title;
+            json.subtitle = subtitle;
+            json.tooltip = tooltip;
+            json.xAxis = xAxis;
+            json.yAxis = yAxis;
+            json.series = series;
+            json.plotOptions = plotOptions;
+            json.legend = legend;
+            json.credits = credits;
+
+            $('#container').highcharts(json);
+
+        });
+    </script>
+</body>
+</html>

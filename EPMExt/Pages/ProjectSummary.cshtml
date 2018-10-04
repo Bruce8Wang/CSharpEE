@@ -1,0 +1,74 @@
+﻿@using System.Configuration;
+@{
+    var db = Database.OpenConnectionString(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString, ConfigurationManager.ConnectionStrings["ConnectionString"].ProviderName);
+    var selectQueryString = @"SELECT 项目部门=ProjectDepartment, " +
+                    "项目名称=ProjectName, " +
+                    "项目经理=Owner, " +
+                    "启动日期=Convert(varchar(10),ProjectStartDate,120), " +
+                    "完成日期=Convert(varchar(10),ProjectFinishDate,120), " +
+                    "完成百分比=Convert(varchar(2),ProjectPercentCompleted)+'%', " +
+                    "项目延迟率=ISNULL(DelayRate,1), " +
+                    "持续时间=Convert(int,ProjectDuration/8), " +
+                    "最近发布=Convert(varchar(10),PublishDate,120) " +
+            "FROM dbo.ProjectSummary_RD " +            
+            "order by ProjectName ";
+    var data = db.Query(selectQueryString);
+    var grid = new WebGrid(source: data, ajaxUpdateContainerId: "grid");
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>项目总体报表</title>
+    <script type="text/javascript" src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <style type="text/css">
+        .webGrid {
+            margin: 4px;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #FCFCFC;
+        }
+
+        .header {
+            background-color: #C1D4E6;
+            font-weight: bold;
+            color: #FFF;
+        }
+
+        .webGrid th, .webGrid td {
+            border: 1px solid #C0C0C0;
+            padding: 5px;
+        }
+
+        .alt {
+            background-color: #E4E9F5;
+            color: #000;
+        }
+
+        .gridHead a:hover {
+            text-decoration: underline;
+        }
+
+        .description {
+            width: auto;
+        }
+
+        .select {
+            background-color: #389DF5;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="text-align:center">项目总体报表</h1>
+    <div id="grid">
+        @grid.GetHtml(tableStyle: "webGrid",
+                headerStyle: "header",
+                alternatingRowStyle: "alt",
+                selectedRowStyle: "select")
+    </div>
+    <br />
+    <div style="text-align:center">
+        <button type="button" onclick="javascript: window.open('ProjectDetail.aspx')" style="border-style:none">项目明细报表</button>
+    </div>
+</body>
+</html>

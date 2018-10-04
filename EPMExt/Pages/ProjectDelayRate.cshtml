@@ -1,0 +1,19 @@
+﻿@using System.Configuration;
+@{
+    var db = Database.OpenConnectionString(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString, ConfigurationManager.ConnectionStrings["ConnectionString"].ProviderName);
+    var dbdata = db.Query(@"SELECT ProjectName," +
+            "ProjectDelayRate=ISNULL(DelayRate,1) " +
+        "FROM dbo.ProjectSummary_RD " +
+        "where DelayRate>0 " +
+        "order by ProjectName");
+    var myChart = new Chart(width: 1200, height: 300, theme: ChartTheme.Green)
+        .AddLegend("项目总体延迟")
+        .AddTitle("项目总体延迟一览表")
+        .AddSeries(name: "Project Delay Rate",
+                    chartType: "bar",
+                    xValue: dbdata,
+                    xField: "ProjectName",
+                    yValues: dbdata,
+                    yFields: "ProjectDelayRate")
+        .Write();
+}

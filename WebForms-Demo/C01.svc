@@ -3,14 +3,9 @@
 using System.ServiceModel;
 
 [ServiceContract]
-public interface IC01
+public class C01
 {
     [OperationContract]
-    string Hello(string value);
-}
-
-public class C01 : IC01
-{
     public string Hello(string value)
     {
         return "Hello " + value;

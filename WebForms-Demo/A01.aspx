@@ -19,10 +19,10 @@
 </script>
 
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <title>Home Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>A01</title>
 </head>
 <body>
     <form id="frmMain" runat="server">

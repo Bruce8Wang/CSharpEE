@@ -1,5 +1,4 @@
 ﻿<%@ ServiceHost Language="C#" Service="C01" %>
-
 using System.ServiceModel;
 using System.ServiceModel.Web;
 
@@ -7,19 +6,9 @@ using System.ServiceModel.Web;
 public class C01
 {
     [OperationContract]
-    public string Hello(string value)
+    [WebInvoke(Method = "GET", UriTemplate = "getuser/{name}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+    public string GetUser(string name)
     {
-        return "Hello " + value;
+        return "Hello " + name;
     }
-}
-
-[ServiceContract]
-public class C02
-{
-	[OperationContract]
-	[WebGet(UriTemplate = "operation/{name}")]
-	public string MyOperation(string name)
-	{
-		return string.Format("Operation name: {0}", name);
-	}
 }

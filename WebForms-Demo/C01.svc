@@ -6,7 +6,7 @@ using System.ServiceModel.Web;
 public class C01
 {
     [OperationContract]
-    [WebInvoke(Method = "GET", UriTemplate = "getuser/{name}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+    [WebInvoke(Method = "GET", UriTemplate = "User/{name}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
     public User GetUser(string name)
     {
         return new User { Id = 1, Name = name };

@@ -15,23 +15,10 @@ public class D01 : IHttpHandler
         dt.Columns.Add("Id", typeof(int));
         dt.Columns.Add("Name", typeof(String));
         dt.Rows.Add(1, context.Request.QueryString["name"]);
-        // 将DataTable转换成JSON
-        JavaScriptSerializer javaScriptSerializer = new JavaScriptSerializer();
-        javaScriptSerializer.MaxJsonLength = int.MaxValue;
-        IList list = new ArrayList();
-        foreach (DataRow dataRow in dt.Rows)
-        {
-            Dictionary<string, object> dictionary = new Dictionary<string, object>();
-            foreach (DataColumn dataColumn in dt.Columns)
-            {
-                dictionary.Add(dataColumn.ColumnName, dataRow[dataColumn.ColumnName].ToString());
-            }
-            list.Add(dictionary);
-        }
-        String result = javaScriptSerializer.Serialize(list);
+        dt.Rows.Add(2, "Anna");
 
         context.Response.ContentType = "application/json";
-        context.Response.Write(result);
+        context.Response.Write(DataTable2Json(dt));
     }
     public bool IsReusable
     {
@@ -39,5 +26,25 @@ public class D01 : IHttpHandler
         {
             return false;
         }
+    }
+
+    /// <summary>
+    /// 将DataTable转换成JSON
+    /// </summary>
+    /// <param name="dt"></param>
+    /// <returns></returns>
+    public static string DataTable2Json(DataTable dt)
+    {
+        IList list = new ArrayList();
+        foreach (DataRow dataRow in dt.Rows)
+        {
+            IDictionary<string, object> dictionary = new Dictionary<string, object>();
+            foreach (DataColumn dataColumn in dt.Columns)
+            {
+                dictionary.Add(dataColumn.ColumnName, dataRow[dataColumn.ColumnName].ToString());
+            }
+            list.Add(dictionary);
+        }
+        return new JavaScriptSerializer { MaxJsonLength = int.MaxValue }.Serialize(list);
     }
 }

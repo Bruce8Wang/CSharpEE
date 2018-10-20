@@ -6,8 +6,8 @@ using System.Web.Services;
 public class B01 : WebService
 {
     [WebMethod]
-    public string HelloWorld()
+    public User GetUser(string name)
     {
-        return "Hello World";
+        return new User { Id = 1, Name = name };
     }
 }

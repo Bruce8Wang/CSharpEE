@@ -30,7 +30,7 @@ public class D01 : IHttpHandler
         }
         String result = javaScriptSerializer.Serialize(list);
 
-        context.Response.ContentType = "text/plain";
+        context.Response.ContentType = "application/json";
         context.Response.Write(result);
     }
     public bool IsReusable

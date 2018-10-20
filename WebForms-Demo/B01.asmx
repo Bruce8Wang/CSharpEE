@@ -1,4 +1,6 @@
 ﻿<%@ WebService Language="C#" Class="B01" %>
+using System;
+using System.Data;
 using System.Web.Services;
 
 [WebService(Namespace = "http://tempuri.org/")]
@@ -6,8 +8,15 @@ using System.Web.Services;
 public class B01 : WebService
 {
     [WebMethod]
-    public User GetUser(string name)
+    public DataTable GetUser(string name)
     {
-        return new User { Id = 1, Name = name };
+        DataTable dt = new DataTable("dbo");
+        dt.Columns.Add("Id", typeof(int));
+        dt.Columns.Add("Name", typeof(String));
+        DataRow dr = dt.NewRow();
+        dr["Id"] = 1;
+        dr["Name"] = name;
+        dt.Rows.Add(dr);
+        return dt;
     }
 }

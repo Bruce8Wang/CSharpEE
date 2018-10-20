@@ -12,6 +12,6 @@
                 Response.Write("我爱你，中国！");
             }
         };
-		base.OnInit(e);
+        base.OnInit(e);
     }
 </script>

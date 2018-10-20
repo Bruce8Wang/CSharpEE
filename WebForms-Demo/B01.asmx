@@ -1,5 +1,4 @@
 ﻿<%@ WebService Language="C#" Class="B01" %>
-
 using System.Web.Services;
 
 [WebService(Namespace = "http://tempuri.org/")]

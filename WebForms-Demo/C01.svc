@@ -14,10 +14,7 @@ public class C01
         DataTable dt = new DataTable("dbo");
         dt.Columns.Add("Id", typeof(int));
         dt.Columns.Add("Name", typeof(String));
-        DataRow dr = dt.NewRow();
-        dr["Id"] = 1;
-        dr["Name"] = name;
-        dt.Rows.Add(dr);
+        dt.Rows.Add(1, name);
         return dt;
     }
 }

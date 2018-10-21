@@ -11,7 +11,7 @@ public class B01 : WebService
 
     [WebMethod]
     [SoapHeader("mySoapHeader")]
-    public IList<User> GetUser(string name)
+    public List<User> GetUser(string name)
     {
         if (mySoapHeader == null)
         {

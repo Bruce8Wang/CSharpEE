@@ -1,10 +1,14 @@
 ﻿<%@ WebService Language="C#" Class="B01" %>
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Web.Services;
+using System.Web.Script.Services;
 using System.Web.Services.Protocols;
 
 [WebService(Namespace = "http://tempuri.org/")]
 [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+[ToolboxItem(false)]
+[ScriptService]
 public class B01 : WebService
 {
     public MySoapHeader mySoapHeader { get; set; }

@@ -1,6 +1,5 @@
 ﻿<%@ WebService Language="C#" Class="B01" %>
-using System;
-using System.Data;
+using System.Collections.Generic;
 using System.Web.Services;
 using System.Web.Services.Protocols;
 
@@ -12,26 +11,15 @@ public class B01 : WebService
 
     [WebMethod]
     [SoapHeader("mySoapHeader")]
-    public DataTable GetUser(string name)
+    public IList<User> GetUser(string name)
     {
         if (mySoapHeader == null)
         {
-            DataTable dt = new DataTable("dbo");
-            dt.Columns.Add("Id", typeof(int));
-            dt.Columns.Add("Name", typeof(String));
-            dt.Rows.Add(1, name);
-            return dt;
+            return new List<User> { new User { Id = 1, Name = name }, new User { Id = 2, Name = "Anna" } };
         }
         else
         {
             return null;
         }
     }
-}
-
-public class MySoapHeader : SoapHeader
-{
-    public string UserName { get; set; }
-    public string Ip { get; set; }
-    public string Token { get; set; }
 }

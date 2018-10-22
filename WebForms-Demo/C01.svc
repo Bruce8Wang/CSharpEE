@@ -1,11 +1,9 @@
 ﻿<%@ ServiceHost Language="C#" Service="C01" %>
 using System.Collections.Generic;
 using System.ServiceModel;
-using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
 
-[ServiceContract(Namespace = "")]
-[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+[ServiceContract]
 public class C01
 {
     [OperationContract]

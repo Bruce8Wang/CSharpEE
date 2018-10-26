@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" %>
+﻿<%@ Control Language="C#" Inherits="System.Web.UI.UserControl" %>
 
 <script runat="server">
     public string Text { get; set; }

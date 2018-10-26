@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" %>
+﻿<%@ Master Language="C#" Inherits="System.Web.UI.MasterPage" %>
 
 <script runat="server">
     protected override void OnInit(EventArgs e)

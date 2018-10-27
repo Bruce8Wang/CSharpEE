@@ -1,4 +1,4 @@
-﻿<%@ Application Language="C#" %>
+﻿<%@ Application Language="C#" Inherits="System.Web.HttpApplication" %>
 
 <script RunAt="server">
     public override void Init()

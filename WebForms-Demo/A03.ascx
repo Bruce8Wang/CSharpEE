@@ -3,15 +3,15 @@
 <script runat="server">
     public string Text { get; set; }
 
-    protected override void OnInit(EventArgs e)
+    protected override void OnInit(EventArgs ea)
     {
-        Load += (sender, e1) =>
+        Load += (sender, e) =>
         {
             if (IsPostBack)
             {
                 Response.Write("我爱你，中国！");
             }
         };
-        base.OnInit(e);
+        base.OnInit(ea);
     }
 </script>

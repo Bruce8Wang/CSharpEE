@@ -1,4 +1,4 @@
-﻿<%@ Application Language="C#" %>
+﻿<%@ Application Language="C#" Inherits="System.Web.HttpApplication" %>
 
 <script RunAt="server">
     public override void Init()
@@ -8,5 +8,10 @@
             HttpContext.Current.SetSessionStateBehavior(SessionStateBehavior.Required);
         };
         base.Init();
+    }
+
+    public static int Add(int a, int b)
+    {
+        return a + b;
     }
 </script>

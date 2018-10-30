@@ -3,6 +3,7 @@
 <script runat="server">    
     protected override void OnInit(EventArgs ea)
     {
+        int i = global_asax.Add(1, 2);
         Load += (sender, e) =>
         {
             if (IsPostBack)

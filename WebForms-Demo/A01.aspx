@@ -28,7 +28,7 @@
 <body>
     <form id="frmMain" runat="server">
         <asp:Button ID="btnSubmit" runat="server" Text="Submit" /><br />
-        <asp:Label ID="lblShow" runat="server" Text=" "></asp:Label>
+        <asp:Label ID="lblShow" runat="server" Text=""></asp:Label>
     </form>
 </body>
 </html>

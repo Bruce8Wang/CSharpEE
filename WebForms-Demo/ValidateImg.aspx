@@ -7,7 +7,7 @@
 <script runat="server">
     protected override void OnInit(EventArgs e)
     {
-        Load += (sender, e1) =>
+        Load += (sender, f) =>
         {
             string vNum = "X13B";
             int gheight = (int)(vNum.Length * 11.5);

@@ -18,7 +18,7 @@
             MemoryStream ms = new MemoryStream();
             img.Save(ms, ImageFormat.Jpeg);
             Response.ClearContent();
-            Response.ContentType = "image/jpeg";
+            Response.ContentType = "image/jpeg; charset=utf-8";
             Response.BinaryWrite(ms.ToArray());
             g.Dispose();
             img.Dispose();

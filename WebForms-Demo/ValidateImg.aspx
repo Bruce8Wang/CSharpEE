@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" %>
 <%@ Import Namespace="System" %>
-<%@ Import Namespace="System.Drawing" %>
-<%@ Import Namespace="System.Drawing.Imaging" %>
+<%@ Import Namespace="System.DrawingCore" %>
+<%@ Import Namespace="System.DrawingCore.Imaging" %>
 <%@ Import Namespace="System.IO" %>
 
 <script runat="server">

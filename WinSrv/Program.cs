@@ -8,7 +8,7 @@ namespace WinSrv
 	{
 		public static void Main(string[] args)
 		{
-			ServiceBase.Run(new ServiceBase());
+			ServiceBase.Run(new WindowsService());
 		}
 		
 		public class WindowsService : ServiceBase

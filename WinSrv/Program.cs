@@ -18,7 +18,9 @@ namespace WinSrv
 			protected override void OnStart(string[] args)
 			{
 				//执行逻辑或调用其他进程
-				process = Process.Start(ConfigurationManager.AppSettings["fileName"] ?? "", ConfigurationManager.AppSettings["arguments"] ?? "");
+				string fileName = ConfigurationManager.AppSettings["fileName"] ?? "";
+				string arguments = ConfigurationManager.AppSettings["arguments"] ?? "";
+				process = Process.Start(fileName, arguments);
 			}
 
 			protected override void OnStop()

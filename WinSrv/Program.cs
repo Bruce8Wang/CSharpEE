@@ -17,7 +17,7 @@ namespace WinSrv
 			
 			protected override void OnStart(string[] args)
 			{
-				//执行逻辑或调用其他进程
+				// 调用其他进程
 				string fileName = ConfigurationManager.AppSettings["fileName"] ?? "";
 				string arguments = ConfigurationManager.AppSettings["arguments"] ?? "";
 				process = Process.Start(fileName, arguments);
@@ -25,7 +25,7 @@ namespace WinSrv
 
 			protected override void OnStop()
 			{
-				//执行逻辑或杀死其他进程
+				// 杀死其他进程
 				process.Kill();
 			}
 		}

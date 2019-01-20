@@ -1,5 +1,4 @@
 ﻿<%@ Page Language="C#" %>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +22,10 @@
             <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
             <RowStyle ForeColor="#000066" />
         </asp:DetailsView>
+        <br />
+        <label for="TextBox1">ProductName : </label>
+        <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="true"></asp:TextBox>
+        <br />
         <br />
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
             <Columns>
@@ -48,7 +51,7 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
             DeleteCommand="DELETE FROM Products WHERE ProductID = @ProductID"
             InsertCommand="INSERT INTO Products (ProductName, UnitPrice, Discontinued) VALUES (@ProductName, @UnitPrice, @Discontinued)"
-            SelectCommand="SELECT ProductID, ProductName, UnitPrice, Discontinued FROM Products"
+            SelectCommand="SELECT ProductID, ProductName, UnitPrice, Discontinued FROM Products where ProductName=IIF(@ProductName='',ProductName,@ProductName)"
             UpdateCommand="UPDATE Products SET ProductName = @ProductName, UnitPrice = @UnitPrice, Discontinued = @Discontinued WHERE ProductID = @ProductID">
             <DeleteParameters>
                 <asp:Parameter Name="ProductID" Type="Int32" />
@@ -64,6 +67,9 @@
                 <asp:Parameter Name="UnitPrice" Type="Decimal" />
                 <asp:Parameter Name="Discontinued" Type="Boolean" />
             </InsertParameters>
+            <SelectParameters>
+                <asp:ControlParameter Name="ProductName" Type="String" ControlID="TextBox1" DefaultValue=" " />
+            </SelectParameters>
         </asp:SqlDataSource>
     </form>
 </body>

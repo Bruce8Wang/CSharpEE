@@ -5,9 +5,9 @@
 <%@ Import Namespace="System.IO" %>
 
 <script runat="server">
-    protected override void OnInit(EventArgs e)
+    protected override void OnInit(EventArgs _e)
     {
-        Load += (sender, f) =>
+        Load += (sender, e) =>
         {
             string vNum = "X13B";
             int gheight = (int)(vNum.Length * 11.5);

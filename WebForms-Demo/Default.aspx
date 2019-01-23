@@ -161,12 +161,13 @@
             </SelectedItemTemplate>
         </asp:ListView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server"
-            ConnectionString="server=10.0.0.143;database=northwind;user id=sa;password=1qaz@WSX"
-            ProviderName="System.Data.SqlClient"
+            ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+            ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>"			
+			InsertCommand="INSERT INTO Products (ProductName, UnitPrice, Discontinued) VALUES (@ProductName, @UnitPrice, @Discontinued)"
+			UpdateCommand="UPDATE Products SET ProductName = @ProductName, UnitPrice = @UnitPrice, Discontinued = @Discontinued WHERE ProductID = @ProductID"			
             DeleteCommand="DELETE FROM Products WHERE ProductID = @ProductID"
-            InsertCommand="INSERT INTO Products (ProductName, UnitPrice, Discontinued) VALUES (@ProductName, @UnitPrice, @Discontinued)"
-            SelectCommand="SELECT ProductID, ProductName, UnitPrice, Discontinued FROM Products where ProductName=IIF(@ProductName='',ProductName,@ProductName)"
-            UpdateCommand="UPDATE Products SET ProductName = @ProductName, UnitPrice = @UnitPrice, Discontinued = @Discontinued WHERE ProductID = @ProductID">
+			SelectCommand="SELECT ProductID, ProductName, UnitPrice, Discontinued FROM Products"
+			FilterExpression="ProductName='{0}'">
             <DeleteParameters>
                 <asp:Parameter Name="ProductID" Type="Int32" />
             </DeleteParameters>
@@ -181,9 +182,9 @@
                 <asp:Parameter Name="UnitPrice" Type="Decimal" />
                 <asp:Parameter Name="Discontinued" Type="Boolean" />
             </InsertParameters>
-            <SelectParameters>
-                <asp:ControlParameter Name="ProductName" Type="String" ControlID="txtInput" DefaultValue=" " />
-            </SelectParameters>
+			<FilterParameters>
+				<asp:ControlParameter Name="ProductName" ControlId="txtInput" PropertyName="Text"/>
+			</FilterParameters>		
         </asp:SqlDataSource>
     </form>
 </body>

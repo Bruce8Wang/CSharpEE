@@ -162,9 +162,9 @@
         </asp:ListView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server"
             ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-            ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>"			
+            ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>"
 			InsertCommand="INSERT INTO Products (ProductName, UnitPrice, Discontinued) VALUES (@ProductName, @UnitPrice, @Discontinued)"
-			UpdateCommand="UPDATE Products SET ProductName = @ProductName, UnitPrice = @UnitPrice, Discontinued = @Discontinued WHERE ProductID = @ProductID"			
+			UpdateCommand="UPDATE Products SET ProductName = @ProductName, UnitPrice = @UnitPrice, Discontinued = @Discontinued WHERE ProductID = @ProductID"
             DeleteCommand="DELETE FROM Products WHERE ProductID = @ProductID"
 			SelectCommand="SELECT ProductID, ProductName, UnitPrice, Discontinued FROM Products"
 			FilterExpression="ProductName='{0}'">

@@ -6,16 +6,16 @@
 </head>
 <body>
     <form runat="server">
-        <label for="txtInput">ProductName : </label>
-        <asp:TextBox ID="txtInput" runat="server" AutoPostBack="true"></asp:TextBox>
+		账号：<%= User.Identity.Name %><br /><br />
+        产品名称：<asp:TextBox ID="txtInput" runat="server" AutoPostBack="true"></asp:TextBox>
         <br />
         <br />
         <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" DataKeyNames="ProductID" InsertItemPosition="LastItem" DataMember="DefaultView">
             <AlternatingItemTemplate>
                 <tr style="background-color: #FFFFFF; color: #284775;">
                     <td>
-                        <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="删除" />
-                        <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="编辑" />
+                        <asp:Button runat="server" CommandName="Delete" Text="删除" />
+                        <asp:Button runat="server" CommandName="Edit" Text="编辑" />
                     </td>
                     <td>
                         <asp:Label ID="ProductIDLabel" runat="server" Text='<%# Eval("ProductID") %>' />
@@ -34,8 +34,8 @@
             <EditItemTemplate>
                 <tr style="background-color: #999999;">
                     <td>
-                        <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="更新" />
-                        <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="取消" />
+                        <asp:Button runat="server" CommandName="Update" Text="更新" />
+                        <asp:Button runat="server" CommandName="Cancel" Text="取消" />
                     </td>
                     <td>
                         <asp:Label ID="ProductIDLabel1" runat="server" Text='<%# Eval("ProductID") %>' />
@@ -61,8 +61,8 @@
             <InsertItemTemplate>
                 <tr style="">
                     <td>
-                        <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="插入" />
-                        <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="清除" />
+                        <asp:Button runat="server" CommandName="Insert" Text="插入" />
+                        <asp:Button runat="server" CommandName="Cancel" Text="清除" />
                     </td>
                     <td>&nbsp;</td>
                     <td>
@@ -79,8 +79,8 @@
             <ItemTemplate>
                 <tr style="background-color: #E0FFFF; color: #333333;">
                     <td>
-                        <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="删除" />
-                        <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="编辑" />
+                        <asp:Button runat="server" CommandName="Delete" Text="删除" />
+                        <asp:Button runat="server" CommandName="Edit" Text="编辑" />
                     </td>
                     <td>
                         <asp:Label ID="ProductIDLabel" runat="server" Text='<%# Eval("ProductID") %>' />
@@ -102,7 +102,7 @@
                         <td runat="server">
                             <table id="itemPlaceholderContainer" runat="server" border="1" style="background-color: #FFFFFF; border-collapse: collapse; border-color: #999999; border-style: none; border-width: 1px; font-family: Verdana, Arial, Helvetica, sans-serif;">
                                 <tr runat="server" style="background-color: #E0FFFF; color: #333333;">
-                                    <th runat="server"></th>
+                                    <th></th>
                                     <th>
                                         <asp:LinkButton CommandName="Sort" CommandArgument="ProductID" runat="server">ProductID</asp:LinkButton>
                                     </th>
@@ -117,11 +117,11 @@
                                     </th>
                                 </tr>
                                 <tr id="itemPlaceholder" runat="server">
-                                    <th runat="server"></th>
-                                    <th runat="server">ProductID</th>
-                                    <th runat="server">ProductName</th>
-                                    <th runat="server">UnitPrice</th>
-                                    <th runat="server">Discontinued</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
                                 </tr>
                             </table>
                         </td>
@@ -142,8 +142,8 @@
             <SelectedItemTemplate>
                 <tr style="background-color: #E2DED6; font-weight: bold; color: #333333;">
                     <td>
-                        <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="删除" />
-                        <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="编辑" />
+                        <asp:Button runat="server" CommandName="Delete" Text="删除" />
+                        <asp:Button runat="server" CommandName="Edit" Text="编辑" />
                     </td>
                     <td>
                         <asp:Label ID="ProductIDLabel" runat="server" Text='<%# Eval("ProductID") %>' />
@@ -159,7 +159,7 @@
                     </td>
                 </tr>
             </SelectedItemTemplate>
-        </asp:ListView>
+        </asp:ListView>		
         <asp:SqlDataSource ID="SqlDataSource1" runat="server"
             ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
             ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>"

@@ -1,15 +1,51 @@
 ﻿<%@ Language="C#" %>
 <script runat="server">
-    protected override void OnInit(EventArgs _e)
+
+    protected void Page_PreInit(object sender, EventArgs e)
     {
-		this.InitComplete += (sender, e) => { Response.Write("InitComplete</br>"); };
-		this.PreLoad += (sender, e) => { Response.Write("PreLoad</br>"); };
-        this.Load += (sender, e) => { Response.Write("Load</br>"); };
-        this.LoadComplete += (sender, e) => { Response.Write("LoadComplete</br>"); };
-        this.PreRender += (sender, e) => { Response.Write("PreRender</br>"); };
-        this.PreRenderComplete += (sender, e) => { Response.Write("PreRenderComplete</br>"); };		
-		this.SaveStateComplete += (sender, e) => { Response.Write("SaveStateComplete</br></br>"); };	
+        Response.Write("1、Page_PreInit</br>");
     }
+
+    protected void Page_Init(object sender, EventArgs e)
+    {
+        Response.Write("2、Page_Init</br>");
+    }
+
+    protected void Page_InitComplete(object sender, EventArgs e)
+    {
+        Response.Write("3、Page_InitComplete</br>");
+    }
+
+    protected void Page_PreLoad(object sender, EventArgs e)
+    {
+        Response.Write("4、Page_PreLoad</br>");
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Response.Write("5、Page_Load</br>");
+    }
+
+    protected void Page_LoadComplete(object sender, EventArgs e)
+    {
+        Response.Write("6、Page_LoadComplete</br>");
+    }
+
+    protected void Page_PreRender(object sender, EventArgs e)
+    {
+        Response.Write("7、Page_PreRender</br>");
+    }
+
+    protected void Page_PreRenderComplete(object sender, EventArgs e)
+    {
+        Response.Write("8、Page_PreRenderComplete</br>");
+    }
+
+    protected void Page_SaveStateComplete(object sender, EventArgs e)
+    {
+        Response.Write("9、Page_SaveStateComplete</br>");
+    }
+
 </script>
 
 <!DOCTYPE html>

@@ -1,4 +1,17 @@
 ﻿<%@ Language="C#" %>
+<script runat="server">
+    protected override void OnInit(EventArgs _e)
+    {
+		this.InitComplete += (sender, e) => { Response.Write("InitComplete</br>"); };
+		this.PreLoad += (sender, e) => { Response.Write("PreLoad</br>"); };
+        this.Load += (sender, e) => { Response.Write("Load</br>"); };
+        this.LoadComplete += (sender, e) => { Response.Write("LoadComplete</br>"); };
+        this.PreRender += (sender, e) => { Response.Write("PreRender</br>"); };
+        this.PreRenderComplete += (sender, e) => { Response.Write("PreRenderComplete</br>"); };		
+		this.SaveStateComplete += (sender, e) => { Response.Write("SaveStateComplete</br></br>"); };	
+    }
+</script>
+
 <!DOCTYPE html>
 <html>
 <head>

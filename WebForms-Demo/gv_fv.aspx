@@ -1,15 +1,12 @@
-﻿<%@  Language="C#" %>
+﻿<%@ Language="C#" %>
 <script runat="server">
-    protected override void OnInit(EventArgs _e)
-    {
-        GridView1.RowCommand += (sender, e) =>
-        {
-            if (e.CommandName == "New")
-            {
-                GridView1.DataSourceID = "";
-            }
-        };
-    }
+	protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+	{
+		if (e.CommandName == "New")
+		{
+			GridView1.DataSourceID = "";
+		}
+	}	
     protected void FormView1_ItemInserted(object sender, FormViewInsertedEventArgs e)
     {
         GridView1.DataSourceID = "SqlDataSource1";
@@ -24,7 +21,7 @@
 </head>
 <body>
     <form runat="server">
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="CustomerID" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="CustomerID" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" OnRowCommand="GridView1_RowCommand">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />

@@ -1,49 +1,49 @@
 ﻿<%@ Language="C#" %>
 <script runat="server">
 
-    protected void Page_PreInit(object sender, EventArgs e)
+    protected override void OnPreInit(EventArgs e)
     {
-        Response.Write("1、Page_PreInit</br>");
+        Response.Write("1、PreInit</br>");
     }
 
-    protected void Page_Init(object sender, EventArgs e)
+    protected override void OnInit(EventArgs e)
     {
-        Response.Write("2、Page_Init</br>");
+        Response.Write("2、Init</br>");
     }
 
-    protected void Page_InitComplete(object sender, EventArgs e)
+    protected override void OnInitComplete(EventArgs e)
     {
-        Response.Write("3、Page_InitComplete</br>");
+        Response.Write("3、InitComplete</br>");
     }
 
-    protected void Page_PreLoad(object sender, EventArgs e)
+    protected override void OnPreLoad(EventArgs e)
     {
-        Response.Write("4、Page_PreLoad</br>");
+        Response.Write("4、PreLoad</br>");
     }
 
-    protected void Page_Load(object sender, EventArgs e)
+    protected override void OnLoad(EventArgs e)
     {
-        Response.Write("5、Page_Load</br>");
+        Response.Write("5、Load</br>");
     }
 
-    protected void Page_LoadComplete(object sender, EventArgs e)
+    protected override void OnLoadComplete(EventArgs e)
     {
-        Response.Write("6、Page_LoadComplete</br>");
+        Response.Write("6、LoadComplete</br>");
     }
 
-    protected void Page_PreRender(object sender, EventArgs e)
+    protected override void OnPreRender(EventArgs e)
     {
-        Response.Write("7、Page_PreRender</br>");
+        Response.Write("7、PreRender</br>");
     }
 
-    protected void Page_PreRenderComplete(object sender, EventArgs e)
+    protected override void OnPreRenderComplete(EventArgs e)
     {
-        Response.Write("8、Page_PreRenderComplete</br>");
+        Response.Write("8、PreRenderComplete</br>");
     }
 
-    protected void Page_SaveStateComplete(object sender, EventArgs e)
+    protected override void OnSaveStateComplete(EventArgs e)
     {
-        Response.Write("9、Page_SaveStateComplete</br>");
+        Response.Write("9、SaveStateComplete</br></br>");
     }
 
 </script>

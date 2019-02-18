@@ -1,4 +1,4 @@
-﻿<%@ Language="C#" %>
+﻿<%@ Page Language="C#" %>
 <%@ Import Namespace="System" %>
 <%@ Import Namespace="System.Drawing" %>
 <%@ Import Namespace="System.Drawing.Imaging" %>

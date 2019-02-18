@@ -1,4 +1,4 @@
-<%@ Language="C#" %>
+<%@ Page Language="C#" %>
 <script runat="server">
 
     protected override void OnPreInit(EventArgs e)

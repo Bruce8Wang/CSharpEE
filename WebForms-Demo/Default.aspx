@@ -1,4 +1,4 @@
-﻿<%@ Language="C#" %>
+﻿<%@ Page Language="C#" %>
 <!DOCTYPE html>
 <html>
 <head>

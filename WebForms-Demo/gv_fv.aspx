@@ -1,4 +1,4 @@
-﻿<%@ Language="C#" %>
+﻿<%@ Page Language="C#" %>
 <script runat="server">
 	protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
 	{

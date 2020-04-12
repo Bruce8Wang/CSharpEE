@@ -14,3 +14,10 @@
 - Mvc (2018-11-29)
 1. Install-Package Microsoft.AspNet.Mvc -Version 5.2.7
 2. Install-Package EntityFramework -Version 6.4.0
+
+------------
+
+- 安全相关：
+1. Install-Package Microsoft.Owin.Security.Cookies -Version 4.1.0
+2. Install-Package Microsoft.Owin.Security.OAuth -Version 4.1.0
+3. Install-Package Microsoft.Owin.Security.Jwt -Version 4.1.0

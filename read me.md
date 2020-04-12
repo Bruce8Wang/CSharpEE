@@ -6,8 +6,8 @@
 ------------
 
 - WebPages (2018-11-29)
-1. Install-Package Microsoft.AspNet.WebPages.WebData -Version 3.2.7
-2. Install-Package Microsoft.AspNet.WebPages -Version 3.2.7
+1. Install-Package Microsoft.AspNet.WebPages -Version 3.2.7
+2. Install-Package Microsoft.AspNet.WebPages.WebData -Version 3.2.7
 
 ------------
 

@@ -17,7 +17,7 @@
 
 ------------
 
-- 安全相关：
+- 安全相关 (2019-11-25)
 1. Install-Package Microsoft.Owin.Security.Cookies -Version 4.1.0
 2. Install-Package Microsoft.Owin.Security.OAuth -Version 4.1.0
-3. Install-Package Microsoft.Owin.Security.Jwt -Version 4.1.0
+3. Install-Package Microsoft.Owin.Security.Jwt -Version 4.1.0	

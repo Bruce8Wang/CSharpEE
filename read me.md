@@ -14,3 +14,4 @@
 
 - Mvc (2018-11-29)
 1. Install-Package Microsoft.AspNet.Mvc -Version 5.2.7
+2. Install-Package EntityFramework -Version 6.4.0

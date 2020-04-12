@@ -1,8 +1,7 @@
 - WebApi (2018-11-29)
 1. Install-Package Microsoft.AspNet.WebApi.Owin -Version 5.2.7
 2. Install-Package Microsoft.Owin.Host.SystemWeb -Version 4.1.0
-3. Install-Package Newtonsoft.Json -Version 12.0.3
-4. Install-Package EntityFramework -Version 6.4.0
+3. Install-Package EntityFramework -Version 6.4.0
 
 ------------
 

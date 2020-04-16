@@ -2,6 +2,10 @@
 1. Install-Package Microsoft.AspNet.WebApi.Owin -Version 5.2.7
 2. Install-Package Microsoft.AspNet.WebApi.WebHost -Version 5.2.7
 3. Install-Package EntityFramework -Version 6.4.0
+4. Install-Package Microsoft.AspNet.WebApi.Cors -Version 5.2.7
+5. Install-Package Microsoft.AspNet.WebApi.OData -Version 5.7.0
+6. Install-Package Swashbuckle -Version 5.6.0
+7. Install-Package log4net -Version 2.0.8
 
 ------------
 

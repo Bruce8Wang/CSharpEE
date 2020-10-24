@@ -22,3 +22,9 @@ public class D01 : IHttpHandler
         }
     }
 }
+            
+public class User
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+}

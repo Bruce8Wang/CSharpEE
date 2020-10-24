@@ -12,3 +12,9 @@ public class B01 : WebService
         return new List<User> { new User { Id = 1, Name = name }, new User { Id = 2, Name = "Anna" } };
     }
 }
+
+public class User
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+}
